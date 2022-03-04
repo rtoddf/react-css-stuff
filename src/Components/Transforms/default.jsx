@@ -1,6 +1,6 @@
 import React from 'react';
 import Box from '../Box/default';
-import './transforms.scss';
+import './default.scss';
 
 function Transforms() {
     const boxInfo = [

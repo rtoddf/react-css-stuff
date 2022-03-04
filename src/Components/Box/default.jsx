@@ -1,4 +1,5 @@
 import React from 'react';
+import './default.scss';
 
 function Box(props) {
     const {animation} = props;
@@ -6,13 +7,13 @@ function Box(props) {
     return (
         <>
             {animation && (
-                <div class={animation}>
+                <>
                     <div className="cont">
-                        <div className="box">
+                        <div className={`box ${animation}`}>
                             <h3>Text</h3>
                         </div>
                     </div>
-                </div>
+                </>
                 
             )}
        </>
