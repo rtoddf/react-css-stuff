@@ -17,3 +17,45 @@ html {
     color: #333;
     font-size: 0.875rem;
   }
+
+  //css grids
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .grid {
+    display: grid;
+    display: -ms-grid;
+    grid-gap: 2.5rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5625rem;
+  }
+  
+  .grid > .grid {
+    width: 100%;
+    padding: 0;
+  }
+
+[data-col="3"],
+[data-col="1-2"],
+[data-col="2-1"] {
+  grid-template-columns: repeat(3, [col] 1fr);
+}
+
+@media (max-width: 600px) {
+	.container {
+		width: 100%;
+		padding: 0;
+	}
+
+	.grid[data-margin="0"] {
+		width: 100%;
+		padding: 0;
+	}
+
+	[data-col="3"] {
+		grid-template-columns: repeat(1, [col] 1fr);
+	}
+}
