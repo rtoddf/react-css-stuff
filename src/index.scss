@@ -1,42 +1,42 @@
 html {
-    box-sizing: border-box;
-    height: 100%;
-    color: #222;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-  }
+  box-sizing: border-box;
+  height: 100%;
+  color: #222;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
   
-  *, *:before, *:after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-  }
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
   
-  body {
-    background-color: #fff;
-    color: #333;
-    font-size: 0.875rem;
-  }
+body {
+  background-color: #fff;
+  color: #333;
+  font-size: 0.875rem;
+}
 
-  //css grids
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  .grid {
-    display: grid;
-    display: -ms-grid;
-    grid-gap: 2.5rem;
-    width: 100%;
-    margin: 0 auto;
-    padding: 1.5625rem;
-  }
-  
-  .grid > .grid {
-    width: 100%;
-    padding: 0;
-  }
+//css grids
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  display: -ms-grid;
+  grid-gap: 2.5rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5625rem;
+}
+
+.grid > .grid {
+  width: 100%;
+  padding: 0;
+}
 
 [data-col="3"],
 [data-col="1-2"],
