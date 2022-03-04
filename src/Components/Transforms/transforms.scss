@@ -1,6 +1,6 @@
 .transforms {
 
-  .container-transforms {
+  .cont {
     position: relative;
     width: 100px;
     height: 100px;
@@ -10,7 +10,7 @@
     perspective: 600px;
   }
 
-  .container-transforms .box {
+  .cont .box {
     position: absolute;
     display: block;
     width: 100%;
