@@ -1,9 +1,8 @@
 import React from 'react';
 import Box from './Box';
-import './keyframes.scss';
+import './transforms.scss';
 
-function Keyframes() {
-
+function Transforms() {
     const boxInfo = [
         {
             animation: "rotate-x",
@@ -36,16 +35,17 @@ function Keyframes() {
 
     const boxes = boxInfo.map((box, index) => {
         return <Box key={index} animation={box.animation} />;
-      });
+    });
 
     return (
         <>
-            <h3>Keyframes</h3>
-            <div className="grid keyframes" data-col="3">
+            <h3>Transforms</h3>
+            <div className="grid transforms" data-col="3">
                 {boxes}
             </div>
         </>
+        
     )
 }
 
-export default Keyframes;
+export default Transforms;

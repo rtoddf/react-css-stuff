@@ -6,13 +6,14 @@ function Box(props) {
     return (
         <>
             {animation && (
-                <div className={animation}>
-                    <div className="container-keyframes">
+                <div class={animation}>
+                    <div className="container-transforms">
                         <div className="box">
                             <h3>Text</h3>
                         </div>
                     </div>
                 </div>
+                
             )}
        </>
     )
