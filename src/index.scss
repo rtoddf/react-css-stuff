@@ -18,6 +18,15 @@ body {
   font-size: 0.875rem;
 }
 
+pre {
+  margin: 10px 0;
+  padding: 10px;
+  background: #dedede;
+  border-radius: 6px;
+  font-size: 0.875rem;
+}
+
+
 //css grids
 .container {
   width: 80%;
@@ -48,6 +57,10 @@ body {
 [data-col="1-4"],
 [data-col="4-1"] {
   grid-template-columns: repeat(5, [col] 1fr);
+}
+
+[data-col="10"] {
+  grid-template-columns: repeat(10, [col] 1fr);
 }
 
 @media (max-width: 600px) {

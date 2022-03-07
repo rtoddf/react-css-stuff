@@ -5,10 +5,11 @@ import {
   Switch
 } from "react-router-dom";
 import Home from './Components/Home/default';
-import Keyframes from './Components/Keyframes/default';
-import Transforms from './Components/Transforms/default';
-import RadialGradients from './Components/RadialGradients/default';
-import DropShadows from './Components/DropShadows/default';
+import Keyframes from './Components/Reference/Keyframes/default';
+import Transforms from './Components/Reference/Transforms/default';
+import RadialGradients from './Components/Reference/RadialGradients/default';
+import DropShadows from './Components/Reference/DropShadows/default';
+import NthChild from './Components/Reference/NthChild/default';
 
 function App() {
   return <Router>
@@ -36,6 +37,11 @@ function App() {
       <Switch>
         <Route path='/dropshadows'>
           <DropShadows />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/nth-child'>
+          <NthChild />
         </Route>
       </Switch>
     </div>
