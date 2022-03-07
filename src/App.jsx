@@ -7,6 +7,7 @@ import {
 import Home from './Components/Home/default';
 import Keyframes from './Components/Keyframes/default';
 import Transforms from './Components/Transforms/default';
+import RadialGradients from './Components/RadialGradients/default';
 
 function App() {
   return <Router>
@@ -24,6 +25,11 @@ function App() {
       <Switch>
         <Route path='/transforms'>
           <Transforms />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/radial-gradients'>
+          <RadialGradients />
         </Route>
       </Switch>
     </div>
