@@ -8,6 +8,7 @@ import Home from './Components/Home/default';
 import Keyframes from './Components/Keyframes/default';
 import Transforms from './Components/Transforms/default';
 import RadialGradients from './Components/RadialGradients/default';
+import DropShadows from './Components/DropShadows/default';
 
 function App() {
   return <Router>
@@ -30,6 +31,11 @@ function App() {
       <Switch>
         <Route path='/radial-gradients'>
           <RadialGradients />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/dropshadows'>
+          <DropShadows />
         </Route>
       </Switch>
     </div>

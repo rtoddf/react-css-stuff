@@ -9,6 +9,7 @@ function Home() {
                 <li><Link to="/keyframes">Keyframes</Link></li>
                 <li><Link to="/transforms">Transforms</Link></li>
                 <li><Link to="/radial-gradients">Radial Gradients</Link></li>
+                <li><Link to="/dropshadows">Dropshadows</Link></li>
             </ul>
         </>
     )

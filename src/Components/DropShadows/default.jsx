@@ -2,23 +2,23 @@ import React from 'react';
 import Circle from '../Circle/default';
 import './default.scss';
 
-function RadialGradients() {
+function DropShadows() {
 
     const gradientInfo = [
         {
-            className: "gradient",
+            className: "dropshadow",
         },
         {
-            className: "gradient one",
+            className: "dropshadow",
         },
         {
-            className: "gradient two",
+            className: "dropshadow",
         },
         {
-            className: "gradient three",
+            className: "dropshadow",
         },
         {
-            className: "gradient four",
+            className: "dropshadow",
         },
     ];
 
@@ -28,7 +28,7 @@ function RadialGradients() {
 
     return (
         <>
-            <h3>Radial Gradients</h3>
+            <h3>Dropshadows</h3>
             <div class="grid" data-col="5">
                 {circles}
             </div>
@@ -36,4 +36,4 @@ function RadialGradients() {
     )
 }
 
-export default RadialGradients;
+export default DropShadows;
