@@ -21,32 +21,32 @@ function App() {
         </Route>
       </Switch>
       <Switch>
-        <Route path='/keyframes'>
+        <Route path='/reference/keyframes'>
           <Keyframes />
         </Route>
       </Switch>
       <Switch>
-        <Route path='/transforms'>
+        <Route path='/reference/transforms'>
           <Transforms />
         </Route>
       </Switch>
       <Switch>
-        <Route path='/radial-gradients'>
+        <Route path='/reference/radial-gradients'>
           <RadialGradients />
         </Route>
       </Switch>
       <Switch>
-        <Route path='/dropshadows'>
+        <Route path='/reference/dropshadows'>
           <DropShadows />
         </Route>
       </Switch>
       <Switch>
-        <Route path='/nth-child'>
+        <Route path='/reference/nth-child'>
           <NthChild />
         </Route>
       </Switch>
       <Switch>
-        <Route path='/vw-fonts'>
+        <Route path='/reference/vw-fonts'>
           <VwFonts />
         </Route>
       </Switch>

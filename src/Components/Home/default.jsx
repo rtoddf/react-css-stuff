@@ -6,12 +6,12 @@ function Home() {
         <>
             <h3>CSS Reference</h3>
             <ul>
-                <li><Link to="/keyframes">Keyframes</Link></li>
-                <li><Link to="/transforms">Transforms</Link></li>
-                <li><Link to="/radial-gradients">Radial Gradients</Link></li>
-                <li><Link to="/dropshadows">Dropshadows</Link></li>
-                <li><Link to="/nth-child">Nth Child</Link></li>
-                <li><Link to="/vw-fonts">VW Fonts</Link></li>
+                <li><Link to="/reference/nth-child">Nth Child</Link></li>
+                <li><Link to="/reference/vw-fonts">VW Fonts</Link></li>
+                <li><Link to="/reference/radial-gradients">Radial Gradients</Link></li>
+                <li><Link to="/reference/dropshadows">Dropshadows</Link></li>
+                <li><Link to="/reference/transforms">Transforms</Link></li>
+                <li><Link to="/reference/keyframes">Keyframes</Link></li>
             </ul>
         </>
     )
