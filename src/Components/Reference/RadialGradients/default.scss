@@ -1,0 +1,23 @@
+@import '../../../utilities/colors';
+
+.gradient {
+	background-image: radial-gradient($white-color, $base-color-1);
+
+	&.one {
+		background-image: radial-gradient(circle, $white-color, $base-color-1);
+	}
+
+	&.two {
+		background-image: radial-gradient(circle closest-side, $white-color, $base-color-1);
+	}
+
+	&.three {
+		background-image: radial-gradient(circle at top right, $white-color, $base-color-1);
+	}
+
+	&.four {
+		background: repeating-radial-gradient(circle closest-side, $base-color-1, $white-color 10%, $base-color-1 25%, $base-color-1 30%);
+	}
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-radial-gradient */
