@@ -2,6 +2,7 @@ import React from 'react';
 import './default.scss';
 
 function NthChild() {
+    const colTotal = 10;
     const gridInfo = [
         {
             title: "Select only the 3rd element",
@@ -40,21 +41,18 @@ function NthChild() {
         },
     ];
 
-    const colTotal = 10
-
     const grids = gridInfo.map((grid, index) => {
         return (
-            <>
+            <div key={index}>
                 <h3>{grid.title}</h3>
                 <div className={`grid ${grid.designation}`} data-col={colTotal}>
                     {[...Array(colTotal)].map((el, index) => (
-                        <article>
-                            <div class="dot"></div>
+                        <article> <div key={el} className="dot"></div>
                         </article>
                     ))}
                 </div>
                 <pre>{grid.code}</pre>
-            </>
+            </div>
         );
     });
 
@@ -62,9 +60,6 @@ function NthChild() {
         <>
             <h3>Nth Child</h3>
             { grids }
-{/* <pre>article:nth-last-child(2) .dot {
-    background: #ae0000;
-}</pre> */}
         </>
         
     )

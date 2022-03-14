@@ -10,6 +10,7 @@ import Transforms from './Components/Reference/Transforms/default';
 import RadialGradients from './Components/Reference/RadialGradients/default';
 import DropShadows from './Components/Reference/DropShadows/default';
 import NthChild from './Components/Reference/NthChild/default';
+import VwFonts from './Components/Reference/VwFonts/default';
 
 function App() {
   return <Router>
@@ -42,6 +43,11 @@ function App() {
       <Switch>
         <Route path='/nth-child'>
           <NthChild />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/vw-fonts'>
+          <VwFonts />
         </Route>
       </Switch>
     </div>

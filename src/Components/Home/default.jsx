@@ -11,6 +11,7 @@ function Home() {
                 <li><Link to="/radial-gradients">Radial Gradients</Link></li>
                 <li><Link to="/dropshadows">Dropshadows</Link></li>
                 <li><Link to="/nth-child">Nth Child</Link></li>
+                <li><Link to="/vw-fonts">VW Fonts</Link></li>
             </ul>
         </>
     )
