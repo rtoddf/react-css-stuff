@@ -11,6 +11,7 @@ import RadialGradients from './Components/Reference/RadialGradients/default';
 import DropShadows from './Components/Reference/DropShadows/default';
 import NthChild from './Components/Reference/NthChild/default';
 import VwFonts from './Components/Reference/VwFonts/default';
+import Selectors from './Components/Reference/Selectors/default';
 
 function App() {
   return <Router>
@@ -50,6 +51,12 @@ function App() {
           <VwFonts />
         </Route>
       </Switch>
+      <Switch>
+        <Route path='/reference/selectors'>
+          <Selectors />
+        </Route>
+      </Switch>
+
     </div>
   </Router>;
 }
