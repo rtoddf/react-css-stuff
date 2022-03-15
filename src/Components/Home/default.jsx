@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom';
 function Home() {
     return (
         <>
+            <h3>POCs</h3>
+            <ul>
+                <li><Link to="/pocs/svg-doughnut">SVG Doughnut</Link></li>
+            </ul>
+            
             <h3>CSS Reference</h3>
             <ul>
                 <li><Link to="/reference/nth-child">Nth Child</Link></li>

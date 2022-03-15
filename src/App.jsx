@@ -5,6 +5,11 @@ import {
   Switch
 } from "react-router-dom";
 import Home from './Components/Home/default';
+
+// POCs
+import SvgDoughnut from './Components/Pocs/SvgDoughnut/default';
+
+// Reference
 import Keyframes from './Components/Reference/Keyframes/default';
 import Transforms from './Components/Reference/Transforms/default';
 import RadialGradients from './Components/Reference/RadialGradients/default';
@@ -16,6 +21,12 @@ import Selectors from './Components/Reference/Selectors/default';
 function App() {
   return <Router>
     <div className="container">
+      <Switch>
+        <Route path='/pocs/svg-doughnut'>
+          <SvgDoughnut />
+        </Route>
+      </Switch>
+
       <Switch>
         <Route exact path='/'>
           <Home />
