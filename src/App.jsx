@@ -8,6 +8,7 @@ import Home from './Components/Home/default';
 
 // POCs
 import SvgDoughnut from './Components/Pocs/SvgDoughnut/default';
+import CssPulse from './Components/Pocs/CssPulse/default';
 
 // Reference
 import Keyframes from './Components/Reference/Keyframes/default';
@@ -24,6 +25,11 @@ function App() {
       <Switch>
         <Route path='/pocs/svg-doughnut'>
           <SvgDoughnut />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/pocs/css-pulse'>
+          <CssPulse />
         </Route>
       </Switch>
 

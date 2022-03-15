@@ -7,6 +7,7 @@ function Home() {
             <h3>POCs</h3>
             <ul>
                 <li><Link to="/pocs/svg-doughnut">SVG Doughnut</Link></li>
+                <li><Link to="/pocs/css-pulse">CSS Pulse</Link></li>
             </ul>
             
             <h3>CSS Reference</h3>
