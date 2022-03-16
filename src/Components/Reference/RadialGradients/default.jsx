@@ -1,5 +1,5 @@
 import React from 'react';
-import Circle from '../Circle/default';
+import Circle from '../../Common/Circle/default';
 import './default.scss';
 
 function RadialGradients() {
