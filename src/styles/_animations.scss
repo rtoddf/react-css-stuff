@@ -1,84 +1,104 @@
+// begin keyframes animations
+@keyframes rotate-x {
+  to {
+    transform: rotateX(360deg) rotateY(0deg) rotateZ(0deg);
+  }
+}
+@keyframes rotate-y {
+  to {
+    transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
+  }
+}
+@keyframes rotate-z {
+  to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg);
+  }
+}
+
 @keyframes r1 {
   0% {
-    box-shadow: 0 0 8px 6px $pulse-color-1, 0 0 0px 0px $pulse-color-bg, 0 0 0px 0px $pulse-color-bg;
+    box-shadow: 0 0 8px 6px $blue-green-color, 0 0 0px 0px $white-color, 0 0 0px 0px $white-color;
   }
   10% {
-    box-shadow: 0 0 8px 6px $pulse-color-1, 0 0 12px 10px $pulse-color-bg, 0 0 12px 14px $pulse-color-1;
+    box-shadow: 0 0 8px 6px $blue-green-color, 0 0 12px 10px $white-color, 0 0 12px 14px $blue-green-color;
   }
   100% {
-    box-shadow: 0 0 8px 6px rgba(26, 217, 255, 0), 0 0 0px 40px $pulse-color-bg, 0 0 0px 40px $pulse-color-bg;
+    box-shadow: 0 0 8px 6px rgba(26, 217, 255, 0), 0 0 0px 40px $white-color, 0 0 0px 40px $white-color;
   }
 }
 
 @keyframes r2 {
   0% {
-    box-shadow: 0 0 8px 6px $pulse-color-2, 0 0 0px 0px $pulse-color-bg, 0 0 0px 0px $pulse-color-bg;
+    box-shadow: 0 0 8px 6px $blue-color, 0 0 0px 0px $white-color, 0 0 0px 0px $white-color;
   }
   10% {
-    box-shadow: 0 0 8px 6px $pulse-color-2, 0 0 12px 10px $pulse-color-bg, 0 0 12px 14px $pulse-color-2;
+    box-shadow: 0 0 8px 6px $blue-color, 0 0 12px 10px $white-color, 0 0 12px 14px $blue-color;
   }
   100% {
-    box-shadow: 0 0 8px 6px rgba(26, 217, 255, 0), 0 0 0px 40px $pulse-color-bg, 0 0 0px 40px $pulse-color-bg;
+    box-shadow: 0 0 8px 6px rgba(26, 217, 255, 0), 0 0 0px 40px $white-color, 0 0 0px 40px $white-color;
   }
 }
 
 @keyframes r3 {
   0% {
-    box-shadow: 0 0 8px 6px $pulse-color-3, 0 0 0px 0px $pulse-color-bg, 0 0 0px 0px $pulse-color-bg;
+    box-shadow: 0 0 8px 6px $orange-color, 0 0 0px 0px $white-color, 0 0 0px 0px $white-color;
   }
   10% {
-    box-shadow: 0 0 8px 6px $pulse-color-3, 0 0 12px 10px $pulse-color-bg, 0 0 12px 14px $pulse-color-3;
+    box-shadow: 0 0 8px 6px $orange-color, 0 0 12px 10px $white-color, 0 0 12px 14px $orange-color;
   }
   100% {
-    box-shadow: 0 0 8px 6px rgba(26, 217, 255, 0), 0 0 0px 40px $pulse-color-bg, 0 0 0px 40px $pulse-color-bg;
+    box-shadow: 0 0 8px 6px rgba(26, 217, 255, 0), 0 0 0px 40px $white-color, 0 0 0px 40px $white-color;
   }
 }
 
 @keyframes r4 {
   0% {
-    box-shadow: 0 0 8px 6px $pulse-color-4, 0 0 0px 0px $pulse-color-bg, 0 0 0px 0px $pulse-color-bg;
+    box-shadow: 0 0 8px 6px $red-color, 0 0 0px 0px $white-color, 0 0 0px 0px $white-color;
   }
   10% {
-    box-shadow: 0 0 8px 6px $pulse-color-4, 0 0 12px 10px $pulse-color-bg, 0 0 12px 14px $pulse-color-4;
+    box-shadow: 0 0 8px 6px $red-color, 0 0 12px 10px $white-color, 0 0 12px 14px $red-color;
   }
   100% {
-    box-shadow: 0 0 8px 6px rgba(26, 217, 255, 0), 0 0 0px 40px $pulse-color-bg, 0 0 0px 40px $pulse-color-bg;
+    box-shadow: 0 0 8px 6px rgba(26, 217, 255, 0), 0 0 0px 40px $white-color, 0 0 0px 40px $white-color;
   }
 }
 
 @keyframes r5 {
   0% {
-    box-shadow: 0 0 8px 6px $pulse-color-5, 0 0 0px 0px $pulse-color-bg, 0 0 0px 0px $pulse-color-bg;
+    box-shadow: 0 0 8px 6px $green-color, 0 0 0px 0px $white-color, 0 0 0px 0px $white-color;
   }
   10% {
-    box-shadow: 0 0 8px 6px $pulse-color-5, 0 0 12px 10px $pulse-color-bg, 0 0 12px 14px $pulse-color-5;
+    box-shadow: 0 0 8px 6px $green-color, 0 0 12px 10px $white-color, 0 0 12px 14px $green-color;
   }
   100% {
-    box-shadow: 0 0 8px 6px rgba(26, 179, 255, 0), 0 0 0px 40px $pulse-color-bg, 0 0 0px 40px $pulse-color-bg;
+    box-shadow: 0 0 8px 6px rgba(26, 179, 255, 0), 0 0 0px 40px $white-color, 0 0 0px 40px $white-color;
   }
 }
 
 @keyframes r6 {
   0% {
-    box-shadow: 0 0 8px 6px $pulse-color-6, 0 0 0px 0px $pulse-color-bg, 0 0 0px 0px $pulse-color-bg;
+    box-shadow: 0 0 8px 6px $brown-color, 0 0 0px 0px $white-color, 0 0 0px 0px $white-color;
   }
   10% {
-    box-shadow: 0 0 8px 6px $pulse-color-6, 0 0 12px 10px $pulse-color-bg, 0 0 12px 14px $pulse-color-6;
+    box-shadow: 0 0 8px 6px $brown-color, 0 0 12px 10px $white-color, 0 0 12px 14px $brown-color;
   }
   100% {
-    box-shadow: 0 0 8px 6px rgba(26, 179, 255, 0), 0 0 0px 40px $pulse-color-bg, 0 0 0px 40px $pulse-color-bg;
+    box-shadow: 0 0 8px 6px rgba(26, 179, 255, 0), 0 0 0px 40px $white-color, 0 0 0px 40px $white-color;
   }
 }
+// begin keyframes animations
 
+// begin pulse animations
 @keyframes pulse-hover {
   from {
-    box-shadow: 0 0 8px 6px $white-color, 0 0 12px 10px $pulse-color-bg, 0 0 12px 14px $white-color;
+    box-shadow: 0 0 8px 6px $white-color, 0 0 12px 10px $white-color, 0 0 12px 14px $white-color;
   }
   to {
-    box-shadow: 0 0 8px 6px rgba(255, 255, 255, 0), 0 0 4px 40px $pulse-color-bg, 0 0 4px 41px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 8px 6px rgba(255, 255, 255, 0), 0 0 4px 40px $white-color, 0 0 4px 41px rgba(255, 255, 255, 0);
   }
 }
 
+// begin svg-doughnut animations
 @-webkit-keyframes html {
   to {
       stroke-dashoffset: 80;
@@ -102,3 +122,4 @@
       stroke-dashoffset: 300;
   }
 }
+// end svg-doughnut animations

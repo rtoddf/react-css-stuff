@@ -31,6 +31,19 @@ p {
   line-height: 1rem;
 }
 
+a {
+  color: $site-link-color;
+
+  &:hover,
+  &.active {
+    color: $site-link-hover-color;
+  }
+
+  &:visited {
+    color: $site-link-hover-color;
+  }
+}
+
 ul {
   margin-bottom: 20px;
   list-style: none;

@@ -1,41 +1,45 @@
+@import '../../../styles/colors';
+@import '../../../styles/typography';
+@import '../../../styles/mixins';
+
 .nth-child {
     article {
-        border: 1px solid #fff;
+        border: 1px solid $white-color;
         justify-self: center;
     }
 
     article .dot {
     width: 20px;
     height: 20px;
-    background: #000;
+    background: $black-color;
     border-radius: 50%;
     }
 
     .a article:nth-child(3) .dot {
-        background: #ae0000;
+        background: $red-color;
     }
 
     .b article:nth-child(n+4) .dot {
-        background: #ae0000;
+        background: $red-color;
     }
 
     .c article:nth-child(-n+3) .dot {
-        background: #ae0000;
+        background: $red-color;
     }
 
     .d article:nth-child(3n + 1) .dot {
-        background: #ae0000;
+        background: $red-color;
     }
 
     .e article:nth-child(odd) .dot {
-        background: #ae0000;
+        background: $red-color;
     }
 
     .f article:last-child .dot {
-        background: #ae0000;
+        background: $red-color;
     }
 
     .g article:nth-last-child(2) .dot {
-        background: #ae0000;
+        background: $red-color;
     }
 }
