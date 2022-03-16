@@ -2,17 +2,6 @@ import React from 'react';
 import './default.scss';
 
 function Selectors() {
-    // const textInfo = ['rem', 'em', 'vw'];
-
-    // const textBoxes = textInfo.map((headline, index) => {
-    //     return (
-    //         <article key={index} >
-    //             <h3>{headline}</h3>
-    //             <FillerText />
-    //         </article>
-    //     );
-    // });
-
     return (
         <>
             <h3>Selectors</h3>

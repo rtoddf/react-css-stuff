@@ -1,23 +1,15 @@
 @import '../../../utilities/colors';
 
-body {
-  background-color: $pulse-color-bg !important;
-  color: $white-color !important;
-}
-
 /* https://codepen.io/Raphael/pen/fqweF */
+
+// body {
+//   background-color: $pulse-color-bg !important;
+//   color: $white-color !important;
+// }
+
 .grid {
   &.pulse {
     margin: 40px 0;
-    
-    .circle {
-      width: 20px;
-      height: 20px;
-      margin: 0 auto;
-      border-radius: 50%;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
 
     .circle {
       &:nth-child(1) {
@@ -61,7 +53,6 @@ body {
   }
 }
 
-/* begin pulse01 */
 @keyframes r1 {
   0% {
     box-shadow: 0 0 8px 6px $pulse-color-1, 0 0 0px 0px $pulse-color-bg, 0 0 0px 0px $pulse-color-bg;
@@ -142,4 +133,3 @@ body {
     box-shadow: 0 0 8px 6px rgba(255, 255, 255, 0), 0 0 4px 40px $pulse-color-bg, 0 0 4px 41px rgba(255, 255, 255, 0);
   }
 }
-/* end pulse02 */

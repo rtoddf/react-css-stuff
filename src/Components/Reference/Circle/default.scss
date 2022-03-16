@@ -4,4 +4,9 @@
 	height: 150px;
 	margin: 0 auto;
 	border-radius: 50%;
+
+	&.small {
+		width: 20px;
+		height: 20px;
+	}
 }

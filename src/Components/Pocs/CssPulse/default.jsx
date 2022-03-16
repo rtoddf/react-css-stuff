@@ -1,17 +1,16 @@
 import React from 'react';
+import Circle from '../../Reference/Circle/default';
 import './default.scss';
 
 function CssPulse() {
+    const colTotal = 6
     return (
         <>
             <h3>CSS Animations - Pulse</h3>
-            <div class="grid pulse" data-col="6">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
+            <div class="grid pulse" data-col={colTotal}>
+                {[...Array(colTotal)].map((el, index) => (
+                    <Circle classNames='small' />
+                ))}
             </div>
         </>
     )
