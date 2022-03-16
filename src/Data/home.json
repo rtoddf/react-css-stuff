@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "link": "/pocs/svg-doughnut",
+        "title": "SVG Doughnut",
+        "image": "../Images/colton-haynes.jpg"
+    },
+    {
+        "id": 2,
+        "link": "/pocs/css-pulse",
+        "title": "CSS Pulse",
+        "image": "../Images/colton-haynes.jpg"
+    }
+]
