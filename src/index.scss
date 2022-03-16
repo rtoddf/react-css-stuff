@@ -1,9 +1,12 @@
+@import './styles/colors';
+@import './styles/typography';
+@import './styles/mixins';
+
 html {
   box-sizing: border-box;
   height: 100%;
-  color: #222;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: $base-font-size;
 }
   
 *, *:before, *:after {
@@ -13,9 +16,29 @@ html {
 }
   
 body {
-  background-color: #fff;
-  color: #333;
+  background-color: $site-bg-color;
+  color: $site-text-color;
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 1rem;
+  margin: .625rem 0;
+}
+
+p {
   font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+ul {
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+li {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 pre {
@@ -23,9 +46,7 @@ pre {
   padding: 10px;
   background: #dedede;
   border-radius: 6px;
-  font-size: 0.875rem;
 }
-
 
 //css grids
 .container {

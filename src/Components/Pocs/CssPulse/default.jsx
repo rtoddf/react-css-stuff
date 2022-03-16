@@ -3,12 +3,12 @@ import Circle from '../../Common/Circle/default';
 import './default.scss';
 
 function CssPulse() {
-    const colTotal = 6
+    const repeatAmt = 6
     return (
         <>
             <h3>CSS Animations - Pulse</h3>
-            <div class="grid pulse" data-col={colTotal}>
-                {[...Array(colTotal)].map((el, index) => (
+            <div className="grid pulse" data-col={repeatAmt}>
+                {[...Array(repeatAmt)].map((el, index) => (
                     <Circle classNames='small' />
                 ))}
             </div>

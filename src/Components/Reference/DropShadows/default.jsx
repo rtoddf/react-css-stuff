@@ -29,7 +29,7 @@ function DropShadows() {
     return (
         <>
             <h3>Dropshadows</h3>
-            <div class="grid" data-col="5">
+            <div className="grid" data-col="5">
                 {circles}
             </div>
         </>

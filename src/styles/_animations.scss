@@ -1,80 +1,104 @@
 @keyframes r1 {
-    0% {
-      box-shadow: 0 0 8px 6px $pulse-color-1, 0 0 0px 0px $pulse-color-bg, 0 0 0px 0px $pulse-color-bg;
-    }
-    10% {
-      box-shadow: 0 0 8px 6px $pulse-color-1, 0 0 12px 10px $pulse-color-bg, 0 0 12px 14px $pulse-color-1;
-    }
-    100% {
-      box-shadow: 0 0 8px 6px rgba(26, 217, 255, 0), 0 0 0px 40px $pulse-color-bg, 0 0 0px 40px $pulse-color-bg;
-    }
+  0% {
+    box-shadow: 0 0 8px 6px $pulse-color-1, 0 0 0px 0px $pulse-color-bg, 0 0 0px 0px $pulse-color-bg;
   }
-  
-  @keyframes r2 {
-    0% {
-      box-shadow: 0 0 8px 6px $pulse-color-2, 0 0 0px 0px $pulse-color-bg, 0 0 0px 0px $pulse-color-bg;
-    }
-    10% {
-      box-shadow: 0 0 8px 6px $pulse-color-2, 0 0 12px 10px $pulse-color-bg, 0 0 12px 14px $pulse-color-2;
-    }
-    100% {
-      box-shadow: 0 0 8px 6px rgba(26, 217, 255, 0), 0 0 0px 40px $pulse-color-bg, 0 0 0px 40px $pulse-color-bg;
-    }
+  10% {
+    box-shadow: 0 0 8px 6px $pulse-color-1, 0 0 12px 10px $pulse-color-bg, 0 0 12px 14px $pulse-color-1;
   }
-  
-  @keyframes r3 {
-    0% {
-      box-shadow: 0 0 8px 6px $pulse-color-3, 0 0 0px 0px $pulse-color-bg, 0 0 0px 0px $pulse-color-bg;
-    }
-    10% {
-      box-shadow: 0 0 8px 6px $pulse-color-3, 0 0 12px 10px $pulse-color-bg, 0 0 12px 14px $pulse-color-3;
-    }
-    100% {
-      box-shadow: 0 0 8px 6px rgba(26, 217, 255, 0), 0 0 0px 40px $pulse-color-bg, 0 0 0px 40px $pulse-color-bg;
-    }
+  100% {
+    box-shadow: 0 0 8px 6px rgba(26, 217, 255, 0), 0 0 0px 40px $pulse-color-bg, 0 0 0px 40px $pulse-color-bg;
   }
-  
-  @keyframes r4 {
-    0% {
-      box-shadow: 0 0 8px 6px $pulse-color-4, 0 0 0px 0px $pulse-color-bg, 0 0 0px 0px $pulse-color-bg;
-    }
-    10% {
-      box-shadow: 0 0 8px 6px $pulse-color-4, 0 0 12px 10px $pulse-color-bg, 0 0 12px 14px $pulse-color-4;
-    }
-    100% {
-      box-shadow: 0 0 8px 6px rgba(26, 217, 255, 0), 0 0 0px 40px $pulse-color-bg, 0 0 0px 40px $pulse-color-bg;
-    }
+}
+
+@keyframes r2 {
+  0% {
+    box-shadow: 0 0 8px 6px $pulse-color-2, 0 0 0px 0px $pulse-color-bg, 0 0 0px 0px $pulse-color-bg;
   }
-  
-  @keyframes r5 {
-    0% {
-      box-shadow: 0 0 8px 6px $pulse-color-5, 0 0 0px 0px $pulse-color-bg, 0 0 0px 0px $pulse-color-bg;
-    }
-    10% {
-      box-shadow: 0 0 8px 6px $pulse-color-5, 0 0 12px 10px $pulse-color-bg, 0 0 12px 14px $pulse-color-5;
-    }
-    100% {
-      box-shadow: 0 0 8px 6px rgba(26, 179, 255, 0), 0 0 0px 40px $pulse-color-bg, 0 0 0px 40px $pulse-color-bg;
-    }
+  10% {
+    box-shadow: 0 0 8px 6px $pulse-color-2, 0 0 12px 10px $pulse-color-bg, 0 0 12px 14px $pulse-color-2;
   }
-  
-  @keyframes r6 {
-    0% {
-      box-shadow: 0 0 8px 6px $pulse-color-6, 0 0 0px 0px $pulse-color-bg, 0 0 0px 0px $pulse-color-bg;
-    }
-    10% {
-      box-shadow: 0 0 8px 6px $pulse-color-6, 0 0 12px 10px $pulse-color-bg, 0 0 12px 14px $pulse-color-6;
-    }
-    100% {
-      box-shadow: 0 0 8px 6px rgba(26, 179, 255, 0), 0 0 0px 40px $pulse-color-bg, 0 0 0px 40px $pulse-color-bg;
-    }
+  100% {
+    box-shadow: 0 0 8px 6px rgba(26, 217, 255, 0), 0 0 0px 40px $pulse-color-bg, 0 0 0px 40px $pulse-color-bg;
   }
-  
-  @keyframes pulse-hover {
-    from {
-      box-shadow: 0 0 8px 6px $white-color, 0 0 12px 10px $pulse-color-bg, 0 0 12px 14px $white-color;
-    }
-    to {
-      box-shadow: 0 0 8px 6px rgba(255, 255, 255, 0), 0 0 4px 40px $pulse-color-bg, 0 0 4px 41px rgba(255, 255, 255, 0);
-    }
+}
+
+@keyframes r3 {
+  0% {
+    box-shadow: 0 0 8px 6px $pulse-color-3, 0 0 0px 0px $pulse-color-bg, 0 0 0px 0px $pulse-color-bg;
   }
+  10% {
+    box-shadow: 0 0 8px 6px $pulse-color-3, 0 0 12px 10px $pulse-color-bg, 0 0 12px 14px $pulse-color-3;
+  }
+  100% {
+    box-shadow: 0 0 8px 6px rgba(26, 217, 255, 0), 0 0 0px 40px $pulse-color-bg, 0 0 0px 40px $pulse-color-bg;
+  }
+}
+
+@keyframes r4 {
+  0% {
+    box-shadow: 0 0 8px 6px $pulse-color-4, 0 0 0px 0px $pulse-color-bg, 0 0 0px 0px $pulse-color-bg;
+  }
+  10% {
+    box-shadow: 0 0 8px 6px $pulse-color-4, 0 0 12px 10px $pulse-color-bg, 0 0 12px 14px $pulse-color-4;
+  }
+  100% {
+    box-shadow: 0 0 8px 6px rgba(26, 217, 255, 0), 0 0 0px 40px $pulse-color-bg, 0 0 0px 40px $pulse-color-bg;
+  }
+}
+
+@keyframes r5 {
+  0% {
+    box-shadow: 0 0 8px 6px $pulse-color-5, 0 0 0px 0px $pulse-color-bg, 0 0 0px 0px $pulse-color-bg;
+  }
+  10% {
+    box-shadow: 0 0 8px 6px $pulse-color-5, 0 0 12px 10px $pulse-color-bg, 0 0 12px 14px $pulse-color-5;
+  }
+  100% {
+    box-shadow: 0 0 8px 6px rgba(26, 179, 255, 0), 0 0 0px 40px $pulse-color-bg, 0 0 0px 40px $pulse-color-bg;
+  }
+}
+
+@keyframes r6 {
+  0% {
+    box-shadow: 0 0 8px 6px $pulse-color-6, 0 0 0px 0px $pulse-color-bg, 0 0 0px 0px $pulse-color-bg;
+  }
+  10% {
+    box-shadow: 0 0 8px 6px $pulse-color-6, 0 0 12px 10px $pulse-color-bg, 0 0 12px 14px $pulse-color-6;
+  }
+  100% {
+    box-shadow: 0 0 8px 6px rgba(26, 179, 255, 0), 0 0 0px 40px $pulse-color-bg, 0 0 0px 40px $pulse-color-bg;
+  }
+}
+
+@keyframes pulse-hover {
+  from {
+    box-shadow: 0 0 8px 6px $white-color, 0 0 12px 10px $pulse-color-bg, 0 0 12px 14px $white-color;
+  }
+  to {
+    box-shadow: 0 0 8px 6px rgba(255, 255, 255, 0), 0 0 4px 40px $pulse-color-bg, 0 0 4px 41px rgba(255, 255, 255, 0);
+  }
+}
+
+@-webkit-keyframes html {
+  to {
+      stroke-dashoffset: 80;
+  }
+}
+
+@keyframes html {
+  to {
+      stroke-dashoffset: 80;
+  }
+}
+
+@-webkit-keyframes css {
+  to {
+      stroke-dashoffset: 300;
+  }
+}
+
+@keyframes css {
+  to {
+      stroke-dashoffset: 300;
+  }
+}

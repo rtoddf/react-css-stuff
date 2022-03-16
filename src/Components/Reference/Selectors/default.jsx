@@ -3,7 +3,7 @@ import './default.scss';
 
 function Selectors() {
     return (
-        <>
+        <div className="selectors">
             <h3>Selectors</h3>
             <header>
 				<h2>Combinators</h2>
@@ -17,8 +17,8 @@ function Selectors() {
 					nunc tristique rhoncus.</p>
 			</header>
 			
-			<div class="grid" data-col="3">
-                <article class="adjacent-sibling">
+			<div className="grid" data-col="3">
+                <article className="adjacent-sibling">
 					<h3>Adjacent sibling combinator</h3>
 					<p>The + combinator selects adjacent siblings. This means that the second element directly follows the first, and both
 					share the same parent.</p>
@@ -37,7 +37,7 @@ function Selectors() {
 }`}</pre>
 				</article>
 
-				<article class="general-sibling">
+				<article className="general-sibling">
 					<h3>General sibling combinator</h3>
 					<p>The ~ combinator selects siblings. This means that the second element follows the first (though not necessarily immediately), and both share the same parent.</p>
 					<p><strong>Syntax:</strong> A ~ B</p>
@@ -58,7 +58,7 @@ function Selectors() {
 }`}</pre>
 				</article>
 
-				<article class="child">
+				<article className="child">
 					<h3>Child combinator</h3>
 					<p>The > combinator selects nodes that are direct children of the first element.</p>
 					<p><strong>Syntax:</strong> A > B</p>
@@ -67,7 +67,7 @@ function Selectors() {
 					<hr />
 
 					<h4>This is the headline</h4>
-					<ul class="outside">
+					<ul className="outside">
 						<li>item</li>
 						<li>item</li>
 						<li>item</li>
@@ -86,7 +86,7 @@ function Selectors() {
 }`}</pre>
 				</article>
             </div>
-        </>
+        </div>
         
     )
 }
