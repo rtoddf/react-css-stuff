@@ -5,8 +5,7 @@ import colton from './images/colton-haynes.jpg';
 
 function Menu(props) {
     const { items } = props;
-    
-    // eslint-disable-next-line array-callback-return
+
     const menuItems = items.map((item) => {
         return (
             <Link key={item.id} to={item.link}>

@@ -1,6 +1,6 @@
 [
     {
-        "headline": "Reference",
+        "headline": "POCs",
         "items": [
             {
                 "id": 1,
@@ -16,5 +16,52 @@
             }
         ]
         
+    },
+    {
+        "headline": "CSS Reference",
+        "items": [
+            {
+                "id": 1,
+                "link": "/reference/nth-child",
+                "title": "Nth Child",
+                "image": "../Images/colton-haynes.jpg"
+            },
+            {
+                "id": 2,
+                "link": "/reference/vw-fonts",
+                "title": "VW Fonts",
+                "image": "../Images/colton-haynes.jpg"
+            },
+            {
+                "id": 3,
+                "link": "/reference/selectors",
+                "title": "Selectors",
+                "image": "../Images/colton-haynes.jpg"
+            },
+            {
+                "id": 4,
+                "link": "/reference/radial-gradients",
+                "title": "Radial Gradients",
+                "image": "../Images/colton-haynes.jpg"
+            },
+            {
+                "id": 5,
+                "link": "/reference/dropshadows",
+                "title": "Dropshadows",
+                "image": "../Images/colton-haynes.jpg"
+            },
+            {
+                "id": 6,
+                "link": "/reference/transforms",
+                "title": "Transforms",
+                "image": "../Images/colton-haynes.jpg"
+            },
+            {
+                "id": 7,
+                "link": "/reference/keyframes",
+                "title": "Keyframes",
+                "image": "../Images/colton-haynes.jpg"
+            }
+        ]
     }
 ]
