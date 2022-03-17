@@ -3,22 +3,22 @@
         "headline": "POCs",
         "items": [
             {
-                "id": 1,
+                "id": "poc-1",
                 "link": "/pocs/svg-doughnut",
                 "title": "SVG Doughnut",
-                "image": "../Images/colton-haynes.jpg"
+                "image": "colton-haynes.jpg"
             },
             {
-                "id": 2,
+                "id": "poc-2",
                 "link": "/pocs/css-pulse",
                 "title": "CSS Pulse",
-                "image": "../Images/colton-haynes.jpg"
+                "image": "colton-haynes.jpg"
             },
             {
-                "id": 2,
+                "id": "poc-3",
                 "link": "/pocs/neon-type",
                 "title": "Neon Type",
-                "image": "../Images/colton-haynes.jpg"
+                "image": "colton-haynes.jpg"
             }
         ]
         
@@ -30,43 +30,43 @@
                 "id": 1,
                 "link": "/reference/nth-child",
                 "title": "Nth Child",
-                "image": "../Images/colton-haynes.jpg"
+                "image": "colton-haynes.jpg"
             },
             {
                 "id": 2,
                 "link": "/reference/vw-fonts",
                 "title": "VW Fonts",
-                "image": "../Images/colton-haynes.jpg"
+                "image": "colton-haynes.jpg"
             },
             {
                 "id": 3,
                 "link": "/reference/selectors",
                 "title": "Selectors",
-                "image": "../Images/colton-haynes.jpg"
+                "image": "colton-haynes.jpg"
             },
             {
                 "id": 4,
                 "link": "/reference/radial-gradients",
                 "title": "Radial Gradients",
-                "image": "../Images/colton-haynes.jpg"
+                "image": "colton-haynes.jpg"
             },
             {
                 "id": 5,
                 "link": "/reference/dropshadows",
                 "title": "Dropshadows",
-                "image": "../Images/colton-haynes.jpg"
+                "image": "colton-haynes.jpg"
             },
             {
                 "id": 6,
                 "link": "/reference/transforms",
                 "title": "Transforms",
-                "image": "../Images/colton-haynes.jpg"
+                "image": "colton-haynes.jpg"
             },
             {
                 "id": 7,
                 "link": "/reference/keyframes",
                 "title": "Keyframes",
-                "image": "../Images/colton-haynes.jpg"
+                "image": "colton-haynes.jpg"
             }
         ]
     }

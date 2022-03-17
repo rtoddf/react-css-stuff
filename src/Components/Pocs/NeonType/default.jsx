@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import './default.scss';
-import '../../../styles/_colors.scss';
 
 function NeonType() {
     const color = 'color';
