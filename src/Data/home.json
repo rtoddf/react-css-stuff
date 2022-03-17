@@ -19,6 +19,12 @@
                 "link": "/pocs/neon-type",
                 "title": "Neon Type",
                 "image": "pocs/neon-type.jpg"
+            },
+            {
+                "id": "poc-4",
+                "link": "/pocs/switch-animation",
+                "title": "Switch Animation",
+                "image": "pocs/switch-animation.jpg"
             }
         ]
         

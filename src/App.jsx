@@ -10,6 +10,7 @@ import Home from './Components/Home/default';
 import SvgDoughnut from './Components/Pocs/SvgDoughnut/default';
 import CssPulse from './Components/Pocs/CssPulse/default';
 import NeonType from './Components/Pocs/NeonType/default';
+import SwitchAnimation from './Components/Pocs/SwitchAnimation/default';
 
 // Reference
 import Keyframes from './Components/Reference/Keyframes/default';
@@ -38,6 +39,12 @@ function App() {
           <NeonType />
         </Route>
       </Switch>
+      <Switch>
+        <Route path='/pocs/switch-animation'>
+          <SwitchAnimation />
+        </Route>
+      </Switch>
+
 
       <Switch>
         <Route exact path='/'>
