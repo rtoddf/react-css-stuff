@@ -7,49 +7,20 @@ import './default.scss';
 import colton from './images/colton-haynes.jpg';
 
 function Home() {
-    // eslint-disable-next-line array-callback-return
-    // const menu = data.map((item) => {
-    //     console.log('item: ', item)
-    //     return (
-    //         <>
-    //             <h4>Headline</h4>
-    //             <Menu items={item} />
-    //         </>
-            
-    //         <Link key={item.id} to={item.link}>
-    //             <figure>
-    //                 <span className="filler">
-    //                     <img src={colton} alt={item.title} />
-    //                 </span>
-    //             </figure>
-    //             <p>{item.title}</p>
-    //         </Link>
-    //     )
-    // })
-
-    console.log('data: ', data)
+    const menu = data.map((item) => {
+        console.log('item: ', item)
+        return (
+            <>
+                <h4>{item.headline}</h4>
+                {/* <Menu items={item} /> */}
+            </>
+        )
+    })
 
     return (
         <div className="grid" data-col="1">
             <div className="grid" data-col="4">
-                <Menu items={data} />
-                {/* <Link to="/pocs/svg-doughnut">
-                    <figure>
-                        <span className="filler">
-                            <img src={colton} alt="Visualizer One" />
-                        </span>
-                    </figure>
-                    <p>SVG Doughnut</p>
-                </Link>
-
-                <Link to="/pocs/css-pulse">
-                    <figure>
-                        <span className="filler">
-                            <img src={colton} alt="Visualizer One" />
-                        </span>
-                    </figure>
-                    <p>CSS Pulse</p>
-                </Link> */}
+                {menu}
             </div>
 
             <h3>CSS Reference</h3>
