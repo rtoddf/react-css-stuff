@@ -11,6 +11,8 @@ import SvgDoughnut from './Components/Pocs/SvgDoughnut/default';
 import CssPulse from './Components/Pocs/CssPulse/default';
 import NeonType from './Components/Pocs/NeonType/default';
 import SwitchAnimation from './Components/Pocs/SwitchAnimation/default';
+import DayNightAnimation from './Components/Pocs/DayNightAnimation/default';
+import IconAnimations from './Components/Pocs/IconAnimations/default';
 
 // Reference
 import Keyframes from './Components/Reference/Keyframes/default';
@@ -42,6 +44,16 @@ function App() {
       <Switch>
         <Route path='/pocs/switch-animation'>
           <SwitchAnimation />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/pocs/day-night-animation'>
+          <DayNightAnimation />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/pocs/icon-animations'>
+          <IconAnimations />
         </Route>
       </Switch>
 

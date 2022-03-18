@@ -25,6 +25,18 @@
                 "link": "/pocs/switch-animation",
                 "title": "Switch Animation",
                 "image": "pocs/switch-animation.jpg"
+            },
+            {
+                "id": "poc-5",
+                "link": "/pocs/day-night-animation",
+                "title": "Day/Night Animation",
+                "image": "pocs/day-night-animation.jpg"
+            },
+            {
+                "id": "poc-6",
+                "link": "/pocs/icon-animations",
+                "title": "Icon Animations",
+                "image": "pocs/icon-animations.jpg"
             }
         ]
         
