@@ -3,22 +3,18 @@ import './default.scss';
 
 function SwitchAnimation() {
     const [isActive, setActive] = useState("false");
-    function switchAnimation(){
-        document.querySelector('body').classList.toggle("night");
-        setActive(!isActive);
-    }
 
     return (
         <>
             <h3>Switch Animation</h3>
-            <div className="time-circle">
-                <div className="sun"></div>
-                <div className="moon">
+            <div className={isActive ? "time-circle" : "time-circle nite"}>
+                <div className={isActive ? "sun" : "sun nite"}></div>
+                <div className={isActive ? "moon" : "moon nite"}>
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
-                <div className="stars">
+                <div className={isActive ? "stars" : "stars nite"}>
                     <div></div>
                     <div></div>
                     <div></div>
@@ -27,10 +23,10 @@ function SwitchAnimation() {
                     <div></div>
                     <div></div>
                 </div>
-                <div className="water"></div>
+                <div className={isActive ? "water" : "water nite"}></div>
             </div>
 
-            <div className={isActive ? "day" : "day nighttime"} onClick={switchAnimation}>
+            <div className={isActive ? "day" : "day nite"} onClick={() => setActive(!isActive)}>
                 <div className="circle"></div>
             </div>
         </>
