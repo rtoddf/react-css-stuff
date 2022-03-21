@@ -24,7 +24,7 @@ function DropShadows() {
 
     const circles = gradientInfo.map((circle, index) => {
         return <Circle key={index} classNames={circle.className} />;
-      });
+    });
 
     return (
         <>
