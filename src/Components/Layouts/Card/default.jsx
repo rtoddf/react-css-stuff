@@ -7,9 +7,9 @@ import './default.scss';
 
 function Card() {
     const repeatAmt = 3;
-    const cards = (data.riverdale).map((person, index) => {
+    const cards = (data.riverdale).map((person, id) => {
         return (
-            <div className="card">
+            <div key={id} className="card">
                 <Image src={person.image} alt={person.name} shape="round" />
                 <h4>{person.name}</h4>
                 <h5>{person.show}</h5>

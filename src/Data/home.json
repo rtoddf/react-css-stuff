@@ -7,6 +7,12 @@
                 "link": "/layouts/card",
                 "title": "Card",
                 "image": "layouts/placeholder.jpg"
+            },
+            {
+                "id": "layouts-12",
+                "link": "/layouts/panel",
+                "title": "Panel",
+                "image": "layouts/placeholder.jpg"
             }
         ]
     },

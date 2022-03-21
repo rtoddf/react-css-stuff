@@ -8,6 +8,7 @@ import Home from './Components/Home/default';
 
 // POCs
 import Card from './Components/Layouts/Card/default';
+import Panel from './Components/Layouts/Panel/default';
 
 // POCs
 import SvgDoughnut from './Components/Pocs/SvgDoughnut/default';
@@ -33,6 +34,11 @@ function App() {
       <Switch>
         <Route path='/layouts/card'>
           <Card />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/layouts/panel'>
+          <Panel />
         </Route>
       </Switch>
 

@@ -113,6 +113,10 @@ figure {
   padding: 0;
 }
 
+[data-col="2"] {
+  grid-template-columns: repeat(2, [col] 1fr);
+}
+
 [data-col="3"],
 [data-col="1-2"],
 [data-col="2-1"] {
