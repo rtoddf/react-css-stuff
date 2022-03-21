@@ -6,10 +6,22 @@
                 "show": "Riverdale",
                 "image": "../images/layouts/card/kj-apa.jpg", 
                 "social": [
-                    "fab fa-facebook-f", 
-                    "fab fa-twitter",
-                    "fas fa-share", 
-                    "fas fa-thumbs-up"
+                    {
+                        "icon": "fab fa-facebook-f",
+                        "link": "https://www.facebook.com/"
+                    },
+                    {
+                        "icon": "fab fa-twitter",
+                        "link": "https://www.twitter.com/"
+                    },
+                    {
+                        "icon": "fas fa-share",
+                        "link": ""
+                    },
+                    {
+                        "icon": "fas fa-thumbs-up",
+                        "link": ""
+                    }
                 ]
             },
             {
@@ -17,10 +29,22 @@
                 "show": "Riverdale",
                 "image": "../images/layouts/card/casey-cott.jpg", 
                 "social": [
-                    "fab fa-facebook-f", 
-                    "fab fa-twitter",
-                    "fas fa-share", 
-                    "fas fa-thumbs-up"
+                    {
+                        "icon": "fab fa-facebook-f",
+                        "link": "https://www.facebook.com/"
+                    },
+                    {
+                        "icon": "fab fa-twitter",
+                        "link": "https://www.twitter.com/"
+                    },
+                    {
+                        "icon": "fas fa-share",
+                        "link": ""
+                    },
+                    {
+                        "icon": "fas fa-thumbs-up",
+                        "link": ""
+                    }
                 ]
             },
             {
@@ -28,10 +52,22 @@
                 "show": "Riverdale",
                 "image": "../images/layouts/card/cole-sprouse.jpg", 
                 "social": [
-                    "fab fa-facebook-f", 
-                    "fab fa-twitter",
-                    "fas fa-share", 
-                    "fas fa-thumbs-up"
+                    {
+                        "icon": "fab fa-facebook-f",
+                        "link": "https://www.facebook.com/"
+                    },
+                    {
+                        "icon": "fab fa-twitter",
+                        "link": "https://www.twitter.com/"
+                    },
+                    {
+                        "icon": "fas fa-share",
+                        "link": ""
+                    },
+                    {
+                        "icon": "fas fa-thumbs-up",
+                        "link": ""
+                    }
                 ]
             }
         ]

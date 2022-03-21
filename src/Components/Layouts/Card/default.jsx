@@ -1,5 +1,6 @@
 import React from 'react';
-import SocialIcons from './socialIcons';
+import Image from '../../Common/Image/default';
+import SocialIcons from './SocialIcons';
 
 import data from '../../../Data/cards.json';
 import './default.scss';
@@ -9,9 +10,7 @@ function Card() {
     const cards = (data.riverdale).map((person, index) => {
         return (
             <div className="card">
-                <figure>
-                    <img src={person.image} alt={person.name} />
-                </figure>
+                <Image src={person.image} alt={person.name} shape="round" />
                 <h4>{person.name}</h4>
                 <h5>{person.show}</h5>
 

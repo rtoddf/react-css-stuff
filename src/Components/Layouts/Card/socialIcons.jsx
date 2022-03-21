@@ -1,16 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Icon from '../../Common/Icon/default';
 
-function socialIcons({links, animation}) {
+function SocialIcons({links, animation}) {
+    console.log('links: ', links)
+
     return (
         <>
-            {links.map((iconClass, id) => {
+            {links.map((iconInfo, id) => {
+                console.log('iconInfo: ', iconInfo)
                 return (
-                    <Icon key={id} iconClass={iconClass} animation={animation}  />
+                    <Link key={id} to={iconInfo.link}>
+                        <Icon key={id} iconClass={iconInfo.icon} animation={animation}  />
+                    </Link>
                 )
             })}
         </>
     )
 }
 
-export default socialIcons;
+export default SocialIcons;
