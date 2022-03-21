@@ -23,7 +23,7 @@
   figcaption {
     margin: 0.3125rem auto 0;
     padding: 0 20px;
-    color: #888;
+    color: $gray-color-4;
     font-size: 0.75rem;
     font-weight: 300;
     line-height: 1rem;
@@ -41,7 +41,7 @@
   }
 
   a {
-    color: #333;
+    color: $site-link-color;
   }
 
   ul {
