@@ -1,5 +1,16 @@
 [
     {
+        "headline": "Layouts",
+        "items": [
+            {
+                "id": "layouts-1",
+                "link": "/layouts/card",
+                "title": "Card",
+                "image": "layouts/placeholder.jpg"
+            }
+        ]
+    },
+    {
         "headline": "POCs",
         "items": [
             {

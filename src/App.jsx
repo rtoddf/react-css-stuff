@@ -7,6 +7,9 @@ import {
 import Home from './Components/Home/default';
 
 // POCs
+import Card from './Components/Layouts/Card/default';
+
+// POCs
 import SvgDoughnut from './Components/Pocs/SvgDoughnut/default';
 import CssPulse from './Components/Pocs/CssPulse/default';
 import NeonType from './Components/Pocs/NeonType/default';
@@ -26,6 +29,14 @@ import Selectors from './Components/Reference/Selectors/default';
 function App() {
   return <Router>
     <div className="container">
+      {/* Layouts */}
+      <Switch>
+        <Route path='/layouts/card'>
+          <Card />
+        </Route>
+      </Switch>
+
+      {/* POCs */}
       <Switch>
         <Route path='/pocs/svg-doughnut'>
           <SvgDoughnut />
@@ -57,7 +68,7 @@ function App() {
         </Route>
       </Switch>
 
-
+      {/* Reference */}
       <Switch>
         <Route exact path='/'>
           <Home />
