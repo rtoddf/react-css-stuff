@@ -9,13 +9,16 @@ function Panel() {
     const panels = (data.television).map((item, id) => {
         return (
             <article key={id} className="panel">
+
                 <h3>{item.headline}</h3>
-                <figure>
-                    <span className="filler">
-                        <img src={item.image} alt={item.headline} />
-                    </span>
-                    <figcaption>{item.cpation}</figcaption>
-                </figure>
+
+                <Image
+                    src={item.images.main.src}
+                    alt={item.images.main.caption}
+                    caption={item.images.main.caption}
+                    credit={item.images.main.credit}
+                />
+
                 <p>{item.text}</p>           
             </article>
         );

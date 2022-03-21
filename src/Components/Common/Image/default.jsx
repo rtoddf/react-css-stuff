@@ -1,11 +1,24 @@
 import React from 'react';
 import './default.scss';
 
-function Image({src, alt, shape}) {
+function Image({src, alt, caption, credit, shape}) {
     return (
-        <figure>
-            <img className={shape} src={src} alt={alt} />
-        </figure>
+        <>
+            {shape && shape === 'round' ?
+                <figure>
+                    <img className={shape} src={src} alt={alt ? alt : ""} />
+                </figure>
+                :
+                <figure>
+                    <span className="filler">
+                        <img src={src} alt={alt ? alt : ""} />
+                    </span>
+                    {caption && (
+                        <figcaption>{caption} {credit ? `(${credit})` : ""}</figcaption>
+                    )}
+                </figure>
+            }
+        </>
     )
 }
 
