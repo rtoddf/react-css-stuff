@@ -6,13 +6,13 @@
                 "id": "layouts-1",
                 "link": "/layouts/card",
                 "title": "Card",
-                "image": "layouts/placeholder.jpg"
+                "image": "layouts/thumbnails/card.jpg"
             },
             {
                 "id": "layouts-12",
                 "link": "/layouts/panel",
                 "title": "Panel",
-                "image": "layouts/placeholder.jpg"
+                "image": "layouts/thumbnails/panel.jpg"
             }
         ]
     },
@@ -23,37 +23,37 @@
                 "id": "poc-1",
                 "link": "/pocs/svg-doughnut",
                 "title": "SVG Doughnut",
-                "image": "pocs/svg-doughnut.jpg"
+                "image": "pocs/thumbnails/svg-doughnut.jpg"
             },
             {
                 "id": "poc-2",
                 "link": "/pocs/css-pulse",
                 "title": "CSS Pulse",
-                "image": "pocs/pulse.jpg"
+                "image": "pocs/thumbnails/pulse.jpg"
             },
             {
                 "id": "poc-3",
                 "link": "/pocs/neon-type",
                 "title": "Neon Type",
-                "image": "pocs/neon-type.jpg"
+                "image": "pocs/thumbnails/neon-type.jpg"
             },
             {
                 "id": "poc-4",
                 "link": "/pocs/switch-animation",
                 "title": "Switch Animation",
-                "image": "pocs/switch-animation.jpg"
+                "image": "pocs/thumbnails/switch-animation.jpg"
             },
             {
                 "id": "poc-5",
                 "link": "/pocs/day-night-animation",
                 "title": "Day/Night Animation",
-                "image": "pocs/day-night-animation.jpg"
+                "image": "pocs/thumbnails/day-night-animation.jpg"
             },
             {
                 "id": "poc-6",
                 "link": "/pocs/icon-animations",
                 "title": "Icon Animations",
-                "image": "pocs/icon-animations.jpg"
+                "image": "pocs/thumbnails/icon-animations.jpg"
             }
         ]
         
@@ -65,7 +65,7 @@
                 "id": 1,
                 "link": "/reference/nth-child",
                 "title": "Nth Child",
-                "image": "reference/nthchild.jpg"
+                "image": "reference/thumbnails/nthchild.jpg"
             },
             {
                 "id": 2,
@@ -83,25 +83,25 @@
                 "id": 4,
                 "link": "/reference/radial-gradients",
                 "title": "Radial Gradients",
-                "image": "reference/radial-gradients.jpg"
+                "image": "reference/thumbnails/radial-gradients.jpg"
             },
             {
                 "id": 5,
                 "link": "/reference/dropshadows",
                 "title": "Dropshadows",
-                "image": "reference/dropshadows.jpg"
+                "image": "reference/thumbnails/dropshadows.jpg"
             },
             {
                 "id": 6,
                 "link": "/reference/transforms",
                 "title": "Transforms",
-                "image": "reference/transform-functions.jpg"
+                "image": "reference/thumbnails/transform-functions.jpg"
             },
             {
                 "id": 7,
                 "link": "/reference/keyframes",
                 "title": "Keyframes",
-                "image": "reference/keyframes.jpg"
+                "image": "reference/thumbnails/keyframes.jpg"
             }
         ]
     }

@@ -27,6 +27,12 @@
     font-weight: normal;
   }
 
+  h4 {
+    margin: 1.5rem 0 0.625rem;
+    font-size: 1.25rem;
+    font-weight: normal;
+  }
+
   p {
     font-size: 1rem;
     line-height: 1.75rem;
@@ -38,7 +44,7 @@
 
   ul {
     margin-bottom: 0;
-    padding-top: 20px;
+    // padding-top: 20px;
 
     li {
       border: none;
@@ -60,7 +66,7 @@
 
       &:after {
         width: 100%;
-        // background-color: #D5D5D5;
+        background-color: #D5D5D5;
         content: "";
         display: block;
         height: 1px;
@@ -73,5 +79,9 @@
         background-color: transparent;
       }
     }
+  }
+
+  .body-copy {
+    margin: 0 0 1.5rem;
   }
 }

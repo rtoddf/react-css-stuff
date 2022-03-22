@@ -1,33 +1,138 @@
 {
     "television": [
         {
-            "headline": "Riverdale",
+            "panelTitle": "Politics",
+            "headline": "Headline for AOC",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed lacus a quam tempor interdum vitae eget est. Aenean sodales nec massa in pharetra. Vestibulum pretium id lorem sagittis lobortis. Duis ac augue vitae leo efficitur vestibulum. Maecenas condimentum nisl vel est pharetra varius. Duis volutpat ex nulla, id bibendum lacus elementum at.",
+            "images": {
+                "main": {
+                    "src": "../images/layouts/panel/politics/cortez.jpg",
+                    "caption": "Alexandria Ocasio-Cortez (born October 13, 1989), sometimes referred to by her initials AOC, is an American politician and educator. She is the U.S. Representative-elect for New York's 14th congressional district, elected on November 6, 2018.",
+                    "credit": "photo credit"
+                }
+            },
+            "list": [
+                {
+                    "headline": "Phasellus eget ipsum laoreet, malesuada ligula id, venenatis nibh. Curabitur auctor nisi massa, eu tincidunt tellus posuere quis. Morbi sit amet tristique nunc.",
+                    "link": "https://www.cnn.com"
+                },
+                {
+                    "headline": "Cras semper lobortis commodo.",
+                    "link": "https://www.cnn.com"
+                },
+                {
+                    "headline": "Donec elit lectus, placerat pulvinar lacus nec, eleifend congue metus.",
+                    "link": "https://www.cnn.com"
+                }
+            ]
+        },
+        {
+            "panelTitle": "Politics",
+            "headline": "Headline for Rick Perry",
+            "text": "",
+            "images": {
+                "main": {
+                    "src": "../images/layouts/panel/politics/perry.jpg",
+                    "caption": "James Richard 'Rick' Perry (born March 4, 1950) is an American politician who is the 14th and current United States Secretary of Energy, serving in the Cabinet of Donald Trump.",
+                    "credit": "CNN"
+                }
+            },
+            "list": [
+                {
+                    "headline": "Phasellus eget ipsum laoreet, malesuada ligula id, venenatis nibh. Curabitur auctor nisi massa, eu tincidunt tellus posuere quis. Morbi sit amet tristique nunc.",
+                    "link": "https://www.cnn.com"
+                },
+                {
+                    "headline": "Cras semper lobortis commodo.",
+                    "link": "https://www.cnn.com"
+                },
+                {
+                    "headline": "Donec elit lectus, placerat pulvinar lacus nec, eleifend congue metus.",
+                    "link": "https://www.cnn.com"
+                },
+                {
+                    "headline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac leo nec mi viverra euismod.",
+                    "link": "https://www.cnn.com"
+                },
+                {
+                    "headline": "Phasellus eget ipsum laoreet, malesuada ligula id, venenatis nibh. Curabitur auctor nisi massa, eu tincidunt tellus posuere quis. Morbi sit amet tristique nunc.",
+                    "link": "https://www.cnn.com"
+                },
+                {
+                    "headline": "Cras semper lobortis commodo.",
+                    "link": "https://www.cnn.com"
+                }
+            ]
+        },
+        {
+            "panelTitle": "Politics",
+            "headline": "Headline for Elizabeth Ann Warren",
+            "text": "",
+            "images": {
+                "main": {
+                    "src": "../images/layouts/panel/politics/warren.jpg",
+                    "caption": "Elizabeth Ann Warren (née Herring, born June 22, 1949) is an American politician and academic serving as the senior United States Senator from Massachusetts, a seat she has held since 2013.",
+                    "credit": "Washington Post"
+                }
+            },
+            "list": [
+                {
+                    "headline": "Phasellus eget ipsum laoreet, malesuada ligula id, venenatis nibh. Curabitur auctor nisi massa, eu tincidunt tellus posuere quis. Morbi sit amet tristique nunc.",
+                    "link": "https://www.cnn.com"
+                },
+                {
+                    "headline": "Cras semper lobortis commodo.",
+                    "link": "https://www.cnn.com"
+                },
+                {
+                    "headline": "Donec elit lectus, placerat pulvinar lacus nec, eleifend congue metus.",
+                    "link": "https://www.cnn.com"
+                },
+                {
+                    "headline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac leo nec mi viverra euismod.",
+                    "link": "https://www.cnn.com"
+                },
+                {
+                    "headline": "Phasellus eget ipsum laoreet, malesuada ligula id, venenatis nibh. Curabitur auctor nisi massa, eu tincidunt tellus posuere quis. Morbi sit amet tristique nunc.",
+                    "link": "https://www.cnn.com"
+                },
+                {
+                    "headline": "Cras semper lobortis commodo.",
+                    "link": "https://www.cnn.com"
+                }
+            ]
+        },
+        {
+            "panelTitle": "Riverdale",
+            "headline": "Headline for Riverdale",
             "text": "The series features an ensemble cast based on the characters of Archie Comics, with KJ Apa in the role of Archie Andrews; Lili Reinhart as Betty Cooper, Camila Mendes as Veronica Lodge, and Cole Sprouse as Jughead Jones, the series' narrator. The cast also features Madelaine Petsch as Cheryl Blossom, Ashleigh Murray as Josie McCoy, Casey Cott as Kevin Keller, Charles Melton and Ross Butler as Reginald 'Reggie' Mantle and Vanessa Morgan as Toni Topaz. Other characters in the series include the parents of the main characters: Luke Perry as Fred Andrews, Mädchen Amick as Alice Cooper, Marisol Nichols and Mark Consuelos as Hermione and Hiram Lodge, and Skeet Ulrich as FP Jones.",
             "images": {
                 "main": {
-                    "src": "../images/layouts/panel/riverdale03.jpg",
+                    "src": "../images/layouts/panel/tv/riverdale03.jpg",
                     "caption": "The series features an ensemble cast based on the characters of Archie Comics, with KJ Apa in the role of Archie Andrews.",
                     "credit": "photo credit"
                 }
             }
         },
         {
-            "headline": "Supernatural",
+            "panelTitle": "Supernatural",
+            "headline": "",
             "text": "Supernatural is an American dark fantasy television series created by Eric Kripke. It was first broadcast on September 13, 2005, on The WB, and subsequently became part of successor The CW's lineup. Starring Jared Padalecki as Sam Winchester and Jensen Ackles as Dean Winchester, the series follows the two brothers as they hunt demons, ghosts, monsters, and other supernatural beings. The series is produced by Warner Bros. Television, in association with Wonderland Sound and Vision. Along with Kripke, executive producers have been McG, Robert Singer, Phil Sgriccia, Sera Gamble, Jeremy Carver, John Shiban, Ben Edlund and Adam Glass. Former executive producer and director Kim Manners died of lung cancer during production of the fourth season.",
             "images": {
                 "main": {
-                    "src": "../images/layouts/panel/supernatural01.jpg",
+                    "src": "../images/layouts/panel/tv/supernatural01.jpg",
                     "caption": "In 2005, Ackles joined the cast of the WB show horror/drama series Supernatural where he stars as Dean Winchester.",
                     "credit": "photo credit"
                 }
             }
         },
         {
-            "headline": "Westworld",
+            "panelTitle": "Westworld",
+            "headline": "Headline for Westworld",
             "text": "Westworld is an American science fiction Western television series created by Jonathan Nolan and Lisa Joy. Produced by HBO, it is based on the 1973 film of the same name (written and directed by Michael Crichton) and to a lesser extent the film's 1976 sequel, Futureworld. The story takes place in Westworld, a fictional, technologically advanced Wild-West-themed amusement park populated by android 'hosts'. The park caters to high-paying 'guests' who may indulge their wildest fantasies within the park without fear of retaliation from the hosts, who are prevented by their programming from harming humans.",
             "images": {
                 "main": {
-                    "src": "../images/layouts/panel/westworld01.jpg",
+                    "src": "../images/layouts/panel/tv/westworld01.jpg",
                     "caption": "Thandie Newton was born in Westminster, London, England, the daughter of Nyasha, a Zimbabwean princess of the Shona people, and Nick Newton, an English laboratory technician and artist.",
                     "credit": "photo credit"
                 }
