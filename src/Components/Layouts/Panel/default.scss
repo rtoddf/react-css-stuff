@@ -1,4 +1,5 @@
 @import '../../../styles/colors';
+@import '../../../styles/typography';
 @import '../../../styles/mixins';
 
 .panel {
@@ -7,8 +8,8 @@
   background: $white-color;
   border: 1px solid $gray-color-5;
   -webkit-border-radius: 4px;
-  border-radius: 6px;
-  color: #444;
+  border-radius: $border-radius;
+  color: $site-text-color;
   box-shadow: 0 2px 26px 4px rgba(0, 0, 0, 0.1);
 
   figure {
@@ -18,15 +19,6 @@
       width: 102%;
       max-width: 102%;
     }
-  }
-
-  figcaption {
-    margin: 0.3125rem auto 0;
-    padding: 0 20px;
-    color: $gray-color-4;
-    font-size: 0.75rem;
-    font-weight: 300;
-    line-height: 1rem;
   }
 
   h3 {
@@ -68,7 +60,7 @@
 
       &:after {
         width: 100%;
-        background-color: #D5D5D5;
+        // background-color: #D5D5D5;
         content: "";
         display: block;
         height: 1px;
