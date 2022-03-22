@@ -1,0 +1,108 @@
+[
+    {
+        "headline": "Layouts",
+        "items": [
+            {
+                "id": "layouts-1",
+                "link": "/layouts/card",
+                "title": "Card",
+                "image": "layouts/placeholder.jpg"
+            },
+            {
+                "id": "layouts-12",
+                "link": "/layouts/panel",
+                "title": "Panel",
+                "image": "layouts/placeholder.jpg"
+            }
+        ]
+    },
+    {
+        "headline": "POCs",
+        "items": [
+            {
+                "id": "poc-1",
+                "link": "/pocs/svg-doughnut",
+                "title": "SVG Doughnut",
+                "image": "pocs/svg-doughnut.jpg"
+            },
+            {
+                "id": "poc-2",
+                "link": "/pocs/css-pulse",
+                "title": "CSS Pulse",
+                "image": "pocs/pulse.jpg"
+            },
+            {
+                "id": "poc-3",
+                "link": "/pocs/neon-type",
+                "title": "Neon Type",
+                "image": "pocs/neon-type.jpg"
+            },
+            {
+                "id": "poc-4",
+                "link": "/pocs/switch-animation",
+                "title": "Switch Animation",
+                "image": "pocs/switch-animation.jpg"
+            },
+            {
+                "id": "poc-5",
+                "link": "/pocs/day-night-animation",
+                "title": "Day/Night Animation",
+                "image": "pocs/day-night-animation.jpg"
+            },
+            {
+                "id": "poc-6",
+                "link": "/pocs/icon-animations",
+                "title": "Icon Animations",
+                "image": "pocs/icon-animations.jpg"
+            }
+        ]
+        
+    },
+    {
+        "headline": "CSS Reference",
+        "items": [
+            {
+                "id": 1,
+                "link": "/reference/nth-child",
+                "title": "Nth Child",
+                "image": "reference/nthchild.jpg"
+            },
+            {
+                "id": 2,
+                "link": "/reference/vw-fonts",
+                "title": "VW Fonts",
+                "image": "placeholder.jpg"
+            },
+            {
+                "id": 3,
+                "link": "/reference/selectors",
+                "title": "Selectors",
+                "image": "placeholder.jpg"
+            },
+            {
+                "id": 4,
+                "link": "/reference/radial-gradients",
+                "title": "Radial Gradients",
+                "image": "reference/radial-gradients.jpg"
+            },
+            {
+                "id": 5,
+                "link": "/reference/dropshadows",
+                "title": "Dropshadows",
+                "image": "reference/dropshadows.jpg"
+            },
+            {
+                "id": 6,
+                "link": "/reference/transforms",
+                "title": "Transforms",
+                "image": "reference/transform-functions.jpg"
+            },
+            {
+                "id": 7,
+                "link": "/reference/keyframes",
+                "title": "Keyframes",
+                "image": "reference/keyframes.jpg"
+            }
+        ]
+    }
+]

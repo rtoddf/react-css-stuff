@@ -1,20 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Menu from './Menu';
+
+import data from '../../Data/home.json';
+import './default.scss';
 
 function Home() {
+    const menu = data.map((item, id) => {
+        return (
+            <div key={id}>
+                <h3>{item.headline}</h3>
+                <div className="grid" data-col="4">
+                    <Menu items={item.items} />
+                </div>
+            </div>
+        )
+    })
+
     return (
-        <>
-            <h3>CSS Reference</h3>
-            <ul>
-                <li><Link to="/reference/nth-child">Nth Child</Link></li>
-                <li><Link to="/reference/vw-fonts">VW Fonts</Link></li>
-                <li><Link to="/reference/selectors">Selectors</Link></li>
-                <li><Link to="/reference/radial-gradients">Radial Gradients</Link></li>
-                <li><Link to="/reference/dropshadows">Dropshadows</Link></li>
-                <li><Link to="/reference/transforms">Transforms</Link></li>
-                <li><Link to="/reference/keyframes">Keyframes</Link></li>
-            </ul>
-        </>
+        <div className="grid">
+            {menu}
+        </div>
     )
 }
 

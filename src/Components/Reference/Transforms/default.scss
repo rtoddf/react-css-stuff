@@ -1,5 +1,8 @@
-.transforms {
+@import '../../../styles/colors';
+@import '../../../styles/typography';
+@import '../../../styles/mixins';
 
+.transforms {
   .box {
     &.rotate-x {
       transform: rotateX(45deg);

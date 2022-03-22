@@ -1,40 +1,45 @@
-article {
-	border: 1px solid #fff;
-	// align-self: center;
-	justify-self: center;
-}
+@import '../../../styles/colors';
+@import '../../../styles/typography';
+@import '../../../styles/mixins';
 
-article .dot {
-  width: 20px;
-  height: 20px;
-  background: #000;
-  border-radius: 50%;
-}
+.nth-child {
+    article {
+        border: 1px solid $white-color;
+        justify-self: center;
+    }
 
-.a article:nth-child(3) .dot {
-    background: #ae0000;
-}
+    article .dot {
+    width: 20px;
+    height: 20px;
+    background: $black-color;
+    border-radius: 50%;
+    }
 
-.b article:nth-child(n+4) .dot {
-    background: #ae0000;
-}
+    .a article:nth-child(3) .dot {
+        background: $red-color;
+    }
 
-.c article:nth-child(-n+3) .dot {
-    background: #ae0000;
-}
+    .b article:nth-child(n+4) .dot {
+        background: $red-color;
+    }
 
-.d article:nth-child(3n + 1) .dot {
-    background: #ae0000;
-}
+    .c article:nth-child(-n+3) .dot {
+        background: $red-color;
+    }
 
-.e article:nth-child(odd) .dot {
-    background: #ae0000;
-}
+    .d article:nth-child(3n + 1) .dot {
+        background: $red-color;
+    }
 
-.f article:last-child .dot {
-    background: #ae0000;
-}
+    .e article:nth-child(odd) .dot {
+        background: $red-color;
+    }
 
-.g article:nth-last-child(2) .dot {
-    background: #ae0000;
+    .f article:last-child .dot {
+        background: $red-color;
+    }
+
+    .g article:nth-last-child(2) .dot {
+        background: $red-color;
+    }
 }

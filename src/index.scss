@@ -1,9 +1,12 @@
+@import './styles/colors';
+@import './styles/typography';
+@import './styles/mixins';
+
 html {
   box-sizing: border-box;
   height: 100%;
-  color: #222;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: $base-font-size;
 }
   
 *, *:before, *:after {
@@ -13,9 +16,42 @@ html {
 }
   
 body {
-  background-color: #fff;
-  color: #333;
+  background-color: $site-bg-color;
+  color: $site-text-color;
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 1rem;
+  margin: .625rem 0;
+}
+
+p {
   font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+a {
+  color: $site-link-color;
+
+  &:hover,
+  &.active {
+    color: $site-link-hover-color;
+  }
+
+  &:visited {
+    color: $site-link-hover-color;
+  }
+}
+
+ul {
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+li {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 pre {
@@ -23,9 +59,39 @@ pre {
   padding: 10px;
   background: #dedede;
   border-radius: 6px;
-  font-size: 0.875rem;
 }
 
+// images
+img {
+  width: 100%;
+}
+
+figure {
+  .filler {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      max-height: 100%;
+      padding-bottom: 56%;
+      overflow: hidden;
+      background: #222;
+
+      > img {
+          display: block;
+          position: absolute;
+          top: 25%;
+          left: 50%;
+          width: auto;
+          max-width: 102%;
+          height: 102%;
+          max-height: 102%;
+          -webkit-transform: translate(-50%, -25%);
+          -ms-transform: translate(-50%, -25%);
+          transform: translate(-50%, -25%);
+          text-align: center;
+      }
+  }
+}
 
 //css grids
 .container {
@@ -39,12 +105,16 @@ pre {
   grid-gap: 2.5rem;
   width: 100%;
   margin: 0 auto;
-  padding: 1.5625rem;
+  // padding: 1.5625rem;
 }
 
 .grid > .grid {
   width: 100%;
   padding: 0;
+}
+
+[data-col="2"] {
+  grid-template-columns: repeat(2, [col] 1fr);
 }
 
 [data-col="3"],
@@ -53,10 +123,27 @@ pre {
   grid-template-columns: repeat(3, [col] 1fr);
 }
 
+[data-col="4"],
+[data-col="1-3"],
+[data-col="3-1"],
+[data-col="2-1-1"],
+[data-col="1-2-1"],
+[data-col="1-1-2"] {
+  grid-template-columns: repeat(4, [col] 1fr);
+}
+
 [data-col="5"],
 [data-col="1-4"],
 [data-col="4-1"] {
   grid-template-columns: repeat(5, [col] 1fr);
+}
+
+[data-col="6"],
+[data-col="3-1-1-1"],
+[data-col="1-3-1-1"],
+[data-col="1-1-3-1"],
+[data-col="1-1-1-3"] {
+  grid-template-columns: repeat(6, [col] 1fr);
 }
 
 [data-col="10"] {

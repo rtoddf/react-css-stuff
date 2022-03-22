@@ -1,22 +1,24 @@
-@import '../../../utilities/colors';
+@import '../../../styles/colors';
+@import '../../../styles/typography';
+@import '../../../styles/mixins';
 
 .gradient {
-	background-image: radial-gradient($white-color, $base-color-1);
+	background-image: radial-gradient($white-color, $orange-color);
 
 	&.one {
-		background-image: radial-gradient(circle, $white-color, $base-color-1);
+		background-image: radial-gradient(circle, $white-color, $orange-color);
 	}
 
 	&.two {
-		background-image: radial-gradient(circle closest-side, $white-color, $base-color-1);
+		background-image: radial-gradient(circle closest-side, $white-color, $orange-color);
 	}
 
 	&.three {
-		background-image: radial-gradient(circle at top right, $white-color, $base-color-1);
+		background-image: radial-gradient(circle at top right, $white-color, $orange-color);
 	}
 
 	&.four {
-		background: repeating-radial-gradient(circle closest-side, $base-color-1, $white-color 10%, $base-color-1 25%, $base-color-1 30%);
+		background: repeating-radial-gradient(circle closest-side, $orange-color, $white-color 10%, $orange-color 25%, $orange-color 30%);
 	}
 }
 

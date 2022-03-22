@@ -5,6 +5,20 @@ import {
   Switch
 } from "react-router-dom";
 import Home from './Components/Home/default';
+
+// POCs
+import Card from './Components/Layouts/Card/default';
+import Panel from './Components/Layouts/Panel/default';
+
+// POCs
+import SvgDoughnut from './Components/Pocs/SvgDoughnut/default';
+import CssPulse from './Components/Pocs/CssPulse/default';
+import NeonType from './Components/Pocs/NeonType/default';
+import SwitchAnimation from './Components/Pocs/SwitchAnimation/default';
+import DayNightAnimation from './Components/Pocs/DayNightAnimation/default';
+import IconAnimations from './Components/Pocs/IconAnimations/default';
+
+// Reference
 import Keyframes from './Components/Reference/Keyframes/default';
 import Transforms from './Components/Reference/Transforms/default';
 import RadialGradients from './Components/Reference/RadialGradients/default';
@@ -16,6 +30,51 @@ import Selectors from './Components/Reference/Selectors/default';
 function App() {
   return <Router>
     <div className="container">
+      {/* Layouts */}
+      <Switch>
+        <Route path='/layouts/card'>
+          <Card />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/layouts/panel'>
+          <Panel />
+        </Route>
+      </Switch>
+
+      {/* POCs */}
+      <Switch>
+        <Route path='/pocs/svg-doughnut'>
+          <SvgDoughnut />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/pocs/css-pulse'>
+          <CssPulse />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/pocs/neon-type'>
+          <NeonType />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/pocs/switch-animation'>
+          <SwitchAnimation />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/pocs/day-night-animation'>
+          <DayNightAnimation />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/pocs/icon-animations'>
+          <IconAnimations />
+        </Route>
+      </Switch>
+
+      {/* Reference */}
       <Switch>
         <Route exact path='/'>
           <Home />

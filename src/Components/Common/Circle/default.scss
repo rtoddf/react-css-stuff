@@ -1,0 +1,16 @@
+@import '../../../styles/colors';
+@import '../../../styles/typography';
+@import '../../../styles/mixins';
+
+.circle {
+	display: block;
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	border-radius: 50%;
+
+	&.small {
+		width: 20px;
+		height: 20px;
+	}
+}

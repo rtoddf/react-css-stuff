@@ -1,5 +1,5 @@
 import React from 'react';
-import FillerText from '../FillerText/default';
+import FillerText from '../../Common/FillerText/default';
 import './default.scss';
 
 function VwFonts() {
@@ -15,13 +15,12 @@ function VwFonts() {
     });
 
     return (
-        <>
+        <div className="vw-fonts">
             <h3>VW Fonts</h3>
-            <div class="grid" data-col="3">
+            <div className="grid" data-col="3">
                 {textBoxes}
             </div>
-        </>
-        
+        </div>
     )
 }
 

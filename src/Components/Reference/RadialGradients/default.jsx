@@ -1,5 +1,5 @@
 import React from 'react';
-import Circle from '../Circle/default';
+import Circle from '../../Common/Circle/default';
 import './default.scss';
 
 function RadialGradients() {
@@ -29,7 +29,7 @@ function RadialGradients() {
     return (
         <>
             <h3>Radial Gradients</h3>
-            <div class="grid" data-col="5">
+            <div className="grid" data-col="5">
                 {circles}
             </div>
         </>
