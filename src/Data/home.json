@@ -20,6 +20,12 @@
         "headline": "POCs",
         "items": [
             {
+                "id": "poc-7",
+                "link": "/pocs/square-images",
+                "title": "Square Images",
+                "image": "placeholder.jpg"
+            },
+            {
                 "id": "poc-1",
                 "link": "/pocs/svg-doughnut",
                 "title": "SVG Doughnut",

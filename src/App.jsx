@@ -11,6 +11,7 @@ import Card from './Components/Layouts/Card/default';
 import Panel from './Components/Layouts/Panel/default';
 
 // POCs
+import SquareImages from './Components/Pocs/SquareImages/default';
 import SvgDoughnut from './Components/Pocs/SvgDoughnut/default';
 import CssPulse from './Components/Pocs/CssPulse/default';
 import NeonType from './Components/Pocs/NeonType/default';
@@ -43,6 +44,11 @@ function App() {
       </Switch>
 
       {/* POCs */}
+      <Switch>
+        <Route path='/pocs/square-images'>
+          <SquareImages />
+        </Route>
+      </Switch>
       <Switch>
         <Route path='/pocs/svg-doughnut'>
           <SvgDoughnut />
