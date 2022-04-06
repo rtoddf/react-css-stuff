@@ -8,7 +8,7 @@
     height: 300px;
     position: relative;
     margin: 0 auto 40px;
-      perspective: 1000px;
+    perspective: 1000px;
 
       .cube {
         width: 100%;
@@ -36,32 +36,32 @@
         }
 
         .front { 
-          background: hsla(   0, 100%, 50%, 0.7 );
+          background: rgba(0,50,100,0.7);
           transform: translateZ(150px);
         }
 
         .back {
-          background: hsla(  60, 100%, 50%, 0.7 );
+          background: rgba(102,0,74,0.7);
           transform: rotateX(-180deg) translateZ(150px);
         }
 
         .right {
-          background: hsla( 120, 100%, 50%, 0.7 );
+          background: rgba(174,0,0,0.7);
           transform: rotateY(90deg) translateZ(150px);
         }
 
         .left {
-          background: hsla( 180, 100%, 50%, 0.7 );
+          background: rgba(186,186,113,0.7);
           transform: rotateY(-90deg) translateZ(150px);
         }
 
         .top {
-          background: hsla( 240, 100%, 50%, 0.7 );
+          background: rgba(250,124,0,0.7);
           transform: rotateX(90deg) translateZ(150px);
         }
 
         .bottom {
-          background: hsla( 300, 100%, 50%, 0.7 );
+          background: rgba(0,125,125,0.7);
           transform: rotateX(-90deg) translateZ(150px);
         }
 
@@ -96,18 +96,19 @@
   }
   
   button {
-    background-color: #999;
     display: inline-block;
-    cursor: pointer;
-    color: #333;
-    font-size: 14px;
-    padding: 10px 16px;
-    text-decoration: none;
+    margin: 10px;
+    padding: 20px;
+    background-color: $gray-color-5;
+    color: $site-text-color;
     border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
 
     &:hover {
-      background-color:#666;
-      color: #fff;
+      background-color:$gray-color-4;
+      color: $white-color;
     }
   }
 }
