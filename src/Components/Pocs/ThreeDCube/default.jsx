@@ -22,13 +22,13 @@ function ThreeDCube() {
             className={`show-${side.side}`}
             onClick={() => setSide(`show-${side.side}`)}
         >
-            {`Show ${index + 1}`}
+            {images ? side.alt : `Show ${index + 1}`}
         </button>;
     });
 
     return (
         <>
-            <h3>Learning - 3-D Cube</h3>
+            <h3>3-D Cube</h3>
             <div className='grid three-d-cube'>
                 <article className="cube-container">
                     <div className={`cube ${side} ${backFaceInvisible ? 'panels-backface-invisible' : ''}`}>

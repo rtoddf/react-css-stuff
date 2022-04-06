@@ -6,8 +6,8 @@
     },
     {
         "side": "two",
-        "image": "../images/pocs/cube/adam-lambert.jpg",
-        "alt": "Adam Lambert"
+        "image": "../images/pocs/cube/tom-daley.jpg",
+        "alt": "Tom Daley"
     },
     {
         "side": "three",
@@ -16,8 +16,8 @@
     },
     {
         "side": "four",
-        "image": "../images/pocs/cube/deborah-harry.jpg",
-        "alt": "Deborah Harry"
+        "image": "../images/pocs/cube/omar-sharif.jpg",
+        "alt": "Omar Sharif"
     },
     {
         "side": "five",

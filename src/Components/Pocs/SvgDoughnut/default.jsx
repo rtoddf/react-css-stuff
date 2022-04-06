@@ -10,7 +10,7 @@ function SvgDoughnut() {
 					<h3>HTML</h3>
 					<svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
 						<g>
-							<circle id="circle" className="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#6fdb6f" fill="none" />
+							<circle id="circle" className="circle_animation" r="69.85699" cy="81" cx="81" strokeWidth="8" stroke="#6fdb6f" fill="none" />
 						</g>
 					</svg>
 				</article>
@@ -18,7 +18,7 @@ function SvgDoughnut() {
 					<h3>CSS</h3>
 					<svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
 						<g>
-							<circle id="circle" className="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#69aff4" fill="none"/ >
+							<circle id="circle" className="circle_animation" r="69.85699" cy="81" cx="81" strokeWidth="8" stroke="#69aff4" fill="none"/ >
 						</g>
 					</svg>
 				</article>

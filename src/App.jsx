@@ -11,9 +11,10 @@ import Card from './Components/Layouts/Card/default';
 import Panel from './Components/Layouts/Panel/default';
 
 // Learning
-import ThreeDCube from './Components/Learning/ThreeDCube/default';
+
 
 // POCs
+import ThreeDCube from './Components/Pocs/ThreeDCube/default';
 import SquareImages from './Components/Pocs/SquareImages/default';
 import SvgDoughnut from './Components/Pocs/SvgDoughnut/default';
 import CssPulse from './Components/Pocs/CssPulse/default';
@@ -47,13 +48,13 @@ function App() {
       </Switch>
 
       {/* Learning */}
+
+      {/* POCs */}
       <Switch>
-        <Route path='/learning/three-d-cube'>
+        <Route path='/pocs/three-d-cube'>
           <ThreeDCube />
         </Route>
       </Switch>
-
-      {/* POCs */}
       <Switch>
         <Route path='/pocs/square-images'>
           <SquareImages />
