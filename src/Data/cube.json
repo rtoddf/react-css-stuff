@@ -1,0 +1,32 @@
+[
+    {
+        "side": "one",
+        "image": "../images/pocs/cube/jonathan-groff.jpg",
+        "alt": "Jonathan Groff"
+    },
+    {
+        "side": "two",
+        "image": "../images/pocs/cube/adam-lambert.jpg",
+        "alt": "Adam Lambert"
+    },
+    {
+        "side": "three",
+        "image": "../images/pocs/cube/andy-mientus.jpg",
+        "alt": "Andy Mientus"
+    },
+    {
+        "side": "four",
+        "image": "../images/pocs/cube/deborah-harry.jpg",
+        "alt": "Deborah Harry"
+    },
+    {
+        "side": "five",
+        "image": "../images/pocs/cube/andrew-garfield.jpg",
+        "alt": "Andrew Garfield"
+    },
+    {
+        "side": "six",
+        "image": "../images/pocs/cube/matt-doyle.jpg",
+        "alt": "Matt Doyle"
+    }
+]
