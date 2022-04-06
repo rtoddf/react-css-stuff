@@ -1,26 +1,32 @@
 [
     {
         "image": "../images/pocs/cube/jonathan-groff.jpg",
-        "alt": "Jonathan Groff"
+        "alt": "Jonathan Groff",
+        "label": "Front"
     },
     {
         "image": "../images/pocs/cube/tom-daley.jpg",
-        "alt": "Tom Daley"
+        "alt": "Tom Daley",
+        "label": "Back"
     },
     {
         "image": "../images/pocs/cube/andy-mientus.jpg",
-        "alt": "Andy Mientus"
+        "alt": "Andy Mientus",
+        "label": "Right"
     },
     {
         "image": "../images/pocs/cube/omar-sharif.jpg",
-        "alt": "Omar Sharif"
+        "alt": "Omar Sharif",
+        "label": "Left"
     },
     {
         "image": "../images/pocs/cube/andrew-garfield.jpg",
-        "alt": "Andrew Garfield"
+        "alt": "Andrew Garfield",
+        "label": "Top"
     },
     {
         "image": "../images/pocs/cube/matt-doyle.jpg",
-        "alt": "Matt Doyle"
+        "alt": "Matt Doyle",
+        "label": "Bottom"
     }
 ]

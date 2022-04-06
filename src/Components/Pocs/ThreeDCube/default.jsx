@@ -10,7 +10,7 @@ function ThreeDCube() {
     const cubeSides = cubeInfo.map((side, index) => {
         const whichSide = index + 1;
         return <figure key={index} className={`side-${whichSide}`}>
-            {images ? <img src={side.image} alt={side.alt} /> : whichSide}
+            {images ? <img src={side.image} alt={side.alt} /> : side.label}
         </figure>;
     });
 
@@ -21,7 +21,7 @@ function ThreeDCube() {
             className={`side-${index + 1}`}
             onClick={() => setSide(`show-${whichButton}`)}
         >
-            {images ? side.alt : `Show ${whichButton}`}
+            {images ? side.alt : side.label}
         </button>;
     });
 
@@ -38,11 +38,11 @@ function ThreeDCube() {
                 <article className='options'>
                     {buttons}
                     <div>
-                        <button onClick={() => setBackFaceInvisible(!backFaceInvisible)}>
-                            Toggle Backface Visibility
-                        </button>
                         <button onClick={() => setImages(!images)}>
                             Hide/Show Images
+                        </button>
+                        <button className={`${images ? 'hidden' : ''}`} onClick={() => setBackFaceInvisible(!backFaceInvisible)}>
+                            Toggle Backface Visibility
                         </button>
                     </div>
                 </article>
