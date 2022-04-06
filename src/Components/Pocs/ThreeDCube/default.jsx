@@ -3,23 +3,26 @@ import './default.scss';
 import cubeInfo from '../../../Data/cube.json';
 
 function ThreeDCube() {
+    const [dataSet, setDataSet] = useState('set02');
     const [images, setImages] = useState(true);
     const [backFaceInvisible, setBackFaceInvisible] = useState(false);
-    const [side, setSide] = useState('show-1');
+    const [side, setSide] = useState('show-front');
 
-    const cubeSides = cubeInfo.map((side, index) => {
-        const whichSide = index + 1;
-        return <figure key={index} className={`side-${whichSide}`}>
-            {images ? <img src={side.image} alt={side.alt} /> : side.label}
-        </figure>;
+    const set = cubeInfo[dataSet];
+
+    const cubeSides = set.map((side, index) => {
+        return <>
+            <figure key={index} className={`side-${side.label}`}>
+                {images ? <img src={side.image} alt={side.alt} /> : side.label}
+                {/* <h4>Name</h4> */}
+            </figure>
+        </>;
     });
 
-    const buttons = cubeInfo.map((side, index) => {
-        const whichButton = index + 1;
+    const buttons = set.map((side, index) => {
         return <button
             key={index}
-            className={`side-${index + 1}`}
-            onClick={() => setSide(`show-${whichButton}`)}
+            onClick={() => setSide(`show-${side.label}`)}
         >
             {images ? side.alt : side.label}
         </button>;
