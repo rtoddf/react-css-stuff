@@ -1,43 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './default.scss';
 
 function ThreeDCube() {
-    const cubeInfo = ["front", "back", "right", "left", "top", "bottom"];
+    const [backFaceInvisible, setbackFaceInvisible] = useState(false);
+    const cubeInfo = ['front', 'back', 'right', 'left', 'top', 'bottom'];
 
     const cubeSides = cubeInfo.map((side, index) => {
         return <figure key={index} className={side}>{index + 1}</figure>;
     });
 
-    const buttons = cubeInfo.map((side, index) => {
-        return <button key={index} className={`show-${side}`}>{`Show ${index + 1}`}</button>;
-    });
+    function sayHello() {
+        console.log('Hello!');
+    }
 
-    // const box = document.querySelector('#cube');
-    // const panelClassName = 'show-front';
-    // const buttons = document.querySelector('#show-buttons');
+    const buttons = cubeInfo.map((side, index) => {
+        return <button key={index} className={`show-${side}`} onClick={() => sayHello()}>{`Show ${index + 1}`}</button>;
+    });
 
     return (
         <>
             <h3>Learning - 3-D Cube</h3>
-            <div className="grid three-d-cube">
-                {/* {[...Array(repeatAmt)].map((el, index) => (
-                    <Circle classNames='small' />
-                ))} */}
-
+            <div className='grid three-d-cube'>
                 <article className="cube-container">
-                    <div id="cube" className="show-front">
+                    <div id='cube' className={`show-front ${backFaceInvisible ? 'panels-backface-invisible' : ''}`}>
                         {cubeSides}
                     </div>
                 </article>
 
-                <article className="options">
-                    <p id="show-buttons">
+                <article className='options'>
+                    <p id='show-buttons'>
                         {buttons}
                     </p>
 
                     <p>
-                        <button id="toggle-backface-visibility">Toggle Backface Visibility</button>
+                        <button onClick={() => setbackFaceInvisible(!backFaceInvisible)}>
+                            Toggle Backface Visibility
+                        </button>
                     </p>
                 </article>
             </div>
