@@ -8,21 +8,20 @@ function ThreeDCube() {
     const [side, setSide] = useState('show-1');
 
     const cubeSides = cubeInfo.map((side, index) => {
-        if(images) {
-            return <figure key={index} className={`side-${index + 1}`}>
-                <img src={side.image} alt={side.alt} />
-            </figure>;
-        }
-        return <figure key={index} className={`side-${index + 1}`}>{index + 1}</figure>;
+        const whichSide = index + 1;
+        return <figure key={index} className={`side-${whichSide}`}>
+            {images ? <img src={side.image} alt={side.alt} /> : whichSide}
+        </figure>;
     });
 
     const buttons = cubeInfo.map((side, index) => {
+        const whichButton = index + 1;
         return <button
             key={index}
             className={`side-${index + 1}`}
-            onClick={() => setSide(`show-${index + 1}`)}
+            onClick={() => setSide(`show-${whichButton}`)}
         >
-            {images ? side.alt : `Show ${index + 1}`}
+            {images ? side.alt : `Show ${whichButton}`}
         </button>;
     });
 
