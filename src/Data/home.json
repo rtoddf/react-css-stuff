@@ -17,6 +17,17 @@
         ]
     },
     {
+        "headline": "Layouts",
+        "items": [
+            {
+                "id": "learning-1",
+                "link": "/learning/three-d-cube",
+                "title": "Three-D Cube",
+                "image": "placeholder.jpg"
+            }
+        ]
+    },
+    {
         "headline": "POCs",
         "items": [
             {

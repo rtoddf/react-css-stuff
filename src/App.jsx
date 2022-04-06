@@ -10,6 +10,9 @@ import Home from './Components/Home/default';
 import Card from './Components/Layouts/Card/default';
 import Panel from './Components/Layouts/Panel/default';
 
+// Learning
+import ThreeDCube from './Components/Learning/ThreeDCube/default';
+
 // POCs
 import SquareImages from './Components/Pocs/SquareImages/default';
 import SvgDoughnut from './Components/Pocs/SvgDoughnut/default';
@@ -40,6 +43,13 @@ function App() {
       <Switch>
         <Route path='/layouts/panel'>
           <Panel />
+        </Route>
+      </Switch>
+
+      {/* Learning */}
+      <Switch>
+        <Route path='/learning/three-d-cube'>
+          <ThreeDCube />
         </Route>
       </Switch>
 
