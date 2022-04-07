@@ -3,7 +3,7 @@ import './default.scss';
 import cubeInfo from '../../../Data/cube.json';
 
 function ThreeDCube() {
-    const [dataSet, setDataSet] = useState('set02');
+    const [dataSet, setDataSet] = useState('set01');
     const [images, setImages] = useState(true);
     const [backFaceInvisible, setBackFaceInvisible] = useState(false);
     const [side, setSide] = useState('show-front');
@@ -39,8 +39,11 @@ function ThreeDCube() {
                 </article>
 
                 <article className='options'>
-                    {buttons}
-                    <div>
+                    <div className="side-options">
+                        {buttons}
+                    </div>
+                    
+                    <div className="display-options">
                         <button onClick={() => setImages(!images)}>
                             Hide/Show Images
                         </button>
@@ -48,6 +51,16 @@ function ThreeDCube() {
                             Toggle Backface Visibility
                         </button>
                     </div>
+
+                    <div className="toggle-options">
+                        <div class="toggle-switch-label">Switch dataset</div>
+                        <label className="switch">
+                            
+                            <input type="checkbox" onClick={() => setDataSet(dataSet === 'set01' ? 'set02' : 'set01')} />
+                            <span className="slider round"></span>
+                        </label>
+                    </div>
+                    
                 </article>
             </div>
         </>
