@@ -7,6 +7,7 @@ import {
 import Home from './Components/Home/default';
 
 // POCs
+import Layouts from './Components/Layouts/default';
 import Card from './Components/Layouts/Card/default';
 import Panel from './Components/Layouts/Panel/default';
 
@@ -14,6 +15,7 @@ import Panel from './Components/Layouts/Panel/default';
 
 
 // POCs
+import Pocs from './Components/Pocs/default';
 import ThreeDCube from './Components/Pocs/ThreeDCube/default';
 import SquareImages from './Components/Pocs/SquareImages/default';
 import SvgDoughnut from './Components/Pocs/SvgDoughnut/default';
@@ -24,6 +26,7 @@ import DayNightAnimation from './Components/Pocs/DayNightAnimation/default';
 import IconAnimations from './Components/Pocs/IconAnimations/default';
 
 // Reference
+import Reference from './Components/Reference/default';
 import Keyframes from './Components/Reference/Keyframes/default';
 import Transforms from './Components/Reference/Transforms/default';
 import RadialGradients from './Components/Reference/RadialGradients/default';
@@ -35,7 +38,19 @@ import Selectors from './Components/Reference/Selectors/default';
 function App() {
   return <Router>
     <div className="container">
+      {/* Home */}
+      <Switch>
+        <Route exact path='/'>
+          <Home />
+        </Route>
+      </Switch>
+
       {/* Layouts */}
+      <Switch>
+        <Route path='/layouts'>
+          <Layouts />
+        </Route>
+      </Switch>
       <Switch>
         <Route path='/layouts/card'>
           <Card />
@@ -50,6 +65,11 @@ function App() {
       {/* Learning */}
 
       {/* POCs */}
+      <Switch>
+        <Route path='/pocs'>
+          <Pocs />
+        </Route>
+      </Switch>
       <Switch>
         <Route path='/pocs/three-d-cube'>
           <ThreeDCube />
@@ -93,8 +113,8 @@ function App() {
 
       {/* Reference */}
       <Switch>
-        <Route exact path='/'>
-          <Home />
+        <Route path='/reference'>
+          <Reference />
         </Route>
       </Switch>
       <Switch>
