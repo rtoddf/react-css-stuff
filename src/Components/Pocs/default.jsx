@@ -5,7 +5,7 @@ import data from '../../Data/menu.json';
 function Pocs() {
     return (
         <div className="grid">
-            <Header section={data.pocs[0]} />
+            <Header section={data.pocs} />
         </div>
     )
 }

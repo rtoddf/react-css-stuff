@@ -6,7 +6,7 @@ import './default.scss';
 function Home() {
     return (
         <div className="grid">
-            <Header section={data.home[0]} />
+            <Header section={data.home} />
         </div>
     )
 }
