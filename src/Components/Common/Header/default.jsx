@@ -1,4 +1,5 @@
 import React from 'react';
+import Description from '../../Common/Description/default';
 import Menu from '../Menu/default';
 
 function Header(props) {
@@ -6,8 +7,7 @@ function Header(props) {
 
     return (
         <>
-            <h3>{section.headline}</h3>
-            <p>{section.copy}</p>
+            <Description title={section.headline} copy={section.copy} />
             <Menu items={section.items} />
         </>
         

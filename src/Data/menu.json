@@ -21,6 +21,12 @@
                     "link": "/reference",
                     "title": "Reference",
                     "image": "placeholder.jpg"
+                },
+                {
+                    "id": "home-4",
+                    "link": "/learning",
+                    "title": "Learning",
+                    "image": "placeholder.jpg"
                 }
             ]
         },
@@ -145,6 +151,19 @@
                     "link": "/reference/keyframes",
                     "title": "Keyframes",
                     "image": "reference/thumbnails/keyframes.jpg"
+                }
+            ]
+        },
+        "learning":
+        {
+            "headline": "Learning",
+            "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor aliquet lacus ut dignissim. In pellentesque lorem eu nisl pretium fermentum. Donec ut tellus imperdiet, vestibulum nisl sed, pellentesque purus. Donec sollicitudin sapien in nibh aliquam pellentesque. Proin sagittis augue non est commodo, quis congue ligula bibendum. Curabitur pellentesque dapibus quam quis imperdiet. Integer venenatis augue consequat diam euismod, a ullamcorper magna varius. Vivamus justo augue, interdum eu ultricies quis, convallis sit amet nunc. Fusce massa nulla, ornare at mauris in, dapibus luctus orci. Aliquam erat volutpat. Duis pulvinar arcu orci, venenatis pellentesque augue bibendum sit amet.",
+            "items": [
+                {
+                    "id": "learning-1",
+                    "link": "/learning/3dcarousel",
+                    "title": "Three-D Carousel",
+                    "image": "placeholder.jpg"
                 }
             ]
         }

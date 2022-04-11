@@ -12,7 +12,8 @@ import Card from './Components/Layouts/Card/default';
 import Panel from './Components/Layouts/Panel/default';
 
 // Learning
-
+import Learning from './Components/Learning/default';
+import ThreeDCarousel from './Components/Learning/ThreeDCarousel/default';
 
 // POCs
 import Pocs from './Components/Pocs/default';
@@ -150,6 +151,18 @@ function App() {
       <Switch>
         <Route path='/reference/selectors'>
           <Selectors />
+        </Route>
+      </Switch>
+
+      {/* Learning */}
+      <Switch>
+        <Route exact path='/learning'>
+          <Learning />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route exact path='/learning/3dcarousel'>
+          <ThreeDCarousel />
         </Route>
       </Switch>
 
