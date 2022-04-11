@@ -3,7 +3,7 @@ import Description from '../../Common/Description/default';
 import Image from '../../Common/Image/default';
 import SocialIcons from './SocialIcons';
 
-import data from '../../../Data/cards.json';
+import data from './data/cards.json';
 import './default.scss';
 
 function Card() {

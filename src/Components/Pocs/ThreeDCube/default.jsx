@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Description from '../../Common/Description/default';
 import './default.scss';
-import cubeInfo from '../../../Data/cube.json';
+import cubeInfo from './data/cube.json';
 
 function ThreeDCube() {
     const [dataSet, setDataSet] = useState('set01');

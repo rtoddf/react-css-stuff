@@ -3,7 +3,7 @@ import Description from '../../Common/Description/default';
 import Image from '../../Common/Image/default';
 import List from './List';
 
-import data from '../../../Data/panels.json';
+import data from './data/panels.json';
 import './default.scss';
 
 function Panel() {
