@@ -25,6 +25,7 @@ import NeonType from './Components/Pocs/NeonType/default';
 import SwitchAnimation from './Components/Pocs/SwitchAnimation/default';
 import DayNightAnimation from './Components/Pocs/DayNightAnimation/default';
 import IconAnimations from './Components/Pocs/IconAnimations/default';
+import FadingImages from './Components/Pocs/FadingImages/default';
 
 // Reference
 import Reference from './Components/Reference/default';
@@ -69,6 +70,11 @@ function App() {
       <Switch>
         <Route exact path='/pocs'>
           <Pocs />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/pocs/fading-images'>
+          <FadingImages />
         </Route>
       </Switch>
       <Switch>
