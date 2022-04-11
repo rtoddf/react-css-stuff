@@ -1,23 +1,11 @@
 import React from 'react';
-import Menu from '../Common/Menu/default';
-
+import Header from '../Common/Header/default';
 import data from '../../Data/menu.json';
 
 function Pocs() {
-    const menu = data.pocs.map((item, id) => {
-        return (
-            <div key={id}>
-                <h3>{item.headline}</h3>
-                <div className="grid" data-col="4">
-                    <Menu items={item.items} />
-                </div>
-            </div>
-        )
-    })
-
     return (
         <div className="grid">
-            {menu}
+            <Header section={data.pocs[0]} />
         </div>
     )
 }

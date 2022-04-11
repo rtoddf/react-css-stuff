@@ -47,7 +47,7 @@ function App() {
 
       {/* Layouts */}
       <Switch>
-        <Route path='/layouts'>
+        <Route exact path='/layouts'>
           <Layouts />
         </Route>
       </Switch>
@@ -66,7 +66,7 @@ function App() {
 
       {/* POCs */}
       <Switch>
-        <Route path='/pocs'>
+        <Route exact path='/pocs'>
           <Pocs />
         </Route>
       </Switch>
@@ -113,7 +113,7 @@ function App() {
 
       {/* Reference */}
       <Switch>
-        <Route path='/reference'>
+        <Route exact path='/reference'>
           <Reference />
         </Route>
       </Switch>
