@@ -7,24 +7,59 @@ import './default.scss';
 function FadingImages() {
     const repeatAmt = 9
 
+    let usedIndexes = [];
+    function getUniqueRandomNumber(x) {
+        const index = Math.floor(Math.random() * (x));
+        if (usedIndexes.length === x) {
+            usedIndexes = [];
+        }
+
+        if (usedIndexes.includes(index)) {
+            return getUniqueRandomNumber(x);
+        } else { 
+            usedIndexes.push(index);
+            return index;
+        }
+    }
+
+    let usedImages = [];
+    function getUniqueRandomImage(x) {
+        const index = Math.floor(Math.random() * (x));
+        if (usedImages.length === x) {
+            usedImages = [];
+        }
+
+        if (usedImages.includes(index)) {
+            return getUniqueRandomImage(x);
+        } else { 
+            usedImages.push(index);
+            return index;
+        }
+    }
+
     useEffect(() => {
         const interval = setInterval(() => {
+            // using the random number generator function - random imageholder
+            let randomHolderNumber = getUniqueRandomNumber(repeatAmt);
+
             // select a random imageholder
-            let randomHolderNumber = 0 + Math.floor(Math.random() * (repeatAmt - 1));
+            // let randomHolderNumber = 1 + Math.floor(Math.random() * (repeatAmt - 1));
             // select a random data image node
-            let randomImageNumber = 0 + Math.floor(Math.random() * data.length);
-            // console.log('randomImageNumber: ', randomImageNumber)
+            let randomImageNumber = getUniqueRandomImage(repeatAmt);
+
+            // we need a random image number array
+            // we then need to remove that number from the holders
+            // we need a randmom holder number array
             
             // choose the random div based on the random number
-            const holderToChange = document.querySelector(`.fading-images article:nth-child(${randomHolderNumber}) div figure img`);
+            // this number should be between 1 and 9
+            const holderToChange = document.querySelector(`.fading-images article:nth-child(${randomHolderNumber + 1}) div figure img`);
             // change the image src of the random div
+            console.log('data[randomImageNumber]: ', data[randomImageNumber])
             holderToChange.src = data[randomImageNumber].image;
-        }, 3000);
+        }, 6000);
         
-        return () => {
-            console.log(`clearing interval`);
-            clearInterval(interval);
-        };
+        return () => clearInterval(interval);
     }, []);
 
     const holders = (data).map((image, id) => {
