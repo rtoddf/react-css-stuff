@@ -17,7 +17,11 @@ function Menu(props) {
         )
     })
 
-    return <>{menuItems}</>;
+    return (
+        <div className="grid menu" data-col="4">
+            {menuItems}
+        </div>
+    )
 }
 
 export default Menu;

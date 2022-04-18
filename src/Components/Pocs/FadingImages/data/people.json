@@ -1,0 +1,57 @@
+[
+    {
+        "id": 0,
+        "title": "Superman - Son of Kalel", 
+        "image": "../images/pocs/fadingimages/superman.jpg"
+    },
+    {
+        "id": 1,
+        "title": "Kaldur'ahm", 
+        "image": "../images/pocs/fadingimages/kaldurahm.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Deadpool", 
+        "image": "../images/pocs/fadingimages/deadpool.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Tim Drake", 
+        "image": "../images/pocs/fadingimages/tim-drake.jpg"
+    },
+    {
+        "id": 4,
+        "title": "John Constantine", 
+        "image": "../images/pocs/fadingimages/john-constantine.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Kevin Keller", 
+        "image": "../images/pocs/fadingimages/kevin-keller.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Harley Quinn", 
+        "image": "../images/pocs/fadingimages/harley-quinn.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Hulking", 
+        "image": "../images/pocs/fadingimages/hulkling.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Iceman", 
+        "image": "../images/pocs/fadingimages/iceman.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Shaping Sound", 
+        "image": "../images/pocs/fadingimages/shaping-sound.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Nick Jonas", 
+        "image": "../images/pocs/fadingimages/nick-jonas.jpg"
+    }
+]
