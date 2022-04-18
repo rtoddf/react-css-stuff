@@ -25,12 +25,15 @@ function FadingImages() {
     let usedImages = [];
     function getUniqueRandomImage(x) {
         const index = Math.floor(Math.random() * (x));
-        if (usedImages.length === x) {
-            usedImages = [];
-        }
+        console.log('data.length: ', data.length)
+        console.log('usedImages.length: ', usedImages.length)
+        // if (usedImages.length === data.length) {
+        //     usedImages = [];
+        // }
 
         if (usedImages.includes(index)) {
-            return getUniqueRandomImage(x);
+            console.log('index: ', index)
+            // return getUniqueRandomImage(x);
         } else { 
             usedImages.push(index);
             return index;
@@ -64,6 +67,7 @@ function FadingImages() {
 
     const holders = (data).map((image, id) => {
         if(id <= 8){
+            usedImages.push(image.id)
             return (
                 <article key={id} data-image-layout="square">
                     <div className="tile">

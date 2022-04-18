@@ -6,7 +6,10 @@ import {
 } from "react-router-dom";
 import Home from './Components/Home/default';
 
-// POCs
+// Layouts
+import Placeholder from './Components/Apis/Placeholder/default';
+
+// Layouts
 import Layouts from './Components/Layouts/default';
 import Card from './Components/Layouts/Card/default';
 import Panel from './Components/Layouts/Panel/default';
@@ -44,6 +47,13 @@ function App() {
       <Switch>
         <Route exact path='/'>
           <Home />
+        </Route>
+      </Switch>
+
+      {/* Apis */}
+      <Switch>
+        <Route exact path='/apis'>
+          <Placeholder />
         </Route>
       </Switch>
 
