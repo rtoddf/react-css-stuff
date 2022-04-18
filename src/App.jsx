@@ -7,6 +7,7 @@ import {
 import Home from './Components/Home/default';
 
 // Layouts
+import Apis from './Components/Apis/default';
 import Placeholder from './Components/Apis/Placeholder/default';
 
 // Layouts
@@ -53,6 +54,11 @@ function App() {
       {/* Apis */}
       <Switch>
         <Route exact path='/apis'>
+          <Apis />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/apis/placeholder'>
           <Placeholder />
         </Route>
       </Switch>

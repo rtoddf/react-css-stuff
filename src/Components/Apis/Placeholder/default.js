@@ -1,11 +1,11 @@
 import React from 'react';
-import Apis from '../../../Apis/default';
+import GetPlaceHolderData from '../../../Apis/GetPlaceHolderData';
 
 function PlaceHolder() {
   return (
     <>
       <h3>Placeholder will be here</h3>
-      <Apis />;
+      <GetPlaceHolderData />
     </>
   );
 }
