@@ -3,15 +3,22 @@ import axios from 'axios';
 
 function GetItunesData() {
   const [images, setImages] = useState([]);
+  const [artistName, setArtistName] = useState('Charlie Puth');
+  const [songTitle, setSongTitle] = useState('Marvin Gaye');
+  const entity = 'musicTrack';
 
   useEffect(() => {
     axios
       .get(
-        'http://itunes.apple.com/search?term=Charlie+Puth+Marvin+Gaye&entity=musicTrack'
+        `http://itunes.apple.com/search?term=${artistName.replace(
+          / /g,
+          '+'
+        )}+${songTitle.replace(/ /g, '+')}&entity=${entity}`
       )
       .then((res) => {
         console.log('res: ', res.data.results);
         setImages(res.data.results);
+        setArtistName(artistName);
       })
       .catch((err) => {
         console.log('err: ', err);
@@ -20,9 +27,14 @@ function GetItunesData() {
 
   return (
     <>
-      <h1>itunes</h1>
+      <h1>{artistName}</h1>
+      <p>{songTitle}</p>
       {images.map((image, index) => (
-        <img key={index} src={image.artworkUrl100} alt='name' />
+        <img
+          key={index}
+          src={image.artworkUrl100.replace('100x100', '225x225')}
+          alt={image.artistName}
+        />
       ))}
     </>
   );
