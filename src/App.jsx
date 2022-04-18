@@ -9,6 +9,7 @@ import Home from './Components/Home/default';
 // Layouts
 import Apis from './Components/Apis/default';
 import Placeholder from './Components/Apis/Placeholder/default';
+import Itunes from './Components/Apis/Itunes/default';
 
 // Layouts
 import Layouts from './Components/Layouts/default';
@@ -60,6 +61,11 @@ function App() {
       <Switch>
         <Route path='/apis/placeholder'>
           <Placeholder />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/apis/itunes/images'>
+          <Itunes />
         </Route>
       </Switch>
 
