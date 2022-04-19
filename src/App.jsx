@@ -6,10 +6,15 @@ import {
 } from "react-router-dom";
 import Home from './Components/Home/default';
 
-// Layouts
+// Three
+import Three from './Components/Three/default';
+import Test from './Components/Three/Test/default';
+
+// Apis
 import Apis from './Components/Apis/default';
 import Placeholder from './Components/Apis/Placeholder/default';
-import Itunes from './Components/Apis/Itunes/default';
+import ItunesImages from './Components/Apis/Itunes/ItunesImages';
+import ItunesArtistInfo from './Components/Apis/Itunes/ItunesArtistInfo';
 
 // Layouts
 import Layouts from './Components/Layouts/default';
@@ -52,6 +57,18 @@ function App() {
         </Route>
       </Switch>
 
+      {/* Three */}
+      <Switch>
+        <Route exact path='/three'>
+          <Three />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/test'>
+          <Test />
+        </Route>
+      </Switch>
+
       {/* Apis */}
       <Switch>
         <Route exact path='/apis'>
@@ -65,9 +82,15 @@ function App() {
       </Switch>
       <Switch>
         <Route path='/apis/itunes/images'>
-          <Itunes />
+          <ItunesImages />
         </Route>
       </Switch>
+      <Switch>
+        <Route path='/apis/itunes/artist'>
+          <ItunesArtistInfo />
+        </Route>
+      </Switch>
+      
 
       {/* Layouts */}
       <Switch>

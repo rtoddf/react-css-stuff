@@ -2,7 +2,7 @@ import React from 'react';
 import { ItunesData } from '../../../Apis/Itunes';
 import './default.scss';
 
-function Itunes() {
+function ItunesImages() {
   const artistName = 'Charlie Puth';
   const songTitle = 'Marvin Gaye';
   const entity = 'musicTrack';
@@ -33,4 +33,4 @@ function Itunes() {
   );
 }
 
-export default Itunes;
+export default ItunesImages;
