@@ -49,16 +49,22 @@
             "items": [
                 {
                     "id": "three-1",
-                    "link": "/three/test",
-                    "title": "Three JS Test",
+                    "link": "/three/wireframes",
+                    "title": "Wireframes",
                     "image": "placeholder.jpg"
                 },
                 {
                     "id": "three-2",
                     "link": "/three/boxshape",
-                    "title": "Three JS - Box Shape",
+                    "title": "Box Shape",
                     "image": "placeholder.jpg"
-                }             
+                },
+                {
+                    "id": "three-3",
+                    "link": "/three/test",
+                    "title": "Test",
+                    "image": "placeholder.jpg"
+                }
             ]
         },
         "apis":

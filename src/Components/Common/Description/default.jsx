@@ -1,5 +1,4 @@
 import React from 'react';
-import Menu from '../Menu/default';
 
 function Description({ title, copy }) {
     return (

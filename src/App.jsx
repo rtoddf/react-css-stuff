@@ -8,8 +8,9 @@ import Home from './Components/Home/default';
 
 // Three
 import Three from './Components/Three/default';
-import Test from './Components/Three/Test/default';
+import Wireframes from './Components/Three/Wireframes/default';
 import BoxShape from './Components/Three/BoxShape/default';
+import Test from './Components/Three/Test/default';
 
 // Apis
 import Apis from './Components/Apis/default';
@@ -62,6 +63,11 @@ function App() {
       <Switch>
         <Route exact path='/three'>
           <Three />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/wireframes'>
+          <Wireframes />
         </Route>
       </Switch>
       <Switch>
