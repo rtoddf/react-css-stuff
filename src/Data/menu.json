@@ -52,6 +52,12 @@
                     "link": "/three/test",
                     "title": "Three JS Test",
                     "image": "placeholder.jpg"
+                },
+                {
+                    "id": "three-2",
+                    "link": "/three/boxshape",
+                    "title": "Three JS - Box Shape",
+                    "image": "placeholder.jpg"
                 }             
             ]
         },

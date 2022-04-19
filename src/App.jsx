@@ -9,6 +9,7 @@ import Home from './Components/Home/default';
 // Three
 import Three from './Components/Three/default';
 import Test from './Components/Three/Test/default';
+import BoxShape from './Components/Three/BoxShape/default';
 
 // Apis
 import Apis from './Components/Apis/default';
@@ -64,10 +65,15 @@ function App() {
         </Route>
       </Switch>
       <Switch>
+        <Route path='/three/boxshape'>
+          <BoxShape />
+        </Route>
+      </Switch>
+      <Switch>
         <Route path='/three/test'>
           <Test />
         </Route>
-      </Switch>
+      </Switch>      
 
       {/* Apis */}
       <Switch>
