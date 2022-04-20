@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { createLight } from '../utilities/createLight';
 import Description from '../../Common/Description/default';
 import '../default.scss';
 
@@ -38,17 +39,17 @@ function ConeShape() {
         orbit.enableZoom = false;
 
         // create light1
-        const light1 = new THREE.PointLight(0xffffff, 1, 2000);
+        const light1 = createLight();
         light1.position.set(200, 0, 200);
         scene.add(light1);
 
         // create light2
-        const light2 = new THREE.PointLight(0xffffff, 1, 2000);
+        const light2 = createLight();
         light2.position.set(100, 200, 100);
         scene.add(light2);
 
         // create light3
-        const light3 = new THREE.PointLight(0xffffff, 1, 2000);
+        const light3 = createLight();
         light3.position.set(-100, -200, -100);
         scene.add(light3);
 
