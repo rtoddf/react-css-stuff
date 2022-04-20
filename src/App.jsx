@@ -10,6 +10,7 @@ import Home from './Components/Home/default';
 import Three from './Components/Three/default';
 import Wireframes from './Components/Three/Wireframes/default';
 import BoxShape from './Components/Three/BoxShape/default';
+import ConeShape from './Components/Three/ConeShape/default';
 import Test from './Components/Three/Test/default';
 
 // Apis
@@ -73,6 +74,11 @@ function App() {
       <Switch>
         <Route path='/three/boxshape'>
           <BoxShape />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/coneshape'>
+          <ConeShape />
         </Route>
       </Switch>
       <Switch>

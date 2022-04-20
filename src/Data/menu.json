@@ -61,6 +61,12 @@
                 },
                 {
                     "id": "three-3",
+                    "link": "/three/coneshape",
+                    "title": "Cone Shape",
+                    "image": "placeholder.jpg"
+                },
+                {
+                    "id": "three-4",
                     "link": "/three/test",
                     "title": "Test",
                     "image": "placeholder.jpg"
