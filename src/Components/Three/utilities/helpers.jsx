@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import settings from './settings';
+import settings from '../Wireframes/settings';
 
 export function getShapeSettings(shape){
     let geometry = '';

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import * as THREE from 'three';
-import { getShapeSettings } from './helper';
+import { getShapeSettings } from '../utilities/helpers';
 import settings from './settings';
 import Description from '../../Common/Description/default';
 import '../default.scss';
