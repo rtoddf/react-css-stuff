@@ -66,6 +66,12 @@
                     "image": "placeholder.jpg"
                 },
                 {
+                    "id": "three-5",
+                    "link": "/three/circleshape",
+                    "title": "Cirle Shape",
+                    "image": "placeholder.jpg"
+                },
+                {
                     "id": "three-4",
                     "link": "/three/test",
                     "title": "Test",
