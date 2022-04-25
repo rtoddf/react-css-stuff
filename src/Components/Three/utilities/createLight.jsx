@@ -1,12 +1,25 @@
 import * as THREE from 'three';
 
-export function createLight(type, color, intensity, distance){
+export function createLight(
+        type,
+        color,
+        intensity, 
+        distance,
+        positionx,
+        positiony,
+        positionz
+    ){
+
     let light;
 
     type = type || 'point';
     color = color || 0xffffff;
     intensity = intensity || 2;
     distance = distance || 2000;
+
+    positionx = positionx || 0;
+    positiony = positiony || 0;
+    positionz = positionz || 0;
 
     switch (type) {
         case 'point':
@@ -18,6 +31,8 @@ export function createLight(type, color, intensity, distance){
         default:
             light = new THREE.PointLight(color, intensity, distance);
         }
+
+    light.position.set(positionx, positiony, positionz);
 
     return light;
 }

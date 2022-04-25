@@ -1,11 +1,13 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { createConeShape } from '../utilities/createShape';
+import { createCamera } from '../utilities/createCamera';
 import { createLight } from '../utilities/createLight';
 import Description from '../../Common/Description/default';
 import '../default.scss';
 
-function ConeShape() {
+function CircleShape() {
     useEffect(() => {
         const container = document.getElementById('shape-holder');
         const canvasWidth = document.getElementById('shape-holder').offsetWidth;
@@ -13,16 +15,7 @@ function ConeShape() {
 
         // create a scene
         const scene = new THREE.Scene();
-
-        // create a camera
-        const camera = new THREE.PerspectiveCamera(
-            50, // field of view
-            canvasWidth / canvasHeight, // aspect ratio
-            1, // near
-            5000 // far
-        );
-        // position the camera so you're not on top of the geometry
-        camera.position.z = 600;
+        const camera = createCamera(canvasWidth, canvasHeight);
 
         // create a renderer
         const renderer = new THREE.WebGLRenderer({
@@ -38,43 +31,31 @@ function ConeShape() {
         var orbit = new OrbitControls(camera, renderer.domElement);
         orbit.enableZoom = false;
 
-        // create light1
-        const light1 = createLight();
-        light1.position.set(200, 0, 200);
-        scene.add(light1);
-
-        // create light2
-        const light2 = createLight();
-        light2.position.set(100, 200, 100);
-        scene.add(light2);
-
-        // create light3
-        const light3 = createLight();
-        light3.position.set(-100, -200, -100);
-        scene.add(light3);
+        // create three lights
+        scene.add(createLight('point', 0xffffff, 2, 2000, 200, 0, 200));
+        scene.add(createLight('point', 0xffffff, 2, 2000, 100, 200, 100));
+        scene.add(createLight('point', 0xffffff, 2, 2000, -100, -200, -100));
 
         // create the cone geometry
-        const coneGeometry = new THREE.ConeGeometry(150, 350, 50, 50, false);
-        const coneMaterial = new THREE.MeshLambertMaterial({
+        const geometry = createConeShape();
+        const material = new THREE.MeshLambertMaterial({
             color: 0x003264,
         });
-        const coneMesh = new THREE.Mesh(coneGeometry, coneMaterial);
-        scene.add(coneMesh);
+        const mesh = new THREE.Mesh(geometry, material);
+        scene.add(mesh);
 
         const animate = () => {
-            coneMesh.rotation.x += 0.02;
-            coneMesh.rotation.z += 0.02;
+            mesh.rotation.x += 0.02;
+            mesh.rotation.z += 0.02;
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
         };
         animate();
     }, [])
 
-    // create a class for this from the Yourtube example
-
     return (
         <>
-            <Description title="Cone Box - Shiny Material" copy="" />
+            <Description title="Circle - Shiny Material" copy="" />
             <div className="grid">
                 <div id="shape-holder"></div>
             </div>
@@ -82,4 +63,4 @@ function ConeShape() {
     )
 }
 
-export default ConeShape;
+export default CircleShape;

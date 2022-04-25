@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { createCircleShape } from '../utilities/createShape';
 import { createCamera } from '../utilities/createCamera';
 import { createLight } from '../utilities/createLight';
 import Description from '../../Common/Description/default';
@@ -14,10 +15,7 @@ function CircleShape() {
 
         // create a scene
         const scene = new THREE.Scene();
-
-        
-        const camera = createCamera(canvasWidth, canvasHeight);
-        
+        const camera = createCamera(canvasWidth, canvasHeight, 5, 1, 5000, 0, 0, 200);
 
         // create a renderer
         const renderer = new THREE.WebGLRenderer({
@@ -33,32 +31,22 @@ function CircleShape() {
         var orbit = new OrbitControls(camera, renderer.domElement);
         orbit.enableZoom = false;
 
-        // create light1
-        const light1 = createLight();
-        light1.position.set(200, 0, 200);
-        scene.add(light1);
-
-        // create light2
-        const light2 = createLight();
-        light2.position.set(100, 200, 100);
-        scene.add(light2);
-
-        // create light3
-        const light3 = createLight();
-        light3.position.set(-100, -200, -100);
-        scene.add(light3);
+        // create three lights
+        scene.add(createLight('point', 0xffffff, 2, 2000, 200, 0, 200));
+        scene.add(createLight('point', 0xffffff, 2, 2000, 100, 200, 100));
+        scene.add(createLight('point', 0xffffff, 2, 2000, -100, -200, -100));
 
         // create the cone geometry
-        const coneGeometry = new THREE.ConeGeometry(150, 350, 50, 50, false);
-        const coneMaterial = new THREE.MeshLambertMaterial({
+        const geometry = createCircleShape(5, 32, 0x002200);
+        const material = new THREE.MeshPhongMaterial({
             color: 0x003264,
         });
-        const coneMesh = new THREE.Mesh(coneGeometry, coneMaterial);
-        scene.add(coneMesh);
+        const mesh = new THREE.Mesh(geometry, material);
+        scene.add(mesh);
 
         const animate = () => {
-            coneMesh.rotation.x += 0.02;
-            coneMesh.rotation.z += 0.02;
+            mesh.rotation.x += 0.02;
+            mesh.rotation.z += 0.02;
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
         };

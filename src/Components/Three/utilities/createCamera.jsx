@@ -10,6 +10,9 @@ export function createCamera(
         positiony,
         positionz
     ){
+
+    console.log('positionz: ', positionz)
+
     fov = fov || 50;
     near = near || 1;
     far = far || 5000;
