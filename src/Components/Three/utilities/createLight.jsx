@@ -14,7 +14,7 @@ export function createLight(
 
     type = type || 'point';
     color = color || 0xffffff;
-    intensity = intensity || 2;
+    intensity = intensity || 1;
     distance = distance || 2000;
 
     positionx = positionx || 0;

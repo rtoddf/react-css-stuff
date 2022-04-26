@@ -33,25 +33,20 @@ export function createCircleShape(
     thetaStart,
     thetaEnd
     ){
-
-        console.log('radius: ', radius)
-        console.log('segments: ', segments)
-        console.log('color: ', color)
+        const π = Math.PI
 
         radius = radius || 100;
         segments = segments || 100;
         color = color || 0x002200;
-        thetaStart = thetaStart || 0;
-        thetaEnd = thetaEnd || 6.3;
+        thetaStart = thetaStart || 2 * π;
+        thetaEnd = thetaEnd || 2 * π;
 
         // radius — Radius of the circle, default = 1.
         // segments — Number of segments (triangles), minimum = 3, default = 8.
         // thetaStart — Start angle for first segment, default = 0 (three o'clock position).
         // thetaLength — The central angle, often called theta, of the circular sector. The default is 2*Pi, which makes for a complete circle.
     
-        const circleGeometry = new THREE.CircleGeometry(radius, segments);
-        // const circleGeometry = new THREE.CircleGeometry(radius, segments, color, thetaStart, thetaEnd);
-        // const circleGeometry = new THREE.CircleGeometry( 5, 32 );
+        const circleGeometry = new THREE.CircleGeometry(radius, segments, color, thetaStart, thetaEnd);
 
     return circleGeometry;
 }

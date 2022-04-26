@@ -15,7 +15,7 @@ function CircleShape() {
 
         // create a scene
         const scene = new THREE.Scene();
-        const camera = createCamera(canvasWidth, canvasHeight, 5, 1, 5000, 0, 0, 200);
+        const camera = createCamera(canvasWidth, canvasHeight, 1000, 1, 5000, 0, 0, 200);
 
         // create a renderer
         const renderer = new THREE.WebGLRenderer({
@@ -32,21 +32,20 @@ function CircleShape() {
         orbit.enableZoom = false;
 
         // create three lights
-        scene.add(createLight('point', 0xffffff, 2, 2000, 200, 0, 200));
-        scene.add(createLight('point', 0xffffff, 2, 2000, 100, 200, 100));
-        scene.add(createLight('point', 0xffffff, 2, 2000, -100, -200, -100));
+        scene.add(createLight('point', 0xffff00, 3, 700, 200, 0, 200));
+        scene.add(createLight('point', 0xffffff, 3, 700, 200, 0, -200));
 
         // create the cone geometry
-        const geometry = createCircleShape(5, 32, 0x002200);
+        const geometry = createCircleShape(100, 100, 0x002200, 0, 6.3);
         const material = new THREE.MeshPhongMaterial({
-            color: 0x003264,
+            color: 0x002200,
         });
         const mesh = new THREE.Mesh(geometry, material);
         scene.add(mesh);
 
         const animate = () => {
             mesh.rotation.x += 0.02;
-            mesh.rotation.z += 0.02;
+            mesh.rotation.y += 0.02;
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
         };
