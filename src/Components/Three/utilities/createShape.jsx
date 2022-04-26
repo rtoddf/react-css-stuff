@@ -51,6 +51,7 @@ export function createCircleShape(
     return circleGeometry;
 }
 
+// fix this. it doesn't need to be hardcoded
 export function createCylinderShape(
     radius,
     segments,
@@ -78,4 +79,32 @@ export function createCylinderShape(
         const cylinderGeometry = new THREE.CylinderGeometry(30, 60, 100, 100, 30, false)
 
     return cylinderGeometry;
+}
+
+export function createTorusShape(
+    radius,
+    tube,
+    color,
+    radialSegments,
+    tubularSegments,
+    arc
+    ){
+        const π = Math.PI
+
+        radius = radius || 1;
+        tube = tube || 0.4;
+        color = color || 0xffffff;
+        radialSegments = radialSegments || 8;
+        tubularSegments = tubularSegments || 6;
+        arc = arc || 2 * π;
+
+        // radius - Radius of the torus, from the center of the torus to the center of the tube. Default is 1.
+        // tube — Radius of the tube. Default is 0.4.
+        // radialSegments — Default is 8
+        // tubularSegments — Default is 6.
+        // arc — Central angle. Default is Math.PI * 2.
+
+        const torusGeometry = new THREE.TorusGeometry(radius, tube, radialSegments, tubularSegments, arc)
+
+    return torusGeometry;
 }

@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
-import { createCylinderShape } from '../utilities/createShape';
+import { createTorusShape } from '../utilities/createShape';
 import { createCamera } from '../utilities/createCamera';
 import { createLight } from '../utilities/createLight';
 import Description from '../../Common/Description/default';
 import '../default.scss';
 
-function CylinderShape() {
+function TorusShape() {
     useEffect(() => {
         const container = document.getElementById('shape-holder');
         const canvasWidth = document.getElementById('shape-holder').offsetWidth;
@@ -14,7 +14,7 @@ function CylinderShape() {
 
         // create a scene
         const scene = new THREE.Scene();
-        const camera = createCamera(canvasWidth, canvasHeight, 50, 1, 1000, 0, 0, 300);
+        const camera = createCamera(canvasWidth, canvasHeight, 50, 1, 1000, 0, 0, 225);
 
         // create a renderer
         const renderer = new THREE.WebGLRenderer({
@@ -28,19 +28,18 @@ function CylinderShape() {
         container.append(renderer.domElement);
 
         // create three lights
-        scene.add(createLight('point', 0xae0000, 2, 2000, 500, 0, 200));
-        scene.add(createLight('point', 0xffff00, 2, 2000, -500, 200, 200));
+        scene.add(createLight('point', 0x003264, 2, 2000, 400, 0, 100));
+        scene.add(createLight('point', 0x8403a9, 2, 2000, -700, 0, 200));
 
         // create the cone geometry
-        const geometry = createCylinderShape();
-        const material = new THREE.MeshPhongMaterial({
-            color: 0xffffff,
-        });
+        const geometry = createTorusShape(50, 20, 0xffffff, 50, 100);
+        const material = new THREE.MeshPhongMaterial();
         const mesh = new THREE.Mesh(geometry, material);
         scene.add(mesh);
 
         const animate = () => {
-            mesh.rotation.x += 0.03;
+            mesh.rotation.x += 0.02;
+            mesh.rotation.y += 0.02;
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
         };
@@ -50,7 +49,7 @@ function CylinderShape() {
 
     return (
         <>
-            <Description title="Cylinder" copy="" />
+            <Description title="Torus - Shiny Material" copy="" />
             <div className="grid">
                 <div id="shape-holder"></div>
             </div>
@@ -58,4 +57,4 @@ function CylinderShape() {
     )
 }
 
-export default CylinderShape;
+export default TorusShape;

@@ -78,6 +78,12 @@
                     "image": "threejs/thumbnails/cylinder-shape.jpg"
                 },
                 {
+                    "id": "three-6",
+                    "link": "/three/torusshape",
+                    "title": "Torus Shape",
+                    "image": "threejs/thumbnails/cylinder-shape.jpg"
+                },
+                {
                     "id": "three-4",
                     "link": "/three/test",
                     "title": "Test",
