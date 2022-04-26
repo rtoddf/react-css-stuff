@@ -12,6 +12,7 @@ import Wireframes from './Components/Three/Wireframes/default';
 import BoxShape from './Components/Three/BoxShape/default';
 import ConeShape from './Components/Three/ConeShape/default';
 import CircleShape from './Components/Three/CircleShape/default';
+import CylinderShape from './Components/Three/CylinderShape/default';
 
 import Test from './Components/Three/Test/default';
 
@@ -88,7 +89,11 @@ function App() {
           <CircleShape />
         </Route>
       </Switch>
-
+      <Switch>
+        <Route path='/three/cylindershape'>
+          <CylinderShape />
+        </Route>
+      </Switch>
       
 
       <Switch>
