@@ -51,22 +51,24 @@ export function createCircleShape(
     return circleGeometry;
 }
 
-// fix this. it doesn't need to be hardcoded
 export function createCylinderShape(
-    radius,
-    segments,
-    color,
-    thetaStart,
-    thetaEnd
+    radiusTop,
+    radiusBottom,
+    height,
+    radialSegments,
+    heightSegments,
+    openEnded
     ){
-        const π = Math.PI
+        // may be needed later for a cylinder param
+        // const π = Math.PI
 
-        radius = radius || 100;
-        segments = segments || 100;
-        color = color || 0x002200;
-        thetaStart = thetaStart || 2 * π;
-        thetaEnd = thetaEnd || 2 * π;
-
+        radiusTop = radiusTop || 30;
+        radiusBottom = radiusBottom || 60;
+        height = height || 100;
+        radialSegments = radialSegments || 100;
+        heightSegments = heightSegments || 30;
+        openEnded = openEnded || false;
+        
         // radiusTop — Radius of the cylinder at the top. Default is 1.
         // radiusBottom — Radius of the cylinder at the bottom. Default is 1.
         // height — Height of the cylinder. Default is 1.
@@ -76,7 +78,7 @@ export function createCylinderShape(
         // thetaStart — Start angle for first segment, default = 0 (three o'clock position).
         // thetaLength — The central angle, often called theta, of the circular sector. The default is 2*Pi, which makes for a complete cylinder.
     
-        const cylinderGeometry = new THREE.CylinderGeometry(30, 60, 100, 100, 30, false)
+        const cylinderGeometry = new THREE.CylinderGeometry(radiusTop, radiusBottom, height, radialSegments, heightSegments, openEnded)
 
     return cylinderGeometry;
 }
