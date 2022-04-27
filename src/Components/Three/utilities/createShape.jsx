@@ -1,5 +1,32 @@
 import * as THREE from 'three';
 
+const π = Math.PI;
+
+export function createBoxShape(
+    width,
+    height,
+    depth,
+    color
+    ){
+        width = width || 100;
+        height = height || 100;
+        depth = depth || 100;
+        color = color || 0xffffff;
+
+        // width — Width; that is, the length of the edges parallel to the X axis. Optional; defaults to 1.
+        // height — Height; that is, the length of the edges parallel to the Y axis. Optional; defaults to 1.
+        // depth — Depth; that is, the length of the edges parallel to the Z axis. Optional; defaults to 1.
+        // widthSegments — Number of segmented rectangular faces along the width of the sides. Optional; defaults to 1.
+        // heightSegments — Number of segmented rectangular faces along the height of the sides. Optional; defaults to 1.
+        // depthSegments — Number of segmented rectangular faces along the depth of the sides. Optional; defaults to 1.
+
+        const geometry = new THREE.BoxGeometry(width, height, depth);
+        const material = new THREE.MeshPhongMaterial({ color: 0xffffff });
+        const mesh = new THREE.Mesh(geometry, material)
+
+    return mesh;
+}
+
 export function createConeShape(
     radius,
     height,
@@ -21,9 +48,9 @@ export function createConeShape(
         // thetaStart — Start angle for first segment, default = 0 (three o'clock position).
         // thetaLength — The central angle, often called theta, of the circular sector. The default is 2*Pi, which makes for a complete cone.
     
-        const coneGeometry = new THREE.ConeGeometry(radius, height, radialSegments, heightSegments, openEnded);
+        const geometry = new THREE.ConeGeometry(radius, height, radialSegments, heightSegments, openEnded);
 
-    return coneGeometry;
+    return geometry;
 }
 
 export function createCircleShape(
@@ -33,8 +60,6 @@ export function createCircleShape(
     thetaStart,
     thetaEnd
     ){
-        const π = Math.PI
-
         radius = radius || 100;
         segments = segments || 100;
         color = color || 0x002200;
@@ -46,9 +71,9 @@ export function createCircleShape(
         // thetaStart — Start angle for first segment, default = 0 (three o'clock position).
         // thetaLength — The central angle, often called theta, of the circular sector. The default is 2*Pi, which makes for a complete circle.
     
-        const circleGeometry = new THREE.CircleGeometry(radius, segments, color, thetaStart, thetaEnd);
+        const geometry = new THREE.CircleGeometry(radius, segments, color, thetaStart, thetaEnd);
 
-    return circleGeometry;
+    return geometry;
 }
 
 export function createCylinderShape(
@@ -59,9 +84,6 @@ export function createCylinderShape(
     heightSegments,
     openEnded
     ){
-        // may be needed later for a cylinder param
-        // const π = Math.PI
-
         radiusTop = radiusTop || 30;
         radiusBottom = radiusBottom || 60;
         height = height || 100;
@@ -78,9 +100,9 @@ export function createCylinderShape(
         // thetaStart — Start angle for first segment, default = 0 (three o'clock position).
         // thetaLength — The central angle, often called theta, of the circular sector. The default is 2*Pi, which makes for a complete cylinder.
     
-        const cylinderGeometry = new THREE.CylinderGeometry(radiusTop, radiusBottom, height, radialSegments, heightSegments, openEnded)
+        const geometry = new THREE.CylinderGeometry(radiusTop, radiusBottom, height, radialSegments, heightSegments, openEnded)
 
-    return cylinderGeometry;
+    return geometry;
 }
 
 export function createTorusShape(
@@ -91,8 +113,6 @@ export function createTorusShape(
     tubularSegments,
     arc
     ){
-        const π = Math.PI
-
         radius = radius || 1;
         tube = tube || 0.4;
         color = color || 0xffffff;
@@ -106,9 +126,9 @@ export function createTorusShape(
         // tubularSegments — Default is 6.
         // arc — Central angle. Default is Math.PI * 2.
 
-        const torusGeometry = new THREE.TorusGeometry(radius, tube, radialSegments, tubularSegments, arc)
+        const geometry = new THREE.TorusGeometry(radius, tube, radialSegments, tubularSegments, arc)
 
-    return torusGeometry;
+    return geometry;
 }
 
 export function createPlaneShape(
@@ -127,8 +147,8 @@ export function createPlaneShape(
         // widthSegments — Optional. Default is 1.
         // heightSegments — Optional. Default is 1.
 
-        const planeGeometry = new THREE.PlaneGeometry(width, height, wSegments, hSegments)
+        const geometry = new THREE.PlaneGeometry(width, height, wSegments, hSegments)
 
-    return planeGeometry;
+    return geometry;
 }
 

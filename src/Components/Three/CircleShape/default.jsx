@@ -31,7 +31,7 @@ function CircleShape() {
         var orbit = new OrbitControls(camera, renderer.domElement);
         orbit.enableZoom = false;
 
-        // create three lights
+        // create two lights
         scene.add(createLight('point', 0xffff00, 3, 700, 200, 0, 200));
         scene.add(createLight('point', 0xffffff, 3, 700, 200, 0, -200));
 

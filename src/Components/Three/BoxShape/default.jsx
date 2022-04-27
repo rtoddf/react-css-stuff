@@ -1,5 +1,9 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
+import { createCamera } from '../utilities/createCamera';
+import { createLight } from '../utilities/createLight';
+import { createBoxShape } from '../utilities/createShape';
+
 import Description from '../../Common/Description/default';
 import '../default.scss';
 
@@ -13,16 +17,7 @@ function BoxShape() {
         const scene = new THREE.Scene();
 
         // create a camera
-        const camera = new THREE.PerspectiveCamera(
-            1000, // field of view
-            canvasWidth / canvasHeight, // aspect ratio
-            1, // near
-            5000 // far
-        );
-        // position the camera so you're not on top of the geometry
-        camera.position.x = 0;
-        camera.position.y = 0;
-        camera.position.z = 200;
+        const camera = createCamera(canvasWidth, canvasHeight, 1000, 1, 5000, 0, 0, 200);
 
         // create a renderer
         const renderer = new THREE.WebGLRenderer({
@@ -35,36 +30,23 @@ function BoxShape() {
         renderer.setSize(canvasWidth, canvasHeight);
         container.append(renderer.domElement);
 
-        // create light1
-        const light1 = new THREE.PointLight(0xff7700, 2, 2000);
-        light1.castShadow = true;
-        light1.position.set(200, 0, 200);
-        scene.add(light1);
-
-        // create light2
-        const light2 = new THREE.PointLight(0xae0000, 2, 2000);
-        light2.castShadow = true;
-        light2.position.set(0, 0, 200);
-        scene.add(light2);
+        // create two lights
+        // type, color, intensity, distance, xpos, ypos, zpos
+        scene.add(createLight('point', 0xff7700, 2, 2000, 200, 0, 200));
+        scene.add(createLight('point', 0xae0000, 2, 2000, 200, 0, -200));
 
         // create the box geometry
-        const boxGeometry = new THREE.BoxGeometry(100, 100, 100);
-        const boxMaterial = new THREE.MeshPhongMaterial({
-            color: '0xffffff',
-        });
-        const boxMesh = new THREE.Mesh(boxGeometry, boxMaterial);
-        scene.add(boxMesh);
+        const box = createBoxShape(100, 100, 100);
+        scene.add(box);
 
         const animate = () => {
-            boxMesh.rotation.x += 0.02;
-            boxMesh.rotation.z += 0.02;
+            box.rotation.x += 0.02;
+            box.rotation.z += 0.02;
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
         };
         animate();
     }, [])
-
-    // create a class for this from the Yourtube example
 
     return (
         <>
