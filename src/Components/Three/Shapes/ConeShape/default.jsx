@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
-import { createRenderer, createCamera, createLight, createMaterial } from '../utilities/default';
-import { createConeShape } from '../utilities/createShape';
-import Description from '../../Common/Description/default';
-import '../default.scss';
+import { createRenderer, createCamera, createLight, createMaterial } from '../../utilities/default';
+import { createConeShape } from '../../utilities/createShape';
+import Description from '../../../Common/Description/default';
+import '../../default.scss';
 
 function CircleShape() {
     useEffect(() => {

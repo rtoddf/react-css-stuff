@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
-import { createRenderer, createCamera, createLight, createMaterial } from '../utilities/default';
-import { createPlaneShape } from '../utilities/createShape';
-import Description from '../../Common/Description/default';
-import '../default.scss';
+import { createRenderer, createCamera, createLight, createMaterial } from '../../utilities/default';
+import { createBoxShape } from '../../utilities/createShape';
+import Description from '../../../Common/Description/default';
+import '../../default.scss';
 
-function PlaneShape() {
+function BoxShape() {
     useEffect(() => {
         const container = document.getElementById('shape-holder');
         const canvasWidth = document.getElementById('shape-holder').offsetWidth;
@@ -13,24 +13,27 @@ function PlaneShape() {
 
         // create a scene
         const scene = new THREE.Scene();
+
+        // create a camera
         const camera = createCamera(canvasWidth, canvasHeight, 1000, 1, 5000, 0, 0, 200);
 
         // create a renderer
         const renderer = createRenderer(container, canvasWidth, canvasHeight)
 
-        // create three lights
-        scene.add(createLight('point', 0xffffff, 2, 700, 200, 0, 200));
-        scene.add(createLight('point', 0xffffff, 2, 700, 200, 0, -200));
+        // create two lights
+        // type, color, intensity, distance, xpos, ypos, zpos
+        scene.add(createLight('point', 0xff7700, 2, 2000, 200, 0, 200));
+        scene.add(createLight('point', 0xae0000, 2, 2000, 200, 0, -200));
 
-        // create the cone geometry
-        const torus = createPlaneShape();
-        const material = createMaterial('meshPhong', 0x8d0196);
-        const mesh = new THREE.Mesh(torus, material)
+        // create the box geometry
+        const box = createBoxShape(100, 100, 100);
+        const material = createMaterial();
+        const mesh = new THREE.Mesh(box, material)
         scene.add(mesh);
 
         const animate = () => {
             mesh.rotation.x += 0.02;
-            mesh.rotation.y += 0.02;
+            mesh.rotation.z += 0.02;
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
         };
@@ -39,7 +42,7 @@ function PlaneShape() {
 
     return (
         <>
-            <Description title="Plane - Shiny Material" copy="" />
+            <Description title="Simple Box - Shiny Material" copy="" />
             <div className="grid">
                 <div id="shape-holder"></div>
             </div>
@@ -47,4 +50,4 @@ function PlaneShape() {
     )
 }
 
-export default PlaneShape;
+export default BoxShape;

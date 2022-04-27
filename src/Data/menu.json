@@ -55,37 +55,37 @@
                 },
                 {
                     "id": "three-2",
-                    "link": "/three/boxshape",
+                    "link": "/three/shape/boxshape",
                     "title": "Box Shape",
                     "image": "threejs/thumbnails/box-shape.jpg"
                 },
                 {
                     "id": "three-3",
-                    "link": "/three/coneshape",
+                    "link": "/three/shape/coneshape",
                     "title": "Cone Shape",
                     "image": "threejs/thumbnails/cone-shape.jpg"
                 },
                 {
                     "id": "three-5",
-                    "link": "/three/circleshape",
+                    "link": "/three/shape/circleshape",
                     "title": "Cirle Shape",
                     "image": "threejs/thumbnails/circle-shape.jpg"
                 },
                 {
                     "id": "three-6",
-                    "link": "/three/cylindershape",
+                    "link": "/three/shape/cylindershape",
                     "title": "Cylinder Shape",
                     "image": "threejs/thumbnails/cylinder-shape.jpg"
                 },
                 {
                     "id": "three-6",
-                    "link": "/three/torusshape",
+                    "link": "/three/shape/torusshape",
                     "title": "Torus Shape",
                     "image": "threejs/thumbnails/torus-shape.jpg"
                 },
                 {
                     "id": "three-6",
-                    "link": "/three/planeshape",
+                    "link": "/three/shape/planeshape",
                     "title": "Plane Shape",
                     "image": "threejs/thumbnails/torus-shape.jpg"
                 },

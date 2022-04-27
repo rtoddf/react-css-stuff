@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
-import { createRenderer, createCamera, createLight, createMaterial } from '../utilities/default';
-import { createCircleShape } from '../utilities/createShape';
-import Description from '../../Common/Description/default';
-import '../default.scss';
+import { createRenderer, createCamera, createLight, createMaterial } from '../../utilities/default';
+import { createPlaneShape } from '../../utilities/createShape';
+import Description from '../../../Common/Description/default';
+import '../../default.scss';
 
-function CircleShape() {
+function PlaneShape() {
     useEffect(() => {
         const container = document.getElementById('shape-holder');
         const canvasWidth = document.getElementById('shape-holder').offsetWidth;
@@ -18,14 +18,14 @@ function CircleShape() {
         // create a renderer
         const renderer = createRenderer(container, canvasWidth, canvasHeight)
 
-        // create two lights
-        scene.add(createLight('point', 0xffff00, 3, 700, 200, 0, 200));
-        scene.add(createLight('point', 0xffffff, 3, 700, 200, 0, -200));
+        // create three lights
+        scene.add(createLight('point', 0xffffff, 2, 700, 200, 0, 200));
+        scene.add(createLight('point', 0xffffff, 2, 700, 200, 0, -200));
 
         // create the cone geometry
-        const circle = createCircleShape(100, 100, 0x002200, 0, 6.3);
-        const material = createMaterial('meshPhong', 0x002200);
-        const mesh = new THREE.Mesh(circle, material)
+        const torus = createPlaneShape();
+        const material = createMaterial('meshPhong', 0x8d0196);
+        const mesh = new THREE.Mesh(torus, material)
         scene.add(mesh);
 
         const animate = () => {
@@ -39,7 +39,7 @@ function CircleShape() {
 
     return (
         <>
-            <Description title="Circle - Shiny Material" copy="" />
+            <Description title="Plane - Shiny Material" copy="" />
             <div className="grid">
                 <div id="shape-holder"></div>
             </div>
@@ -47,4 +47,4 @@ function CircleShape() {
     )
 }
 
-export default CircleShape;
+export default PlaneShape;

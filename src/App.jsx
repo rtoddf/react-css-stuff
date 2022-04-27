@@ -9,12 +9,12 @@ import Home from './Components/Home/default';
 // Three
 import Three from './Components/Three/default';
 import Wireframes from './Components/Three/Wireframes/default';
-import BoxShape from './Components/Three/BoxShape/default';
-import ConeShape from './Components/Three/ConeShape/default';
-import CircleShape from './Components/Three/CircleShape/default';
-import CylinderShape from './Components/Three/CylinderShape/default';
-import TorusShape from './Components/Three/TorusShape/default';
-import PlaneShape from './Components/Three/PlaneShape/default';
+import BoxShape from './Components/Three/Shapes/BoxShape/default';
+import ConeShape from './Components/Three/Shapes/ConeShape/default';
+import CircleShape from './Components/Three/Shapes/CircleShape/default';
+import CylinderShape from './Components/Three/Shapes/CylinderShape/default';
+import TorusShape from './Components/Three/Shapes/TorusShape/default';
+import PlaneShape from './Components/Three/Shapes/PlaneShape/default';
 
 import Test from './Components/Three/Test/default';
 
@@ -77,32 +77,32 @@ function App() {
         </Route>
       </Switch>
       <Switch>
-        <Route path='/three/boxshape'>
+        <Route path='/three/shape/boxshape'>
           <BoxShape />
         </Route>
       </Switch>
       <Switch>
-        <Route path='/three/coneshape'>
+        <Route path='/three/shape/coneshape'>
           <ConeShape />
         </Route>
       </Switch>
       <Switch>
-        <Route path='/three/circleshape'>
+        <Route path='/three/shape/circleshape'>
           <CircleShape />
         </Route>
       </Switch>
       <Switch>
-        <Route path='/three/cylindershape'>
+        <Route path='/three/shape/cylindershape'>
           <CylinderShape />
         </Route>
       </Switch>
       <Switch>
-        <Route path='/three/torusshape'>
+        <Route path='/three/shape/torusshape'>
           <TorusShape />
         </Route>
       </Switch>
       <Switch>
-        <Route path='/three/planeshape'>
+        <Route path='/three/shape/planeshape'>
           <PlaneShape />
         </Route>
       </Switch>
