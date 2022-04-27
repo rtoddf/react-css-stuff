@@ -14,6 +14,8 @@ import ConeShape from './Components/Three/ConeShape/default';
 import CircleShape from './Components/Three/CircleShape/default';
 import CylinderShape from './Components/Three/CylinderShape/default';
 import TorusShape from './Components/Three/TorusShape/default';
+import PlaneShape from './Components/Three/PlaneShape/default';
+
 import Test from './Components/Three/Test/default';
 
 // Apis
@@ -97,6 +99,11 @@ function App() {
       <Switch>
         <Route path='/three/torusshape'>
           <TorusShape />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/planeshape'>
+          <PlaneShape />
         </Route>
       </Switch>
       

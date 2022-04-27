@@ -81,7 +81,13 @@
                     "id": "three-6",
                     "link": "/three/torusshape",
                     "title": "Torus Shape",
-                    "image": "threejs/thumbnails/cylinder-shape.jpg"
+                    "image": "threejs/thumbnails/torus-shape.jpg"
+                },
+                {
+                    "id": "three-6",
+                    "link": "/three/planeshape",
+                    "title": "Plane Shape",
+                    "image": "threejs/thumbnails/torus-shape.jpg"
                 },
                 {
                     "id": "three-4",

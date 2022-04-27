@@ -110,3 +110,25 @@ export function createTorusShape(
 
     return torusGeometry;
 }
+
+export function createPlaneShape(
+    width,
+    height,
+    wSegments,
+    hSegments
+    ){
+        width = width || 200;
+        height = height || 200;
+        wSegments = wSegments || 32;
+        hSegments = hSegments || 32;
+
+        // width — Width along the X axis. Default is 1.
+        // height — Height along the Y axis. Default is 1.
+        // widthSegments — Optional. Default is 1.
+        // heightSegments — Optional. Default is 1.
+
+        const planeGeometry = new THREE.PlaneGeometry(width, height, wSegments, hSegments)
+
+    return planeGeometry;
+}
+
