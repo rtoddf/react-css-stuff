@@ -4,11 +4,10 @@ export function createRenderer(
         container,
         canvasWidth,
         canvasHeight,
-        antialias,
-        alpha,
         color,
+        antialias,
+        alpha
     ){
-
     antialias = antialias || true;
     alpha = alpha || true;
     color = color || 0xffffff;
@@ -19,7 +18,7 @@ export function createRenderer(
         alpha: alpha,
     });
 
-    renderer.setClearColor(0xffffff);
+    renderer.setClearColor(color);
     renderer.setPixelRatio(devicePixelRatio);
     renderer.setSize(canvasWidth, canvasHeight);
     container.append(renderer.domElement);
@@ -63,62 +62,58 @@ export function createCamera(
 }
 
 export function createLight(
-    type,
-    color,
-    intensity, 
-    distance,
-    positionx,
-    positiony,
-    positionz
-){
+        type,
+        color,
+        intensity, 
+        distance,
+        positionx,
+        positiony,
+        positionz
+    ){
 
-let light;
+    let light;
 
-type = type || 'point';
-color = color || 0xffffff;
-intensity = intensity || 1;
-distance = distance || 2000;
+    type = type || 'point';
+    color = color || 0xffffff;
+    intensity = intensity || 1;
+    distance = distance || 2000;
 
-positionx = positionx || 0;
-positiony = positiony || 0;
-positionz = positionz || 0;
+    positionx = positionx || 0;
+    positiony = positiony || 0;
+    positionz = positionz || 0;
 
-switch (type) {
-    case 'point':
-        light = new THREE.PointLight(color, intensity, distance);
-        break;
-    case 'ambient':
-        light = new THREE.AmbientLight(color, intensity);
-        break;
-    default:
-        light = new THREE.PointLight(color, intensity, distance);
-    }
+    switch (type) {
+        case 'point':
+            light = new THREE.PointLight(color, intensity, distance);
+            break;
+        case 'ambient':
+            light = new THREE.AmbientLight(color, intensity);
+            break;
+        default:
+            light = new THREE.PointLight(color, intensity, distance);
+        }
 
-light.position.set(positionx, positiony, positionz);
+    light.position.set(positionx, positiony, positionz);
 
-return light;
+    return light;
 }
 
-export function createMaterial(
-    type,
-    color
-){
+export function createMaterial(type, color){
+    let material;
 
-let material;
+    type = type || 'meshPhong';
+    color = color || 0xffffff;
 
-type = type || 'meshPhong';
-color = color || 0xffffff;
+    switch (type) {
+        case 'meshPhong':
+            material = new THREE.MeshPhongMaterial({ color });
+            break;
+        case 'meshLambert':
+            material = new THREE.MeshLambertMaterial({ color });
+            break;
+        default:
+            material = new THREE.MeshPhongMaterial({ color });
+        }
 
-switch (type) {
-    case 'meshPhong':
-        material = new THREE.MeshPhongMaterial({ color });
-        break;
-    case 'meshPhong':
-        material = new THREE.MeshPhongMaterial({ color });
-        break;
-    default:
-        material = new THREE.MeshPhongMaterial({ color });
-    }
-
-return material;
+    return material;
 }

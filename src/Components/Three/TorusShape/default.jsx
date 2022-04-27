@@ -29,8 +29,9 @@ function TorusShape() {
         scene.add(mesh);
 
         const animate = () => {
-            mesh.rotation.x += 0.02;
-            mesh.rotation.y += 0.02;
+            mesh.rotation.x += 0.03;
+            mesh.rotation.y += 0.05;
+            mesh.rotation.z += 0.03;
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
         };

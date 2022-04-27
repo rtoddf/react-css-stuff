@@ -26,7 +26,7 @@ function CircleShape() {
 
         // create the cone geometry
         const cone = createConeShape();
-        const material = createMaterial();
+        const material = createMaterial('meshLambert', 0x00ff00);
         const mesh = new THREE.Mesh(cone, material)
         scene.add(mesh);
 
@@ -36,6 +36,9 @@ function CircleShape() {
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
         };
+
+        console.log('typeOf: ', typeof animate)
+
         animate();
     }, [])
 

@@ -16,7 +16,7 @@ function CylinderShape() {
         const camera = createCamera(canvasWidth, canvasHeight, 50, 1, 1000, 0, 0, 300);
 
         // create a renderer
-        const renderer = createRenderer(container, canvasWidth, canvasHeight)
+        const renderer = createRenderer(container, canvasWidth, canvasHeight, 0x111111)
 
         // create three lights
         scene.add(createLight('point', 0xae0000, 2, 2000, 500, 0, 200));
