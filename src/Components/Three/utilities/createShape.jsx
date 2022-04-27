@@ -21,7 +21,7 @@ export function createBoxShape(
         // depthSegments — Number of segmented rectangular faces along the depth of the sides. Optional; defaults to 1.
 
         const geometry = new THREE.BoxGeometry(width, height, depth);
-        const material = new THREE.MeshPhongMaterial({ color: 0xffffff });
+        const material = new THREE.MeshPhongMaterial({ color });
         const mesh = new THREE.Mesh(geometry, material)
 
     return mesh;
@@ -32,13 +32,15 @@ export function createConeShape(
     height,
     radialSegments,
     heightSegments,
-    openEnded
+    openEnded,
+    color
     ){
         radius = radius || 150;
         height = height || 350;
         radialSegments = radialSegments || 50;
         heightSegments = heightSegments || 50;
         openEnded = openEnded || false;
+        color = color || 0xffffff;
 
         // radius — Radius of the cone base. Default is 1.
         // height — Height of the cone. Default is 1.
@@ -49,8 +51,10 @@ export function createConeShape(
         // thetaLength — The central angle, often called theta, of the circular sector. The default is 2*Pi, which makes for a complete cone.
     
         const geometry = new THREE.ConeGeometry(radius, height, radialSegments, heightSegments, openEnded);
+        const material = new THREE.MeshPhongMaterial({ color });
+        const mesh = new THREE.Mesh(geometry, material)
 
-    return geometry;
+    return mesh;
 }
 
 export function createCircleShape(

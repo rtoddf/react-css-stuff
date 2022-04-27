@@ -28,25 +28,19 @@ function CircleShape() {
         renderer.setSize(canvasWidth, canvasHeight);
         container.append(renderer.domElement);
 
-        var orbit = new OrbitControls(camera, renderer.domElement);
-        orbit.enableZoom = false;
-
         // create three lights
-        scene.add(createLight('point', 0xffffff, 2, 2000, 200, 0, 200));
-        scene.add(createLight('point', 0xffffff, 2, 2000, 100, 200, 100));
-        scene.add(createLight('point', 0xffffff, 2, 2000, -100, -200, -100));
+        // type, color, intensity, distance, xpos, ypos, zpos
+        scene.add(createLight('point', 0x003264, 2, 2000, 200, 0, 200));
+        scene.add(createLight('point', 0x003264, 2, 2000, 100, 200, 100));
+        scene.add(createLight('point', 0x003264, 2, 2000, -100, -200, -100));
 
         // create the cone geometry
-        const geometry = createConeShape();
-        const material = new THREE.MeshLambertMaterial({
-            color: 0x003264,
-        });
-        const mesh = new THREE.Mesh(geometry, material);
-        scene.add(mesh);
+        const cone = createConeShape();
+        scene.add(cone);
 
         const animate = () => {
-            mesh.rotation.x += 0.02;
-            mesh.rotation.z += 0.02;
+            cone.rotation.x += 0.02;
+            cone.rotation.z += 0.02;
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
         };
