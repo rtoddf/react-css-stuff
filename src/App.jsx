@@ -6,10 +6,23 @@ import {
 } from "react-router-dom";
 import Home from './Components/Home/default';
 
-// Layouts
+// Three
+import Three from './Components/Three/default';
+import Wireframes from './Components/Three/Wireframes/default';
+import BoxShape from './Components/Three/BoxShape/default';
+import ConeShape from './Components/Three/ConeShape/default';
+import CircleShape from './Components/Three/CircleShape/default';
+import CylinderShape from './Components/Three/CylinderShape/default';
+import TorusShape from './Components/Three/TorusShape/default';
+import PlaneShape from './Components/Three/PlaneShape/default';
+
+import Test from './Components/Three/Test/default';
+
+// Apis
 import Apis from './Components/Apis/default';
 import Placeholder from './Components/Apis/Placeholder/default';
-import Itunes from './Components/Apis/Itunes/default';
+import ItunesImages from './Components/Apis/Itunes/ItunesImages';
+import ItunesArtistInfo from './Components/Apis/Itunes/ItunesArtistInfo';
 
 // Layouts
 import Layouts from './Components/Layouts/default';
@@ -52,6 +65,55 @@ function App() {
         </Route>
       </Switch>
 
+      {/* Three */}
+      <Switch>
+        <Route exact path='/three'>
+          <Three />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/wireframes'>
+          <Wireframes />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/boxshape'>
+          <BoxShape />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/coneshape'>
+          <ConeShape />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/circleshape'>
+          <CircleShape />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/cylindershape'>
+          <CylinderShape />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/torusshape'>
+          <TorusShape />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/planeshape'>
+          <PlaneShape />
+        </Route>
+      </Switch>
+      
+      
+      <Switch>
+        <Route path='/three/test'>
+          <Test />
+        </Route>
+      </Switch>      
+
       {/* Apis */}
       <Switch>
         <Route exact path='/apis'>
@@ -65,9 +127,15 @@ function App() {
       </Switch>
       <Switch>
         <Route path='/apis/itunes/images'>
-          <Itunes />
+          <ItunesImages />
         </Route>
       </Switch>
+      <Switch>
+        <Route path='/apis/itunes/artist'>
+          <ItunesArtistInfo />
+        </Route>
+      </Switch>
+      
 
       {/* Layouts */}
       <Switch>

@@ -1,11 +1,17 @@
 import React from 'react';
-import GetPlaceHolderData from '../../../Apis/GetPlaceHolderData';
+import { JsonPlaceholder } from '../../../Apis/JsonPlaceholder';
 
 function PlaceHolder() {
+  const data = JsonPlaceholder();
+
+  const posts = data.map((post, index) => {
+    return <li key={index}>{post.title}</li>;
+  });
+
   return (
     <>
-      <h3>Placeholder will be here</h3>
-      <GetPlaceHolderData />
+      <h3>Posts</h3>
+      <ul>{posts}</ul>
     </>
   );
 }
