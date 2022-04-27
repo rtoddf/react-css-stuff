@@ -4,6 +4,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { createCircleShape } from '../utilities/createShape';
 import { createCamera } from '../utilities/createCamera';
 import { createLight } from '../utilities/createLight';
+import { createMaterial } from '../utilities/createMaterial';
 import Description from '../../Common/Description/default';
 import '../default.scss';
 
@@ -36,11 +37,9 @@ function CircleShape() {
         scene.add(createLight('point', 0xffffff, 3, 700, 200, 0, -200));
 
         // create the cone geometry
-        const geometry = createCircleShape(100, 100, 0x002200, 0, 6.3);
-        const material = new THREE.MeshPhongMaterial({
-            color: 0x002200,
-        });
-        const mesh = new THREE.Mesh(geometry, material);
+        const circle = createCircleShape(100, 100, 0x002200, 0, 6.3);
+        const material = createMaterial('meshPhong', 0x002200);
+        const mesh = new THREE.Mesh(circle, material)
         scene.add(mesh);
 
         const animate = () => {

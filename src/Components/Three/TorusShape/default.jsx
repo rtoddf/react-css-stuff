@@ -3,6 +3,7 @@ import * as THREE from 'three';
 import { createTorusShape } from '../utilities/createShape';
 import { createCamera } from '../utilities/createCamera';
 import { createLight } from '../utilities/createLight';
+import { createMaterial } from '../utilities/createMaterial';
 import Description from '../../Common/Description/default';
 import '../default.scss';
 
@@ -32,9 +33,9 @@ function TorusShape() {
         scene.add(createLight('point', 0x8403a9, 2, 2000, -700, 0, 200));
 
         // create the cone geometry
-        const geometry = createTorusShape(50, 20, 0xffffff, 50, 100);
-        const material = new THREE.MeshPhongMaterial();
-        const mesh = new THREE.Mesh(geometry, material);
+        const torus = createTorusShape(50, 20, 0xffffff, 50, 100);
+        const material = createMaterial();
+        const mesh = new THREE.Mesh(torus, material)
         scene.add(mesh);
 
         const animate = () => {

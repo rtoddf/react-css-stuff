@@ -5,13 +5,11 @@ const π = Math.PI;
 export function createBoxShape(
     width,
     height,
-    depth,
-    color
+    depth
     ){
         width = width || 100;
         height = height || 100;
         depth = depth || 100;
-        color = color || 0xffffff;
 
         // width — Width; that is, the length of the edges parallel to the X axis. Optional; defaults to 1.
         // height — Height; that is, the length of the edges parallel to the Y axis. Optional; defaults to 1.
@@ -21,10 +19,8 @@ export function createBoxShape(
         // depthSegments — Number of segmented rectangular faces along the depth of the sides. Optional; defaults to 1.
 
         const geometry = new THREE.BoxGeometry(width, height, depth);
-        const material = new THREE.MeshPhongMaterial({ color });
-        const mesh = new THREE.Mesh(geometry, material)
 
-    return mesh;
+    return geometry;
 }
 
 export function createConeShape(
@@ -32,15 +28,13 @@ export function createConeShape(
     height,
     radialSegments,
     heightSegments,
-    openEnded,
-    color
+    openEnded
     ){
         radius = radius || 150;
         height = height || 350;
         radialSegments = radialSegments || 50;
         heightSegments = heightSegments || 50;
         openEnded = openEnded || false;
-        color = color || 0xffffff;
 
         // radius — Radius of the cone base. Default is 1.
         // height — Height of the cone. Default is 1.
@@ -51,10 +45,8 @@ export function createConeShape(
         // thetaLength — The central angle, often called theta, of the circular sector. The default is 2*Pi, which makes for a complete cone.
     
         const geometry = new THREE.ConeGeometry(radius, height, radialSegments, heightSegments, openEnded);
-        const material = new THREE.MeshPhongMaterial({ color });
-        const mesh = new THREE.Mesh(geometry, material)
 
-    return mesh;
+    return geometry;
 }
 
 export function createCircleShape(
@@ -119,7 +111,6 @@ export function createTorusShape(
     ){
         radius = radius || 1;
         tube = tube || 0.4;
-        color = color || 0xffffff;
         radialSegments = radialSegments || 8;
         tubularSegments = tubularSegments || 6;
         arc = arc || 2 * π;

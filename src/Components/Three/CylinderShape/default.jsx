@@ -3,6 +3,7 @@ import * as THREE from 'three';
 import { createCylinderShape } from '../utilities/createShape';
 import { createCamera } from '../utilities/createCamera';
 import { createLight } from '../utilities/createLight';
+import { createMaterial } from '../utilities/createMaterial';
 import Description from '../../Common/Description/default';
 import '../default.scss';
 
@@ -32,11 +33,9 @@ function CylinderShape() {
         scene.add(createLight('point', 0xffff00, 2, 2000, -500, 200, 200));
 
         // create the cone geometry
-        const geometry = createCylinderShape();
-        const material = new THREE.MeshPhongMaterial({
-            color: 0xffffff,
-        });
-        const mesh = new THREE.Mesh(geometry, material);
+        const cylinder = createCylinderShape();
+        const material = createMaterial();
+        const mesh = new THREE.Mesh(cylinder, material)
         scene.add(mesh);
 
         const animate = () => {

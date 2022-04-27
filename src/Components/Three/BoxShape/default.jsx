@@ -3,7 +3,7 @@ import * as THREE from 'three';
 import { createCamera } from '../utilities/createCamera';
 import { createLight } from '../utilities/createLight';
 import { createBoxShape } from '../utilities/createShape';
-
+import { createMaterial } from '../utilities/createMaterial';
 import Description from '../../Common/Description/default';
 import '../default.scss';
 
@@ -37,11 +37,13 @@ function BoxShape() {
 
         // create the box geometry
         const box = createBoxShape(100, 100, 100);
-        scene.add(box);
+        const material = createMaterial();
+        const mesh = new THREE.Mesh(box, material)
+        scene.add(mesh);
 
         const animate = () => {
-            box.rotation.x += 0.02;
-            box.rotation.z += 0.02;
+            mesh.rotation.x += 0.02;
+            mesh.rotation.z += 0.02;
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
         };

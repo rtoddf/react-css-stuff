@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { createConeShape } from '../utilities/createShape';
 import { createCamera } from '../utilities/createCamera';
 import { createLight } from '../utilities/createLight';
+import { createMaterial } from '../utilities/createMaterial';
 import Description from '../../Common/Description/default';
 import '../default.scss';
 
@@ -36,11 +36,13 @@ function CircleShape() {
 
         // create the cone geometry
         const cone = createConeShape();
-        scene.add(cone);
+        const material = createMaterial();
+        const mesh = new THREE.Mesh(cone, material)
+        scene.add(mesh);
 
         const animate = () => {
-            cone.rotation.x += 0.02;
-            cone.rotation.z += 0.02;
+            mesh.rotation.x += 0.02;
+            mesh.rotation.z += 0.02;
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
         };
