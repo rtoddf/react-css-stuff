@@ -1,9 +1,7 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
-import { createCamera } from '../utilities/createCamera';
-import { createLight } from '../utilities/createLight';
+import { createRenderer, createCamera, createLight, createMaterial } from '../utilities/default';
 import { createBoxShape } from '../utilities/createShape';
-import { createMaterial } from '../utilities/createMaterial';
 import Description from '../../Common/Description/default';
 import '../default.scss';
 
@@ -20,15 +18,7 @@ function BoxShape() {
         const camera = createCamera(canvasWidth, canvasHeight, 1000, 1, 5000, 0, 0, 200);
 
         // create a renderer
-        const renderer = new THREE.WebGLRenderer({
-            antialias: true,
-            alpha: true,
-        });
-
-        renderer.setClearColor(0xffffff);
-        renderer.setPixelRatio(devicePixelRatio);
-        renderer.setSize(canvasWidth, canvasHeight);
-        container.append(renderer.domElement);
+        const renderer = createRenderer(container, canvasWidth, canvasHeight)
 
         // create two lights
         // type, color, intensity, distance, xpos, ypos, zpos

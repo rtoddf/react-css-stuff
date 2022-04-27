@@ -1,9 +1,7 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
+import { createRenderer, createCamera, createLight, createMaterial } from '../utilities/default';
 import { createCylinderShape } from '../utilities/createShape';
-import { createCamera } from '../utilities/createCamera';
-import { createLight } from '../utilities/createLight';
-import { createMaterial } from '../utilities/createMaterial';
 import Description from '../../Common/Description/default';
 import '../default.scss';
 
@@ -18,15 +16,7 @@ function CylinderShape() {
         const camera = createCamera(canvasWidth, canvasHeight, 50, 1, 1000, 0, 0, 300);
 
         // create a renderer
-        const renderer = new THREE.WebGLRenderer({
-            antialias: true,
-            alpha: true,
-        });
-
-        renderer.setClearColor(0xffffff);
-        renderer.setPixelRatio(devicePixelRatio);
-        renderer.setSize(canvasWidth, canvasHeight);
-        container.append(renderer.domElement);
+        const renderer = createRenderer(container, canvasWidth, canvasHeight)
 
         // create three lights
         scene.add(createLight('point', 0xae0000, 2, 2000, 500, 0, 200));
