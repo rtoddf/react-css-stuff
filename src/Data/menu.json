@@ -42,62 +42,87 @@
                 }
             ]
         },
-        "three":
-        {
-            "headline": "Three JS",
-            "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor aliquet lacus ut dignissim. In pellentesque lorem eu nisl pretium fermentum. Donec ut tellus imperdiet, vestibulum nisl sed, pellentesque purus. Donec sollicitudin sapien in nibh aliquam pellentesque. Proin sagittis augue non est commodo, quis congue ligula bibendum. Curabitur pellentesque dapibus quam quis imperdiet. Integer venenatis augue consequat diam euismod, a ullamcorper magna varius. Vivamus justo augue, interdum eu ultricies quis, convallis sit amet nunc. Fusce massa nulla, ornare at mauris in, dapibus luctus orci. Aliquam erat volutpat. Duis pulvinar arcu orci, venenatis pellentesque augue bibendum sit amet.",
+    "three": {
+        "lighting": {
+            "headline": "Three JS Lighting",
+            "copy": "",
             "items": [
                 {
-                    "id": "three-1",
+                    "id": "three-test-1",
                     "link": "/three/wireframes",
                     "title": "Wireframes",
                     "image": "threejs/thumbnails/wireframes.jpg"
+                }
+            ]
+        },
+        "shapes": {
+            "headline": "Three JS Shapes",
+            "copy": "",
+            "items": [
+                {
+                    "id": "three-shapes-1",
+                    "link": "/three/shape/sphereshape",
+                    "title": "Sphere Shape",
+                    "image": "placeholder.jpg"
                 },
                 {
-                    "id": "three-2",
+                    "id": "three-shapes-2",
                     "link": "/three/shape/boxshape",
                     "title": "Box Shape",
                     "image": "threejs/thumbnails/box-shape.jpg"
                 },
                 {
-                    "id": "three-3",
+                    "id": "three-shapes-3",
                     "link": "/three/shape/coneshape",
                     "title": "Cone Shape",
                     "image": "threejs/thumbnails/cone-shape.jpg"
                 },
                 {
-                    "id": "three-5",
+                    "id": "three-shapes-4",
                     "link": "/three/shape/circleshape",
                     "title": "Cirle Shape",
                     "image": "threejs/thumbnails/circle-shape.jpg"
                 },
                 {
-                    "id": "three-6",
+                    "id": "three-shapes-5",
                     "link": "/three/shape/cylindershape",
                     "title": "Cylinder Shape",
                     "image": "threejs/thumbnails/cylinder-shape.jpg"
                 },
                 {
-                    "id": "three-6",
+                    "id": "three-shapes-6",
                     "link": "/three/shape/torusshape",
                     "title": "Torus Shape",
                     "image": "threejs/thumbnails/torus-shape.jpg"
                 },
                 {
-                    "id": "three-6",
+                    "id": "three-shapes-7",
                     "link": "/three/shape/planeshape",
                     "title": "Plane Shape",
-                    "image": "threejs/thumbnails/torus-shape.jpg"
+                    "image": "placeholder.jpg"
+                }
+            ]
+        },
+        "tests": {
+            "headline": "Three JS Tests",
+            "copy": "",
+            "items": [
+                {
+                    "id": "three-test-1",
+                    "link": "/three/wireframes",
+                    "title": "Wireframes",
+                    "image": "threejs/thumbnails/wireframes.jpg"
                 },
                 {
-                    "id": "three-4",
+                    "id": "three-test-2",
                     "link": "/three/test",
                     "title": "Test",
                     "image": "placeholder.jpg"
                 }
             ]
-        },
-        "apis":
+        }
+    },
+    "apis":
         {
             "headline": "APIS",
             "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor aliquet lacus ut dignissim. In pellentesque lorem eu nisl pretium fermentum. Donec ut tellus imperdiet, vestibulum nisl sed, pellentesque purus. Donec sollicitudin sapien in nibh aliquam pellentesque. Proin sagittis augue non est commodo, quis congue ligula bibendum. Curabitur pellentesque dapibus quam quis imperdiet. Integer venenatis augue consequat diam euismod, a ullamcorper magna varius. Vivamus justo augue, interdum eu ultricies quis, convallis sit amet nunc. Fusce massa nulla, ornare at mauris in, dapibus luctus orci. Aliquam erat volutpat. Duis pulvinar arcu orci, venenatis pellentesque augue bibendum sit amet.",
@@ -122,7 +147,7 @@
                 }                
             ]
         },
-        "layouts":
+    "layouts":
         {
             "headline": "Layouts",
             "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor aliquet lacus ut dignissim. In pellentesque lorem eu nisl pretium fermentum. Donec ut tellus imperdiet, vestibulum nisl sed, pellentesque purus. Donec sollicitudin sapien in nibh aliquam pellentesque. Proin sagittis augue non est commodo, quis congue ligula bibendum. Curabitur pellentesque dapibus quam quis imperdiet. Integer venenatis augue consequat diam euismod, a ullamcorper magna varius. Vivamus justo augue, interdum eu ultricies quis, convallis sit amet nunc. Fusce massa nulla, ornare at mauris in, dapibus luctus orci. Aliquam erat volutpat. Duis pulvinar arcu orci, venenatis pellentesque augue bibendum sit amet.",
