@@ -89,6 +89,9 @@ export function createLight(
         case 'ambient':
             light = new THREE.AmbientLight(color, intensity);
             break;
+        case 'spot':
+            light = new THREE.SpotLight(color, intensity);
+            break;
         default:
             light = new THREE.PointLight(color, intensity, distance);
         }
@@ -110,6 +113,9 @@ export function createMaterial(type, color){
             break;
         case 'meshLambert':
             material = new THREE.MeshLambertMaterial({ color });
+            break;
+        case 'meshStandard':
+            material = new THREE.MeshStandardMaterial({ color });
             break;
         default:
             material = new THREE.MeshPhongMaterial({ color });
