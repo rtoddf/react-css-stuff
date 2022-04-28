@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { createRenderer, createCamera, createLight, createMaterial } from '../../utilities/default';
 import { createPlaneShape, createBoxShape } from '../../utilities/createShape';
 import Description from '../../../Common/Description/default';
@@ -8,33 +9,27 @@ import '../../default.scss';
 function Point01() {
     useEffect(() => {
         const container = document.getElementById('shape-holder');
-        const canvasWidth = document.getElementById('shape-holder').offsetWidth/2;
-        const canvasHeight = canvasWidth * 0.7;
+        const canvasWidth = document.getElementById('shape-holder').offsetWidth;
+        const canvasHeight = canvasWidth * 0.5;
 
         // create a scene
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(
-            1000,
-            canvasWidth/canvasHeight,
-            1,
-            5000 );
-        camera.position.z = -30;
+        const scene = new THREE.Scene(canvasWidth/canvasHeight);
+        const camera = createCamera(canvasWidth, canvasHeight, 1000, 1, 5000, 0, 0, 30)
 
         // create a renderer
         const renderer = createRenderer(container, canvasWidth, canvasHeight, 0x333333)
-        renderer.shadowMap.enabled = true
+        renderer.shadowMap.enabled = true;
+
+        var controls = new OrbitControls( camera, renderer.domElement );
+        controls.enableZoom = false;
 
         // create three lights
-        const light1 = createLight('point', 0xfca102, 3, 0, 300, 0, 100)
+        const light1 = createLight('point', 0xae0000, 2, 0, 300, -200, 50)
         light1.castShadow = true
-        // light1.shadow.bias = 0.001
-        // light1.penumbra = .5
         scene.add(light1)
 
-        const light2 = createLight('point', 0xfca102, 3, 0, -300, 0, 100)
+        const light2 = createLight('point', 0xfca102, 2, 0, -300, -200, 50)
         light2.castShadow = true
-        // light2.shadow.bias = 0.001
-        // light2.penumbra = .5
         scene.add(light2)
 
         var lightHelper1 = new THREE.PointLightHelper(light1)
@@ -58,7 +53,7 @@ function Point01() {
         scene.add(planeMesh)
 
         const cube = createBoxShape(100, 100, 100);
-        const material = createMaterial('meshStandard', 0xb16f2e);
+        const material = createMaterial('meshStandard', 0xffffff);
         const mesh = new THREE.Mesh(cube, material);
         mesh.position.z = -200;
         mesh.castShadow = true;
@@ -67,8 +62,10 @@ function Point01() {
         renderer.render(scene, camera);
 
         const animate = () => {
-            mesh.rotation.x += 0.02;
-            mesh.rotation.z += 0.02;
+            // mesh.rotation.x += 0.05;
+            mesh.rotation.y += 0.05;
+            // mesh.rotation.z += 0.05;
+            controls.update();
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
         };
