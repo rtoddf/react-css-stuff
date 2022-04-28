@@ -8,7 +8,8 @@ import Home from './Components/Home/default';
 
 // Three
 import Three from './Components/Three/default';
-import Wireframes from './Components/Three/Wireframes/default';
+import Point01 from './Components/Three/Lights/Point01/default';
+
 import BoxShape from './Components/Three/Shapes/BoxShape/default';
 import ConeShape from './Components/Three/Shapes/ConeShape/default';
 import CircleShape from './Components/Three/Shapes/CircleShape/default';
@@ -16,6 +17,7 @@ import CylinderShape from './Components/Three/Shapes/CylinderShape/default';
 import TorusShape from './Components/Three/Shapes/TorusShape/default';
 import PlaneShape from './Components/Three/Shapes/PlaneShape/default';
 
+import Wireframes from './Components/Three/Wireframes/default';
 import Test from './Components/Three/Test/default';
 
 // Apis
@@ -71,11 +73,16 @@ function App() {
           <Three />
         </Route>
       </Switch>
+
+      {/* ThreeJS lights */}
       <Switch>
-        <Route path='/three/wireframes'>
-          <Wireframes />
+        <Route path='/three/lights/point01'>
+          <Point01 />
         </Route>
       </Switch>
+      
+      
+      {/* ThreeJS shapes */}
       <Switch>
         <Route path='/three/shape/boxshape'>
           <BoxShape />
@@ -107,7 +114,12 @@ function App() {
         </Route>
       </Switch>
       
-      
+      {/* ThreeJS tests */}
+      <Switch>
+        <Route path='/three/tests/wireframes'>
+          <Wireframes />
+        </Route>
+      </Switch>
       <Switch>
         <Route path='/three/test'>
           <Test />
