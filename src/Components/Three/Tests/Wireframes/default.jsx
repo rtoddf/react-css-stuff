@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import * as THREE from 'three';
-import { getShapeSettings } from '../utilities/helpers';
+import { getShapeSettings } from '../../utilities/helpers';
 import settings from './settings';
-import Description from '../../Common/Description/default';
-import '../default.scss';
+import Description from '../../../Common/Description/default';
+import '../../default.scss';
 
 function Wireframes() {
     const [shape, setShape] = useState('cube');

@@ -115,8 +115,8 @@
                 },
                 {
                     "id": "three-test-2",
-                    "link": "/three/test",
-                    "title": "Test",
+                    "link": "/three/tests/test01",
+                    "title": "Test 01",
                     "image": "placeholder.jpg"
                 }
             ]

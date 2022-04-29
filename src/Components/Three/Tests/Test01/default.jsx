@@ -2,10 +2,10 @@ import { useEffect } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Stats from 'three/examples/jsm/libs/stats.module';
-import Description from '../../Common/Description/default';
-import '../default.scss';
+import Description from '../../../Common/Description/default';
+import '../../default.scss';
 
-function Test() {
+function Test01() {
     useEffect(() => {
         // create a scene
         const scene = new THREE.Scene();
@@ -84,4 +84,4 @@ function Test() {
     )
 }
 
-export default Test;
+export default Test01;

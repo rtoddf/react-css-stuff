@@ -17,8 +17,8 @@ import CylinderShape from './Components/Three/Shapes/CylinderShape/default';
 import TorusShape from './Components/Three/Shapes/TorusShape/default';
 import PlaneShape from './Components/Three/Shapes/PlaneShape/default';
 
-import Wireframes from './Components/Three/Wireframes/default';
-import Test from './Components/Three/Test/default';
+import Wireframes from './Components/Three/Tests/Wireframes/default';
+import Test01 from './Components/Three/Tests/Test01/default';
 
 // Apis
 import Apis from './Components/Apis/default';
@@ -121,8 +121,8 @@ function App() {
         </Route>
       </Switch>
       <Switch>
-        <Route path='/three/test'>
-          <Test />
+        <Route path='/three/tests/test01'>
+          <Test01 />
         </Route>
       </Switch>      
 
