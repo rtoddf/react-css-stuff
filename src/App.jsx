@@ -17,6 +17,7 @@ import CylinderShape from './Components/Three/Shapes/CylinderShape/default';
 import TorusShape from './Components/Three/Shapes/TorusShape/default';
 import PlaneShape from './Components/Three/Shapes/PlaneShape/default';
 
+import Trial01 from './Components/Three/Tests/Trial01/default';
 import Wireframes from './Components/Three/Tests/Wireframes/default';
 import Test01 from './Components/Three/Tests/Test01/default';
 
@@ -115,6 +116,11 @@ function App() {
       </Switch>
       
       {/* ThreeJS tests */}
+      <Switch>
+        <Route path='/three/tests/trial01'>
+          <Trial01 />
+        </Route>
+      </Switch>
       <Switch>
         <Route path='/three/tests/wireframes'>
           <Wireframes />

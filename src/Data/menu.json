@@ -109,6 +109,12 @@
             "items": [
                 {
                     "id": "three-test-1",
+                    "link": "/three/tests/trial01",
+                    "title": "Trial One",
+                    "image": "placeholder.jpg"
+                },
+                {
+                    "id": "three-test-1",
                     "link": "/three/tests/wireframes",
                     "title": "Wireframes",
                     "image": "threejs/thumbnails/wireframes.jpg"
