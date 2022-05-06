@@ -4,8 +4,9 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Description from '../../../Common/Description/default';
 import '../../default.scss';
 
-function Trial01() {
+function Trial02() {
     useEffect(() => {
+        const π = Math.PI;
         // create a scene
         const scene = new THREE.Scene();
 
@@ -27,27 +28,52 @@ function Trial01() {
         });
         renderer.setPixelRatio(window.devicePixelRatio);
         renderer.setSize(canvasWidth, canvasHeight);
+        renderer.shadowMap.enabled = true;
+        // renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
         // create lights
-        const pointLight = new THREE.PointLight(0xffffff);
+        // PointLight( color : Integer, intensity : Float, distance : Number, decay : Float )
+        const pointLight = new THREE.PointLight(0x003264, 5);
         // pointLight.position.set(5,5,5);
         pointLight.position.set(0,10,10);
+        pointLight.castShadow = true;
+        // scene.add(pointLight);
 
-        const ambientLight = new THREE.AmbientLight(0xffffff);
-        scene.add(pointLight);
+        const ambientLight = new THREE.AmbientLight(0x003264);
+        scene.add(ambientLight);
+
+        // SpotLight( color : Integer, intensity : Float, distance : Float, angle : Radians, penumbra : Float, decay : Float )
+        const spotLight = new THREE.SpotLight( 0x003264, 5, 0, π/3, 0.05 );
+        spotLight.position.set(0,10,10);
+        spotLight.castShadow = true;
+        scene.add(spotLight);
 
         // create geometry
-        const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
+        const geometry = new THREE.PlaneGeometry( 50, 50 );
+        const geometry02 = new THREE.BoxGeometry(10, 10, 10);
 
         // create material
         // MeshBasicMaterial does not need a light source. Others do
         const material = new THREE.MeshStandardMaterial({
-            color: 0xff6347,
-            // wireframe: true,
+            color: 0xffffff,
         });
+        const material02 = new THREE.MeshStandardMaterial({
+            color: 0xffffff,
+        });
+
         // create mesh
-        const torus = new THREE.Mesh(geometry, material);
-        scene.add(torus);
+        const plane = new THREE.Mesh(geometry, material);
+        plane.rotation.x += -1.5;
+        // move it down so we can see it
+        plane.position.set(0, -10, 0);
+        plane.receiveShadow = true;
+
+        const box = new THREE.Mesh(geometry02, material02);
+        box.position.set(0, 3, 3);
+        box.rotation.x = 2;
+        box.castShadow = true;
+
+        scene.add(plane, box);
 
         // add Helpers
         const lightHelper = new THREE.PointLightHelper(pointLight, 1);
@@ -63,9 +89,10 @@ function Trial01() {
         function animate(){
             window.requestAnimationFrame(animate);
 
-            torus.rotation.x += 0.01;
-            // torus.rotation.y += 0.01;
-            // torus.rotation.z += 0.01;
+            // plane.rotation.x += 0.01;
+            // plane.rotation.y += 0.01;
+            box.rotation.z += 0.05;
+            // box.position.z += 0.05;
 
             controls.update();
 
@@ -87,4 +114,4 @@ function Trial01() {
     )
 }
 
-export default Trial01;
+export default Trial02;
