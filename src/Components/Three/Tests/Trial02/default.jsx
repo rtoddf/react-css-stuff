@@ -18,7 +18,10 @@ function Trial02() {
         const camera = new THREE.PerspectiveCamera(60, canvasWidth/canvasHeight, 0.1, 1000);
 
         // position the camera so you're not on top of the geometry
-        camera.position.setZ(50);
+        // the box is 10px
+        // if we put the camera at 10, we'll be in the center of the box
+        // so we set it to 30
+        camera.position.setZ(30);
         
         // create a renderer
         const renderer = new THREE.WebGLRenderer({

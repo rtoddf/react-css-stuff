@@ -126,13 +126,19 @@
                     "image": "placeholder.jpg"
                 },
                 {
-                    "id": "three-test-1",
+                    "id": "three-test-3",
+                    "link": "/three/tests/texture01",
+                    "title": "Texture One",
+                    "image": "placeholder.jpg"
+                },
+                {
+                    "id": "three-test-4",
                     "link": "/three/tests/wireframes",
                     "title": "Wireframes",
                     "image": "threejs/thumbnails/wireframes.jpg"
                 },
                 {
-                    "id": "three-test-2",
+                    "id": "three-test-5",
                     "link": "/three/tests/test01",
                     "title": "Test 01",
                     "image": "placeholder.jpg"
