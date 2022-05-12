@@ -51,10 +51,10 @@ function CapsuleShape() {
 
         // create the box geometry
         const geometry = new THREE.CapsuleGeometry( 4, 6, 100, 50 );
-        const material = new THREE.MeshStandardMaterial({
+        const material = new THREE.MeshPhongMaterial({
             color: 0xffffff,
             // wireframe: true
-            // map: new THREE.TextureLoader().load('./images/globe.jpeg'),
+            map: new THREE.TextureLoader().load('images/threejs/textures/globe.jpeg'),
         });
 
         const mesh = new THREE.Mesh( geometry, material );
