@@ -1,7 +1,7 @@
 import React from 'react';
 import Description from '../../Common/Description/default';
 import Image from '../../Common/Image/default';
-import SocialIcons from './SocialIcons';
+import SocialIcons from './socialIcons';
 
 import data from './data/cards.json';
 import './default.scss';
