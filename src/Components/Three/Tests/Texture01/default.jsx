@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
-import vertexShader from './shaders/vertex.glsl';
+// import vertexShader from './shaders/vertex.glsl';
 import { MeshBasicMaterial } from 'three';
 import Description from '../../../Common/Description/default';
 import '../../default.scss';
@@ -33,13 +33,13 @@ function Texture01() {
         const sphere = new THREE.Mesh(
             new THREE.SphereGeometry(5, 50, 50),
             new THREE.ShaderMaterial({
-                vertexShader,
+                // vertexShader,
                 // fragmentShader: 
             })
-        //     new THREE.MeshBasicMaterial({
-        //         // color: 0xbaba71,
-        //         map: new THREE.TextureLoader().load('/images/threejs/textures/globe.jpeg')
-        //     })
+            // new THREE.MeshBasicMaterial({
+            //     // color: 0xbaba71,
+            //     map: new THREE.TextureLoader().load('/images/threejs/textures/globe.jpeg')
+            // })
         );
 
         scene.add(sphere);

@@ -13,8 +13,6 @@ function CapsuleShape() {
         // create a scene
         const scene = new THREE.Scene();
 
-        
-
         // create a camera
         const camera = new THREE.PerspectiveCamera(
             75,
@@ -22,7 +20,7 @@ function CapsuleShape() {
             0.1,
             10000
         );
-        camera.position.z = 25;
+        camera.position.z = 15;
 
         // create a renderer
         const renderer = new THREE.WebGLRenderer({
@@ -39,28 +37,33 @@ function CapsuleShape() {
         controls.enableZoom = true;
 
         // create lights
-        const light = new THREE.PointLight('point', 0xff0000, 2, 0);
-        light.position.set(0,10,10);
-        scene.add(light);
+        const pointLight01 = new THREE.PointLight(0xfa9900, 1.5);
+        pointLight01.position.set( 0, 5, 10);
+        scene.add(pointLight01);
 
-        var lightHelper1 = new THREE.PointLightHelper(light)
-		scene.add(lightHelper1)
+        const pointLight02 = new THREE.PointLight(0xffffff, 1);
+        pointLight02.position.set( 0, -10, 0);
+        scene.add(pointLight02);
+
+        var lightHelper1 = new THREE.PointLightHelper(pointLight01)
+        var lightHelper2 = new THREE.PointLightHelper(pointLight02)
+		scene.add(lightHelper1, lightHelper2)
 
         // create the box geometry
-        const geometry = new THREE.Mesh(
-            new THREE.CapsuleGeometry( 4, 8, 16, 16 ),
-            new THREE.MeshStandardMaterial({
-                color: 0xffffff,
-                // wireframe: true
-                // map: new THREE.TextureLoader().load('./images/globe.jpeg'),
-            })
-        );
-        scene.add(geometry);
+        const geometry = new THREE.CapsuleGeometry( 4, 6, 100, 50 );
+        const material = new THREE.MeshStandardMaterial({
+            color: 0xffffff,
+            // wireframe: true
+            // map: new THREE.TextureLoader().load('./images/globe.jpeg'),
+        });
+
+        const mesh = new THREE.Mesh( geometry, material );
+        scene.add(mesh);
 
         const animate = () => {
             renderer.render(scene, camera);
-            geometry.rotation.x += 0.01;
-            geometry.rotation.y += 0.01;
+            mesh.rotation.x += 0.03;
+            // mesh.rotation.z += 0.03;
             controls.update();
             requestAnimationFrame(animate);
         };
