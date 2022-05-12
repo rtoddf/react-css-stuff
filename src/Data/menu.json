@@ -106,6 +106,12 @@
                     "link": "/three/shape/plane02",
                     "title": "Plane Shape",
                     "image": "placeholder.jpg"
+                },
+                {
+                    "id": "three-shapes-9",
+                    "link": "/three/shape/capsule",
+                    "title": "Capsule Shape",
+                    "image": "placeholder.jpg"
                 }
             ]
         },

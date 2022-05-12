@@ -10,6 +10,7 @@ import Home from './Components/Home/default';
 import Three from './Components/Three/default';
 import Point01 from './Components/Three/Lights/Point01/default';
 
+// Three Geometries
 import BoxShape from './Components/Three/Shapes/BoxShape/default';
 import ConeShape from './Components/Three/Shapes/ConeShape/default';
 import CircleShape from './Components/Three/Shapes/CircleShape/default';
@@ -17,7 +18,9 @@ import CylinderShape from './Components/Three/Shapes/CylinderShape/default';
 import TorusShape from './Components/Three/Shapes/TorusShape/default';
 import PlaneShape from './Components/Three/Shapes/PlaneShape/default';
 import Plane02 from './Components/Three/Shapes/PlaneShape/Plane02';
+import CapsuleShape from './Components/Three/Shapes/CapsuleShape/default';
 
+// Three Trials & Tests
 import Trial01 from './Components/Three/Tests/Trial01/default';
 import Trial02 from './Components/Three/Tests/Trial02/default';
 import Texture01 from './Components/Three/Tests/Texture01/default';
@@ -123,8 +126,15 @@ function App() {
           <Plane02 />
         </Route>
       </Switch>
+      <Switch>
+        <Route path='/three/shape/capsule'>
+          <CapsuleShape />
+        </Route>
+      </Switch>
+
       
-      {/* ThreeJS tests */}
+      
+      {/* ThreeJS Trials & Tests */}
       <Switch>
         <Route path='/three/tests/trial01'>
           <Trial01 />
