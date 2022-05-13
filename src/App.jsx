@@ -8,7 +8,12 @@ import Home from './Components/Home/default';
 
 // Three
 import Three from './Components/Three/default';
+
+// Lights
 import Point01 from './Components/Three/Lights/Point01/default';
+
+// Shaders
+import Texture01 from './Components/Three/Shaders/Texture01/default';
 
 // Three Geometries
 import SphereShape from './Components/Three/Shapes/Sphere/default';
@@ -24,7 +29,6 @@ import CapsuleShape from './Components/Three/Shapes/Capsule/default';
 // Three Trials & Tests
 import Trial01 from './Components/Three/Tests/Trial01/default';
 import Trial02 from './Components/Three/Tests/Trial02/default';
-import Texture01 from './Components/Three/Tests/Texture01/default';
 
 import Wireframes from './Components/Three/Tests/Wireframes/default';
 import Test01 from './Components/Three/Tests/Test01/default';
@@ -150,13 +154,7 @@ function App() {
         <Route path='/three/tests/trial02'>
           <Trial02 />
         </Route>
-      </Switch>
-      <Switch>
-        <Route path='/three/tests/texture01'>
-          <Texture01 />
-        </Route>
-      </Switch>
-      
+      </Switch>      
       <Switch>
         <Route path='/three/tests/wireframes'>
           <Wireframes />
@@ -166,7 +164,14 @@ function App() {
         <Route path='/three/tests/test01'>
           <Test01 />
         </Route>
-      </Switch>      
+      </Switch>   
+
+      {/* ThreeJS Shaders */}
+      <Switch>
+        <Route path='/three/shaders/texture01'>
+          <Texture01 />
+        </Route>
+      </Switch> 
 
       {/* Apis */}
       <Switch>

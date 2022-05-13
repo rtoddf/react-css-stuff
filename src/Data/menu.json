@@ -51,7 +51,7 @@
                     "id": "three-lighting-1",
                     "link": "/three/lights/point01",
                     "title": "Point Lights & Shadows (w/Light Helpers)",
-                    "image": "placeholder.jpg"
+                    "image": "threejs/thumbnails/point-lights-shadows.jpg"
                 }
             ]
         },
@@ -99,7 +99,7 @@
                     "id": "three-shapes-7",
                     "link": "/three/shape/plane",
                     "title": "Plane",
-                    "image": "placeholder.jpg"
+                    "image": "threejs/thumbnails/plane-shape.jpg"
                 },
                 {
                     "id": "three-shapes-8",
@@ -111,7 +111,7 @@
                     "id": "three-shapes-9",
                     "link": "/three/shape/capsule",
                     "title": "Capsule ",
-                    "image": "placeholder.jpg"
+                    "image": "threejs/thumbnails/capsule-shape.jpg"
                 }
             ]
         },
@@ -123,18 +123,12 @@
                     "id": "three-test-1",
                     "link": "/three/tests/trial01",
                     "title": "Trial One",
-                    "image": "placeholder.jpg"
+                    "image": "threejs/thumbnails/test01.jpg"
                 },
                 {
                     "id": "three-test-2",
                     "link": "/three/tests/trial02",
                     "title": "Trial Two",
-                    "image": "placeholder.jpg"
-                },
-                {
-                    "id": "three-test-3",
-                    "link": "/three/tests/texture01",
-                    "title": "Texture One",
                     "image": "placeholder.jpg"
                 },
                 {
@@ -147,6 +141,18 @@
                     "id": "three-test-5",
                     "link": "/three/tests/test01",
                     "title": "Test 01",
+                    "image": "placeholder.jpg"
+                }
+            ]
+        },
+        "shaders": {
+            "headline": "Three JS Shaders",
+            "copy": "",
+            "items": [
+                {
+                    "id": "three-shaders-1",
+                    "link": "/three/shaders/texture01",
+                    "title": "Texture One",
                     "image": "placeholder.jpg"
                 }
             ]
