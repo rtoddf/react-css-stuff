@@ -4,7 +4,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Description from '../../../Common/Description/default';
 import '../../default.scss';
 
-function Trial02() {
+function Test03() {
     useEffect(() => {
         const π = Math.PI;
         // create a scene
@@ -117,4 +117,4 @@ function Trial02() {
     )
 }
 
-export default Trial02;
+export default Test03;

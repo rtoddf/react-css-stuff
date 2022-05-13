@@ -4,7 +4,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Description from '../../../Common/Description/default';
 import '../../default.scss';
 
-function Trial01() {
+function Test02() {
     useEffect(() => {
         // create a scene
         const scene = new THREE.Scene();
@@ -87,4 +87,4 @@ function Trial01() {
     )
 }
 
-export default Trial01;
+export default Test02;

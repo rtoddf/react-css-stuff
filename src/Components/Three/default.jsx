@@ -4,7 +4,7 @@ import data from '../../Data/menu.json';
 
 function Three() {
     return (
-        <>
+        <div className="threejs">
             <div className="grid">
                 <Header section={data.three.geometries} />
             </div>
@@ -17,7 +17,7 @@ function Three() {
             <div className="grid">
                 <Header section={data.three.shaders} />
             </div>
-        </>
+        </div>
     )
 }
 

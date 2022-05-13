@@ -121,27 +121,27 @@
             "items": [
                 {
                     "id": "three-test-1",
-                    "link": "/three/tests/trial01",
-                    "title": "Trial One",
+                    "link": "/three/tests/test01",
+                    "title": "Test One",
                     "image": "threejs/thumbnails/test01.jpg"
                 },
                 {
                     "id": "three-test-2",
-                    "link": "/three/tests/trial02",
-                    "title": "Trial Two",
-                    "image": "placeholder.jpg"
+                    "link": "/three/tests/test02",
+                    "title": "Test Two",
+                    "image": "threejs/thumbnails/test02.jpg"
+                },
+                {
+                    "id": "three-test-3",
+                    "link": "/three/tests/test03",
+                    "title": "Test Three",
+                    "image": "threejs/thumbnails/test03.jpg"
                 },
                 {
                     "id": "three-test-4",
                     "link": "/three/tests/wireframes",
                     "title": "Wireframes",
                     "image": "threejs/thumbnails/wireframes.jpg"
-                },
-                {
-                    "id": "three-test-5",
-                    "link": "/three/tests/test01",
-                    "title": "Test 01",
-                    "image": "placeholder.jpg"
                 }
             ]
         },

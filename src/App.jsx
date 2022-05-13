@@ -27,11 +27,11 @@ import Plane02 from './Components/Three/Geometries/Plane/Plane02';
 import CapsuleGeometry from './Components/Three/Geometries/Capsule/default';
 
 // Three Trials & Tests
-import Trial01 from './Components/Three/Tests/Trial01/default';
-import Trial02 from './Components/Three/Tests/Trial02/default';
-
-import Wireframes from './Components/Three/Tests/Wireframes/default';
 import Test01 from './Components/Three/Tests/Test01/default';
+import Test02 from './Components/Three/Tests/Test02/default';
+import Test03 from './Components/Three/Tests/Test03/default';
+import Wireframes from './Components/Three/Tests/Wireframes/default';
+
 
 // Apis
 import Apis from './Components/Apis/default';
@@ -146,13 +146,18 @@ function App() {
       
       {/* ThreeJS Trials & Tests */}
       <Switch>
-        <Route path='/three/tests/trial01'>
-          <Trial01 />
+        <Route path='/three/tests/test01'>
+          <Test01 />
+        </Route>
+      </Switch>  
+      <Switch>
+        <Route path='/three/tests/test02'>
+          <Test02 />
         </Route>
       </Switch>
       <Switch>
-        <Route path='/three/tests/trial02'>
-          <Trial02 />
+        <Route path='/three/tests/test03'>
+          <Test03 />
         </Route>
       </Switch>      
       <Switch>
@@ -160,11 +165,6 @@ function App() {
           <Wireframes />
         </Route>
       </Switch>
-      <Switch>
-        <Route path='/three/tests/test01'>
-          <Test01 />
-        </Route>
-      </Switch>   
 
       {/* ThreeJS Shaders */}
       <Switch>
