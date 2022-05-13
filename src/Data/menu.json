@@ -55,61 +55,61 @@
                 }
             ]
         },
-        "shapes": {
-            "headline": "Three JS Shapes",
+        "geometries": {
+            "headline": "Three JS Geometries",
             "copy": "",
             "items": [
                 {
                     "id": "three-shapes-1",
-                    "link": "/three/shape/sphere",
+                    "link": "/three/geometries/sphere",
                     "title": "Sphere ",
                     "image": "placeholder.jpg"
                 },
                 {
                     "id": "three-shapes-2",
-                    "link": "/three/shape/box",
+                    "link": "/three/geometries/box",
                     "title": "Box",
                     "image": "threejs/thumbnails/box-shape.jpg"
                 },
                 {
                     "id": "three-shapes-3",
-                    "link": "/three/shape/cone",
+                    "link": "/three/geometries/cone",
                     "title": "Cone",
                     "image": "threejs/thumbnails/cone-shape.jpg"
                 },
                 {
                     "id": "three-shapes-4",
-                    "link": "/three/shape/circle",
+                    "link": "/three/geometries/circle",
                     "title": "Cirle",
                     "image": "threejs/thumbnails/circle-shape.jpg"
                 },
                 {
                     "id": "three-shapes-5",
-                    "link": "/three/shape/cylinder",
+                    "link": "/three/geometries/cylinder",
                     "title": "Cylinder",
                     "image": "threejs/thumbnails/cylinder-shape.jpg"
                 },
                 {
                     "id": "three-shapes-6",
-                    "link": "/three/shape/torus",
+                    "link": "/three/geometries/torus",
                     "title": "Torus",
                     "image": "threejs/thumbnails/torus-shape.jpg"
                 },
                 {
                     "id": "three-shapes-7",
-                    "link": "/three/shape/plane",
+                    "link": "/three/geometries/plane",
                     "title": "Plane",
                     "image": "threejs/thumbnails/plane-shape.jpg"
                 },
                 {
                     "id": "three-shapes-8",
-                    "link": "/three/shape/plane02",
+                    "link": "/three/geometries/plane02",
                     "title": "Plane",
                     "image": "placeholder.jpg"
                 },
                 {
                     "id": "three-shapes-9",
-                    "link": "/three/shape/capsule",
+                    "link": "/three/geometries/capsule",
                     "title": "Capsule ",
                     "image": "threejs/thumbnails/capsule-shape.jpg"
                 }

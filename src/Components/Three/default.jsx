@@ -6,7 +6,7 @@ function Three() {
     return (
         <>
             <div className="grid">
-                <Header section={data.three.shapes} />
+                <Header section={data.three.geometries} />
             </div>
             <div className="grid">
                 <Header section={data.three.lighting} />

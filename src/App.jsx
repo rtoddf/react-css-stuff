@@ -16,15 +16,15 @@ import Point01 from './Components/Three/Lights/Point01/default';
 import Texture01 from './Components/Three/Shaders/Texture01/default';
 
 // Three Geometries
-import SphereShape from './Components/Three/Shapes/Sphere/default';
-import BoxShape from './Components/Three/Shapes/Box/default';
-import ConeShape from './Components/Three/Shapes/Cone/default';
-import CircleShape from './Components/Three/Shapes/Circle/default';
-import CylinderShape from './Components/Three/Shapes/Cylinder/default';
-import TorusShape from './Components/Three/Shapes/Torus/default';
-import PlaneShape from './Components/Three/Shapes/Plane/default';
-import Plane02 from './Components/Three/Shapes/Plane/Plane02';
-import CapsuleShape from './Components/Three/Shapes/Capsule/default';
+import SphereGeometry from './Components/Three/Geometries/Sphere/default';
+import BoxGeometry from './Components/Three/Geometries/Box/default';
+import ConeGeometry from './Components/Three/Geometries/Cone/default';
+import CircleGeometry from './Components/Three/Geometries/Circle/default';
+import CylinderGeometry from './Components/Three/Geometries/Cylinder/default';
+import TorusGeometry from './Components/Three/Geometries/Torus/default';
+import PlaneGeometry from './Components/Three/Geometries/Plane/default';
+import Plane02 from './Components/Three/Geometries/Plane/Plane02';
+import CapsuleGeometry from './Components/Three/Geometries/Capsule/default';
 
 // Three Trials & Tests
 import Trial01 from './Components/Three/Tests/Trial01/default';
@@ -95,50 +95,50 @@ function App() {
       </Switch>
       
       
-      {/* ThreeJS shapes */}
+      {/* ThreeJS geometries */}
       <Switch>
-        <Route path='/three/shape/sphere'>
-          <SphereShape />
+        <Route path='/three/geometries/sphere'>
+          <SphereGeometry />
         </Route>
       </Switch>
       <Switch>
-        <Route path='/three/shape/box'>
-          <BoxShape />
+        <Route path='/three/geometries/box'>
+          <BoxGeometry />
         </Route>
       </Switch>
       <Switch>
-        <Route path='/three/shape/cone'>
-          <ConeShape />
+        <Route path='/three/geometries/cone'>
+          <ConeGeometry />
         </Route>
       </Switch>
       <Switch>
-        <Route path='/three/shape/circle'>
-          <CircleShape />
+        <Route path='/three/geometries/circle'>
+          <CircleGeometry />
         </Route>
       </Switch>
       <Switch>
-        <Route path='/three/shape/cylinder'>
-          <CylinderShape />
+        <Route path='/three/geometries/cylinder'>
+          <CylinderGeometry />
         </Route>
       </Switch>
       <Switch>
-        <Route path='/three/shape/torus'>
-          <TorusShape />
+        <Route path='/three/geometries/torus'>
+          <TorusGeometry />
         </Route>
       </Switch>
       <Switch>
-        <Route path='/three/shape/plane'>
-          <PlaneShape />
+        <Route path='/three/geometries/plane'>
+          <PlaneGeometry />
         </Route>
       </Switch>
       <Switch>
-        <Route path='/three/shape/plane02'>
+        <Route path='/three/geometries/plane02'>
           <Plane02 />
         </Route>
       </Switch>
       <Switch>
-        <Route path='/three/shape/capsule'>
-          <CapsuleShape />
+        <Route path='/three/geometries/capsule'>
+          <CapsuleGeometry />
         </Route>
       </Switch>
 
