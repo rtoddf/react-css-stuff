@@ -61,56 +61,56 @@
             "items": [
                 {
                     "id": "three-shapes-1",
-                    "link": "/three/shape/sphereshape",
-                    "title": "Sphere Shape",
+                    "link": "/three/shape/sphere",
+                    "title": "Sphere ",
                     "image": "placeholder.jpg"
                 },
                 {
                     "id": "three-shapes-2",
-                    "link": "/three/shape/boxshape",
-                    "title": "Box Shape",
+                    "link": "/three/shape/box",
+                    "title": "Box",
                     "image": "threejs/thumbnails/box-shape.jpg"
                 },
                 {
                     "id": "three-shapes-3",
-                    "link": "/three/shape/coneshape",
-                    "title": "Cone Shape",
+                    "link": "/three/shape/cone",
+                    "title": "Cone",
                     "image": "threejs/thumbnails/cone-shape.jpg"
                 },
                 {
                     "id": "three-shapes-4",
-                    "link": "/three/shape/circleshape",
-                    "title": "Cirle Shape",
+                    "link": "/three/shape/circle",
+                    "title": "Cirle",
                     "image": "threejs/thumbnails/circle-shape.jpg"
                 },
                 {
                     "id": "three-shapes-5",
-                    "link": "/three/shape/cylindershape",
-                    "title": "Cylinder Shape",
+                    "link": "/three/shape/cylinder",
+                    "title": "Cylinder",
                     "image": "threejs/thumbnails/cylinder-shape.jpg"
                 },
                 {
                     "id": "three-shapes-6",
-                    "link": "/three/shape/torusshape",
-                    "title": "Torus Shape",
+                    "link": "/three/shape/torus",
+                    "title": "Torus",
                     "image": "threejs/thumbnails/torus-shape.jpg"
                 },
                 {
                     "id": "three-shapes-7",
-                    "link": "/three/shape/planeshape",
-                    "title": "Plane Shape",
+                    "link": "/three/shape/plane",
+                    "title": "Plane",
                     "image": "placeholder.jpg"
                 },
                 {
                     "id": "three-shapes-8",
                     "link": "/three/shape/plane02",
-                    "title": "Plane Shape",
+                    "title": "Plane",
                     "image": "placeholder.jpg"
                 },
                 {
                     "id": "three-shapes-9",
                     "link": "/three/shape/capsule",
-                    "title": "Capsule Shape",
+                    "title": "Capsule ",
                     "image": "placeholder.jpg"
                 }
             ]

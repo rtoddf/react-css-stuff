@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
 import { createRenderer, createCamera, createLight, createMaterial } from '../../utilities/default';
-import { createBoxShape } from '../../utilities/createShape';
+import { createConeShape } from '../../utilities/createShape';
 import Description from '../../../Common/Description/default';
 import '../../default.scss';
 
-function BoxShape() {
+function Circle() {
     useEffect(() => {
         const container = document.getElementById('shape-holder');
         const canvasWidth = document.getElementById('shape-holder').offsetWidth;
@@ -13,22 +13,21 @@ function BoxShape() {
 
         // create a scene
         const scene = new THREE.Scene();
-
-        // create a camera
-        const camera = createCamera(canvasWidth, canvasHeight, 1000, 1, 5000, 0, 0, 200);
+        const camera = createCamera(canvasWidth, canvasHeight);
 
         // create a renderer
         const renderer = createRenderer(container, canvasWidth, canvasHeight)
 
-        // create two lights
+        // create three lights
         // type, color, intensity, distance, xpos, ypos, zpos
-        scene.add(createLight('point', 0xff7700, 2, 2000, 200, 0, 200));
-        scene.add(createLight('point', 0xae0000, 2, 2000, 200, 0, -200));
+        scene.add(createLight('point', 0x003264, 2, 2000, 200, 0, 200));
+        scene.add(createLight('point', 0x003264, 2, 2000, 100, 200, 100));
+        scene.add(createLight('point', 0x003264, 2, 2000, -100, -200, -100));
 
-        // create the box geometry
-        const box = createBoxShape(100, 100, 100);
-        const material = createMaterial();
-        const mesh = new THREE.Mesh(box, material)
+        // create the cone geometry
+        const cone = createConeShape();
+        const material = createMaterial('meshLambert', 0x00ff00);
+        const mesh = new THREE.Mesh(cone, material)
         scene.add(mesh);
 
         const animate = () => {
@@ -37,12 +36,15 @@ function BoxShape() {
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
         };
+
+        console.log('typeOf: ', typeof animate)
+
         animate();
     }, [])
 
     return (
         <>
-            <Description title="Simple Box - Shiny Material" copy="" />
+            <Description title="Circle - Shiny Material" copy="" />
             <div className="grid">
                 <div id="shape-holder"></div>
             </div>
@@ -50,4 +52,4 @@ function BoxShape() {
     )
 }
 
-export default BoxShape;
+export default Circle;

@@ -20,7 +20,7 @@ function Point01() {
         const renderer = createRenderer(container, canvasWidth, canvasHeight, 0x333333)
         renderer.shadowMap.enabled = true;
 
-        var controls = new OrbitControls( camera, renderer.domElement );
+        const controls = new OrbitControls( camera, renderer.domElement );
         controls.enableZoom = false;
 
         // create three lights
@@ -32,21 +32,21 @@ function Point01() {
         light2.castShadow = true
         scene.add(light2)
 
-        var lightHelper1 = new THREE.PointLightHelper(light1)
+        const lightHelper1 = new THREE.PointLightHelper(light1)
 		scene.add(lightHelper1)
-		var lightHelper2 = new THREE.PointLightHelper(light2)
+		const lightHelper2 = new THREE.PointLightHelper(light2)
 		scene.add(lightHelper2)
 
         const π = Math.PI;
 
         // create the cone geometry
-        var plane = createPlaneShape(1000, 2000);
-        var planeMaterial= new THREE.MeshPhongMaterial({
+        const plane = createPlaneShape(1000, 2000);
+        const planeMaterial= new THREE.MeshPhongMaterial({
             color: 0xffffff,
             side: THREE.DoubleSide
         });
     
-        var planeMesh = new THREE.Mesh(plane, planeMaterial)
+        const planeMesh = new THREE.Mesh(plane, planeMaterial)
         planeMesh.rotation.x = π/2
         planeMesh.position.y = 100
         planeMesh.receiveShadow = true

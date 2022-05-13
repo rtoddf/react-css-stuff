@@ -20,7 +20,7 @@ function Wireframes() {
     function getShape(e){
         //remove the canvas element before adding another
         // can this be done different???
-        var elem = document.querySelector('#shape-holder canvas');
+        const elem = document.querySelector('#shape-holder canvas');
         elem.parentNode.removeChild(elem);
 
         let geometry = getShapeSettings(e.target.value);

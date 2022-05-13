@@ -5,7 +5,7 @@ import { createCircleShape } from '../../utilities/createShape';
 import Description from '../../../Common/Description/default';
 import '../../default.scss';
 
-function CircleShape() {
+function Sphere() {
     useEffect(() => {
         const container = document.getElementById('shape-holder');
         const canvasWidth = document.getElementById('shape-holder').offsetWidth;
@@ -39,7 +39,7 @@ function CircleShape() {
 
     return (
         <>
-            <Description title="Circle - Shiny Material" copy="" />
+            <Description title="Sphere" copy="" />
             <div className="grid">
                 <div id="shape-holder"></div>
             </div>
@@ -47,4 +47,4 @@ function CircleShape() {
     )
 }
 
-export default CircleShape;
+export default Sphere;

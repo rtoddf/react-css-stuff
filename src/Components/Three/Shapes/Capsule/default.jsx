@@ -4,7 +4,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Description from '../../../Common/Description/default';
 import '../../default.scss';
 
-function CapsuleShape() {
+function Capsule() {
     useEffect(() => {
         const container = document.getElementById('shape-holder');
         const canvasWidth = document.getElementById('shape-holder').offsetWidth;
@@ -28,7 +28,7 @@ function CapsuleShape() {
             alpha: true,
         });
 
-        renderer.setClearColor(0x000000);
+        renderer.setClearColor(0xffffff);
         renderer.setPixelRatio(devicePixelRatio);
         renderer.setSize(canvasWidth, canvasHeight);
         container.append(renderer.domElement);
@@ -37,16 +37,16 @@ function CapsuleShape() {
         controls.enableZoom = true;
 
         // create lights
-        const pointLight01 = new THREE.PointLight(0xfa9900, 1.5);
-        pointLight01.position.set( 0, 5, 10);
+        const pointLight01 = new THREE.PointLight(0xffffff, 1);
+        pointLight01.position.set( 0, 10, 10);
         scene.add(pointLight01);
 
-        const pointLight02 = new THREE.PointLight(0xffffff, 1);
+        const pointLight02 = new THREE.PointLight(0xfa9900, 1);
         pointLight02.position.set( 0, -10, 0);
         scene.add(pointLight02);
 
-        var lightHelper1 = new THREE.PointLightHelper(pointLight01)
-        var lightHelper2 = new THREE.PointLightHelper(pointLight02)
+        const lightHelper1 = new THREE.PointLightHelper(pointLight01)
+        const lightHelper2 = new THREE.PointLightHelper(pointLight02)
 		scene.add(lightHelper1, lightHelper2)
 
         // create the box geometry
@@ -54,7 +54,7 @@ function CapsuleShape() {
         const material = new THREE.MeshPhongMaterial({
             color: 0xffffff,
             // wireframe: true
-            map: new THREE.TextureLoader().load('images/threejs/textures/globe.jpeg'),
+            // map: new THREE.TextureLoader().load('images/threejs/textures/globe.jpeg'),
         });
 
         const mesh = new THREE.Mesh( geometry, material );
@@ -80,4 +80,4 @@ function CapsuleShape() {
     )
 }
 
-export default CapsuleShape;
+export default Capsule;

@@ -5,7 +5,7 @@ import { createPlaneShape } from '../../utilities/createShape';
 import Description from '../../../Common/Description/default';
 import '../../default.scss';
 
-function PlaneShape() {
+function Plane() {
     useEffect(() => {
         const container = document.getElementById('shape-holder');
         const canvasWidth = document.getElementById('shape-holder').offsetWidth;
@@ -47,4 +47,4 @@ function PlaneShape() {
     )
 }
 
-export default PlaneShape;
+export default Plane;
