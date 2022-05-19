@@ -180,6 +180,12 @@
                     "link": "/apis/placeholder",
                     "title": "Placeholder Data",
                     "image": "placeholder.jpg"
+                },
+                {
+                    "id": "apis-4",
+                    "link": "/apis/weather",
+                    "title": "Weather Data",
+                    "image": "placeholder.jpg"
                 }                
             ]
         },

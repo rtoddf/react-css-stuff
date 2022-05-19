@@ -1,8 +1,6 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import { createRenderer, createCamera, createLight, createMaterial } from '../../utilities/default';
-import { createCircleShape } from '../../utilities/createShape';
 import Description from '../../../Common/Description/default';
 import '../../default.scss';
 
@@ -21,7 +19,7 @@ function Sphere() {
             0.1,
             10000
         );
-        camera.position.z = 30;
+        camera.position.z = 35;
 
         // create a renderer
         const renderer = new THREE.WebGLRenderer({
@@ -29,7 +27,7 @@ function Sphere() {
             alpha: true,
         });
 
-        renderer.setClearColor(0x000000);
+        renderer.setClearColor(0xffffff);
         renderer.setPixelRatio(devicePixelRatio);
         renderer.setSize(canvasWidth, canvasHeight);
         container.append(renderer.domElement);
@@ -50,17 +48,45 @@ function Sphere() {
         const lightHelper2 = new THREE.PointLightHelper(pointLight02)
 		scene.add(lightHelper1, lightHelper2)
 
-        // create the cone geometry
-        const sphere = new THREE.SphereGeometry( 15, 32, 32 );
+        // create the sphere01 geometry
+        const sphere01 = new THREE.SphereGeometry( 10, 32, 32 );
         const material = new THREE.MeshPhongMaterial({
             color: 0xffffff,
-            // wireframe: true
         });
-        const mesh = new THREE.Mesh(sphere, material)
-        scene.add(mesh);
+        const mesh01 = new THREE.Mesh(sphere01, material)
+        scene.add(mesh01);
+
+        // create the sphere02 geometry
+        const sphere02 = new THREE.SphereGeometry( 2, 16, 16 );
+        const mesh02 = new THREE.Mesh(sphere02, material);
+        // create a center point for sphere01 to rotate around - invisble object
+        const sphere02CenterPoint = new THREE.Object3D();
+        // add the invisible object to the scene
+        scene.add(sphere02CenterPoint);
+        // add the sphere01 to the invisibel object
+        sphere02CenterPoint.add(mesh02);
+        mesh02.position.x = 15;
+
+        // create the sphere03 geometry
+        const sphere03 = new THREE.SphereGeometry( 2, 16, 16 );
+        const mesh03 = new THREE.Mesh(sphere03, material);
+        // create a center point for sphere01 to rotate around - invisble object
+        const sphere03CenterPoint = new THREE.Object3D();
+        // add the invisible object to the scene
+        scene.add(sphere03CenterPoint);
+        // add the sphere01 to the invisibel object
+        sphere03CenterPoint.add(mesh03);
+        mesh03.position.x = -15;
 
         const animate = () => {
-            mesh.rotation.z += 0.02;
+            // mesh01.rotation.y += 0.025;
+            sphere02CenterPoint.rotateY(0.02);
+            sphere02CenterPoint.rotateZ(0.02);
+
+            sphere03CenterPoint.rotateY(0.03);
+            sphere03CenterPoint.rotateX(0.03);
+
+            // mesh01.rotateY(0.025);
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
         };

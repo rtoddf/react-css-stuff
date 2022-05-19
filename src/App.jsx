@@ -36,6 +36,7 @@ import Wireframes from './Components/Three/Tests/Wireframes/default';
 // Apis
 import Apis from './Components/Apis/default';
 import Placeholder from './Components/Apis/Placeholder/default';
+import Weather from './Components/Apis/Placeholder/Weather';
 import ItunesImages from './Components/Apis/Itunes/ItunesImages';
 import ItunesArtistInfo from './Components/Apis/Itunes/ItunesArtistInfo';
 
@@ -182,6 +183,11 @@ function App() {
       <Switch>
         <Route path='/apis/placeholder'>
           <Placeholder />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/apis/weather'>
+          <Weather />
         </Route>
       </Switch>
       <Switch>

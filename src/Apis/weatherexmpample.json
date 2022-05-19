@@ -1,0 +1,35 @@
+{
+    "location": "Nashville, Tennessee",
+    "headerTemp": 51,
+    "headerIconCode": 65,
+    "headerTitle": "Fair",
+    "days": [
+      {
+        "dateTime": 1649073600000,
+        "dayIconCode": "67",
+        "nightIconCode": "103",
+        "title": "Cloudy",
+        "hiTemp": 71,
+        "lowTemp": 41,
+        "precipitation": 20,
+        "wind": 8,
+        "windDirection": "SSW",
+        "humidity": 39,
+        "ultraviolet": "Moderate"
+      }
+    ],
+    "hourlyForecasts": [
+      {
+        "dayOfWeek": "Monday",
+        "iconCode": "66",
+        "title": "Partly Cloudy",
+        "temp": 54,
+        "precipitation": 0,
+        "wind": 2,
+        "windDirection": "SSE",
+        "humidity": 51,
+        "ultraviolet": "Low",
+        "heatIndex": 54
+      }
+    ]
+  }
