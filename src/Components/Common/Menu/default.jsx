@@ -1,19 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Menu(props) {
-    const { items } = props;
+import CardSection from '../../Layouts/CardSection/default';
 
+function Menu({ items }) {
     const menuItems = items.map((item) => {
         return (
-            <Link key={item.id} to={item.link}>
-                <figure>
-                    <span className="filler">
-                        <img src={`./images/${item.image}`} alt={item.title} />
-                    </span>
-                </figure>
-                <p>{item.title}</p>
-            </Link>
+            <CardSection item={item} />
+            // <Link key={item.id} to={item.link}>
+            //     <figure>
+            //         <span className="filler">
+            //             <img src={`./images/${item.image}`} alt={item.title} />
+            //         </span>
+            //     </figure>
+            //     <p>{item.title}</p>
+            // </Link>
         )
     })
 

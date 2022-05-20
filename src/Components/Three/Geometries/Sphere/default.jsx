@@ -27,7 +27,7 @@ function Sphere() {
             alpha: true,
         });
 
-        renderer.setClearColor(0xffffff);
+        renderer.setClearColor(0x000000);
         renderer.setPixelRatio(devicePixelRatio);
         renderer.setSize(canvasWidth, canvasHeight);
         container.append(renderer.domElement);
@@ -84,7 +84,7 @@ function Sphere() {
             sphere02CenterPoint.rotateZ(0.02);
 
             sphere03CenterPoint.rotateY(0.03);
-            sphere03CenterPoint.rotateX(0.03);
+            // sphere03CenterPoint.rotateX(0.03);
 
             // mesh01.rotateY(0.025);
             renderer.render(scene, camera);
