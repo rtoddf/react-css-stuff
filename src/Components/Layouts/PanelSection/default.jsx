@@ -17,7 +17,7 @@ function PanelSection({item}) {
                             <img src={`./images/${item.image}`} alt={ item.title } />
                         </span>
                     </figure>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis. Morbi vel nunc lectus. Phasellus viverra egestas nulla nec sollicitudin.</p>
+                    <p>{ item.copy }</p>
                 </article>
             </a>
         </>

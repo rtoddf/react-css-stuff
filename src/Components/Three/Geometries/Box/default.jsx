@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
-import { createRenderer, createCamera, createLight, createMaterial } from '../../utilities/default';
+import { createLight, createMaterial } from '../../utilities/default';
 import { createBoxShape } from '../../utilities/createShape';
 import Description from '../../../Common/Description/default';
 import '../../default.scss';
@@ -9,16 +9,29 @@ function Box() {
     useEffect(() => {
         const container = document.getElementById('shape-holder');
         const canvasWidth = document.getElementById('shape-holder').offsetWidth;
-        const canvasHeight = canvasWidth * 0.7;
+        const canvasHeight = canvasWidth * 0.5;
 
         // create a scene
         const scene = new THREE.Scene();
 
         // create a camera
-        const camera = createCamera(canvasWidth, canvasHeight, 1000, 1, 5000, 0, 0, 200);
+        const camera = new THREE.PerspectiveCamera(
+            75,
+            canvasWidth / canvasHeight,
+            0.1,
+            10000
+        );
+        camera.position.z = 175;
 
         // create a renderer
-        const renderer = createRenderer(container, canvasWidth, canvasHeight)
+        const renderer = new THREE.WebGLRenderer({
+            antialias: true,
+            alpha: true,
+        });
+        renderer.setClearColor(0x000000);
+        renderer.setPixelRatio(devicePixelRatio);
+        renderer.setSize(canvasWidth, canvasHeight);
+        container.append(renderer.domElement);
 
         // create two lights
         // type, color, intensity, distance, xpos, ypos, zpos

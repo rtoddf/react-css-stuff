@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
-import { createRenderer, createCamera, createLight, createMaterial } from '../../utilities/default';
+import { createMaterial } from '../../utilities/default';
 import { createConeShape } from '../../utilities/createShape';
 import Description from '../../../Common/Description/default';
 import '../../default.scss';
@@ -9,20 +9,39 @@ function Circle() {
     useEffect(() => {
         const container = document.getElementById('shape-holder');
         const canvasWidth = document.getElementById('shape-holder').offsetWidth;
-        const canvasHeight = canvasWidth * 0.7;
+        const canvasHeight = canvasWidth * 0.5;
 
         // create a scene
         const scene = new THREE.Scene();
-        const camera = createCamera(canvasWidth, canvasHeight);
+        
+        // create a camera
+        const camera = new THREE.PerspectiveCamera(
+            75,
+            canvasWidth / canvasHeight,
+            0.1,
+            10000
+        );
+        camera.position.z = 500;
 
         // create a renderer
-        const renderer = createRenderer(container, canvasWidth, canvasHeight)
+        const renderer = new THREE.WebGLRenderer({
+            antialias: true,
+            alpha: true,
+        });
 
-        // create three lights
-        // type, color, intensity, distance, xpos, ypos, zpos
-        scene.add(createLight('point', 0x003264, 2, 2000, 200, 0, 200));
-        scene.add(createLight('point', 0x003264, 2, 2000, 100, 200, 100));
-        scene.add(createLight('point', 0x003264, 2, 2000, -100, -200, -100));
+        renderer.setClearColor(0x000000);
+        renderer.setPixelRatio(devicePixelRatio);
+        renderer.setSize(canvasWidth, canvasHeight);
+        container.append(renderer.domElement);
+
+        // create lights
+        const pointLight01 = new THREE.PointLight(0xffffff, 1);
+        pointLight01.position.set( 0, 300, 300);
+        scene.add(pointLight01);
+
+        const pointLight02 = new THREE.PointLight(0xfa9900, 1);
+        pointLight02.position.set( 0, -300, 0);
+        scene.add(pointLight02);
 
         // create the cone geometry
         const cone = createConeShape();
@@ -32,12 +51,10 @@ function Circle() {
 
         const animate = () => {
             mesh.rotation.x += 0.02;
-            mesh.rotation.z += 0.02;
+            mesh.rotation.y += 0.02;
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
         };
-
-        console.log('typeOf: ', typeof animate)
 
         animate();
     }, [])

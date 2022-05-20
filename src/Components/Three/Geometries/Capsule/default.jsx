@@ -28,7 +28,7 @@ function Capsule() {
             alpha: true,
         });
 
-        renderer.setClearColor(0xffffff);
+        renderer.setClearColor(0x000000);
         renderer.setPixelRatio(devicePixelRatio);
         renderer.setSize(canvasWidth, canvasHeight);
         container.append(renderer.domElement);
