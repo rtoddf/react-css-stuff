@@ -19,16 +19,14 @@ function Weather() {
 
   let days = [];
   for (const property in cmgForecastDays) {
-    // console.log('something: ', cmgForecastDays[property]);
-    // console.log(`${property}: ${cmgForecastDays[property]}`);
-    // console.log('key: ', key)
-    // console.log('value: ', cmgForecastDays[property][key])
-
     let day = {};
 
     for (const key in cmgForecastDays[property]) {
       // NOTE: dateTime and humidity are hardcoded for now
-      day['dateTime'] = 1649073600000;
+
+      console.log('teim: ', new Date(cmgForecastDays[property]['validTimeLocal']).getTime())
+
+      day['dateTime'] = new Date(cmgForecastDays[property]['validTimeLocal']).getTime();
       day['dayIconCode'] = cmgForecastDays[property]['day']['iconCode'].toString();
       day['nightIconCode'] = cmgForecastDays[property]['night']['iconCode'].toString();
       day['title'] = cmgForecastDays[property]['day']['wxPhraseShort'];
@@ -51,7 +49,7 @@ function Weather() {
   let hourlyForecasts = [];
 
   for (const property in cmgForecastHours) {
-    if(property < 12){
+    if(property < 24){
       console.log('something: ', cmgForecastHours[property]['dayOfWeek']);
 
       let hour = {};
