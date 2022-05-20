@@ -24,6 +24,7 @@ import CylinderGeometry from './Components/Three/Geometries/Cylinder/default';
 import TorusGeometry from './Components/Three/Geometries/Torus/default';
 import PlaneGeometry from './Components/Three/Geometries/Plane/default';
 import Plane02 from './Components/Three/Geometries/Plane/Plane02';
+import Plane03 from './Components/Three/Geometries/Plane/Plane03';
 import CapsuleGeometry from './Components/Three/Geometries/Capsule/default';
 
 // Three Trials & Tests
@@ -135,6 +136,11 @@ function App() {
       <Switch>
         <Route path='/three/geometries/plane02'>
           <Plane02 />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/geometries/plane03'>
+          <Plane03 />
         </Route>
       </Switch>
       <Switch>
