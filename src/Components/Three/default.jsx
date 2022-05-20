@@ -4,7 +4,7 @@ import data from '../../Data/menu.json';
 
 function Three() {
     return (
-        <div className="threejs">
+        <div className="section threejs">
             <div className="grid">
                 <Header section={data.three.geometries} />
             </div>

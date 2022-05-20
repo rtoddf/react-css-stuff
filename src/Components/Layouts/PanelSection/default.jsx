@@ -4,14 +4,14 @@ import React from 'react';
 
 import './default.scss';
 
-function CardSection({item}) {
+function PanelSection({item}) {
     console.log('item: ', item)
 
     return (
         <>
             <a href={ item.link }>
                 <article class="panel">
-                    <h3>{ item.title }</h3>
+                    <h4>{ item.title }</h4>
                     <figure>
                         <span class="filler">
                             <img src={`./images/${item.image}`} alt={ item.title } />
@@ -24,4 +24,4 @@ function CardSection({item}) {
     )
 }
 
-export default CardSection;
+export default PanelSection;
