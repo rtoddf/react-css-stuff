@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
-import { createRenderer, createCamera, createLight, createMaterial } from '../../utilities/default';
+import { createMaterial } from '../../utilities/default';
 import { createTorusShape } from '../../utilities/createShape';
 import Description from '../../../Common/Description/default';
 import '../../default.scss';
@@ -9,29 +9,55 @@ function Torus() {
     useEffect(() => {
         const container = document.getElementById('shape-holder');
         const canvasWidth = document.getElementById('shape-holder').offsetWidth;
-        const canvasHeight = canvasWidth * 0.7;
+        const canvasHeight = canvasWidth * 0.5;
 
         // create a scene
         const scene = new THREE.Scene();
-        const camera = createCamera(canvasWidth, canvasHeight, 50, 1, 1000, 0, 0, 225);
+
+        // create a camera
+        const camera = new THREE.PerspectiveCamera(
+            75,
+            canvasWidth / canvasHeight,
+            0.1,
+            10000
+        );
+        camera.position.z = 125;
 
         // create a renderer
-        const renderer = createRenderer(container, canvasWidth, canvasHeight)
+        const renderer = new THREE.WebGLRenderer({
+            antialias: true,
+            alpha: true,
+        });
 
-        // create three lights
-        scene.add(createLight('point', 0x003264, 2, 2000, 400, 0, 100));
-        scene.add(createLight('point', 0x8403a9, 2, 2000, -700, 0, 200));
+        renderer.setClearColor(0x000000);
+        renderer.setPixelRatio(devicePixelRatio);
+        renderer.setSize(canvasWidth, canvasHeight);
+        container.append(renderer.domElement);
+
+        // create lights
+        const pointLight01 = new THREE.PointLight(0x003264, 1);
+        pointLight01.position.set( 300, 0, 200 );
+        // pointLight01.position.set( 0, 10, 10);
+        scene.add(pointLight01);
+
+        const pointLight02 = new THREE.PointLight(0x8403a9, 1);
+        pointLight02.position.set( -300, 0, 200 );
+        // pointLight02.position.set( 0, -10, 0);
+        scene.add(pointLight02);
+
+		scene.add(
+            new THREE.PointLightHelper(pointLight01),
+            new THREE.PointLightHelper(pointLight02)
+        )
 
         // create the cone geometry
-        const torus = createTorusShape(50, 20, 0xffffff, 50, 100);
+        const torus = createTorusShape(50, 15, 0xffffff, 50, 100);
         const material = createMaterial();
         const mesh = new THREE.Mesh(torus, material)
         scene.add(mesh);
 
         const animate = () => {
-            mesh.rotation.x += 0.03;
-            mesh.rotation.y += 0.05;
-            mesh.rotation.z += 0.03;
+            mesh.rotation.y += 0.02;
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
         };

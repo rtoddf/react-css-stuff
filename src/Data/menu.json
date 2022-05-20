@@ -82,6 +82,13 @@
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
+                    "id": "three-shapes-9",
+                    "link": "/three/geometries/capsule",
+                    "title": "Capsule ",
+                    "image": "threejs/thumbnails/capsule-shape.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
                     "id": "three-shapes-4",
                     "link": "/three/geometries/circle",
                     "title": "Circle",
@@ -114,13 +121,6 @@
                     "link": "/three/geometries/plane02",
                     "title": "Plane",
                     "image": "placeholder.jpg",
-                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
-                },
-                {
-                    "id": "three-shapes-9",
-                    "link": "/three/geometries/capsule",
-                    "title": "Capsule ",
-                    "image": "threejs/thumbnails/capsule-shape.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]

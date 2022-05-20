@@ -38,16 +38,17 @@ function Capsule() {
 
         // create lights
         const pointLight01 = new THREE.PointLight(0xffffff, 1);
-        pointLight01.position.set( 0, 10, 10);
+        pointLight01.position.set( 0, 10, 10 );
         scene.add(pointLight01);
 
         const pointLight02 = new THREE.PointLight(0xfa9900, 1);
-        pointLight02.position.set( 0, -10, 0);
+        pointLight02.position.set( 0, -10, 0 );
         scene.add(pointLight02);
 
-        const lightHelper1 = new THREE.PointLightHelper(pointLight01)
-        const lightHelper2 = new THREE.PointLightHelper(pointLight02)
-		scene.add(lightHelper1, lightHelper2)
+		scene.add(
+            new THREE.PointLightHelper(pointLight01),
+            new THREE.PointLightHelper(pointLight02)
+        )
 
         // create the box geometry
         const geometry = new THREE.CapsuleGeometry( 4, 6, 100, 50 );
