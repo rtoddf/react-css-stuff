@@ -78,7 +78,7 @@ function Circle() {
 
     return (
         <>
-            <Description title="Circle - Shiny Material" copy="" />
+            <Description title="Circle" copy="" />
             <div className="grid">
                 <div id="shape-holder"></div>
             </div>

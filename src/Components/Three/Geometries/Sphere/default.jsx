@@ -95,7 +95,7 @@ function Sphere() {
 
     return (
         <>
-            <Description title="Sphere" copy="" />
+            <Description title="Spheres" copy="" />
             <div className="grid">
                 <div id="shape-holder"></div>
             </div>

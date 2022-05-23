@@ -64,7 +64,7 @@ function Plane() {
 
     return (
         <>
-            <Description title="Plane - Shiny Material" copy="" />
+            <Description title="Plane" copy="" />
             <div className="grid">
                 <div id="shape-holder"></div>
             </div>

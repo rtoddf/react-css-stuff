@@ -30,7 +30,7 @@ function Wireframes() {
     useEffect(() => {
         const container = document.getElementById('shape-holder');
         const canvasWidth = document.getElementById('shape-holder').offsetWidth;
-        const canvasHeight = canvasWidth * 0.7;
+        const canvasHeight = canvasWidth * 0.5;
 
         // create a camera
         const camera = new THREE.PerspectiveCamera(
@@ -48,14 +48,14 @@ function Wireframes() {
             antialias: true,
         });
 
-        renderer.setClearColor(0xffffff);
+        renderer.setClearColor(0x000000);
         renderer.setPixelRatio(devicePixelRatio);
         renderer.setSize(canvasWidth, canvasHeight);
         container.append(renderer.domElement);
 
         // create the geometry
         const material = new THREE.MeshBasicMaterial({ 
-            color: 'rgba(51,51,51,1)', 
+            color: 0xffffff, 
             wireframe: true 
         })
 

@@ -67,7 +67,7 @@ function Torus() {
 
     return (
         <>
-            <Description title="Torus - Shiny Material" copy="" />
+            <Description title="Torus" copy="" />
             <div className="grid">
                 <div id="shape-holder"></div>
             </div>

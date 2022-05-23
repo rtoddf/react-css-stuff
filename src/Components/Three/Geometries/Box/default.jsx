@@ -55,7 +55,7 @@ function Box() {
 
     return (
         <>
-            <Description title="Simple Box - Shiny Material" copy="" />
+            <Description title="Box" copy="" />
             <div className="grid">
                 <div id="shape-holder"></div>
             </div>

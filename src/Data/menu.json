@@ -50,7 +50,7 @@
                 {
                     "id": "three-lights-1",
                     "link": "/three/lights/point01",
-                    "title": "Point Lights & Shadows (w/Light Helpers)",
+                    "title": "Point Lights & Shadows",
                     "image": "threejs/thumbnails/point-lights-shadows.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
@@ -58,14 +58,14 @@
                     "id": "three-lights-2",
                     "link": "/three/lights/shadows01",
                     "title": "Shadows & Light",
-                    "image": "threejs/thumbnails/shadow01.jpg",
+                    "image": "threejs/thumbnails/shadows01.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": "three-lights-3",
                     "link": "/three/lights/shadows02",
                     "title": "Lighting & Shadow",
-                    "image": "threejs/thumbnails/test03.jpg",
+                    "image": "threejs/thumbnails/shadows02.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
@@ -146,14 +146,14 @@
                 {
                     "id": "three-test-1",
                     "link": "/three/tests/test01",
-                    "title": "Test One - Box Geometry",
+                    "title": "Box Geometry",
                     "image": "threejs/thumbnails/test01.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": "three-test-2",
                     "link": "/three/tests/test02",
-                    "title": "Test Two - Geometry & Lighting",
+                    "title": "Geometry & Lighting",
                     "image": "threejs/thumbnails/test02.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
