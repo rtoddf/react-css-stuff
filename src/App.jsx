@@ -23,6 +23,8 @@ import BoxGeometry from './Components/Three/Geometries/Box/default';
 import ConeGeometry from './Components/Three/Geometries/Cone/default';
 import CircleGeometry from './Components/Three/Geometries/Circle/default';
 import CylinderGeometry from './Components/Three/Geometries/Cylinder/default';
+import Dodecahedron from './Components/Three/Geometries/Dodecahedron/default';
+
 import TorusGeometry from './Components/Three/Geometries/Torus/default';
 import PlaneGeometry from './Components/Three/Geometries/Plane/default';
 import CapsuleGeometry from './Components/Three/Geometries/Capsule/default';
@@ -107,13 +109,13 @@ function App() {
 
       {/* ThreeJS geometries */}
       <Switch>
-        <Route path='/three/geometries/sphere'>
-          <SphereGeometry />
+        <Route path='/three/geometries/box'>
+          <BoxGeometry />
         </Route>
       </Switch>
       <Switch>
-        <Route path='/three/geometries/box'>
-          <BoxGeometry />
+        <Route path='/three/geometries/capsule'>
+          <CapsuleGeometry />
         </Route>
       </Switch>
       <Switch>
@@ -132,8 +134,8 @@ function App() {
         </Route>
       </Switch>
       <Switch>
-        <Route path='/three/geometries/torus'>
-          <TorusGeometry />
+        <Route path='/three/geometries/dodecahedron'>
+          <Dodecahedron />
         </Route>
       </Switch>
       <Switch>
@@ -142,8 +144,13 @@ function App() {
         </Route>
       </Switch>
       <Switch>
-        <Route path='/three/geometries/capsule'>
-          <CapsuleGeometry />
+        <Route path='/three/geometries/sphere'>
+          <SphereGeometry />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/geometries/torus'>
+          <TorusGeometry />
         </Route>
       </Switch>
       <Switch>

@@ -110,6 +110,13 @@
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
+                    "id": "three-geometries-10",
+                    "link": "/three/geometries/dodecahedron",
+                    "title": "Dodecahedron",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
                     "id": "three-geometries-7",
                     "link": "/three/geometries/plane",
                     "title": "Plane",
