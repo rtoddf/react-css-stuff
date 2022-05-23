@@ -11,6 +11,7 @@ import Three from './Components/Three/default';
 
 // Lights
 import Point01 from './Components/Three/Lights/Point01/default';
+import Shadows01 from './Components/Three/Lights/Shadows01/default';
 
 // Shaders
 import Texture01 from './Components/Three/Shaders/Texture01/default';
@@ -23,7 +24,6 @@ import CircleGeometry from './Components/Three/Geometries/Circle/default';
 import CylinderGeometry from './Components/Three/Geometries/Cylinder/default';
 import TorusGeometry from './Components/Three/Geometries/Torus/default';
 import PlaneGeometry from './Components/Three/Geometries/Plane/default';
-import Plane02 from './Components/Three/Geometries/Plane/Plane02';
 import Plane03 from './Components/Three/Geometries/Plane/Plane03';
 import CapsuleGeometry from './Components/Three/Geometries/Capsule/default';
 
@@ -95,6 +95,11 @@ function App() {
           <Point01 />
         </Route>
       </Switch>
+      <Switch>
+        <Route path='/three/lights/shadows01'>
+          <Shadows01 />
+        </Route>
+      </Switch>
       
       
       {/* ThreeJS geometries */}
@@ -131,11 +136,6 @@ function App() {
       <Switch>
         <Route path='/three/geometries/plane'>
           <PlaneGeometry />
-        </Route>
-      </Switch>
-      <Switch>
-        <Route path='/three/geometries/plane02'>
-          <Plane02 />
         </Route>
       </Switch>
       <Switch>

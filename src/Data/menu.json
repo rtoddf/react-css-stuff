@@ -53,6 +53,13 @@
                     "title": "Point Lights & Shadows (w/Light Helpers)",
                     "image": "threejs/thumbnails/point-lights-shadows.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-shapes-8",
+                    "link": "/three/lights/shadows01",
+                    "title": "Shadows & Light",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
         },
@@ -103,13 +110,6 @@
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
-                    "id": "three-shapes-8",
-                    "link": "/three/geometries/plane02",
-                    "title": "Plane 02",
-                    "image": "placeholder.jpg",
-                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
-                },
-                {
                     "id": "three-shapes-9",
                     "link": "/three/geometries/plane03",
                     "title": "Plane 03",
@@ -137,31 +137,31 @@
             "copy": "",
             "items": [
                 {
+                    "id": "three-test-4",
+                    "link": "/three/tests/wireframes",
+                    "title": "Wireframes",
+                    "image": "threejs/thumbnails/wireframes.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
                     "id": "three-test-1",
                     "link": "/three/tests/test01",
-                    "title": "Test One",
+                    "title": "Test One - Box Geometry",
                     "image": "threejs/thumbnails/test01.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": "three-test-2",
                     "link": "/three/tests/test02",
-                    "title": "Test Two",
+                    "title": "Test Two - Geometry & Lighting",
                     "image": "threejs/thumbnails/test02.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": "three-test-3",
                     "link": "/three/tests/test03",
-                    "title": "Test Three",
+                    "title": "Test Three - Lighting & Shadow",
                     "image": "threejs/thumbnails/test03.jpg",
-                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
-                },
-                {
-                    "id": "three-test-4",
-                    "link": "/three/tests/wireframes",
-                    "title": "Wireframes",
-                    "image": "threejs/thumbnails/wireframes.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
