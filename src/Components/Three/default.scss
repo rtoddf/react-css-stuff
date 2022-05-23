@@ -1,3 +1,20 @@
+.threejs {
+    .grid {
+        grid-gap: 1.5rem;
+
+        &.menu {
+            margin-top: 0;
+        }
+
+        .description {
+            margin-bottom: 0;
+        }
+    }
+}
+
 #shape-holder {
-    width: 50%;
+    &.half {
+        // width: 50%;
+        background-color: #000;
+    }
 }

@@ -8,19 +8,35 @@ import Home from './Components/Home/default';
 
 // Three
 import Three from './Components/Three/default';
-import Wireframes from './Components/Three/Wireframes/default';
-import BoxShape from './Components/Three/BoxShape/default';
-import ConeShape from './Components/Three/ConeShape/default';
-import CircleShape from './Components/Three/CircleShape/default';
-import CylinderShape from './Components/Three/CylinderShape/default';
-import TorusShape from './Components/Three/TorusShape/default';
-import PlaneShape from './Components/Three/PlaneShape/default';
 
-import Test from './Components/Three/Test/default';
+// Lights
+import Point01 from './Components/Three/Lights/Point01/default';
+import Shadows01 from './Components/Three/Lights/Shadows01/default';
+import Shadows02 from './Components/Three/Lights/Shadows02/default';
+
+// Shaders
+import Texture01 from './Components/Three/Shaders/Texture01/default';
+
+// Three Geometries
+import SphereGeometry from './Components/Three/Geometries/Sphere/default';
+import BoxGeometry from './Components/Three/Geometries/Box/default';
+import ConeGeometry from './Components/Three/Geometries/Cone/default';
+import CircleGeometry from './Components/Three/Geometries/Circle/default';
+import CylinderGeometry from './Components/Three/Geometries/Cylinder/default';
+import TorusGeometry from './Components/Three/Geometries/Torus/default';
+import PlaneGeometry from './Components/Three/Geometries/Plane/default';
+import CapsuleGeometry from './Components/Three/Geometries/Capsule/default';
+import Wireframes from './Components/Three/Geometries/Wireframes/default';
+
+// Three Trials & Tests
+import Test01 from './Components/Three/Tests/Test01/default';
+import Test02 from './Components/Three/Tests/Test02/default';
+import Test04 from './Components/Three/Tests/Test04/default';
 
 // Apis
 import Apis from './Components/Apis/default';
 import Placeholder from './Components/Apis/Placeholder/default';
+import Weather from './Components/Apis/Placeholder/Weather';
 import ItunesImages from './Components/Apis/Itunes/ItunesImages';
 import ItunesArtistInfo from './Components/Apis/Itunes/ItunesArtistInfo';
 
@@ -71,48 +87,94 @@ function App() {
           <Three />
         </Route>
       </Switch>
+
+      {/* ThreeJS lights */}
       <Switch>
-        <Route path='/three/wireframes'>
+        <Route path='/three/lights/point01'>
+          <Point01 />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/lights/shadows01'>
+          <Shadows01 />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/lights/shadows02'>
+          <Shadows02 />
+        </Route>
+      </Switch>
+
+      {/* ThreeJS geometries */}
+      <Switch>
+        <Route path='/three/geometries/sphere'>
+          <SphereGeometry />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/geometries/box'>
+          <BoxGeometry />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/geometries/cone'>
+          <ConeGeometry />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/geometries/circle'>
+          <CircleGeometry />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/geometries/cylinder'>
+          <CylinderGeometry />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/geometries/torus'>
+          <TorusGeometry />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/geometries/plane'>
+          <PlaneGeometry />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/geometries/capsule'>
+          <CapsuleGeometry />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/geometries/wireframes'>
           <Wireframes />
         </Route>
       </Switch>
+
+      {/* ThreeJS Trials & Tests */}
       <Switch>
-        <Route path='/three/boxshape'>
-          <BoxShape />
+        <Route path='/three/tests/test01'>
+          <Test01 />
+        </Route>
+      </Switch>  
+      <Switch>
+        <Route path='/three/tests/test02'>
+          <Test02 />
         </Route>
       </Switch>
       <Switch>
-        <Route path='/three/coneshape'>
-          <ConeShape />
+        <Route path='/three/tests/test04'>
+          <Test04 />
         </Route>
       </Switch>
+
+      {/* ThreeJS Shaders */}
       <Switch>
-        <Route path='/three/circleshape'>
-          <CircleShape />
+        <Route path='/three/shaders/texture01'>
+          <Texture01 />
         </Route>
-      </Switch>
-      <Switch>
-        <Route path='/three/cylindershape'>
-          <CylinderShape />
-        </Route>
-      </Switch>
-      <Switch>
-        <Route path='/three/torusshape'>
-          <TorusShape />
-        </Route>
-      </Switch>
-      <Switch>
-        <Route path='/three/planeshape'>
-          <PlaneShape />
-        </Route>
-      </Switch>
-      
-      
-      <Switch>
-        <Route path='/three/test'>
-          <Test />
-        </Route>
-      </Switch>      
+      </Switch> 
 
       {/* Apis */}
       <Switch>
@@ -123,6 +185,11 @@ function App() {
       <Switch>
         <Route path='/apis/placeholder'>
           <Placeholder />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/apis/weather'>
+          <Weather />
         </Route>
       </Switch>
       <Switch>

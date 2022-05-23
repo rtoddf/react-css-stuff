@@ -1,19 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import PanelSection from '../../Layouts/PanelSection/default';
 
-function Menu(props) {
-    const { items } = props;
-
+function Menu({ items }) {
     const menuItems = items.map((item) => {
         return (
-            <Link key={item.id} to={item.link}>
-                <figure>
-                    <span className="filler">
-                        <img src={`./images/${item.image}`} alt={item.title} />
-                    </span>
-                </figure>
-                <p>{item.title}</p>
-            </Link>
+            <PanelSection item={item} />
         )
     })
 
