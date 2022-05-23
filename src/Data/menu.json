@@ -55,10 +55,10 @@
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
-                    "id": "three-shapes-8",
+                    "id": "three-geometries-8",
                     "link": "/three/lights/shadows01",
                     "title": "Shadows & Light",
-                    "image": "placeholder.jpg",
+                    "image": "threejs/thumbnails/shadow01.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
@@ -68,66 +68,66 @@
             "copy": "",
             "items": [
                 {
-                    "id": "three-shapes-2",
+                    "id": "three-geometries-2",
                     "link": "/three/geometries/box",
                     "title": "Box",
                     "image": "threejs/thumbnails/box-shape.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
-                    "id": "three-shapes-9",
+                    "id": "three-geometries-9",
                     "link": "/three/geometries/capsule",
                     "title": "Capsule ",
                     "image": "threejs/thumbnails/capsule-shape.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
-                    "id": "three-shapes-4",
+                    "id": "three-geometries-4",
                     "link": "/three/geometries/circle",
                     "title": "Circle",
                     "image": "threejs/thumbnails/circle-shape.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
-                    "id": "three-shapes-3",
+                    "id": "three-geometries-3",
                     "link": "/three/geometries/cone",
                     "title": "Cone",
                     "image": "threejs/thumbnails/cone-shape.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
-                    "id": "three-shapes-5",
+                    "id": "three-geometries-5",
                     "link": "/three/geometries/cylinder",
                     "title": "Cylinder",
                     "image": "threejs/thumbnails/cylinder-shape.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
-                    "id": "three-shapes-7",
+                    "id": "three-geometries-7",
                     "link": "/three/geometries/plane",
                     "title": "Plane",
                     "image": "threejs/thumbnails/plane-shape.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
-                    "id": "three-shapes-9",
-                    "link": "/three/geometries/plane03",
-                    "title": "Plane 03",
-                    "image": "placeholder.jpg",
-                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
-                },
-                {
-                    "id": "three-shapes-1",
+                    "id": "three-geometries-1",
                     "link": "/three/geometries/sphere",
                     "title": "Sphere ",
                     "image": "threejs/thumbnails/sphere-shape.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
-                    "id": "three-shapes-6",
+                    "id": "three-geometries-6",
                     "link": "/three/geometries/torus",
                     "title": "Torus",
                     "image": "threejs/thumbnails/torus-shape.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-geometries-0",
+                    "link": "/three/geometries/wireframes",
+                    "title": "Wireframes",
+                    "image": "threejs/thumbnails/wireframes.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
@@ -136,13 +136,6 @@
             "headline": "Three JS Tests",
             "copy": "",
             "items": [
-                {
-                    "id": "three-test-4",
-                    "link": "/three/tests/wireframes",
-                    "title": "Wireframes",
-                    "image": "threejs/thumbnails/wireframes.jpg",
-                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
-                },
                 {
                     "id": "three-test-1",
                     "link": "/three/tests/test01",
@@ -162,6 +155,13 @@
                     "link": "/three/tests/test03",
                     "title": "Test Three - Lighting & Shadow",
                     "image": "threejs/thumbnails/test03.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-test-5",
+                    "link": "/three/tests/test04",
+                    "title": "Lighting & Shadow Test",
+                    "image": "threejs/thumbnails/test04.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]

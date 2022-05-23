@@ -98,7 +98,7 @@ function Plane02() {
 
     return (
         <>
-            <Description title="Plane - Shiny Material" copy="" />
+            <Description title="Shadows &amp; Light" copy="" />
             <div className="grid">
                 <div id="shape-holder"></div>
             </div>

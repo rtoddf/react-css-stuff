@@ -4,7 +4,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Description from '../../../Common/Description/default';
 import '../../default.scss';
 
-function Plane03() {
+function Test04() {
     useEffect(() => {
 
         let renderer, scene, camera;
@@ -108,7 +108,7 @@ function Plane03() {
 
     return (
         <>
-            <Description title="Plane - Shiny Material" copy="" />
+            <Description title="Test 04 - Lighting &amp; Shadow" copy="" />
             <div className="grid">
                 <div id="shape-holder"></div>
             </div>
@@ -116,4 +116,4 @@ function Plane03() {
     )
 }
 
-export default Plane03;
+export default Test04;

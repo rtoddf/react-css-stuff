@@ -24,15 +24,14 @@ import CircleGeometry from './Components/Three/Geometries/Circle/default';
 import CylinderGeometry from './Components/Three/Geometries/Cylinder/default';
 import TorusGeometry from './Components/Three/Geometries/Torus/default';
 import PlaneGeometry from './Components/Three/Geometries/Plane/default';
-import Plane03 from './Components/Three/Geometries/Plane/Plane03';
 import CapsuleGeometry from './Components/Three/Geometries/Capsule/default';
+import Wireframes from './Components/Three/Geometries/Wireframes/default';
 
 // Three Trials & Tests
 import Test01 from './Components/Three/Tests/Test01/default';
 import Test02 from './Components/Three/Tests/Test02/default';
 import Test03 from './Components/Three/Tests/Test03/default';
-import Wireframes from './Components/Three/Tests/Wireframes/default';
-
+import Test04 from './Components/Three/Tests/Test04/default';
 
 // Apis
 import Apis from './Components/Apis/default';
@@ -100,8 +99,7 @@ function App() {
           <Shadows01 />
         </Route>
       </Switch>
-      
-      
+
       {/* ThreeJS geometries */}
       <Switch>
         <Route path='/three/geometries/sphere'>
@@ -139,18 +137,16 @@ function App() {
         </Route>
       </Switch>
       <Switch>
-        <Route path='/three/geometries/plane03'>
-          <Plane03 />
-        </Route>
-      </Switch>
-      <Switch>
         <Route path='/three/geometries/capsule'>
           <CapsuleGeometry />
         </Route>
       </Switch>
+      <Switch>
+        <Route path='/three/geometries/wireframes'>
+          <Wireframes />
+        </Route>
+      </Switch>
 
-      
-      
       {/* ThreeJS Trials & Tests */}
       <Switch>
         <Route path='/three/tests/test01'>
@@ -166,10 +162,10 @@ function App() {
         <Route path='/three/tests/test03'>
           <Test03 />
         </Route>
-      </Switch>      
+      </Switch>
       <Switch>
-        <Route path='/three/tests/wireframes'>
-          <Wireframes />
+        <Route path='/three/tests/test04'>
+          <Test04 />
         </Route>
       </Switch>
 
