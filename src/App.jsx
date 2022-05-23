@@ -12,6 +12,7 @@ import Three from './Components/Three/default';
 // Lights
 import Point01 from './Components/Three/Lights/Point01/default';
 import Shadows01 from './Components/Three/Lights/Shadows01/default';
+import Shadows02 from './Components/Three/Lights/Shadows02/default';
 
 // Shaders
 import Texture01 from './Components/Three/Shaders/Texture01/default';
@@ -30,7 +31,6 @@ import Wireframes from './Components/Three/Geometries/Wireframes/default';
 // Three Trials & Tests
 import Test01 from './Components/Three/Tests/Test01/default';
 import Test02 from './Components/Three/Tests/Test02/default';
-import Test03 from './Components/Three/Tests/Test03/default';
 import Test04 from './Components/Three/Tests/Test04/default';
 
 // Apis
@@ -99,6 +99,11 @@ function App() {
           <Shadows01 />
         </Route>
       </Switch>
+      <Switch>
+        <Route path='/three/lights/shadows02'>
+          <Shadows02 />
+        </Route>
+      </Switch>
 
       {/* ThreeJS geometries */}
       <Switch>
@@ -156,11 +161,6 @@ function App() {
       <Switch>
         <Route path='/three/tests/test02'>
           <Test02 />
-        </Route>
-      </Switch>
-      <Switch>
-        <Route path='/three/tests/test03'>
-          <Test03 />
         </Route>
       </Switch>
       <Switch>

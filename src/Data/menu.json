@@ -48,17 +48,24 @@
             "copy": "",
             "items": [
                 {
-                    "id": "three-lighting-1",
+                    "id": "three-lights-1",
                     "link": "/three/lights/point01",
                     "title": "Point Lights & Shadows (w/Light Helpers)",
                     "image": "threejs/thumbnails/point-lights-shadows.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
-                    "id": "three-geometries-8",
+                    "id": "three-lights-2",
                     "link": "/three/lights/shadows01",
                     "title": "Shadows & Light",
                     "image": "threejs/thumbnails/shadow01.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-lights-3",
+                    "link": "/three/lights/shadows02",
+                    "title": "Lighting & Shadow",
+                    "image": "threejs/thumbnails/test03.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
@@ -148,13 +155,6 @@
                     "link": "/three/tests/test02",
                     "title": "Test Two - Geometry & Lighting",
                     "image": "threejs/thumbnails/test02.jpg",
-                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
-                },
-                {
-                    "id": "three-test-3",
-                    "link": "/three/tests/test03",
-                    "title": "Test Three - Lighting & Shadow",
-                    "image": "threejs/thumbnails/test03.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {

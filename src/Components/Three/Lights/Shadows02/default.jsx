@@ -4,7 +4,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Description from '../../../Common/Description/default';
 import '../../default.scss';
 
-function Test03() {
+function Shadows02() {
     useEffect(() => {
         const π = Math.PI;
         // create a scene
@@ -86,8 +86,6 @@ function Test03() {
 
         const controls = new OrbitControls(camera, renderer.domElement);
 
-        // add FPS stats
-
         // add animate
         function animate(){
             window.requestAnimationFrame(animate);
@@ -117,4 +115,4 @@ function Test03() {
     )
 }
 
-export default Test03;
+export default Shadows02;
