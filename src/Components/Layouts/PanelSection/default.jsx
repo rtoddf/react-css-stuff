@@ -5,15 +5,15 @@ import React from 'react';
 import './default.scss';
 
 function PanelSection({item}) {
-    console.log('item: ', item)
+    // console.log('item: ', item)
 
     return (
         <>
             <a href={ item.link }>
-                <article class="panel">
+                <article className="panel">
                     <h4>{ item.title }</h4>
                     <figure>
-                        <span class="filler">
+                        <span className="filler">
                             <img src={`./images/${item.image}`} alt={ item.title } />
                         </span>
                     </figure>

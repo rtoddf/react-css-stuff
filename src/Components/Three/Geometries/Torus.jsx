@@ -1,10 +1,11 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import Description from '../../../Common/Description/default';
-import '../../default.scss';
+import { createMaterial } from '../utilities/default';
+import { createTorusShape } from '../utilities/createShape';
+import Description from '../../Common/Description/default';
+import '../default.scss';
 
-function Capsule() {
+function Torus() {
     useEffect(() => {
         const container = document.getElementById('shape-holder');
         const canvasWidth = document.getElementById('shape-holder').offsetWidth;
@@ -20,7 +21,7 @@ function Capsule() {
             0.1,
             10000
         );
-        camera.position.z = 15;
+        camera.position.z = 125;
 
         // create a renderer
         const renderer = new THREE.WebGLRenderer({
@@ -33,16 +34,15 @@ function Capsule() {
         renderer.setSize(canvasWidth, canvasHeight);
         container.append(renderer.domElement);
 
-        const controls = new OrbitControls( camera, renderer.domElement );
-        controls.enableZoom = true;
-
         // create lights
-        const pointLight01 = new THREE.PointLight(0xffffff, 1);
-        pointLight01.position.set( 0, 10, 10 );
+        const pointLight01 = new THREE.PointLight(0x003264, 1);
+        pointLight01.position.set( 300, 0, 200 );
+        // pointLight01.position.set( 0, 10, 10);
         scene.add(pointLight01);
 
-        const pointLight02 = new THREE.PointLight(0xfa9900, 1);
-        pointLight02.position.set( 0, -10, 0 );
+        const pointLight02 = new THREE.PointLight(0x8403a9, 1);
+        pointLight02.position.set( -300, 0, 200 );
+        // pointLight02.position.set( 0, -10, 0);
         scene.add(pointLight02);
 
 		scene.add(
@@ -50,30 +50,24 @@ function Capsule() {
             new THREE.PointLightHelper(pointLight02)
         )
 
-        // create the box geometry
-        const geometry = new THREE.CapsuleGeometry( 4, 6, 100, 50 );
-        const material = new THREE.MeshPhongMaterial({
-            color: 0xffffff,
-            // wireframe: true
-            // map: new THREE.TextureLoader().load('images/threejs/textures/globe.jpeg'),
-        });
-
-        const mesh = new THREE.Mesh( geometry, material );
+        // create the cone geometry
+        const torus = createTorusShape(50, 15, 0xffffff, 50, 100);
+        const material = createMaterial();
+        const mesh = new THREE.Mesh(torus, material)
         scene.add(mesh);
 
         const animate = () => {
+            mesh.rotation.y += 0.02;
             renderer.render(scene, camera);
-            mesh.rotation.x += 0.03;
-            // mesh.rotation.z += 0.03;
-            controls.update();
             requestAnimationFrame(animate);
         };
+
         animate();
     }, [])
 
     return (
         <>
-            <Description title="Capsule" copy="" />
+            <Description title="Torus" copy="" />
             <div className="grid">
                 <div id="shape-holder"></div>
             </div>
@@ -81,4 +75,4 @@ function Capsule() {
     )
 }
 
-export default Capsule;
+export default Torus;

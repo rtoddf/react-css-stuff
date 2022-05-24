@@ -2,9 +2,9 @@ import React from 'react';
 import PanelSection from '../../Layouts/PanelSection/default';
 
 function Menu({ items }) {
-    const menuItems = items.map((item) => {
+    const menuItems = items.map((item, index) => {
         return (
-            <PanelSection item={item} />
+            <PanelSection key={index} item={item} />
         )
     })
 

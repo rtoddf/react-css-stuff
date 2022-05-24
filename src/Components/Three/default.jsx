@@ -14,9 +14,9 @@ function Three() {
             <div className="grid">
                 <Header section={data.three.tests} />
             </div>
-            <div className="grid">
+            {/* <div className="grid">
                 <Header section={data.three.shaders} />
-            </div>
+            </div> */}
         </div>
     )
 }

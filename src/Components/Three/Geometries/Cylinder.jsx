@@ -1,11 +1,12 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
-import { createMaterial } from '../../utilities/default';
-import { createConeShape } from '../../utilities/createShape';
-import Description from '../../../Common/Description/default';
-import '../../default.scss';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { createMaterial } from '../utilities/default';
+import { createCylinderShape } from '../utilities/createShape';
+import Description from '../../Common/Description/default';
+import '../default.scss';
 
-function Circle() {
+function Cylinder() {
     useEffect(() => {
         const container = document.getElementById('shape-holder');
         const canvasWidth = document.getElementById('shape-holder').offsetWidth;
@@ -13,7 +14,9 @@ function Circle() {
 
         // create a scene
         const scene = new THREE.Scene();
-        
+
+        // const camera = createCamera(canvasWidth, canvasHeight, 50, 1, 1000, 0, 0, 300);
+
         // create a camera
         const camera = new THREE.PerspectiveCamera(
             75,
@@ -21,7 +24,7 @@ function Circle() {
             0.1,
             10000
         );
-        camera.position.z = 500;
+        camera.position.z = 150;
 
         // create a renderer
         const renderer = new THREE.WebGLRenderer({
@@ -34,24 +37,36 @@ function Circle() {
         renderer.setSize(canvasWidth, canvasHeight);
         container.append(renderer.domElement);
 
+        const controls = new OrbitControls( camera, renderer.domElement );
+        controls.enableZoom = true;
+
         // create lights
-        const pointLight01 = new THREE.PointLight(0xffffff, 1);
-        pointLight01.position.set( 0, 300, 300);
+        const pointLight01 = new THREE.PointLight(0xae0000, 1);
+        pointLight01.position.set( 100, 0, 100 );
         scene.add(pointLight01);
 
         const pointLight02 = new THREE.PointLight(0xfa9900, 1);
-        pointLight02.position.set( 0, -300, 0);
+        pointLight02.position.set( -100, 0, 100 );
         scene.add(pointLight02);
 
+        const pointLight03 = new THREE.PointLight(0x999900, 1);
+        pointLight03.position.set( 0, 100, 100 );
+        scene.add(pointLight03);
+
+		scene.add(
+            new THREE.PointLightHelper(pointLight01),
+            new THREE.PointLightHelper(pointLight02),
+            new THREE.PointLightHelper(pointLight03)
+        )
+
         // create the cone geometry
-        const cone = createConeShape();
-        const material = createMaterial('meshLambert', 0x00ff00);
-        const mesh = new THREE.Mesh(cone, material)
+        const cylinder = createCylinderShape();
+        const material = createMaterial();
+        const mesh = new THREE.Mesh(cylinder, material)
         scene.add(mesh);
 
         const animate = () => {
-            mesh.rotation.x += 0.02;
-            mesh.rotation.y += 0.02;
+            mesh.rotation.x += 0.03;
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
         };
@@ -61,7 +76,7 @@ function Circle() {
 
     return (
         <>
-            <Description title="Cone" copy="" />
+            <Description title="Cylinder" copy="" />
             <div className="grid">
                 <div id="shape-holder"></div>
             </div>
@@ -69,4 +84,4 @@ function Circle() {
     )
 }
 
-export default Circle;
+export default Cylinder;

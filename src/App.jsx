@@ -10,28 +10,26 @@ import Home from './Components/Home/default';
 import Three from './Components/Three/default';
 
 // Lights
-import Point01 from './Components/Three/Lights/Point01/default';
-import Shadows01 from './Components/Three/Lights/Shadows01/default';
-import Shadows02 from './Components/Three/Lights/Shadows02/default';
-
-// Shaders
-import Texture01 from './Components/Three/Shaders/Texture01/default';
+import Point01 from './Components/Three/Lights/Point01';
+import Shadows01 from './Components/Three/Lights/Shadows01';
+import Shadows02 from './Components/Three/Lights/Shadows02';
 
 // Three Geometries
-import SphereGeometry from './Components/Three/Geometries/Sphere/default';
-import BoxGeometry from './Components/Three/Geometries/Box/default';
-import ConeGeometry from './Components/Three/Geometries/Cone/default';
-import CircleGeometry from './Components/Three/Geometries/Circle/default';
-import CylinderGeometry from './Components/Three/Geometries/Cylinder/default';
-import TorusGeometry from './Components/Three/Geometries/Torus/default';
-import PlaneGeometry from './Components/Three/Geometries/Plane/default';
-import CapsuleGeometry from './Components/Three/Geometries/Capsule/default';
+import Box from './Components/Three/Geometries/Box';
+import Capsule from './Components/Three/Geometries/Capsule';
+import Circle from './Components/Three/Geometries/Circle';
+import Cone from './Components/Three/Geometries/Cone';
+import Cylinder from './Components/Three/Geometries/Cylinder';
+import Dodecahedron from './Components/Three/Geometries/Dodecahedron';
+import Plane from './Components/Three/Geometries/Plane';
+import Sphere from './Components/Three/Geometries/Sphere';
+import Torus from './Components/Three/Geometries/Torus';
 import Wireframes from './Components/Three/Geometries/Wireframes/default';
 
 // Three Trials & Tests
-import Test01 from './Components/Three/Tests/Test01/default';
-import Test02 from './Components/Three/Tests/Test02/default';
-import Test04 from './Components/Three/Tests/Test04/default';
+import Test01 from './Components/Three/Tests/Test01';
+import Test02 from './Components/Three/Tests/Test02';
+import Test04 from './Components/Three/Tests/Test04';
 
 // Apis
 import Apis from './Components/Apis/default';
@@ -107,43 +105,48 @@ function App() {
 
       {/* ThreeJS geometries */}
       <Switch>
-        <Route path='/three/geometries/sphere'>
-          <SphereGeometry />
-        </Route>
-      </Switch>
-      <Switch>
         <Route path='/three/geometries/box'>
-          <BoxGeometry />
-        </Route>
-      </Switch>
-      <Switch>
-        <Route path='/three/geometries/cone'>
-          <ConeGeometry />
-        </Route>
-      </Switch>
-      <Switch>
-        <Route path='/three/geometries/circle'>
-          <CircleGeometry />
-        </Route>
-      </Switch>
-      <Switch>
-        <Route path='/three/geometries/cylinder'>
-          <CylinderGeometry />
-        </Route>
-      </Switch>
-      <Switch>
-        <Route path='/three/geometries/torus'>
-          <TorusGeometry />
-        </Route>
-      </Switch>
-      <Switch>
-        <Route path='/three/geometries/plane'>
-          <PlaneGeometry />
+          <Box />
         </Route>
       </Switch>
       <Switch>
         <Route path='/three/geometries/capsule'>
-          <CapsuleGeometry />
+          <Capsule />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/geometries/cone'>
+          <Cone />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/geometries/circle'>
+          <Circle />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/geometries/cylinder'>
+          <Cylinder />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/geometries/dodecahedron'>
+          <Dodecahedron />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/geometries/plane'>
+          <Plane />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/geometries/sphere'>
+          <Sphere />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/three/geometries/torus'>
+          <Torus />
         </Route>
       </Switch>
       <Switch>
@@ -168,13 +171,6 @@ function App() {
           <Test04 />
         </Route>
       </Switch>
-
-      {/* ThreeJS Shaders */}
-      <Switch>
-        <Route path='/three/shaders/texture01'>
-          <Texture01 />
-        </Route>
-      </Switch> 
 
       {/* Apis */}
       <Switch>

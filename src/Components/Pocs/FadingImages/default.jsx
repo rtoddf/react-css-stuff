@@ -25,14 +25,14 @@ function FadingImages() {
     let usedImages = [];
     function getUniqueRandomImage(x) {
         const index = Math.floor(Math.random() * (x));
-        console.log('data.length: ', data.length)
-        console.log('usedImages.length: ', usedImages.length)
+        // console.log('data.length: ', data.length)
+        // console.log('usedImages.length: ', usedImages.length)
         // if (usedImages.length === data.length) {
         //     usedImages = [];
         // }
 
         if (usedImages.includes(index)) {
-            console.log('index: ', index)
+            // console.log('index: ', index)
             // return getUniqueRandomImage(x);
         } else { 
             usedImages.push(index);

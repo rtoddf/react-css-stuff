@@ -1,10 +1,11 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
-import { createMaterial } from '../../utilities/default';
-import Description from '../../../Common/Description/default';
-import '../../default.scss';
+import { createMaterial } from '../utilities/default';
+import { createConeShape } from '../utilities/createShape';
+import Description from '../../Common/Description/default';
+import '../default.scss';
 
-function Plane() {
+function Circle() {
     useEffect(() => {
         const container = document.getElementById('shape-holder');
         const canvasWidth = document.getElementById('shape-holder').offsetWidth;
@@ -12,7 +13,7 @@ function Plane() {
 
         // create a scene
         const scene = new THREE.Scene();
-
+        
         // create a camera
         const camera = new THREE.PerspectiveCamera(
             75,
@@ -20,7 +21,7 @@ function Plane() {
             0.1,
             10000
         );
-        camera.position.z = 25;
+        camera.position.z = 500;
 
         // create a renderer
         const renderer = new THREE.WebGLRenderer({
@@ -34,23 +35,18 @@ function Plane() {
         container.append(renderer.domElement);
 
         // create lights
-        const pointLight01 = new THREE.PointLight(0x8d0196, 1);
-        pointLight01.position.set( 200, 0, 200 );
+        const pointLight01 = new THREE.PointLight(0xffffff, 1);
+        pointLight01.position.set( 0, 300, 300);
         scene.add(pointLight01);
 
-        const pointLight02 = new THREE.PointLight(0xffffff, 1);
-        pointLight02.position.set( -200, 0, 200 );
+        const pointLight02 = new THREE.PointLight(0xfa9900, 1);
+        pointLight02.position.set( 0, -300, 0);
         scene.add(pointLight02);
 
-		scene.add(
-            new THREE.PointLightHelper(pointLight01),
-            new THREE.PointLightHelper(pointLight02)
-        )
-
         // create the cone geometry
-        const plane = new THREE.PlaneGeometry(20, 20, 32, 32);
-        const material = createMaterial('meshPhong', 0xffffff);
-        const mesh = new THREE.Mesh(plane, material)
+        const cone = createConeShape();
+        const material = createMaterial('meshLambert', 0x00ff00);
+        const mesh = new THREE.Mesh(cone, material)
         scene.add(mesh);
 
         const animate = () => {
@@ -59,12 +55,13 @@ function Plane() {
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
         };
+
         animate();
     }, [])
 
     return (
         <>
-            <Description title="Plane" copy="" />
+            <Description title="Cone" copy="" />
             <div className="grid">
                 <div id="shape-holder"></div>
             </div>
@@ -72,4 +69,4 @@ function Plane() {
     )
 }
 
-export default Plane;
+export default Circle;

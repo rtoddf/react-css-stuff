@@ -10,7 +10,7 @@ function ItunesArtistInfo() {
   const data = ItunesData(artistName, songTitle, entity);
 
   const images = data.map((track, index) => {
-    console.log('track: ', track);
+    // console.log('track: ', track);
     if (track.kind !== 'music-video' && track.artistName === artistName) {
       return (
         <article key={index} className='panel'>
