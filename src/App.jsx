@@ -18,16 +18,15 @@ import Shadows02 from './Components/Three/Lights/Shadows02/default';
 import Texture01 from './Components/Three/Shaders/Texture01/default';
 
 // Three Geometries
-import SphereGeometry from './Components/Three/Geometries/Sphere/default';
-import BoxGeometry from './Components/Three/Geometries/Box/default';
-import ConeGeometry from './Components/Three/Geometries/Cone/default';
-import CircleGeometry from './Components/Three/Geometries/Circle/default';
-import CylinderGeometry from './Components/Three/Geometries/Cylinder/default';
-import Dodecahedron from './Components/Three/Geometries/Dodecahedron/default';
-
-import TorusGeometry from './Components/Three/Geometries/Torus/default';
-import PlaneGeometry from './Components/Three/Geometries/Plane/default';
-import CapsuleGeometry from './Components/Three/Geometries/Capsule/default';
+import Box from './Components/Three/Geometries/Box';
+import Capsule from './Components/Three/Geometries/Capsule';
+import Circle from './Components/Three/Geometries/Circle';
+import Cone from './Components/Three/Geometries/Cone';
+import Cylinder from './Components/Three/Geometries/Cylinder';
+import Dodecahedron from './Components/Three/Geometries/Dodecahedron';
+import Plane from './Components/Three/Geometries/Plane';
+import Sphere from './Components/Three/Geometries/Sphere';
+import Torus from './Components/Three/Geometries/Torus';
 import Wireframes from './Components/Three/Geometries/Wireframes/default';
 
 // Three Trials & Tests
@@ -110,27 +109,27 @@ function App() {
       {/* ThreeJS geometries */}
       <Switch>
         <Route path='/three/geometries/box'>
-          <BoxGeometry />
+          <Box />
         </Route>
       </Switch>
       <Switch>
         <Route path='/three/geometries/capsule'>
-          <CapsuleGeometry />
+          <Capsule />
         </Route>
       </Switch>
       <Switch>
         <Route path='/three/geometries/cone'>
-          <ConeGeometry />
+          <Cone />
         </Route>
       </Switch>
       <Switch>
         <Route path='/three/geometries/circle'>
-          <CircleGeometry />
+          <Circle />
         </Route>
       </Switch>
       <Switch>
         <Route path='/three/geometries/cylinder'>
-          <CylinderGeometry />
+          <Cylinder />
         </Route>
       </Switch>
       <Switch>
@@ -140,17 +139,17 @@ function App() {
       </Switch>
       <Switch>
         <Route path='/three/geometries/plane'>
-          <PlaneGeometry />
+          <Plane />
         </Route>
       </Switch>
       <Switch>
         <Route path='/three/geometries/sphere'>
-          <SphereGeometry />
+          <Sphere />
         </Route>
       </Switch>
       <Switch>
         <Route path='/three/geometries/torus'>
-          <TorusGeometry />
+          <Torus />
         </Route>
       </Switch>
       <Switch>

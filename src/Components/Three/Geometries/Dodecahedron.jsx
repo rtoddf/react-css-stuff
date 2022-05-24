@@ -1,11 +1,10 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
-import { createMaterial } from '../../utilities/default';
-import { createTorusShape } from '../../utilities/createShape';
-import Description from '../../../Common/Description/default';
-import '../../default.scss';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import Description from '../../Common/Description/default';
+import '../default.scss';
 
-function Torus() {
+function Dodecahedron() {
     useEffect(() => {
         const container = document.getElementById('shape-holder');
         const canvasWidth = document.getElementById('shape-holder').offsetWidth;
@@ -21,7 +20,7 @@ function Torus() {
             0.1,
             10000
         );
-        camera.position.z = 125;
+        camera.position.z = 25;
 
         // create a renderer
         const renderer = new THREE.WebGLRenderer({
@@ -33,17 +32,22 @@ function Torus() {
         renderer.setPixelRatio(devicePixelRatio);
         renderer.setSize(canvasWidth, canvasHeight);
         container.append(renderer.domElement);
+        const controls = new OrbitControls( camera, renderer.domElement );
+        controls.enableZoom = true;
 
         // create lights
-        const pointLight01 = new THREE.PointLight(0x003264, 1);
-        pointLight01.position.set( 300, 0, 200 );
-        // pointLight01.position.set( 0, 10, 10);
+        const pointLight01 = new THREE.PointLight(0xd403fa, .2);
+        pointLight01.position.set( 0, -10, 20 );
         scene.add(pointLight01);
 
-        const pointLight02 = new THREE.PointLight(0x8403a9, 1);
-        pointLight02.position.set( -300, 0, 200 );
-        // pointLight02.position.set( 0, -10, 0);
+        const pointLight02 = new THREE.PointLight(0x01a4ae, 1);
+        pointLight02.position.set( 0, 10, 20 );
         scene.add(pointLight02);
+
+        scene.add(
+            new THREE.PointLightHelper(pointLight01),
+            new THREE.PointLightHelper(pointLight02)
+        )
 
 		scene.add(
             new THREE.PointLightHelper(pointLight01),
@@ -51,23 +55,25 @@ function Torus() {
         )
 
         // create the cone geometry
-        const torus = createTorusShape(50, 15, 0xffffff, 50, 100);
-        const material = createMaterial();
-        const mesh = new THREE.Mesh(torus, material)
+        const dodecahedron = new THREE.DodecahedronGeometry(10);
+        const material = new THREE.MeshPhongMaterial({
+            color: 0xffffff,
+        });
+        const mesh = new THREE.Mesh(dodecahedron, material)
         scene.add(mesh);
 
         const animate = () => {
+            mesh.rotation.x += 0.02;
             mesh.rotation.y += 0.02;
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
         };
-
         animate();
     }, [])
 
     return (
         <>
-            <Description title="Torus" copy="" />
+            <Description title="Dodecahedron" copy="" />
             <div className="grid">
                 <div id="shape-holder"></div>
             </div>
@@ -75,4 +81,4 @@ function Torus() {
     )
 }
 
-export default Torus;
+export default Dodecahedron;

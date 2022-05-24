@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
-import { createLight, createMaterial } from '../../utilities/default';
-import { createBoxShape } from '../../utilities/createShape';
-import Description from '../../../Common/Description/default';
-import '../../default.scss';
+import { createLight, createMaterial } from '../utilities/default';
+import { createBoxShape } from '../utilities/createShape';
+import Description from '../../Common/Description/default';
+import '../default.scss';
 
 function Box() {
     useEffect(() => {
