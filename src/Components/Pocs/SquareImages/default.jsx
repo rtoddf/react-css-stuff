@@ -8,11 +8,11 @@ function SquareImages() {
         if(id < 6) {
             return (
                 <article key={id} data-image-layout="square">
-                    <div class="tile">
+                    <div className="tile">
                         <figure>
                             <img src={`../images/pocs/squareimages/${image.image}`} alt={image.title} />
                         </figure>
-                        <div class="content-holder">
+                        <div className="content-holder">
                             <h4>{image.title}</h4>
                         </div>
                     </div>
@@ -25,11 +25,11 @@ function SquareImages() {
         if(id < 3) {
             return (
                 <article key={id} data-image-layout="square">
-                    <div class="tile">
+                    <div className="tile">
                         <figure>
                             <img src={`../images/pocs/squareimages/${image.image}`} alt={image.title} />
                         </figure>
-                        <div class="content-holder">
+                        <div className="content-holder">
                             <h4>{image.title}</h4>
                         </div>
                     </div>

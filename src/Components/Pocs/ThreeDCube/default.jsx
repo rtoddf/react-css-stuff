@@ -54,7 +54,7 @@ function ThreeDCube() {
                     </div>
 
                     <div className="toggle-options">
-                        <div class="toggle-switch-label">Switch dataset</div>
+                        <div className="toggle-switch-label">Switch dataset</div>
                         <label className="switch">
                             
                             <input type="checkbox" onClick={() => setDataSet(dataSet === 'set01' ? 'set02' : 'set01')} />
