@@ -4,9 +4,12 @@ import data from '../../Data/menu.json';
 
 function Layouts() {
     return (
-        <div className="grid">
-            <Header section={data.layouts} />
+        <div className="section layouts">
+            <div className="grid">
+                <Header section={data.layouts} />
+            </div>
         </div>
+        
     )
 }
 

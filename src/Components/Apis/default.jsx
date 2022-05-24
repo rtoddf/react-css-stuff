@@ -4,8 +4,10 @@ import data from '../../Data/menu.json';
 
 function Apis() {
     return (
-        <div className="grid">
-            <Header section={data.apis} />
+        <div className="section apis">
+            <div className="grid">
+                <Header section={data.apis} />
+            </div>
         </div>
     )
 }

@@ -5,9 +5,12 @@ import './default.scss';
 
 function Home() {
     return (
-        <div className="grid">
-            <Header section={data.home} />
+        <div className="section home">
+            <div className="grid">
+                <Header section={data.home} />
+            </div>
         </div>
+        
     )
 }
 
