@@ -2,13 +2,14 @@ Layouts:
     ✔ fix /layouts/card @done(22-05-26 15:22)
     ✔ add placeholder items to /gsap @done(22-05-26 13:06)
     ✔ finish thumbnails /apis @done(22-05-26 15:19)
-    ☐ why aren't you using the panel component for /apis/itunes/artist
-    ☐ why aren't you using the panel component for /apis/itunes/images
+    ✔ why aren't you using the card component for /apis/itunes/artist @done(22-05-26 15:45)
+    ✔ why aren't you using the card component for /apis/itunes/images @done(22-05-26 15:45)
     ☐ add a search for the two pages above
     ☐ finish /pocs/fading-images
     ☐ new images for /pocs/square-images
     ☐ button css for /pocs/three-d-cube
     ☐ make card more universal
+    ☐ your square card isn't square - it's a rectangle. Make a square one
   
   Todos:
     You can write plain text notes/descriptions wherever you want

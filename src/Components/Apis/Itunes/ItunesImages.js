@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Card from '../../Common/Card/default';
 import { ItunesData } from '../../../Apis/Itunes';
 import './default.scss';
 
@@ -7,27 +8,17 @@ function ItunesImages() {
   const [songTitle, setSongTitle] = useState('Marvin Gaye');
   const data = ItunesData(artistName, songTitle, 'musicTrack');
 
-  const images = data.map((image, index) => {
-    if (image.kind !== 'music-video' && image.artistName === artistName) {
+  const cards = data.map((track, index) => {
+    if (track.kind !== 'music-video' && track.artistName === artistName) {
       return (
-        <article key={index} className='panel'>
-          <div className='track'>
-            <div className='artwork'>
-              <img
-                key={index}
-                src={image.artworkUrl100.replace('100x100', '225x225')}
-                alt={artistName}
-              />
-            </div>
-            <ul>
-              <li>
-                <a href={image.artistViewUrl} target='_blank' rel='noreferrer'>
-                  {artistName}
-                </a>
-              </li>
-            </ul>
-          </div>
-        </article>
+        <Card
+          index={index}
+          name={artistName}
+          show={track.primaryGenreName}
+          img={track.artworkUrl100.replace('100x100', '225x225')}
+          imgShape='square'
+          link={track.artistViewUrl}
+        />
       );
     }
   });
@@ -38,7 +29,7 @@ function ItunesImages() {
         {artistName} {songTitle !== '' ? `- ${songTitle}` : ``}
       </h3>
       <div className='grid' data-col='4'>
-        {images}
+        {cards}
       </div>
     </div>
   );
