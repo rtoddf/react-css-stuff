@@ -1,16 +1,14 @@
-import React from 'react';
+import { useState } from 'react';
 import { ItunesData } from '../../../Apis/Itunes';
 import './default.scss';
 
 function ItunesArtistInfo() {
-  const artistName = 'Lizzo';
-  const songTitle = '';
-  const entity = 'musicTrack';
+  const [artistName, setArtistName] = useState('Lizzo');
+  const [songTitle, setSongTitle] = useState('');
 
-  const data = ItunesData(artistName, songTitle, entity);
+  const data = ItunesData(artistName, songTitle, 'musicTrack');
 
   const images = data.map((track, index) => {
-    // console.log('track: ', track);
     if (track.kind !== 'music-video' && track.artistName === artistName) {
       return (
         <article key={index} className='panel'>
@@ -19,14 +17,14 @@ function ItunesArtistInfo() {
               <a href={track.artistViewUrl} target='_blank' rel='noreferrer'>
                 <img
                   src={track.artworkUrl100.replace('100x100', '225x225')}
-                  alt={track.artistName}
+                  alt={artistName}
                 />
               </a>
             </div>
             <ul>
               <li>
                 <a href={track.artistViewUrl} target='_blank' rel='noreferrer'>
-                  {track.artistName}
+                  {artistName}
                 </a>
               </li>
             </ul>

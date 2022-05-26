@@ -33,6 +33,7 @@ import Test04 from './Components/Three/Tests/Test04';
 
 //GSAP
 import Gsap from './Components/Gsap/default';
+import Learn01 from './Components/Gsap/Learn01';
 
 // Apis
 import Apis from './Components/Apis/default';
@@ -203,10 +204,14 @@ function App() {
       </Switch>
 
       {/* Gsap */}
-      
       <Switch>
-        <Route path='/apis/gsap'>
+        <Route path='/gsap'>
           <Gsap />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/apis/gsap/learn01'>
+          <Learn01 />
         </Route>
       </Switch>
 
