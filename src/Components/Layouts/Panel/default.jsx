@@ -1,10 +1,10 @@
 import React from 'react';
 import Description from '../../Common/Description/default';
-import Image from '../../Common/Image/default';
+import Image from '../Image';
 import List from './List';
 
 import data from './data/panels.json';
-import './default.scss';
+import '../default.scss';
 
 function Panel() {
     const repeatAmt = 3;
