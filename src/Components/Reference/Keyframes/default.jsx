@@ -1,6 +1,6 @@
 import React from 'react';
 import Description from '../../Common/Description/default';
-import Box from '../../Common/Box/default';
+import Box from '../Box';
 import './default.scss';
 
 function Keyframes() {

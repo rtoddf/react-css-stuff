@@ -1,7 +1,8 @@
-@import '../../../styles/colors';
-@import '../../../styles/typography';
-@import '../../../styles/mixins';
+@import '../../styles/colors';
+@import '../../styles/typography';
+@import '../../styles/mixins';
 
+//box
 .cont {
     position: relative;
     width: 200px;
@@ -20,4 +21,18 @@
     border: 1px solid $black-color;
     color: $white-color;
     text-align: center;
+}
+
+// circle
+.circle {
+	display: block;
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	border-radius: 50%;
+
+	&.small {
+		width: 20px;
+		height: 20px;
+	}
 }

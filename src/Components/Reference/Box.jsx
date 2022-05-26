@@ -1,6 +1,3 @@
-import React from 'react';
-import './default.scss';
-
 function Box({ animation }) {
     return (
         <>
