@@ -8,37 +8,43 @@
                     "id": "home-6",
                     "link": "/three",
                     "title": "ThreeJS",
-                    "image": "placeholder.jpg"
+                    "image": "threejs/thumbnails/point-lights-shadows.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": "home-5",
                     "link": "/apis",
                     "title": "APIS",
-                    "image": "placeholder.jpg"
+                    "image": "apis/thumbnails/artist-info.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": "home-1",
                     "link": "/layouts",
                     "title": "Layouts",
-                    "image": "placeholder.jpg"
+                    "image": "layouts/thumbnails/card.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": "home-2",
                     "link": "/pocs",
                     "title": "POCs",
-                    "image": "placeholder.jpg"
+                    "image": "pocs/thumbnails/three-d-cube.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": "home-3",
                     "link": "/reference",
                     "title": "Reference",
-                    "image": "placeholder.jpg"
+                    "image": "reference/thumbnails/transform-functions.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": "home-4",
                     "link": "/learning",
                     "title": "Learning",
-                    "image": "placeholder.jpg"
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
         },
@@ -196,25 +202,29 @@
                     "id": "apis-3",
                     "link": "/apis/itunes/artist",
                     "title": "iTunes Artist Info",
-                    "image": "placeholder.jpg"
+                    "image": "apis/thumbnails/artist-info.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": "apis-2",
                     "link": "/apis/itunes/images",
                     "title": "iTunes Image Data",
-                    "image": "placeholder.jpg"
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": "apis-1",
                     "link": "/apis/placeholder",
                     "title": "Placeholder Data",
-                    "image": "placeholder.jpg"
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": "apis-4",
                     "link": "/apis/weather",
                     "title": "Weather Data",
-                    "image": "placeholder.jpg"
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }                
             ]
         },
@@ -227,13 +237,15 @@
                     "id": "layouts-1",
                     "link": "/layouts/card",
                     "title": "Card",
-                    "image": "layouts/thumbnails/card.jpg"
+                    "image": "layouts/thumbnails/card.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": "layouts-12",
                     "link": "/layouts/panel",
                     "title": "Panel",
-                    "image": "layouts/thumbnails/panel.jpg"
+                    "image": "layouts/thumbnails/panel.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
         },
@@ -246,55 +258,64 @@
                     "id": "poc-9",
                     "link": "/pocs/fading-images",
                     "title": "Fading Images",
-                    "image": "placeholder.jpg"
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": "poc-8",
                     "link": "/pocs/three-d-cube",
                     "title": "Three-D Cube",
-                    "image": "placeholder.jpg"
+                    "image": "pocs/thumbnails/three-d-cube.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": "poc-7",
                     "link": "/pocs/square-images",
                     "title": "Square Images",
-                    "image": "placeholder.jpg"
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": "poc-1",
                     "link": "/pocs/svg-doughnut",
                     "title": "SVG Doughnut",
-                    "image": "pocs/thumbnails/svg-doughnut.jpg"
+                    "image": "pocs/thumbnails/svg-doughnut.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": "poc-2",
                     "link": "/pocs/css-pulse",
                     "title": "CSS Pulse",
-                    "image": "pocs/thumbnails/pulse.jpg"
+                    "image": "pocs/thumbnails/pulse.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": "poc-3",
                     "link": "/pocs/neon-type",
                     "title": "Neon Type",
-                    "image": "pocs/thumbnails/neon-type.jpg"
+                    "image": "pocs/thumbnails/neon-type.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": "poc-4",
                     "link": "/pocs/switch-animation",
                     "title": "Switch Animation",
-                    "image": "pocs/thumbnails/switch-animation.jpg"
+                    "image": "pocs/thumbnails/switch-animation.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": "poc-5",
                     "link": "/pocs/day-night-animation",
                     "title": "Day/Night Animation",
-                    "image": "pocs/thumbnails/day-night-animation.jpg"
+                    "image": "pocs/thumbnails/day-night-animation.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": "poc-6",
                     "link": "/pocs/icon-animations",
                     "title": "Icon Animations",
-                    "image": "pocs/thumbnails/icon-animations.jpg"
+                    "image": "pocs/thumbnails/icon-animations.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
             
@@ -308,43 +329,50 @@
                     "id": 1,
                     "link": "/reference/nth-child",
                     "title": "Nth Child",
-                    "image": "reference/thumbnails/nthchild.jpg"
+                    "image": "reference/thumbnails/nthchild.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": 2,
                     "link": "/reference/vw-fonts",
                     "title": "VW Fonts",
-                    "image": "placeholder.jpg"
+                    "image": "reference/thumbnails/vw-fonts.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": 3,
                     "link": "/reference/selectors",
                     "title": "Selectors",
-                    "image": "placeholder.jpg"
+                    "image": "reference/thumbnails/selectors.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": 4,
                     "link": "/reference/radial-gradients",
                     "title": "Radial Gradients",
-                    "image": "reference/thumbnails/radial-gradients.jpg"
+                    "image": "reference/thumbnails/radial-gradients.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": 5,
                     "link": "/reference/dropshadows",
                     "title": "Dropshadows",
-                    "image": "reference/thumbnails/dropshadows.jpg"
+                    "image": "reference/thumbnails/dropshadows.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": 6,
                     "link": "/reference/transforms",
                     "title": "Transforms",
-                    "image": "reference/thumbnails/transform-functions.jpg"
+                    "image": "reference/thumbnails/transform-functions.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": 7,
                     "link": "/reference/keyframes",
                     "title": "Keyframes",
-                    "image": "reference/thumbnails/keyframes.jpg"
+                    "image": "reference/thumbnails/keyframes.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
         },
@@ -357,7 +385,8 @@
                     "id": "learning-1",
                     "link": "/learning/3dcarousel",
                     "title": "Three-D Carousel",
-                    "image": "placeholder.jpg"
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
         }
