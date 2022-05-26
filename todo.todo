@@ -1,5 +1,5 @@
 Layouts:
-    ☐ fix /layouts/card
+    ✔ fix /layouts/card @done(22-05-26 15:22)
     ✔ add placeholder items to /gsap @done(22-05-26 13:06)
     ✔ finish thumbnails /apis @done(22-05-26 15:19)
     ☐ why aren't you using the panel component for /apis/itunes/artist
@@ -8,6 +8,7 @@ Layouts:
     ☐ finish /pocs/fading-images
     ☐ new images for /pocs/square-images
     ☐ button css for /pocs/three-d-cube
+    ☐ make card more universal
   
   Todos:
     You can write plain text notes/descriptions wherever you want
