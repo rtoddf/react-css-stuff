@@ -49,7 +49,7 @@ import Panel from './Components/Layouts/Panel/default';
 
 // Learning
 import Learning from './Components/Learning/default';
-import ThreeDCarousel from './Components/Learning/ThreeDCarousel/default';
+import StyledComponents from './Components/Learning/StyledComponents';
 
 // POCs
 import Pocs from './Components/Pocs/default';
@@ -335,8 +335,8 @@ function App() {
         </Route>
       </Switch>
       <Switch>
-        <Route exact path='/learning/3dcarousel'>
-          <ThreeDCarousel />
+        <Route exact path='/learning/styled-components'>
+          <StyledComponents />
         </Route>
       </Switch>
 

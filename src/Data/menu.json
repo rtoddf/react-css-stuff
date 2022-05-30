@@ -404,8 +404,8 @@
             "items": [
                 {
                     "id": "learning-1",
-                    "link": "/learning/3dcarousel",
-                    "title": "Three-D Carousel",
+                    "link": "/learning/styled-components",
+                    "title": "Styled Components",
                     "image": "placeholder.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
