@@ -16,7 +16,7 @@ function ItunesImages() {
           name={artistName}
           show={track.primaryGenreName}
           img={track.artworkUrl100.replace('100x100', '225x225')}
-          imgShape='square'
+          imgShape='round'
           link={track.artistViewUrl}
         />
       );
