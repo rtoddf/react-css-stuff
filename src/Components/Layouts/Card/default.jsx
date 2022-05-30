@@ -1,6 +1,5 @@
-import React from 'react';
 import Description from '../../Common/Description/default';
-import Image from '../../Common/Image/default';
+import Image from '../Image';
 import SocialIcons from './SocialIcons';
 
 import data from './data/cards.json';

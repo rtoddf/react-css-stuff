@@ -2,15 +2,15 @@ import React from 'react';
 import Header from '../Common/Header/default';
 import data from '../../Data/menu.json';
 
-function Layouts() {
+function Gsap() {
     return (
-        <div className="section layouts">
+        <div className="section reference">
             <div className="grid">
-                <Header section={data.layouts} />
+                <Header section={data.gsap} />
             </div>
         </div>
         
     )
 }
 
-export default Layouts;
+export default Gsap;

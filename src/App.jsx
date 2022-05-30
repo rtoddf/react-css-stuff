@@ -31,6 +31,10 @@ import Test01 from './Components/Three/Tests/Test01';
 import Test02 from './Components/Three/Tests/Test02';
 import Test04 from './Components/Three/Tests/Test04';
 
+//GSAP
+import Gsap from './Components/Gsap/default';
+import Learn01 from './Components/Gsap/Learn01';
+
 // Apis
 import Apis from './Components/Apis/default';
 import Placeholder from './Components/Apis/Placeholder/default';
@@ -198,7 +202,18 @@ function App() {
           <ItunesArtistInfo />
         </Route>
       </Switch>
-      
+
+      {/* Gsap */}
+      <Switch>
+        <Route path='/gsap'>
+          <Gsap />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path='/apis/gsap/learn01'>
+          <Learn01 />
+        </Route>
+      </Switch>
 
       {/* Layouts */}
       <Switch>

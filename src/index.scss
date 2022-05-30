@@ -179,7 +179,7 @@ figure {
 
 @media (max-width: 600px) {
 	.container {
-		width: 100%;
+		width: 80%;
 		padding: 0;
 	}
 
@@ -188,8 +188,19 @@ figure {
 		padding: 0;
 	}
 
-	[data-col="3"],
-  [data-col="5"] {
-		grid-template-columns: repeat(1, [col] 1fr);
-	}
+	[data-col="2"],
+  [data-col="3"],
+  [data-col="4"],
+  [data-col="6"],
+  [data-col="4x2"][data-layout="1-4-1"],
+  [data-col="4x2"][data-layout="4-1-4"] {
+      grid-template-columns: repeat(1, [col] 1fr);
+  }
+
+  [data-col="4x2"][data-layout="1-4-1"] article:nth-child(1),
+  [data-col="4x2"][data-layout="1-4-1"] article:nth-child(2),
+  [data-col="4x2"][data-layout="4-1-4"] article:nth-child(1) {
+      grid-column: auto;
+      grid-row: auto;
+  }
 }

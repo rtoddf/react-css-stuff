@@ -1,21 +1,23 @@
-import React from 'react';
+import { useState } from 'react';
+import Card from '../../Common/Card/default';
 import { ItunesData } from '../../../Apis/Itunes';
 import './default.scss';
 
 function ItunesImages() {
-  const artistName = 'Charlie Puth';
-  const songTitle = 'Marvin Gaye';
-  const entity = 'musicTrack';
+  const [artistName, setArtistName] = useState('Charlie Puth');
+  const [songTitle, setSongTitle] = useState('Marvin Gaye');
+  const data = ItunesData(artistName, songTitle, 'musicTrack');
 
-  const data = ItunesData(artistName, songTitle, entity);
-
-  const images = data.map((image, index) => {
-    if (image.kind !== 'music-video' && image.artistName === artistName) {
+  const cards = data.map((track, index) => {
+    if (track.kind !== 'music-video' && track.artistName === artistName) {
       return (
-        <img
-          key={index}
-          src={image.artworkUrl100.replace('100x100', '225x225')}
-          alt={image.artistName}
+        <Card
+          index={index}
+          name={artistName}
+          show={track.primaryGenreName}
+          img={track.artworkUrl100.replace('100x100', '225x225')}
+          imgShape='round'
+          link={track.artistViewUrl}
         />
       );
     }
@@ -24,10 +26,10 @@ function ItunesImages() {
   return (
     <div className='itunes'>
       <h3>
-        {artistName} - {songTitle}
+        {artistName} {songTitle !== '' ? `- ${songTitle}` : ``}
       </h3>
       <div className='grid' data-col='4'>
-        {images}
+        {cards}
       </div>
     </div>
   );

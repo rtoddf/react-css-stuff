@@ -4,8 +4,10 @@ import data from '../../Data/menu.json';
 
 function Learning() {
     return (
-        <div className="grid">
-            <Header section={data.learning} />
+        <div className="section layouts">
+            <div className="grid">
+                <Header section={data.learning} />
+            </div>
         </div>
     )
 }

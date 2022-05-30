@@ -1,6 +1,6 @@
 import React from 'react';
 import Description from '../../Common/Description/default';
-import Circle from '../../Common/Circle/default';
+import Circle from '../Circle';
 import './default.scss';
 
 function DropShadows() {

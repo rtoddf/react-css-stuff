@@ -4,9 +4,12 @@ import data from '../../Data/menu.json';
 
 function Reference() {
     return (
-        <div className="grid">
-            <Header section={data.reference} />
+        <div className="section reference">
+            <div className="grid">
+                <Header section={data.reference} />
+            </div>
         </div>
+        
     )
 }
 

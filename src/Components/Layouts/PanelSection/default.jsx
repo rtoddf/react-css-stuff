@@ -1,12 +1,6 @@
-import React from 'react';
-// import Description from '../../Common/Description/default';
-// import Image from '../../Common/Image/default';
-
 import './default.scss';
 
 function PanelSection({item}) {
-    // console.log('item: ', item)
-
     return (
         <>
             <a href={ item.link }>
