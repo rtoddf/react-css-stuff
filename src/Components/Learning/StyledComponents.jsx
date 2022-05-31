@@ -9,8 +9,8 @@ function StyledComponents() {
         <>
             <Header />
             <Container>
-            <h1>styled components</h1>
-        </Container>
+                <h1>styled components</h1>
+            </Container>
         </>
     )
 }
