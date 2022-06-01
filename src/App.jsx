@@ -81,233 +81,140 @@ function App() {
         <Route exact path='/'>
           <Home />
         </Route>
-      </Switch>
-
-      {/* Three */}
-      <Switch>
+        {/* Three */}
         <Route exact path='/three'>
           <Three />
         </Route>
-      </Switch>
-
-      {/* ThreeJS lights */}
-      <Switch>
+        {/* ThreeJS lights */}
         <Route path='/three/lights/point01'>
           <Point01 />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/three/lights/shadows01'>
           <Shadows01 />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/three/lights/shadows02'>
           <Shadows02 />
         </Route>
-      </Switch>
-
-      {/* ThreeJS geometries */}
-      <Switch>
+        {/* ThreeJS geometries */}
         <Route path='/three/geometries/box'>
           <Box />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/three/geometries/capsule'>
           <Capsule />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/three/geometries/cone'>
           <Cone />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/three/geometries/circle'>
           <Circle />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/three/geometries/cylinder'>
           <Cylinder />
         </Route>
-      </Switch>
-      <Switch>
+
         <Route path='/three/geometries/dodecahedron'>
           <Dodecahedron />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/three/geometries/plane'>
           <Plane />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/three/geometries/sphere'>
           <Sphere />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/three/geometries/torus'>
           <Torus />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/three/geometries/wireframes'>
           <Wireframes />
         </Route>
-      </Switch>
-
-      {/* ThreeJS Trials & Tests */}
-      <Switch>
+        {/* ThreeJS Trials & Tests */}
         <Route path='/three/tests/test01'>
           <Test01 />
         </Route>
-      </Switch>  
-      <Switch>
         <Route path='/three/tests/test02'>
           <Test02 />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/three/tests/test04'>
           <Test04 />
         </Route>
-      </Switch>
-
-      {/* Apis */}
-      <Switch>
+        {/* Apis */}
         <Route exact path='/apis'>
           <Apis />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/apis/placeholder'>
           <Placeholder />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/apis/weather'>
           <Weather />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/apis/itunes/images'>
           <ItunesImages />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/apis/itunes/artist'>
           <ItunesArtistInfo />
         </Route>
-      </Switch>
-
-      {/* Gsap */}
-      <Switch>
+        {/* Gsap */}
         <Route path='/gsap'>
           <Gsap />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/apis/gsap/learn01'>
           <Learn01 />
         </Route>
-      </Switch>
-
-      {/* Layouts */}
-      <Switch>
+        {/* Layouts */}
         <Route exact path='/layouts'>
           <Layouts />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/layouts/card'>
           <Card />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/layouts/panel'>
           <Panel />
         </Route>
-      </Switch>
-
-      {/* Learning */}
-
-      {/* POCs */}
-      <Switch>
+        {/* Learning */}
+        {/* POCs */}
         <Route exact path='/pocs'>
           <Pocs />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/pocs/fading-images'>
           <FadingImages />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/pocs/three-d-cube'>
           <ThreeDCube />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/pocs/square-images'>
           <SquareImages />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/pocs/svg-doughnut'>
           <SvgDoughnut />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/pocs/css-pulse'>
           <CssPulse />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/pocs/neon-type'>
           <NeonType />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/pocs/switch-animation'>
           <SwitchAnimation />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/pocs/day-night-animation'>
           <DayNightAnimation />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/pocs/icon-animations'>
           <IconAnimations />
         </Route>
-      </Switch>
-
-      {/* Reference */}
-      <Switch>
+        {/* Reference */}
         <Route exact path='/reference'>
           <Reference />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/reference/keyframes'>
           <Keyframes />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/reference/transforms'>
           <Transforms />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/reference/radial-gradients'>
           <RadialGradients />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/reference/dropshadows'>
           <DropShadows />
         </Route>
@@ -316,30 +223,20 @@ function App() {
         <Route path='/reference/nth-child'>
           <NthChild />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/reference/vw-fonts'>
           <VwFonts />
         </Route>
-      </Switch>
-      <Switch>
         <Route path='/reference/selectors'>
           <Selectors />
         </Route>
-      </Switch>
-
-      {/* Learning */}
-      <Switch>
+        {/* Learning */}
         <Route exact path='/learning'>
           <Learning />
         </Route>
-      </Switch>
-      <Switch>
         <Route exact path='/learning/styled-components'>
           <StyledComponents />
         </Route>
       </Switch>
-
     </div>
   </Router>;
 }
