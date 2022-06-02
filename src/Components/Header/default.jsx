@@ -1,4 +1,4 @@
-import PanelSection from '../../Layouts/PanelSection/default';
+import PanelSection from '../Layouts/PanelSection/default';
 
 function Header({ section }) {
     console.log('section: ', section)

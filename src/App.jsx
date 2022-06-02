@@ -1,11 +1,17 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import Routes from './Routes';
+import { ThemeProvider } from 'styled-components';
+
+// styles
+import { theme } from './styles/Theme';
 
 function App() {
   return <Router>
-    <div className="container">
-      <Routes />
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="container">
+        <Routes />
+      </div>
+    </ThemeProvider>
   </Router>;
 }
 
