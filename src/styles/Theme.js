@@ -7,6 +7,7 @@ export const theme = {
     linkColorHover: '#c07f2c',
     linkColorActive: '#c07f2c',
     linkColorVisited: '#000',
+    redColor: '#ae0000',
   },
   grays: {
     black: '#000',
