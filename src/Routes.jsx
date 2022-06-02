@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import Home from './Components/Pages/Home';
 
 // Three
-import Three from './Components/Three/default';
+import Three from './Components/Pages/Three';
 
 // Lights
 import Point01 from './Components/Three/Lights/Point01';
@@ -28,27 +28,27 @@ import Test02 from './Components/Three/Tests/Test02';
 import Test04 from './Components/Three/Tests/Test04';
 
 //GSAP
-import Gsap from './Components/Gsap/default';
+import Gsap from './Components/Pages/Gsap';
 import Learn01 from './Components/Gsap/Learn01';
 
 // Apis
-import Apis from './Components/Apis/default';
+import Apis from './Components/Pages/Apis';
 import Placeholder from './Components/Apis/Placeholder/default';
 import Weather from './Components/Apis/Placeholder/Weather';
 import ItunesImages from './Components/Apis/Itunes/ItunesImages';
 import ItunesArtistInfo from './Components/Apis/Itunes/ItunesArtistInfo';
 
 // Layouts
-import Layouts from './Components/Layouts/default';
+import Layouts from './Components/Pages/Layouts';
 import Card from './Components/Layouts/Card/default';
 import Panel from './Components/Layouts/Panel/default';
 
 // Learning
-import Learning from './Components/Learning/default';
+import Learning from './Components/Pages/Learning';
 import StyledComponents from './Components/Learning/StyledComponents';
 
 // POCs
-import Pocs from './Components/Pocs/default';
+import Pocs from './Components/Pages/Pocs';
 import ThreeDCube from './Components/Pocs/ThreeDCube/default';
 import SquareImages from './Components/Pocs/SquareImages/default';
 import SvgDoughnut from './Components/Pocs/SvgDoughnut/default';
@@ -60,7 +60,7 @@ import IconAnimations from './Components/Pocs/IconAnimations/default';
 import FadingImages from './Components/Pocs/FadingImages/default';
 
 // Reference
-import Reference from './Components/Reference/default';
+import Reference from './Components/Pages/Reference';
 import Keyframes from './Components/Reference/Keyframes/default';
 import Transforms from './Components/Reference/Transforms/default';
 import RadialGradients from './Components/Reference/RadialGradients/default';

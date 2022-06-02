@@ -1,11 +1,13 @@
 import Grid from '../Grid/index';
 import { StyledSectionContent } from './SectionContent.styled';
-import PanelSection from '../Layouts/PanelSection/default';
+import Card from '../Card';
 
 function SectionContent({ section }) {
     const menuItems = (section.items).map((item, index) => {
         return (
-            <PanelSection key={index} item={item} />
+            <>
+                <Card index={index} item={item} />
+            </>
         )
     })
 

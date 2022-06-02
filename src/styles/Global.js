@@ -15,9 +15,7 @@ const GlobalStyles = createGlobalStyle`
     }
     
     body {
-        /* background-color: $site-bg-color; */
         background-color: ${({ theme }) => theme.colors.bodyBgColor};
-        /* color: $site-text-color; */
         color: ${({ theme }) => theme.colors.bodyTextColor};
         font-size: 1rem;
     }
@@ -34,16 +32,15 @@ const GlobalStyles = createGlobalStyle`
 
     a {
         color: ${({ theme }) => theme.colors.linkColor};
+        text-decoration: none;
 
         &:hover,
         &.active {
-            /* color: $site-link-hover-color; */
-            color: #003264;
+            color: ${({ theme }) => theme.colors.linkColorHover};
         }
 
         &:visited {
-            /* color: $site-link-hover-color; */
-            color: #c07f2c;
+            color: ${({ theme }) => theme.colors.linkColorVisited};
         }
     }
 
@@ -60,7 +57,7 @@ const GlobalStyles = createGlobalStyle`
     pre {
         margin: 10px 0;
         padding: 10px;
-        background: #dedede;
+        background: ${({ theme }) => theme.grays.six};
         border-radius: 6px;
     }
 

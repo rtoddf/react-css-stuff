@@ -4,6 +4,9 @@ export const theme = {
     bodyBgColor: '#fff',
     bodyTextColor: '#333',
     linkColor: '#003264',
+    linkColorHover: '#c07f2c',
+    linkColorActive: '#c07f2c',
+    linkColorVisited: '#000',
   },
   grays: {
     black: '#000',
