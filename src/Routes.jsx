@@ -1,6 +1,6 @@
 import { Route, Switch } from "react-router-dom";
 
-import Home from './Components/Home/default';
+import Home from './Components/Pages/Home';
 
 // Three
 import Three from './Components/Three/default';
