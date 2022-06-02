@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import * as THREE from 'three';
 import { createMaterial } from '../utilities/default';
 import { createTorusShape } from '../utilities/createShape';
-import Description from '../../Common/Description/default';
+import Description from '../../Description';
 import '../default.scss';
 
 function Torus() {

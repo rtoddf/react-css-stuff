@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Description from '../../Common/Description/default';
+import Description from '../../Description';
 import './default.scss';
 import cubeInfo from './data/cube.json';
 

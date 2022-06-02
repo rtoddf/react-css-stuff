@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react';
-import Description from '../../Common/Description/default';
+import {useEffect} from 'react';
+import Description from '../../Description';
 import ImageHolder from './ImageHolder';
 import data from './data/people.json';
 import './default.scss';

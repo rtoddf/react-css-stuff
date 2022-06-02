@@ -1,4 +1,4 @@
-import Description from '../../Common/Description/default';
+import Description from '../../Description';
 import Image from '../Image';
 import SocialIcons from './SocialIcons';
 

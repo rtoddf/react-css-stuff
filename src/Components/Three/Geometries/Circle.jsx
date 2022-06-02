@@ -3,7 +3,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { createMaterial } from '../utilities/default';
 import { createCircleShape } from '../utilities/createShape';
-import Description from '../../Common/Description/default';
+import Description from '../../Description';
 import '../default.scss';
 
 function Circle() {

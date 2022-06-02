@@ -1,5 +1,5 @@
 import React from 'react';
-import Description from '../../Common/Description/default';
+import Description from '../../Description';
 import styled from 'styled-components';
 import './default.scss';
 

@@ -3,7 +3,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { createRenderer, createCamera, createLight, createMaterial } from '../utilities/default';
 import { createPlaneShape, createBoxShape } from '../utilities/createShape';
-import Description from '../../Common/Description/default';
+import Description from '../../Description';
 import '../default.scss';
 
 function Point01() {

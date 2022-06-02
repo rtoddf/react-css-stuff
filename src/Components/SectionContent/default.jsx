@@ -1,3 +1,4 @@
+import Description from '../Description';
 import Grid from '../Grid/index';
 import { StyledSectionContent } from './SectionContent.styled';
 import Card from '../Card';
@@ -14,14 +15,8 @@ function SectionContent({ section }) {
     return (
         <>
             <StyledSectionContent>
-                {section.headline !== '' && (
-                    <h3>{section.headline}</h3>
-                )}
-                {section.copy !== '' && (
-                    <p>{section.copy}</p>
-                )}
+                <Description title={section.headline} description={section.copy} />
             </StyledSectionContent>
-
             <Grid cols="4">
                 {menuItems}
             </Grid>

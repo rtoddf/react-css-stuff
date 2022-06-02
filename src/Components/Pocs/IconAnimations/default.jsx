@@ -1,5 +1,5 @@
 import React from 'react';
-import Description from '../../Common/Description/default';
+import Description from '../../Description';
 import Icon from '../../Common/Icon/default';
 import iconMap from '../../Common/Icon/icon-map.json';
 

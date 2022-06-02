@@ -1,4 +1,4 @@
-import Description from '../../Common/Description/default';
+import Description from '../../Description';
 import './default.scss';
 
 function NthChild() {
