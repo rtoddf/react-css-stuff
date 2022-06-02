@@ -9,6 +9,7 @@ export const theme = {
     linkColorVisited: '#000',
     red: '#ae0000',
     orange: '#f06d06',
+    blueGreen: '#32889e',
   },
   grays: {
     black: '#000',

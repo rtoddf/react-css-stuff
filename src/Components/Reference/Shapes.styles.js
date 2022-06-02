@@ -1,13 +1,23 @@
 import styled from 'styled-components';
 
 export const StyledShapes = styled.div`
-  &.box {
+  .cont {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border: 1px solid ${({ theme }) => theme.grays.five};
+    text-align: center;
+    perspective: 600px;
+  }
+
+  .box {
     width: 100%;
     height: 100%;
-    background: $blue-green-color;
+    background: ${({ theme }) => theme.colors.blueGreen};
     opacity: 0.8;
-    border: 1px solid $black-color;
-    color: $white-color;
+    border: 1px solid ${({ theme }) => theme.grays.black};
+    color: ${({ theme }) => theme.grays.white};
     text-align: center;
   }
 

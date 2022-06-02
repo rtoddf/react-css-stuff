@@ -1,6 +1,8 @@
+import { StyledShapes } from './Shapes.styles';
+
 function Box({ animation }) {
     return (
-        <>
+        <StyledShapes>
             {animation && (
                 <div className="cont">
                     <div className={`box ${animation}`}>
@@ -8,7 +10,7 @@ function Box({ animation }) {
                     </div>
                 </div>
             )}
-       </>
+       </StyledShapes>
     )
   }
   
