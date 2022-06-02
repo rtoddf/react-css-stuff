@@ -1,8 +1,7 @@
+import { StyledHeader } from './Header.styled';
 import PanelSection from '../Layouts/PanelSection/default';
 
 function Header({ section }) {
-    console.log('section: ', section)
-
     const menuItems = (section.items).map((item, index) => {
         return (
             <PanelSection key={index} item={item} />
@@ -11,14 +10,14 @@ function Header({ section }) {
 
     return (
         <>
-            <div className="description">
+            <StyledHeader>
                 {section.headline !== '' && (
                     <h3>{section.headline}</h3>
                 )}
                 {section.copy !== '' && (
                     <p>{section.copy}</p>
                 )}
-            </div>
+            </StyledHeader>
 
             <div className="grid menu" data-col="4">
                 {menuItems}

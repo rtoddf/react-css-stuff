@@ -4,6 +4,7 @@ Layouts:
     ✔ finish thumbnails /apis @done(22-05-26 15:19)
     ✔ why aren't you using the card component for /apis/itunes/artist @done(22-05-26 15:45)
     ✔ why aren't you using the card component for /apis/itunes/images @done(22-05-26 15:45)
+    ☐ check cards for border-radius and overflow
     ☐ add a search for the two pages above
     ☐ finish /pocs/fading-images
     ☐ new images for /pocs/square-images
