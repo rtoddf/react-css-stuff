@@ -1,8 +1,6 @@
-@import '../../../styles/colors';
-@import '../../../styles/typography';
-@import '../../../styles/mixins';
+import styled from 'styled-components';
 
-.vw-fonts {
+export const StyledVwFonts = styled.div`
   article:nth-child(1) h3 {
     font-size: 2rem;
   }
@@ -33,4 +31,4 @@
     font-size: 1.13vw;
     line-height: 1.65vw;
   }
-}
+`;

@@ -63,11 +63,11 @@ import FadingImages from './Components/Pocs/FadingImages/default';
 import Reference from './Components/Pages/Reference';
 import Keyframes from './Components/Reference/Keyframes/default';
 import Transforms from './Components/Reference/Transforms/default';
-import RadialGradients from './Components/Reference/RadialGradients/default';
+import RadialGradients from './Components/Reference/RadialGradients';
 import DropShadows from './Components/Reference/DropShadows/default';
 import NthChild from './Components/Reference/NthChild';
-import VwFonts from './Components/Reference/VwFonts/default';
-import Selectors from './Components/Reference/Selectors/default';
+import VwFonts from './Components/Reference/VwFonts';
+import Selectors from './Components/Reference/Selectors';
 
 function Routes() {
     return (

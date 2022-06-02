@@ -1,9 +1,8 @@
-import React from 'react';
-import './default.scss';
+import { StyledShapes } from './Shapes.styles';
 
 function Circle({ classNames }) {
     return (
-        <div className={`circle ${classNames}`}></div>
+        <StyledShapes className={`circle ${classNames}`}></StyledShapes>
     )
   }
   
