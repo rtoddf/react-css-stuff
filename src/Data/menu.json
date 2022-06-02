@@ -256,8 +256,8 @@
             "items": [
                 {
                     "id": "layouts-1",
-                    "link": "/layouts/card",
-                    "title": "Card",
+                    "link": "/layouts/social-card",
+                    "title": "Social Card",
                     "image": "layouts/thumbnails/card.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },

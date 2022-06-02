@@ -1,14 +1,11 @@
-@import '../../../styles/colors';
-@import '../../../styles/typography';
-@import '../../../styles/mixins';
+import styled from 'styled-components';
 
-.card {
-  // width: 80%;
+export const StyledCard = styled.div`
   margin: 0 auto;
   padding: 30px;
-  background: $white-color;
-  color: $site-text-color;
-  border-radius: $border-radius;
+  background: ${({ theme }) => theme.grays.white};
+  color: ${({ theme }) => theme.colors.bodyTextColor};
+  border-radius: 6px;
   box-shadow: 0 2px 26px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
 
@@ -19,9 +16,9 @@
 
   h5 {
     margin: 0 0 20px;
-    font-family: $base-font;
+    font-family: ${({ theme }) => theme.fonts.baseFont};
     font-size: 20px;
     line-height: 1.75;
     letter-spacing: -0.5px;
   }
-}
+`;

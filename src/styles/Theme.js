@@ -20,6 +20,7 @@ export const theme = {
     six: '#dedede',
   },
   fonts: {
+    baseFont: '"Open Sans Condensed", sans-serif',
     baseFontSize: '16px',
   },
 };

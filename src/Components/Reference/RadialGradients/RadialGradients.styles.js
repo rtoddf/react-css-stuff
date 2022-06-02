@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const StyledRadialGradients = styled.div`
   .circle {
+    margin-top: 40px;
     background-image: radial-gradient(
       ${({ theme }) => theme.grays.white},
       ${({ theme }) => theme.colors.orange}

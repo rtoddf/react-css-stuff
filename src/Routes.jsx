@@ -40,7 +40,7 @@ import ItunesArtistInfo from './Components/Apis/Itunes/ItunesArtistInfo';
 
 // Layouts
 import Layouts from './Components/Pages/Layouts';
-import Card from './Components/Layouts/Card/default';
+import SocialCard from './Components/Layouts/SocialCard';
 import Panel from './Components/Layouts/Panel/default';
 
 // Learning
@@ -159,8 +159,8 @@ function Routes() {
             <Route exact path='/layouts'>
                 <Layouts />
             </Route>
-            <Route path='/layouts/card'>
-                <Card />
+            <Route path='/layouts/social-card'>
+                <SocialCard />
             </Route>
             <Route path='/layouts/panel'>
                 <Panel />
