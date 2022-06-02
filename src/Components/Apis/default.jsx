@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from '../Header/default';
+import SectionContent from '../SectionContent/default';
 import data from '../../Data/menu.json';
 
 function Apis() {
     return (
         <div className="section apis">
             <div className="grid">
-                <Header section={data.apis} />
+                <SectionContent section={data.apis} />
             </div>
         </div>
     )

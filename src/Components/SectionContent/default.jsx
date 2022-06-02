@@ -1,7 +1,8 @@
-import { StyledHeader } from './Header.styled';
+import Grid from '../Grid/index';
+import { StyledSectionContent } from './SectionContent.styled';
 import PanelSection from '../Layouts/PanelSection/default';
 
-function Header({ section }) {
+function SectionContent({ section }) {
     const menuItems = (section.items).map((item, index) => {
         return (
             <PanelSection key={index} item={item} />
@@ -10,20 +11,20 @@ function Header({ section }) {
 
     return (
         <>
-            <StyledHeader>
+            <StyledSectionContent>
                 {section.headline !== '' && (
                     <h3>{section.headline}</h3>
                 )}
                 {section.copy !== '' && (
                     <p>{section.copy}</p>
                 )}
-            </StyledHeader>
+            </StyledSectionContent>
 
-            <div className="grid menu" data-col="4">
+            <Grid cols="4">
                 {menuItems}
-            </div>
+            </Grid>
         </>
     )
 }
 
-export default Header;
+export default SectionContent;

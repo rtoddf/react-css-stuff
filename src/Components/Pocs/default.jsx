@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from '../Header/default';
+import SectionContent from '../SectionContent/default';
 import data from '../../Data/menu.json';
 
 function Pocs() {
     return (
         <div className="section pocs">
             <div className="grid">
-                <Header section={data.pocs} />
+                <SectionContent section={data.pocs} />
             </div>
         </div>
         

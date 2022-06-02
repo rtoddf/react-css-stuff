@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledHeader = styled.div`
+export const StyledSectionContent = styled.div`
   margin-bottom: 40px;
 
   h3 {

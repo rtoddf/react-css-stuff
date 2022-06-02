@@ -1,12 +1,11 @@
-import React from 'react';
-import Header from '../Header/default';
+import SectionContent from '../SectionContent/default';
 import data from '../../Data/menu.json';
 
 function Reference() {
     return (
         <div className="section reference">
             <div className="grid">
-                <Header section={data.reference} />
+                <SectionContent section={data.reference} />
             </div>
         </div>
         

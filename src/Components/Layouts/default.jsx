@@ -1,12 +1,11 @@
-import React from 'react';
-import Header from '../Header/default';
+import SectionContent from '../SectionContent/default';
 import data from '../../Data/menu.json';
 
 function Layouts() {
     return (
         <div className="section layouts">
             <div className="grid">
-                <Header section={data.layouts} />
+                <SectionContent section={data.layouts} />
             </div>
         </div>
         

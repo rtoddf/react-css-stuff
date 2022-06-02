@@ -1,11 +1,11 @@
-import Header from '../Header/default';
+import SectionContent from '../SectionContent/default';
 import data from '../../Data/menu.json';
 
 function Learning() {
     return (
         <div className="section layouts">
             <div className="grid">
-                <Header section={data.learning} />
+                <SectionContent section={data.learning} />
             </div>
         </div>
     )
