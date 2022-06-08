@@ -12,6 +12,7 @@ export const theme = {
     blueGreen: '#32889e',
     blue: '#003264',
     green: '#baba71',
+    purple: '#7705c0',
     brown: '#c07f2c',
   },
   grays: {

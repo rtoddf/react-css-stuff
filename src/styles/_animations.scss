@@ -1,55 +1,3 @@
-// begin neon-type
-@keyframes neon-text {
-  0% {
-    text-shadow: 
-      0 0 10px $white-color, 
-      0 0 20px $white-color, 
-      0 0 30px $white-color, 
-      0 0 40px $blue-green-color, 
-      0 0 70px $blue-green-color, 
-      0 0 80px $blue-green-color, 
-      0 0 100px $blue-green-color, 
-      0 0 150px $blue-green-color;
-  }
-  100% {
-    text-shadow: 
-      0 0 5px $white-color, 
-      0 0 10px $white-color, 
-      0 0 15px $white-color, 
-      0 0 20px $blue-green-color, 
-      0 0 35px $blue-green-color, 
-      0 0 40px $blue-green-color, 
-      0 0 50px $blue-green-color, 
-      0 0 75px $blue-green-color;
-  }
-}
-
-@keyframes neon-box {
-  0% {
-    box-shadow: 
-      0 0 10px $white-color, 
-      0 0 20px $white-color, 
-      0 0 30px $white-color, 
-      0 0 40px $blue-green-color, 
-      0 0 70px $blue-green-color, 
-      0 0 80px $blue-green-color, 
-      0 0 100px $blue-green-color, 
-      0 0 150px $blue-green-color;
-  }
-  100% {
-    box-shadow: 
-      0 0 5px $white-color, 
-      0 0 10px $white-color, 
-      0 0 15px $white-color, 
-      0 0 20px $blue-green-color, 
-      0 0 35px $blue-green-color, 
-      0 0 40px $blue-green-color, 
-      0 0 50px $blue-green-color, 
-      0 0 75px $blue-green-color;
-  }
-}
-// end neon-type
-
 // begin keyframes animations
 @keyframes rotate-x {
   to {
@@ -93,7 +41,57 @@
 }
 // end svg-doughnut animations
 
+// begin neon-type
+// @keyframes neon-text {
+//   0% {
+//     text-shadow: 
+//       0 0 10px $white-color, 
+//       0 0 20px $white-color, 
+//       0 0 30px $white-color, 
+//       0 0 40px $blue-green-color, 
+//       0 0 70px $blue-green-color, 
+//       0 0 80px $blue-green-color, 
+//       0 0 100px $blue-green-color, 
+//       0 0 150px $blue-green-color;
+//   }
+//   100% {
+//     text-shadow: 
+//       0 0 5px $white-color, 
+//       0 0 10px $white-color, 
+//       0 0 15px $white-color, 
+//       0 0 20px $blue-green-color, 
+//       0 0 35px $blue-green-color, 
+//       0 0 40px $blue-green-color, 
+//       0 0 50px $blue-green-color, 
+//       0 0 75px $blue-green-color;
+//   }
+// }
 
+// @keyframes neon-box {
+//   0% {
+//     box-shadow: 
+//       0 0 10px $white-color, 
+//       0 0 20px $white-color, 
+//       0 0 30px $white-color, 
+//       0 0 40px $blue-green-color, 
+//       0 0 70px $blue-green-color, 
+//       0 0 80px $blue-green-color, 
+//       0 0 100px $blue-green-color, 
+//       0 0 150px $blue-green-color;
+//   }
+//   100% {
+//     box-shadow: 
+//       0 0 5px $white-color, 
+//       0 0 10px $white-color, 
+//       0 0 15px $white-color, 
+//       0 0 20px $blue-green-color, 
+//       0 0 35px $blue-green-color, 
+//       0 0 40px $blue-green-color, 
+//       0 0 50px $blue-green-color, 
+//       0 0 75px $blue-green-color;
+//   }
+// }
+// end neon-type
 
 // @keyframes r1 {
 //   0% {

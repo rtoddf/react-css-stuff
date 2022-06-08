@@ -1,39 +1,52 @@
-import React from 'react';
+import { useState } from 'react';
+import Grid from '../../Grid';
 import Description from '../../Description';
-import styled from 'styled-components';
-import './default.scss';
+import { StyledButton, StyledNeonType } from './Neontype.styled';
 
 function NeonType() {
-    const color = 'color';
+    const [hue, setHue] = useState({ "name": "blue", "color": "#003264"});
+    const multiColors = [
+        {
+            "name": "blue",
+            "color": "#003264"
+        },
+        {
+            "name": "green",
+            "color": "#baba71"
+        },
+        {
+            "name": "red",
+            "color": "#ae0000"
+        },
+        {
+            "name": "orange",
+            "color": "#f06d06"
+        },
+        {
+            "name": "purple",
+            "color": "#7705c0"
+        }
+    ]
 
-    const Frame = styled.div`
-        display: inline-block;
-        margin: 3.75rem;
-        padding: 1.25rem 2.5rem;
-        background-color: $gray-color-3;
-        border: 10px double $blue-green-color;
-        border-radius: 20px;
-        animation: neon-box 1.5s ease-in-out infinite alternate;
-        text-align: center;
-    `;
-
-    const Text = styled.p`
-        margin-bottom: 0;
-        padding: 2.5rem;
-        color: $white-color;
-        font-family: Audiowide;
-        font-size: 7em;
-        text-transform: uppercase;
-        letter-spacing: 2rem;
-        animation: neon-text 1.5s ease-in-out infinite alternate;
-    `;
+    const buttons = multiColors.map((color, index) => {
+        return <StyledButton
+            key={index}
+            onClick={() => setHue(color)}
+            color={color}
+        >
+            {color.name}
+        </StyledButton>;
+    });
 
     return (
         <>
-            <Description title="CSS Neon Type" copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor aliquet lacus ut dignissim. In pellentesque lorem eu nisl pretium fermentum. Donec ut tellus imperdiet, vestibulum nisl sed, pellentesque purus. Donec sollicitudin sapien in nibh aliquam pellentesque. Proin sagittis augue non est commodo, quis congue ligula bibendum. Curabitur pellentesque dapibus quam quis imperdiet. Integer venenatis augue consequat diam euismod, a ullamcorper magna varius. Vivamus justo augue, interdum eu ultricies quis, convallis sit amet nunc. Fusce massa nulla, ornare at mauris in, dapibus luctus orci. Aliquam erat volutpat. Duis pulvinar arcu orci, venenatis pellentesque augue bibendum sit amet." />
-            <div className="grid neon-type">
-                <Frame className="frame"><Text>{color}</Text></Frame>
-            </div>
+            <Description title="CSS Neon Type" copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor aliquet lacus ut dignissim. In pellentesque lorem eu nisl pretium fermentum. Donec ut tellus imperdiet, vestibulum nisl sed, pellentesque purus." />
+            <Grid cols="1">
+                <StyledNeonType color={hue.color}><p>{hue.name}</p></StyledNeonType>
+                <Grid cols={buttons.length}>
+                    { buttons }
+                </Grid>
+            </Grid>
         </>
     )
 }
