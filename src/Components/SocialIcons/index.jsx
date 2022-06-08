@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Icon from '../Common/Icon/default';
+import Icon from '../Icon';
 
 function SocialIcons({links, animation}) {
     return (

@@ -10,6 +10,9 @@ export const theme = {
     red: '#ae0000',
     orange: '#f06d06',
     blueGreen: '#32889e',
+    blue: '#003264',
+    green: '#baba71',
+    brown: '#c07f2c',
   },
   grays: {
     black: '#000',
