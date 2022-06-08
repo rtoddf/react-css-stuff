@@ -283,38 +283,10 @@
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
-                    "id": "poc-8",
-                    "link": "/pocs/three-d-cube",
-                    "title": "Three-D Cube",
-                    "image": "pocs/thumbnails/three-d-cube.jpg",
-                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
-                },
-                {
                     "id": "poc-7",
                     "link": "/pocs/square-images",
                     "title": "Square Images",
                     "image": "pocs/thumbnails/square-images.jpg",
-                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
-                },
-                {
-                    "id": "poc-1",
-                    "link": "/pocs/svg-doughnut",
-                    "title": "SVG Doughnut",
-                    "image": "pocs/thumbnails/svg-doughnut.jpg",
-                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
-                },
-                {
-                    "id": "poc-2",
-                    "link": "/pocs/css-pulse",
-                    "title": "CSS Pulse",
-                    "image": "pocs/thumbnails/pulse.jpg",
-                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
-                },
-                {
-                    "id": "poc-3",
-                    "link": "/pocs/neon-type",
-                    "title": "Neon Type",
-                    "image": "pocs/thumbnails/neon-type.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
@@ -332,10 +304,38 @@
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
+                    "id": "poc-1",
+                    "link": "/pocs/svg-doughnut",
+                    "title": "SVG Doughnut",
+                    "image": "pocs/thumbnails/svg-doughnut.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
                     "id": "poc-6",
                     "link": "/pocs/icon-animations",
                     "title": "Icon Animations",
                     "image": "pocs/thumbnails/icon-animations.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "poc-2",
+                    "link": "/pocs/css-pulse",
+                    "title": "CSS Pulse",
+                    "image": "pocs/thumbnails/pulse.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "poc-8",
+                    "link": "/pocs/three-d-cube",
+                    "title": "Three-D Cube",
+                    "image": "pocs/thumbnails/three-d-cube.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "poc-3",
+                    "link": "/pocs/neon-type",
+                    "title": "Neon Type",
+                    "image": "pocs/thumbnails/neon-type.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]

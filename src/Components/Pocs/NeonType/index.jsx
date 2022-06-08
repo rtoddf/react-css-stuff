@@ -33,6 +33,7 @@ function NeonType() {
             key={index}
             onClick={() => setHue(color)}
             color={color}
+            textStyle="uppercase"
         >
             {color.name}
         </StyledButton>;

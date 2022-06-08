@@ -49,11 +49,11 @@ import StyledComponents from './Components/Learning/StyledComponents';
 
 // POCs
 import Pocs from './Components/Pages/Pocs';
-import ThreeDCube from './Components/Pocs/ThreeDCube/default';
+import ThreeDCube from './Components/Pocs/ThreeDCube';
 import SquareImages from './Components/Pocs/SquareImages/default';
 import SvgDoughnut from './Components/Pocs/SvgDoughnut/default';
 import CssPulse from './Components/Pocs/CssPulse/default';
-import NeonType from './Components/Pocs/NeonType/default';
+import NeonType from './Components/Pocs/NeonType';
 import SwitchAnimation from './Components/Pocs/SwitchAnimation/default';
 import DayNightAnimation from './Components/Pocs/DayNightAnimation/default';
 import IconAnimations from './Components/Pocs/IconAnimations/default';
