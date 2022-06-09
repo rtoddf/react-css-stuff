@@ -1,51 +1,44 @@
 import Grid from '../../Grid';
 import Description from '../../Description';
-import data from './images.json';
+import Image from './Image';
+import data from './data.json';
 
-import { StyledSquare, StyledImage, StyledContentHolder } from './Square.styled';
+import { StyledSquare } from './Square.styled';
 
 function SquareImages() {
-    const imageSet01 = data.map((image, id) => {
-        if(id < 6) {
+    const divisions = [6, 3];
+
+    const imageSet01 = data.map((item, id) => {
+        if(id < divisions[0]) {
             return (
                 <StyledSquare key={id}>
-                    <div className="tile">
-                        <StyledImage>
-                            <img src={`../images/pocs/squareimages/${image.image}`} alt={image.title} />
-                        </StyledImage>
-                        <StyledContentHolder>
-                            <h4>{image.title}</h4>
-                        </StyledContentHolder>
-                    </div>
+                    <Image image={item.image} title={item.title} />
                 </StyledSquare>
             )
+        } else {
+            return null;
         }
     });
 
-    const imageSet02 = data.map((image, id) => {
-        if(id < 3) {
+    const imageSet02 = data.map((item, id) => {
+        if(id >= divisions[0]) {
             return (
                 <StyledSquare key={id}>
-                    <div className="tile">
-                        <StyledImage>
-                            <img src={`../images/pocs/squareimages/${image.image}`} alt={image.title} />
-                        </StyledImage>
-                        <StyledContentHolder>
-                            <h4>{image.title}</h4>
-                        </StyledContentHolder>
-                    </div>
+                    <Image image={item.image} title={item.title} />
                 </StyledSquare>
             )
+        } else {
+            return null;
         }
     });
 
     return (
         <>
             <Description title="Square Images" copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor aliquet lacus ut dignissim. In pellentesque lorem eu nisl pretium fermentum. Donec ut tellus imperdiet, vestibulum nisl sed, pellentesque purus." />
-            <Grid cols='6' gap="0">
+            <Grid cols={divisions[0]} gap="0">
                 {imageSet01}
             </Grid>
-            <Grid cols='3' gap="0">
+            <Grid cols={data.length - divisions[0]} gap="0">
                 {imageSet02}
             </Grid>
         </>

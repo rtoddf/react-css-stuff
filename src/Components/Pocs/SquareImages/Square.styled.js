@@ -1,23 +1,41 @@
 import styled from 'styled-components';
 
-export const StyledImage = styled.figure`
-  height: 100%;
+export const StyledImage = styled.div`
+  .container {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #222;
+    transition: all 0.3s ease;
 
-  img {
-    width: 102%;
-    height: 102%;
-    max-width: 102%;
-    max-height: 102%;
-    object-fit: cover;
-    cursor: pointer;
-    transition: all 0.6s ease;
+    figure {
+      height: 100%;
 
-    &:hover {
-      width: 110%;
-      height: 110%;
-      max-width: 110%;
-      max-height: 110%;
-      margin: -5%;
+      img {
+        width: 102%;
+        height: 102%;
+        max-width: 102%;
+        max-height: 102%;
+        object-fit: cover;
+        cursor: pointer;
+        transition: all 0.6s ease;
+
+        &:hover {
+          width: 110%;
+          height: 110%;
+          max-width: 110%;
+          max-height: 110%;
+          margin: -5%;
+        }
+      }
     }
   }
 `;
@@ -51,22 +69,6 @@ export const StyledSquare = styled.article`
     float: left;
     display: block;
     padding-top: 100%;
-  }
-
-  .tile {
-    position: absolute;
-    width: auto;
-    height: auto;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    background: #222;
-    transition: all 0.3s ease;
   }
 `;
 
