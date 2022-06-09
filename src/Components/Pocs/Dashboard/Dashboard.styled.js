@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledDoughnut = styled.div`
+export const StyledDashboard = styled.div`
   .item {
     position: relative;
     float: left;

@@ -305,8 +305,8 @@
                 },
                 {
                     "id": "poc-1",
-                    "link": "/pocs/svg-doughnut",
-                    "title": "SVG Doughnut",
+                    "link": "/pocs/dashboard",
+                    "title": "Dashboard",
                     "image": "pocs/thumbnails/svg-doughnut.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },

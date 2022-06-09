@@ -51,7 +51,7 @@ import StyledComponents from './Components/Learning/StyledComponents';
 import Pocs from './Components/Pages/Pocs';
 import ThreeDCube from './Components/Pocs/ThreeDCube';
 import SquareImages from './Components/Pocs/SquareImages/default';
-import SvgDoughnut from './Components/Pocs/SvgDoughnut/default';
+import Dashboard from './Components/Pocs/Dashboard';
 import CssPulse from './Components/Pocs/CssPulse/default';
 import NeonType from './Components/Pocs/NeonType';
 import SwitchAnimation from './Components/Pocs/SwitchAnimation/default';
@@ -179,8 +179,8 @@ function Routes() {
             <Route path='/pocs/square-images'>
                 <SquareImages />
             </Route>
-            <Route path='/pocs/svg-doughnut'>
-                <SvgDoughnut />
+            <Route path='/pocs/dashboard'>
+                <Dashboard />
             </Route>
             <Route path='/pocs/css-pulse'>
                 <CssPulse />
