@@ -54,8 +54,8 @@ import SquareImages from './Components/Pocs/SquareImages';
 import Dashboard from './Components/Pocs/Dashboard';
 import CssPulse from './Components/Pocs/CssPulse/default';
 import NeonType from './Components/Pocs/NeonType';
-import SwitchAnimation from './Components/Pocs/SwitchAnimation/default';
-import DayNightAnimation from './Components/Pocs/DayNightAnimation/default';
+import SwitchAnimation from './Components/Pocs/SwitchAnimation';
+import DayNightAnimation from './Components/Pocs/DayNightAnimation';
 import IconAnimations from './Components/Pocs/IconAnimations/default';
 import FadingImages from './Components/Pocs/FadingImages/default';
 

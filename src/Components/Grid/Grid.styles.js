@@ -24,6 +24,10 @@ export const StyledGrid = styled.div`
     grid-template-columns: repeat(6, [col] 1fr);
   }
 
+  &[data-col='7'] {
+    grid-template-columns: repeat(7, [col] 1fr);
+  }
+
   @media (max-width: 900px) {
     &[data-col='2'],
     &[data-col='3'],
@@ -31,7 +35,8 @@ export const StyledGrid = styled.div`
       grid-template-columns: repeat(2, [col] 1fr);
     }
 
-    &[data-col='6'] {
+    &[data-col='6'],
+    &[data-col='7'] {
       grid-template-columns: repeat(3, [col] 1fr);
     }
   }
@@ -40,7 +45,8 @@ export const StyledGrid = styled.div`
     &[data-col='2'],
     &[data-col='3'],
     &[data-col='4'],
-    &[data-col='6'] {
+    &[data-col='6'],
+    &[data-col='7'] {
       grid-template-columns: repeat(1, [col] 1fr);
     }
   }
