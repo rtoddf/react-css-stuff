@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 export const StyledGrid = styled.div`
   display: grid;
-  grid-gap: 2.5rem;
+  grid-gap: ${({ gap }) => (gap !== undefined ? gap : '2.5rem')};
   width: 100%;
   margin: 0 auto;
   justify-items: ${({ justify }) =>
-    justify === 'center' ? 'center' : 'start'};
+    justify === 'center' ? 'center' : 'inherit'};
 
   &[data-col='2'] {
     grid-template-columns: repeat(2, [col] 1fr);

@@ -50,7 +50,7 @@ import StyledComponents from './Components/Learning/StyledComponents';
 // POCs
 import Pocs from './Components/Pages/Pocs';
 import ThreeDCube from './Components/Pocs/ThreeDCube';
-import SquareImages from './Components/Pocs/SquareImages/default';
+import SquareImages from './Components/Pocs/SquareImages';
 import Dashboard from './Components/Pocs/Dashboard';
 import CssPulse from './Components/Pocs/CssPulse/default';
 import NeonType from './Components/Pocs/NeonType';
