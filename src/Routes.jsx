@@ -52,16 +52,16 @@ import Pocs from './Components/Pages/Pocs';
 import ThreeDCube from './Components/Pocs/ThreeDCube';
 import SquareImages from './Components/Pocs/SquareImages';
 import Dashboard from './Components/Pocs/Dashboard';
-import CssPulse from './Components/Pocs/CssPulse/default';
+import CssPulse from './Components/Pocs/CssPulse';
 import NeonType from './Components/Pocs/NeonType';
 import SwitchAnimation from './Components/Pocs/SwitchAnimation';
 import DayNightAnimation from './Components/Pocs/DayNightAnimation';
-import IconAnimations from './Components/Pocs/IconAnimations/default';
+import IconAnimations from './Components/Pocs/IconAnimations';
 import FadingImages from './Components/Pocs/FadingImages/default';
 
 // Reference
 import Reference from './Components/Pages/Reference';
-import Keyframes from './Components/Reference/Keyframes/default';
+import Keyframes from './Components/Reference/Keyframes';
 import Transforms from './Components/Reference/Transforms';
 import RadialGradients from './Components/Reference/RadialGradients';
 import DropShadows from './Components/Reference/DropShadows';
