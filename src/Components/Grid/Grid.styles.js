@@ -5,6 +5,8 @@ export const StyledGrid = styled.div`
   grid-gap: 2.5rem;
   width: 100%;
   margin: 0 auto;
+  justify-items: ${({ justify }) =>
+    justify === 'center' ? 'center' : 'start'};
 
   &[data-col='2'] {
     grid-template-columns: repeat(2, [col] 1fr);
