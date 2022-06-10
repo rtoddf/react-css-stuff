@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import Grid from '../../Grid';
 import Description from '../../Description';
-import '../default.scss';
+import { StlyedGeometry } from '../Geometries/Geometry.styles';
 
 function Shadows02() {
     useEffect(() => {
@@ -10,8 +11,8 @@ function Shadows02() {
         // create a scene
         const scene = new THREE.Scene();
 
-        const canvas = document.querySelector('#bg');
-        const canvasWidth = document.querySelector('#shape-holder').offsetWidth;
+        const container = document.getElementById('shape-holder');
+        const canvasWidth = document.getElementById('shape-holder').offsetWidth;
         const canvasHeight = canvasWidth * 0.5;
 
         // create a camera
@@ -20,18 +21,20 @@ function Shadows02() {
         // position the camera so you're not on top of the geometry
         // the box is 10px
         // if we put the camera at 10, we'll be in the center of the box
-        // so we set it to 30
-        camera.position.setZ(30);
+        // so we set it to 15
+        camera.position.y = 3;
+        camera.position.z = 15;
         
         // create a renderer
         const renderer = new THREE.WebGLRenderer({
-            canvas: canvas,
             antialias: true,
             alpha: true,
         });
+        renderer.setClearColor(0x000000);
         renderer.setPixelRatio(window.devicePixelRatio);
         renderer.setSize(canvasWidth, canvasHeight);
         renderer.shadowMap.enabled = true;
+        container.append(renderer.domElement);
         // renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
         // create lights
@@ -51,9 +54,15 @@ function Shadows02() {
         spotLight.castShadow = true;
         scene.add(spotLight);
 
+        scene.add(
+            new THREE.PointLightHelper(pointLight),
+            // new THREE.PointLightHelper(pointLight02),
+            new THREE.SpotLightHelper(spotLight)
+        )
+
         // create geometry
-        const geometry = new THREE.PlaneGeometry( 50, 50 );
-        const geometry02 = new THREE.BoxGeometry(10, 10, 10);
+        const geometry = new THREE.PlaneGeometry(80, 80, 32, 32);
+        const geometry02 = new THREE.BoxGeometry(5, 5, 5);
 
         // create material
         // MeshBasicMaterial does not need a light source. Others do
@@ -105,12 +114,10 @@ function Shadows02() {
 
     return (
         <>
-            <Description title="Test Three - Ligting &amp; Shadow" copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor aliquet lacus ut dignissim. In pellentesque lorem eu nisl pretium fermentum. Donec ut tellus imperdiet, vestibulum nisl sed, pellentesque purus. Donec sollicitudin sapien in nibh aliquam pellentesque." />
-            <div className="grid">
-                <div id="shape-holder" className="half">
-                    <canvas id="bg"></canvas>
-                </div>
-            </div>
+            <Description title="Test Three - Ligting &amp; Shadow" />
+            <Grid>
+                <StlyedGeometry id="shape-holder" />
+            </Grid>
         </>
     )
 }
