@@ -17,6 +17,7 @@ Layouts:
     ☐ why are you getting one value in the styled commponent for the gauge
     ☐ figure out the logic for src/Components/Pocs/SquareImages/index.jsx
     ☐ do shadows on src/Components/Three/Geometries/Sphere.jsx
+    ☐ style selects
   
   Todos:
     You can write plain text notes/descriptions wherever you want

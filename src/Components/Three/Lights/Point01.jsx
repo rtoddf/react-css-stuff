@@ -1,10 +1,9 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import { createRenderer, createCamera, createLight, createMaterial } from '../utilities/default';
-import { createPlaneShape, createBoxShape } from '../utilities/createShape';
+import Grid from '../../Grid';
 import Description from '../../Description';
-import '../default.scss';
+import { StlyedGeometry } from '../Geometries/Geometry.styles';
 
 function Point01() {
     useEffect(() => {
@@ -14,33 +13,49 @@ function Point01() {
 
         // create a scene
         const scene = new THREE.Scene(canvasWidth/canvasHeight);
-        const camera = createCamera(canvasWidth, canvasHeight, 1000, 1, 5000, 0, 0, 30)
+        const camera = new THREE.PerspectiveCamera(
+            75,
+            canvasWidth / canvasHeight,
+            0.1,
+            10000
+        );
+        // camera.position.y = 2;
+        camera.position.z = 5;
 
         // create a renderer
-        const renderer = createRenderer(container, canvasWidth, canvasHeight, 0x333333)
+        const renderer = new THREE.WebGLRenderer({
+            antialias: true,
+            alpha: true,
+        });
+        renderer.setClearColor(0x000000);
+        renderer.setPixelRatio(devicePixelRatio);
+        renderer.setSize(canvasWidth, canvasHeight);
         renderer.shadowMap.enabled = true;
+        container.append(renderer.domElement);
 
         const controls = new OrbitControls( camera, renderer.domElement );
-        controls.enableZoom = false;
+        controls.enableZoom = true;
 
         // create three lights
-        const light1 = createLight('point', 0xae0000, 2, 0, 300, -200, 50)
+        const light1 = new THREE.PointLight(0xff7700, 1);
+        light1.position.set( 5, 2, 5 );
         light1.castShadow = true
         scene.add(light1)
 
-        const light2 = createLight('point', 0xfca102, 2, 0, -300, -200, 50)
+        const light2 = new THREE.PointLight(0xfca102, 1.5);
+        light2.position.set( -5, 2, 5 );
         light2.castShadow = true
         scene.add(light2)
 
-        const lightHelper1 = new THREE.PointLightHelper(light1)
-		scene.add(lightHelper1)
-		const lightHelper2 = new THREE.PointLightHelper(light2)
-		scene.add(lightHelper2)
+        scene.add(
+            new THREE.PointLightHelper(light1),
+            new THREE.PointLightHelper(light2)
+        )
 
         const π = Math.PI;
 
         // create the cone geometry
-        const plane = createPlaneShape(1000, 2000);
+        const plane = new THREE.PlaneGeometry(20, 20)
         const planeMaterial= new THREE.MeshPhongMaterial({
             color: 0xffffff,
             side: THREE.DoubleSide
@@ -48,23 +63,24 @@ function Point01() {
     
         const planeMesh = new THREE.Mesh(plane, planeMaterial)
         planeMesh.rotation.x = π/2
-        planeMesh.position.y = 100
+        planeMesh.position.y = -2
         planeMesh.receiveShadow = true
         scene.add(planeMesh)
 
-        const cube = createBoxShape(100, 100, 100);
-        const material = createMaterial('meshStandard', 0xffffff);
-        const mesh = new THREE.Mesh(cube, material);
-        mesh.position.z = -200;
-        mesh.castShadow = true;
-        scene.add(mesh);
+        const cube = new THREE.BoxGeometry(2.5, 2.5, 2.5);
+        const cubeMaterial = new THREE.MeshStandardMaterial({
+            color: 0xffffff,
+        });
+        const cubeMesh = new THREE.Mesh(cube, cubeMaterial);
+        cubeMesh.position.y = .5
+        cubeMesh.castShadow = true;
+        scene.add(cubeMesh);
 
         renderer.render(scene, camera);
 
         const animate = () => {
-            // mesh.rotation.x += 0.05;
-            mesh.rotation.y += 0.05;
-            // mesh.rotation.z += 0.05;
+            cubeMesh.rotation.x += 0.05;
+            cubeMesh.rotation.y += 0.04;
             controls.update();
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
@@ -75,9 +91,9 @@ function Point01() {
     return (
         <>
             <Description title="Point Lights &amp; Shadows (w/Light Helpers)" copy="" />
-            <div className="grid">
-                <div id="shape-holder"></div>
-            </div>
+            <Grid>
+                <StlyedGeometry id="shape-holder" />
+            </Grid>
         </>
     )
 }
