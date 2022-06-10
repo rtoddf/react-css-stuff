@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import settings from '../Geometries/Wireframes/settings';
+import settings from './settings';
 
 export function getShapeSettings(shape){
     let geometry = '';
@@ -62,6 +62,13 @@ export function getShapeSettings(shape){
             settings[shape].innerRadius,
             settings[shape].outerRadius,
             settings[shape].segments
+        );
+    } else if(shape === 'capsule') {
+        geometry = new THREE.CapsuleGeometry(
+            settings[shape].radius,
+            settings[shape].length,
+            settings[shape].capSubdivisions,
+            settings[shape].radialSegments
         );
     } else {
         geometry = new THREE.PlaneGeometry(
