@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import Grid from '../../Grid';
 import Description from '../../Description';
-import '../default.scss';
+import { StlyedGeometry } from './Geometry.styles';
 
 function Dodecahedron() {
     useEffect(() => {
@@ -20,7 +21,7 @@ function Dodecahedron() {
             0.1,
             10000
         );
-        camera.position.z = 25;
+        camera.position.z = 10;
 
         // create a renderer
         const renderer = new THREE.WebGLRenderer({
@@ -36,12 +37,12 @@ function Dodecahedron() {
         controls.enableZoom = true;
 
         // create lights
-        const pointLight01 = new THREE.PointLight(0xd403fa, .2);
-        pointLight01.position.set( 0, -10, 20 );
+        const pointLight01 = new THREE.PointLight(0xd403fa, 1);
+        pointLight01.position.set( -10, -10, 15 );
         scene.add(pointLight01);
 
         const pointLight02 = new THREE.PointLight(0x01a4ae, 1);
-        pointLight02.position.set( 0, 10, 20 );
+        pointLight02.position.set( 10, 10, 15 );
         scene.add(pointLight02);
 
         scene.add(
@@ -49,13 +50,8 @@ function Dodecahedron() {
             new THREE.PointLightHelper(pointLight02)
         )
 
-		scene.add(
-            new THREE.PointLightHelper(pointLight01),
-            new THREE.PointLightHelper(pointLight02)
-        )
-
         // create the cone geometry
-        const dodecahedron = new THREE.DodecahedronGeometry(10);
+        const dodecahedron = new THREE.DodecahedronGeometry(5);
         const material = new THREE.MeshPhongMaterial({
             color: 0xffffff,
         });
@@ -74,9 +70,9 @@ function Dodecahedron() {
     return (
         <>
             <Description title="Dodecahedron" copy="" />
-            <div className="grid">
-                <div id="shape-holder"></div>
-            </div>
+            <Grid>
+                <StlyedGeometry id="shape-holder" />
+            </Grid>
         </>
     )
 }
