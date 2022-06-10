@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import Grid from '../../Grid';
 import Description from '../../Description';
-import '../default.scss';
+import { StlyedGeometry } from './Geometry.styles';
 
 function Capsule() {
     useEffect(() => {
@@ -74,9 +75,9 @@ function Capsule() {
     return (
         <>
             <Description title="Capsule" copy="" />
-            <div className="grid">
-                <div id="shape-holder"></div>
-            </div>
+            <Grid>
+                <StlyedGeometry id="shape-holder" />
+            </Grid>
         </>
     )
 }
