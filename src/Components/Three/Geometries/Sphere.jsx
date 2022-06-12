@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import Description from '../../Common/Description/default';
-import '../default.scss';
+import Grid from '../../Grid';
+import Description from '../../Description';
+import { StlyedGeometry } from './Geometry.styles';
 
 function Sphere() {
     useEffect(() => {
@@ -19,7 +20,7 @@ function Sphere() {
             0.1,
             10000
         );
-        camera.position.z = 35;
+        camera.position.z = 25;
 
         // create a renderer
         const renderer = new THREE.WebGLRenderer({
@@ -36,17 +37,18 @@ function Sphere() {
         controls.enableZoom = true;
 
         // create lights
-        const pointLight01 = new THREE.PointLight(0x003264, 2);
-        pointLight01.position.set( 0, 20, 15);
+        const pointLight01 = new THREE.PointLight(0x003264, 3);
+        pointLight01.position.set( -10, 20, 15);
         scene.add(pointLight01);
 
         const pointLight02 = new THREE.PointLight(0xfa9900, 1);
-        pointLight02.position.set( 0, -20, 15);
+        pointLight02.position.set( -20, -20, 15);
         scene.add(pointLight02);
 
-        const lightHelper1 = new THREE.PointLightHelper(pointLight01)
-        const lightHelper2 = new THREE.PointLightHelper(pointLight02)
-		scene.add(lightHelper1, lightHelper2)
+        scene.add(
+            new THREE.PointLightHelper(pointLight01),
+            new THREE.PointLightHelper(pointLight02)
+        )
 
         // create the sphere01 geometry
         const sphere01 = new THREE.SphereGeometry( 10, 32, 32 );
@@ -57,7 +59,7 @@ function Sphere() {
         scene.add(mesh01);
 
         // create the sphere02 geometry
-        const sphere02 = new THREE.SphereGeometry( 2, 16, 16 );
+        const sphere02 = new THREE.SphereGeometry( 2.15, 32, 23 );
         const mesh02 = new THREE.Mesh(sphere02, material);
         // create a center point for sphere01 to rotate around - invisble object
         const sphere02CenterPoint = new THREE.Object3D();
@@ -65,10 +67,10 @@ function Sphere() {
         scene.add(sphere02CenterPoint);
         // add the sphere01 to the invisibel object
         sphere02CenterPoint.add(mesh02);
-        mesh02.position.x = 15;
+        mesh02.position.x = 20;
 
         // create the sphere03 geometry
-        const sphere03 = new THREE.SphereGeometry( 2, 16, 16 );
+        const sphere03 = new THREE.SphereGeometry( 1.25, 32, 32 );
         const mesh03 = new THREE.Mesh(sphere03, material);
         // create a center point for sphere01 to rotate around - invisble object
         const sphere03CenterPoint = new THREE.Object3D();
@@ -80,11 +82,11 @@ function Sphere() {
 
         const animate = () => {
             // mesh01.rotation.y += 0.025;
-            sphere02CenterPoint.rotateY(0.02);
-            sphere02CenterPoint.rotateZ(0.02);
+            sphere02CenterPoint.rotateY(0.008);
+            sphere02CenterPoint.rotateZ(0.008);
 
-            sphere03CenterPoint.rotateY(0.03);
-            // sphere03CenterPoint.rotateX(0.03);
+            sphere03CenterPoint.rotateY(0.01);
+            sphere03CenterPoint.rotateZ(0.01);
 
             // mesh01.rotateY(0.025);
             renderer.render(scene, camera);
@@ -96,9 +98,9 @@ function Sphere() {
     return (
         <>
             <Description title="Spheres" copy="" />
-            <div className="grid">
-                <div id="shape-holder"></div>
-            </div>
+            <Grid>
+                <StlyedGeometry id="shape-holder" />
+            </Grid>
         </>
     )
 }

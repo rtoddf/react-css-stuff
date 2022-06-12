@@ -1,10 +1,9 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import { createMaterial } from '../utilities/default';
-import { createCylinderShape } from '../utilities/createShape';
-import Description from '../../Common/Description/default';
-import '../default.scss';
+import Grid from '../../Grid';
+import Description from '../../Description';
+import { StlyedGeometry } from './Geometry.styles';
 
 function Cylinder() {
     useEffect(() => {
@@ -24,7 +23,7 @@ function Cylinder() {
             0.1,
             10000
         );
-        camera.position.z = 150;
+        camera.position.z = 38;
 
         // create a renderer
         const renderer = new THREE.WebGLRenderer({
@@ -60,9 +59,11 @@ function Cylinder() {
         )
 
         // create the cone geometry
-        const cylinder = createCylinderShape();
-        const material = createMaterial();
-        const mesh = new THREE.Mesh(cylinder, material)
+        const geometry = new THREE.CylinderGeometry(8, 20, 15, 100, 100)
+        const material = new THREE.MeshPhongMaterial({
+            color: 0xffffff,
+        });
+        const mesh = new THREE.Mesh(geometry, material)
         scene.add(mesh);
 
         const animate = () => {
@@ -77,9 +78,9 @@ function Cylinder() {
     return (
         <>
             <Description title="Cylinder" copy="" />
-            <div className="grid">
-                <div id="shape-holder"></div>
-            </div>
+            <Grid>
+                <StlyedGeometry id="shape-holder" />
+            </Grid>
         </>
     )
 }

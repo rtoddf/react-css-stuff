@@ -1,10 +1,10 @@
 import { useState } from 'react';
+import Grid from '../../Grid';
 import Card from '../../Common/Card/default';
 import { ItunesData } from '../../../Apis/Itunes';
-import './default.scss';
 
 function ItunesArtistInfo() {
-  const [artistName, setArtistName] = useState('Lizzo');
+  const [artistName, setArtistName] = useState('Jukebox the Ghost');
   const [songTitle, setSongTitle] = useState('');
 
   const data = ItunesData(artistName, songTitle, 'musicTrack');
@@ -30,9 +30,10 @@ function ItunesArtistInfo() {
       <h3>
         {artistName} {songTitle !== '' ? `- {songTitle}` : ``}
       </h3>
-      <div className='grid' data-col='4'>
-        {cards}
-      </div>
+      <input type='text' id='name' name='name'></input>
+      <button type='button'>Click Me!</button>
+
+      <Grid cols='4'>{cards}</Grid>
     </div>
   );
 }

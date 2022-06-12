@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
-import { createLight, createMaterial } from '../utilities/default';
-import { createBoxShape } from '../utilities/createShape';
-import Description from '../../Common/Description/default';
-import '../default.scss';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import Grid from '../../Grid';
+import Description from '../../Description';
+import { StlyedGeometry } from './Geometry.styles';
 
 function Box() {
     useEffect(() => {
@@ -21,7 +21,7 @@ function Box() {
             0.1,
             10000
         );
-        camera.position.z = 175;
+        camera.position.z = 15;
 
         // create a renderer
         const renderer = new THREE.WebGLRenderer({
@@ -33,15 +33,30 @@ function Box() {
         renderer.setSize(canvasWidth, canvasHeight);
         container.append(renderer.domElement);
 
-        // create two lights
-        // type, color, intensity, distance, xpos, ypos, zpos
-        scene.add(createLight('point', 0xff7700, 2, 2000, 200, 0, 200));
-        scene.add(createLight('point', 0xae0000, 2, 2000, 200, 0, -200));
+        const controls = new OrbitControls( camera, renderer.domElement );
+        controls.enableZoom = true;
+
+        // create lights
+        const pointLight01 = new THREE.PointLight(0xff7700, 2);
+        pointLight01.position.set( 10, 0, 10 );
+        scene.add(pointLight01);
+
+        const pointLight02 = new THREE.PointLight(0xae0000, 2);
+        pointLight02.position.set( -10, 0, 10 );
+        scene.add(pointLight02);
+
+        scene.add(
+            new THREE.PointLightHelper(pointLight01),
+            new THREE.PointLightHelper(pointLight02)
+        )
 
         // create the box geometry
-        const box = createBoxShape(100, 100, 100);
-        const material = createMaterial();
-        const mesh = new THREE.Mesh(box, material)
+        const geometry = new THREE.BoxGeometry(10, 10, 10);
+        const material = new THREE.MeshPhongMaterial({
+            color: 0xffffff,
+            // wireframe: true
+        });
+        const mesh = new THREE.Mesh(geometry, material)
         scene.add(mesh);
 
         const animate = () => {
@@ -56,9 +71,9 @@ function Box() {
     return (
         <>
             <Description title="Box" copy="" />
-            <div className="grid">
-                <div id="shape-holder"></div>
-            </div>
+            <Grid>
+                <StlyedGeometry id="shape-holder" />
+            </Grid>
         </>
     )
 }

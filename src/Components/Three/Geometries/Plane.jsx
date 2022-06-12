@@ -1,7 +1,9 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
-import Description from '../../Common/Description/default';
-import '../default.scss';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import Grid from '../../Grid';
+import Description from '../../Description';
+import { StlyedGeometry } from './Geometry.styles';
 
 function Plane() {
     useEffect(() => {
@@ -19,7 +21,7 @@ function Plane() {
             0.1,
             10000
         );
-        camera.position.z = 25;
+        camera.position.z = 12;
 
         // create a renderer
         const renderer = new THREE.WebGLRenderer({
@@ -32,13 +34,16 @@ function Plane() {
         renderer.setSize(canvasWidth, canvasHeight);
         container.append(renderer.domElement);
 
+        const controls = new OrbitControls( camera, renderer.domElement );
+        controls.enableZoom = true;
+
         // create lights
-        const pointLight01 = new THREE.PointLight(0x8d0196, 1);
-        pointLight01.position.set( 200, 0, 200 );
+        const pointLight01 = new THREE.PointLight(0x8d0196, 2);
+        pointLight01.position.set( 15, 0, 15 );
         scene.add(pointLight01);
 
-        const pointLight02 = new THREE.PointLight(0xffffff, 1);
-        pointLight02.position.set( -200, 0, 200 );
+        const pointLight02 = new THREE.PointLight(0xff7700, 1);
+        pointLight02.position.set( -15, 0, 15 );
         scene.add(pointLight02);
 
 		scene.add(
@@ -47,7 +52,7 @@ function Plane() {
         )
 
         // create the cone geometry
-        const plane = new THREE.PlaneGeometry(20, 20, 32, 32);
+        const plane = new THREE.PlaneGeometry(10, 10, 32, 32);
         const material = new THREE.MeshPhongMaterial({
             color: 0xffffff,
         });
@@ -66,9 +71,9 @@ function Plane() {
     return (
         <>
             <Description title="Plane" copy="" />
-            <div className="grid">
-                <div id="shape-holder"></div>
-            </div>
+            <Grid>
+                <StlyedGeometry id="shape-holder" />
+            </Grid>
         </>
     )
 }

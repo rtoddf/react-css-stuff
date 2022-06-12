@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import * as THREE from 'three';
-import { getShapeSettings } from '../../utilities/helpers';
+import { getShapeSettings } from './helpers';
 import settings from './settings';
-import Description from '../../../Common/Description/default';
-import '../../default.scss';
+import Grid from '../../../Grid';
+import Description from '../../../Description';
+import { StlyedGeometry } from '../Geometry.styles';
 
 function Wireframes() {
     const [shape, setShape] = useState('cube');
@@ -34,14 +35,14 @@ function Wireframes() {
 
         // create a camera
         const camera = new THREE.PerspectiveCamera(
-            settings['camera'].fieldOfView, // Field of view
-            settings['camera'].aspectRatio, // Aspect ratio
-            settings['camera'].nearClipping, // Near
-            settings['camera'].farClipping // Far
+            75, // Field of view
+            canvasWidth / canvasHeight, // Aspect ratio
+            1, // Near
+            10000 // Far
         );
 
         // position the camera so you're not on top of the geometry
-        camera.position.z = 400;
+        camera.position.z = 40;
 
         // create a renderer
         const renderer = new THREE.WebGLRenderer({
@@ -68,27 +69,28 @@ function Wireframes() {
             requestAnimationFrame(animate);
         };
         animate();
-    }, [geom])
+    }, [geom, scene, shape])
 
     return (
         <>
             <Description title="Simple Shape Wireframe" copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor aliquet lacus ut dignissim. In pellentesque lorem eu nisl pretium fermentum. Donec ut tellus imperdiet, vestibulum nisl sed, pellentesque purus." />
             <select id="shape-select" onChange={(e) => getShape(e)}>
                 <option value="cube">Cube</option>
-                <option value="sphere">Sphere</option>
+                <option value="capsule">Capsule</option>
                 <option value="circle">Circle</option>
                 <option value="cone">Cone</option>
                 <option value="cylinder">Cylinder</option>
                 <option value="dodecahedron">Dodecahedron</option>
                 <option value="icosahedron">Icosahedron</option>
                 <option value="octahedron">Octahedron</option>
-                <option value="tetrahedron">Tetrahedron</option>
-                <option value="ring">Ring</option>
                 <option value="plane">Plane</option>
+                <option value="ring">Ring</option>
+                <option value="sphere">Sphere</option>
+                <option value="tetrahedron">Tetrahedron</option>
             </select>
-            <div className="grid">
-                <div id="shape-holder"></div>
-            </div>
+            <Grid>
+                <StlyedGeometry id="shape-holder" />
+            </Grid>
         </>
     )
 }

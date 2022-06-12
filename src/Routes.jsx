@@ -1,9 +1,9 @@
 import { Route, Switch } from "react-router-dom";
 
-import Home from './Components/Home/default';
+import Home from './Components/Pages/Home';
 
 // Three
-import Three from './Components/Three/default';
+import Three from './Components/Pages/Three';
 
 // Lights
 import Point01 from './Components/Three/Lights/Point01';
@@ -28,46 +28,46 @@ import Test02 from './Components/Three/Tests/Test02';
 import Test04 from './Components/Three/Tests/Test04';
 
 //GSAP
-import Gsap from './Components/Gsap/default';
+import Gsap from './Components/Pages/Gsap';
 import Learn01 from './Components/Gsap/Learn01';
 
 // Apis
-import Apis from './Components/Apis/default';
+import Apis from './Components/Pages/Apis';
 import Placeholder from './Components/Apis/Placeholder/default';
 import Weather from './Components/Apis/Placeholder/Weather';
 import ItunesImages from './Components/Apis/Itunes/ItunesImages';
 import ItunesArtistInfo from './Components/Apis/Itunes/ItunesArtistInfo';
 
 // Layouts
-import Layouts from './Components/Layouts/default';
-import Card from './Components/Layouts/Card/default';
+import Layouts from './Components/Pages/Layouts';
+import SocialCard from './Components/Layouts/SocialCard';
 import Panel from './Components/Layouts/Panel/default';
 
 // Learning
-import Learning from './Components/Learning/default';
+import Learning from './Components/Pages/Learning';
 import StyledComponents from './Components/Learning/StyledComponents';
 
 // POCs
-import Pocs from './Components/Pocs/default';
-import ThreeDCube from './Components/Pocs/ThreeDCube/default';
-import SquareImages from './Components/Pocs/SquareImages/default';
-import SvgDoughnut from './Components/Pocs/SvgDoughnut/default';
-import CssPulse from './Components/Pocs/CssPulse/default';
-import NeonType from './Components/Pocs/NeonType/default';
-import SwitchAnimation from './Components/Pocs/SwitchAnimation/default';
-import DayNightAnimation from './Components/Pocs/DayNightAnimation/default';
-import IconAnimations from './Components/Pocs/IconAnimations/default';
+import Pocs from './Components/Pages/Pocs';
+import ThreeDCube from './Components/Pocs/ThreeDCube';
+import SquareImages from './Components/Pocs/SquareImages';
+import Dashboard from './Components/Pocs/Dashboard';
+import CssPulse from './Components/Pocs/CssPulse';
+import NeonType from './Components/Pocs/NeonType';
+import SwitchAnimation from './Components/Pocs/SwitchAnimation';
+import DayNightAnimation from './Components/Pocs/DayNightAnimation';
+import IconAnimations from './Components/Pocs/IconAnimations';
 import FadingImages from './Components/Pocs/FadingImages/default';
 
 // Reference
-import Reference from './Components/Reference/default';
-import Keyframes from './Components/Reference/Keyframes/default';
-import Transforms from './Components/Reference/Transforms/default';
-import RadialGradients from './Components/Reference/RadialGradients/default';
-import DropShadows from './Components/Reference/DropShadows/default';
-import NthChild from './Components/Reference/NthChild/default';
-import VwFonts from './Components/Reference/VwFonts/default';
-import Selectors from './Components/Reference/Selectors/default';
+import Reference from './Components/Pages/Reference';
+import Keyframes from './Components/Reference/Keyframes';
+import Transforms from './Components/Reference/Transforms';
+import RadialGradients from './Components/Reference/RadialGradients';
+import DropShadows from './Components/Reference/DropShadows';
+import NthChild from './Components/Reference/NthChild';
+import VwFonts from './Components/Reference/VwFonts';
+import Selectors from './Components/Reference/Selectors';
 
 function Routes() {
     return (
@@ -159,8 +159,8 @@ function Routes() {
             <Route exact path='/layouts'>
                 <Layouts />
             </Route>
-            <Route path='/layouts/card'>
-                <Card />
+            <Route path='/layouts/social-card'>
+                <SocialCard />
             </Route>
             <Route path='/layouts/panel'>
                 <Panel />
@@ -179,8 +179,8 @@ function Routes() {
             <Route path='/pocs/square-images'>
                 <SquareImages />
             </Route>
-            <Route path='/pocs/svg-doughnut'>
-                <SvgDoughnut />
+            <Route path='/pocs/dashboard'>
+                <Dashboard />
             </Route>
             <Route path='/pocs/css-pulse'>
                 <CssPulse />

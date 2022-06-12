@@ -1,0 +1,52 @@
+[
+    {
+        "id": 0,
+        "title": "Wesley Taylor", 
+        "image": "wesley-taylor.jpg"
+    },
+    {
+        "id": 1,
+        "title": "Ben Barnes", 
+        "image": "ben-barnes.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Nick Jonas", 
+        "image": "nick-jonas.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Ben Wishaw", 
+        "image": "ben-whishaw.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Andrew Garfield", 
+        "image": "andrew-garfield.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Deborah Harry", 
+        "image": "deborah-harry.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Strange New Worlds", 
+        "image": "strange-new-worlds.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Supernatural", 
+        "image": "supernatural.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Westworld", 
+        "image": "westworld.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Bob's Burgers", 
+        "image": "bobs-burgers.jpg"
+    }
+]

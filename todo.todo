@@ -4,12 +4,20 @@ Layouts:
     ✔ finish thumbnails /apis @done(22-05-26 15:19)
     ✔ why aren't you using the card component for /apis/itunes/artist @done(22-05-26 15:45)
     ✔ why aren't you using the card component for /apis/itunes/images @done(22-05-26 15:45)
+    ✔ remove section classname in src/Components/Home/default.jsx @done(22-06-02 11:04)
+    ☐ find fix for temporary text-decoration in global
+    ☐ check cards for border-radius and overflow
     ☐ add a search for the two pages above
     ☐ finish /pocs/fading-images
     ☐ new images for /pocs/square-images
     ☐ button css for /pocs/three-d-cube
     ☐ make card more universal
     ☐ your square card isn't square - it's a rectangle. Make a square one
+    ☐ add search for itunes apis
+    ☐ why are you getting one value in the styled commponent for the gauge
+    ☐ figure out the logic for src/Components/Pocs/SquareImages/index.jsx
+    ☐ do shadows on src/Components/Three/Geometries/Sphere.jsx
+    ☐ style selects
   
   Todos:
     You can write plain text notes/descriptions wherever you want

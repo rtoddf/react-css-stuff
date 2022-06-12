@@ -1,9 +1,0 @@
-@import '../../../styles/colors';
-@import '../../../styles/typography';
-@import '../../../styles/mixins';
-
-.dropshadow {
-	box-shadow:  0 0 4px 4px $gray-color-4, 0 0 12px 12px $red-color, 0 0 18px 16px $gray-color-4;
-}
-
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-radial-gradient */

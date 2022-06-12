@@ -1,5 +1,4 @@
 @import '../../styles/colors';
-@import '../../styles/typography';
 
 figure {
     img {
@@ -11,13 +10,13 @@ figure {
       }
     }
 
-    figcaption {
-      margin: 0.3125rem auto 0;
-      padding: 0 20px;
-      color: $gray-color-4;
-      font-size: 0.75rem;
-      font-weight: 300;
-      line-height: 1rem;
-    }
+    // figcaption {
+    //   margin: 0.3125rem auto 0;
+    //   padding: 0 20px;
+    //   color: $gray-color-4;
+    //   font-size: 0.75rem;
+    //   font-weight: 300;
+    //   line-height: 1rem;
+    // }
 }
 
