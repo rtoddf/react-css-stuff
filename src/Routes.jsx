@@ -46,6 +46,7 @@ import Panel from './Components/Layouts/Panel/default';
 // Learning
 import Learning from './Components/Pages/Learning';
 import StyledComponents from './Components/Learning/StyledComponents';
+import Hooks from './Components/Learning/Hooks';
 
 // POCs
 import Pocs from './Components/Pages/Pocs';
@@ -230,6 +231,9 @@ function Routes() {
             </Route>
             <Route exact path='/learning/styled-components'>
                 <StyledComponents />
+            </Route>
+            <Route exact path='/learning/hooks'>
+                <Hooks />
             </Route>
         </Switch>
     </>
