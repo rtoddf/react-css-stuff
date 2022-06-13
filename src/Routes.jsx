@@ -5,6 +5,9 @@ import Home from './Components/Pages/Home';
 // Three
 import Three from './Components/Pages/Three';
 
+// D3
+import D3 from './Components/Pages/D3';
+
 // Lights
 import Point01 from './Components/Three/Lights/Point01';
 import Shadows01 from './Components/Three/Lights/Shadows01';
@@ -148,6 +151,10 @@ function Routes() {
             </Route>
             <Route path='/apis/itunes/artist'>
                 <ItunesArtistInfo />
+            </Route>
+            {/* D3 */}
+            <Route path='/d3'>
+                <D3 />
             </Route>
             {/* Gsap */}
             <Route path='/gsap'>

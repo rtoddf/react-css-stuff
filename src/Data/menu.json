@@ -12,6 +12,13 @@
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
+                    "id": "home-9",
+                    "link": "/d3",
+                    "title": "D3",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
                     "id": "home-8",
                     "link": "/gsap",
                     "title": "GSAP",
@@ -55,6 +62,21 @@
                 }
             ]
         },
+    "d3": {
+        "tests": {
+            "headline": "D3 React Tests",
+            "copy": "",
+            "items": [
+                {
+                    "id": "d3-test-1",
+                    "link": "/d3",
+                    "title": "D3 Test One",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        }
+    },
     "three": {
         "lighting": {
             "headline": "Three JS Lighting",
