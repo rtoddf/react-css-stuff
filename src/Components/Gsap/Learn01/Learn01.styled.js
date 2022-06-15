@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledGsap = styled.div`
+export const StyledLearn01 = styled.div`
   padding: 50px;
   text-align: center;
 

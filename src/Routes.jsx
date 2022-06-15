@@ -7,6 +7,7 @@ import Three from './Components/Pages/Three';
 
 // D3
 import D3 from './Components/Pages/D3';
+import Pie01 from './Components/D3/Tests/Pie01';
 
 // Lights
 import Point01 from './Components/Three/Lights/Point01';
@@ -33,6 +34,7 @@ import Test04 from './Components/Three/Tests/Test04';
 //GSAP
 import Gsap from './Components/Pages/Gsap';
 import Learn01 from './Components/Gsap/Learn01';
+import Learn02 from './Components/Gsap/Learn02';
 
 // Apis
 import Apis from './Components/Pages/Apis';
@@ -153,15 +155,25 @@ function Routes() {
                 <ItunesArtistInfo />
             </Route>
             {/* D3 */}
-            <Route path='/d3'>
+            <Route exact path='/d3'>
                 <D3 />
             </Route>
+            <Route path='/d3/tests/pie01'>
+                <Pie01 />
+            </Route>
+            <Route path='/d3/tests/pie02'>
+                <Pie01 />
+            </Route>
+            
             {/* Gsap */}
             <Route path='/gsap'>
                 <Gsap />
             </Route>
             <Route path='/apis/gsap/learn01'>
                 <Learn01 />
+            </Route>
+            <Route path='/apis/gsap/learn02'>
+                <Learn02 />
             </Route>
             {/* Layouts */}
             <Route exact path='/layouts'>

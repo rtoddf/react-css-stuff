@@ -1,9 +1,9 @@
 import { useRef, useEffect } from 'react';
 import { gsap } from "gsap";
-import Grid from '../Grid';
+import Grid from '../../Grid';
 
-import image from './images/john-constantine.jpg'
-import { StyledGsap } from './Gsap.styled';
+import image from '../images/john-constantine.jpg'
+import { StyledLearn01 } from './Learn01.styled';
 
 // docs: https://greensock.com/react/
 
@@ -37,14 +37,14 @@ function Learn01() {
 
   return (
     <Grid>
-      <StyledGsap>
+      <StyledLearn01>
         <img
           ref={imageItem}
           src={image}
           alt="John"
         />
         <h3 ref={textItem}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-      </StyledGsap>
+      </StyledLearn01>
     </Grid>
   );
 }

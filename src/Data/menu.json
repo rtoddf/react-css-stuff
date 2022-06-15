@@ -14,7 +14,7 @@
                 {
                     "id": "home-9",
                     "link": "/d3",
-                    "title": "D3",
+                    "title": "D3 Stuff",
                     "image": "placeholder.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
@@ -68,9 +68,16 @@
             "copy": "",
             "items": [
                 {
-                    "id": "d3-test-1",
-                    "link": "/d3",
-                    "title": "D3 Test One",
+                    "id": "d3-1",
+                    "link": "/d3/tests/pie01",
+                    "title": "D3 Pie Chart One",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "d3-2",
+                    "link": "/d3/tests/pie02",
+                    "title": "D3 Pie Chart Two",
                     "image": "placeholder.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
@@ -231,6 +238,13 @@
                     "id": "gsap-1",
                     "link": "/apis/gsap/learn01",
                     "title": "GSAP Learn One",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "gsap-2",
+                    "link": "/apis/gsap/learn02",
+                    "title": "GSAP Learn Two",
                     "image": "placeholder.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
