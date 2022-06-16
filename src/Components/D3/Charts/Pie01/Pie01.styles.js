@@ -12,13 +12,15 @@ export const StyledPie01 = styled.div`
     color: #000;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
     font: 12px sans-serif;
-    line-height: auto;
     pointer-events: none;
+    opacity: 0;
   }
+
   .tooltip p,
   .over_tooltip p {
     margin-bottom: 3px;
   }
+
   .tooltip td,
   .over_tooltip td {
     padding: 3px;

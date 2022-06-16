@@ -45,6 +45,51 @@ function Pie01() {
                     .attr('d', arc)
                     .attr('fill', (d, i)=>colors(i))
                     .attr('stroke', 'white')
+                    .each(function(d) {
+                        d3.select(this).on('mouseover', user_interaction)
+                        d3.select(this).on('mouseout', user_interaction)
+                    })
+
+        const tooltip = d3.select('#chart')
+            .append('div')
+                .attr('class', 'tooltip')
+
+        function user_interaction(e, d){
+            console.log('data: ', d)
+            console.log('mouseevent: ', e)
+
+            console.log('e: ', e)
+            const rad = e.type === 'mouseover' ? radius + 20 : radius;
+            const tooltip_opacity = e.type === 'mouseover' ? 1 : 0
+            const delay = e.type === 'mouseover' ? 0 : 150
+            const text_opacity = e.type === 'mouseover' ? 1 : 0
+
+            d3.select('.tooltip')
+                .html(function () {
+                    return `<span>${d.data.race}</span>`;
+                })
+                .style('top', `${e.pageY - 50}px`)
+                .style('left', `${e.pageX - 50}px`)
+                .transition()
+                .duration(500)
+                .style('opacity', tooltip_opacity)
+
+            d3.select(this)
+                .transition()
+                    .delay(delay)
+                    .style('cursor', 'pointer')
+
+            d3.select('.percentage').remove();
+
+            vis.append('text')
+                .attr('class', 'percentage')
+                .attr('text-anchor', 'middle')
+                .attr('x', radius / 20)
+                .attr('y', radius / 20 + 10)
+                .style('font-size', radius / 4)
+                .style('opacity', text_opacity)
+                .text(() => `${(d.data.percentage * 100).toFixed(1)}%`)
+        }
             
     });
 
