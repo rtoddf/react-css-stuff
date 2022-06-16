@@ -15,14 +15,16 @@ function Pie01() {
         const container_parent = document.querySelector('.display');
         const chart_container = document.querySelector('#chart');
         const margins = {top: 20, right: 20, bottom: 20, left: 20};
-        const width = container_parent.offsetWidth - margins.left - margins.right;
-        const height = (width * 0.8) - margins.top - margins.bottom;
+        const width = (container_parent.offsetWidth - margins.left - margins.right) / 2;
+        const height = ((width * 0.8) - margins.top - margins.bottom);
         const radius = Math.min(width, height) / 2 - margins.top;
 
         // get positions for each data object
         const piedata = d3.pie().value(d => d.percentage)(data);
         // set the arc
-        const arc = d3.arc().innerRadius(radius).outerRadius(radius / 2);
+        const arc = d3.arc()
+            .innerRadius(radius)
+            .outerRadius(radius / 2);
 
         // set the colors
         const colors = d3.scaleOrdinal([
@@ -45,6 +47,10 @@ function Pie01() {
                     .attr('d', arc)
                     .attr('fill', (d, i)=>colors(i))
                     .attr('stroke', 'white')
+                    .on('mousemove', (e, d) => {
+                        console.log('e: ', e)
+                        console.log('d: ', d)
+                    })
                     .each(function(d) {
                         d3.select(this).on('mouseover', user_interaction)
                         d3.select(this).on('mouseout', user_interaction)
@@ -55,10 +61,9 @@ function Pie01() {
                 .attr('class', 'tooltip')
 
         function user_interaction(e, d){
-            console.log('data: ', d)
-            console.log('mouseevent: ', e)
+            // console.log('data: ', d)
+            // console.log('mouseevent: ', e)
 
-            console.log('e: ', e)
             const rad = e.type === 'mouseover' ? radius + 20 : radius;
             const tooltip_opacity = e.type === 'mouseover' ? 1 : 0
             const delay = e.type === 'mouseover' ? 0 : 150
@@ -71,12 +76,20 @@ function Pie01() {
                 .style('top', `${e.pageY - 50}px`)
                 .style('left', `${e.pageX - 50}px`)
                 .transition()
-                .duration(500)
+                    .duration(500)
                 .style('opacity', tooltip_opacity)
 
             d3.select(this)
                 .transition()
-                    .delay(delay)
+                    .attrTween('d', function (d) {
+                        // d.percentage = d.data.percentage;
+                        console.log('d.outerRadius: ', d.outerRadius)
+                        const i = d3.interpolate(d.outerRadius, rad);
+                        return function (t) {
+                          d.outerRadius = i(t);
+                          return arc(d);
+                        };
+                    })
                     .style('cursor', 'pointer')
 
             d3.select('.percentage').remove();
@@ -89,6 +102,9 @@ function Pie01() {
                 .style('font-size', radius / 4)
                 .style('opacity', text_opacity)
                 .text(() => `${(d.data.percentage * 100).toFixed(1)}%`)
+                    // .transition()
+                    //     .delay(delay)
+                    //     .duration(500)
         }
             
     });

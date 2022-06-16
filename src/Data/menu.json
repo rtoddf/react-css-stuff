@@ -63,6 +63,32 @@
             ]
         },
     "d3": {
+        "charts": {
+            "headline": "D3 React Charts",
+            "copy": "",
+            "items": [
+                {
+                    "id": "d3-charts-1",
+                    "link": "/d3/charts/pie01",
+                    "title": "D3 Pie Chart One",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        },
+        "special": {
+            "headline": "D3 React Special",
+            "copy": "",
+            "items": [
+                {
+                    "id": "d3-special-1",
+                    "link": "/d3/special/analogclock",
+                    "title": "D3 Analog Clock",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        },
         "tests": {
             "headline": "D3 React Tests",
             "copy": "",
@@ -78,19 +104,6 @@
                     "id": "d3-tests-2",
                     "link": "/d3/tests/pie02",
                     "title": "D3 Pie Chart Two",
-                    "image": "placeholder.jpg",
-                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
-                }
-            ]
-        },
-        "charts": {
-            "headline": "D3 React Charts",
-            "copy": "",
-            "items": [
-                {
-                    "id": "d3-charts-1",
-                    "link": "/d3/charts/pie01",
-                    "title": "D3 Pie Chart One",
                     "image": "placeholder.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
