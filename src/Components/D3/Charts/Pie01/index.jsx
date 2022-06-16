@@ -4,25 +4,27 @@ import {theme} from '../../../../styles/Theme';
 import Grid from '../../../Grid';
 import Description from '../../../Description';
 
+import data from '../../data/population.json';
 import { StyledPie01 } from './Pie01.styles';
-
-const data = [
-    {item: 'A', count: 590},
-    {item: 'B', count: 291},
-    {item: 'C', count: 348},
-    {item: 'D', count: 145},
-    {item: 'E', count: 46},
-]
 
 function Pie01() {
     const pieChart = useRef();
+    console.log('data: ', data)
 
-    useEffect(() => {
+    useEffect(()=> {
+        const container_parent = document.querySelector('.display');
+        const chart_container = document.querySelector('#chart');
+        const margins = {top: 20, right: 20, bottom: 20, left: 20};
+        const width = container_parent.offsetWidth - margins.left - margins.right;
+        const height = (width * 0.8) - margins.top - margins.bottom;
+        const radius = Math.min(width, height) / 2 - margins.top;
+
         // get positions for each data object
-        const piedata = d3.pie().value(d => d.count)(data);
+        const piedata = d3.pie().value(d => d.percentage)(data);
         // set the arc
-        const arc = d3.arc().innerRadius(0).outerRadius(200);
-        //colors
+        const arc = d3.arc().innerRadius(radius).outerRadius(radius / 2);
+
+        // set the colors
         const colors = d3.scaleOrdinal([
             theme.colors.orange,
             theme.colors.blue,
@@ -30,50 +32,31 @@ function Pie01() {
             theme.colors.red,
             theme.colors.purple]
         );
-        // desfibe the size and position of the svg
-        const svg = d3.select(pieChart.current)
-            .attr('width', 600)
-            .attr('height', 600)
+
+        const vis = d3.select(pieChart.current)
+            .attr('width', width)
+            .attr('height', height)
             .append('g')
-                .attr('transform', 'translate(300,300)')
+                .attr('transform', `translate(${width/2 + margins.left},${height/2 + margins.top})`)
 
-        //tooltip
-        const toolDiv = d3.select('#chartArea')
-            .append('div')
-            .style('visibility', 'hidden')
-            .style('position', 'absolute')
-            .style('background-color', 'white')
-            .style('padding', '10px')
-            .style('border', '1px solid black')
-
-        svg.append('g')
-            .selectAll('path')
+        vis.append('g').selectAll('path')
             .data(piedata)
-            .join('path')
-                .attr('d', arc)
-                .attr('fill', (d, i)=>colors(i))
-                .attr('stroke', 'white')
-                .on('mouseover', (e, d) => {
-                    toolDiv
-                        .style('visibility', 'visible')
-                        .text(`${d.data.item}:` + `${d.data.count}`)
-                })
-                .on('mousemove', (e, d) => {
-                    toolDiv
-                        .style('top', `${e.pageY - 50}px`)
-                        .style('left', `${e.pageX - 50}px`)
-                })
-                .on('mouseout', () => {
-                    toolDiv.style('visibility', 'hidden')
-                })
+                .join('path')
+                    .attr('d', arc)
+                    .attr('fill', (d, i)=>colors(i))
+                    .attr('stroke', 'white')
+            
     });
 
     return (
-        <StyledPie01>
-            <div id="chartArea">
-                <svg ref={pieChart}></svg>
-            </div>
-        </StyledPie01>
+        <>
+            <Description title="Population Pie Chart - HI" copy="This donut chart shows the US Census 2010 data for Hawaii. The user can hover over each arc, which will animate, and see a tooltip with race. The percentage is also presented in the center of the chart. More data can be added to the tooltip and the center of the chart. Static population data from the US Census 2010 (Hawaii). Hover over an arc to see the percentage and race." />
+            <StyledPie01 className="display">
+                <div id="chart">
+                    <svg ref={pieChart}></svg>
+                </div>
+            </StyledPie01>
+        </>
     )
 }
 

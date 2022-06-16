@@ -30,7 +30,7 @@ function Pie01() {
             theme.colors.red,
             theme.colors.purple]
         );
-        // desfibe the size and position of the svg
+        // describe the size and position of the svg
         const svg = d3.select(pieChart.current)
             .attr('width', 600)
             .attr('height', 600)
