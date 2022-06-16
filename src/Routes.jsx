@@ -7,7 +7,8 @@ import Three from './Components/Pages/Three';
 
 // D3
 import D3 from './Components/Pages/D3';
-import Pie01 from './Components/D3/Tests/Pie01';
+import Pie01 from './Components/D3/Charts/Pie01';
+import Pie01Example from './Components/D3/Tests/Pie01';
 
 // Lights
 import Point01 from './Components/Three/Lights/Point01';
@@ -158,11 +159,14 @@ function Routes() {
             <Route exact path='/d3'>
                 <D3 />
             </Route>
-            <Route path='/d3/tests/pie01'>
+            <Route path='/d3/charts/pie01'>
                 <Pie01 />
             </Route>
+            <Route path='/d3/tests/pie01'>
+                <Pie01Example />
+            </Route>
             <Route path='/d3/tests/pie02'>
-                <Pie01 />
+                <Pie01Example />
             </Route>
             
             {/* Gsap */}

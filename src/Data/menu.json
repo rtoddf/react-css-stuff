@@ -68,16 +68,29 @@
             "copy": "",
             "items": [
                 {
-                    "id": "d3-1",
+                    "id": "d3-tests-1",
                     "link": "/d3/tests/pie01",
                     "title": "D3 Pie Chart One",
                     "image": "placeholder.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
-                    "id": "d3-2",
+                    "id": "d3-tests-2",
                     "link": "/d3/tests/pie02",
                     "title": "D3 Pie Chart Two",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        },
+        "charts": {
+            "headline": "D3 React Charts",
+            "copy": "",
+            "items": [
+                {
+                    "id": "d3-charts-1",
+                    "link": "/d3/charts/pie01",
+                    "title": "D3 Pie Chart One",
                     "image": "placeholder.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
