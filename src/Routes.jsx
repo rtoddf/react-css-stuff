@@ -9,6 +9,7 @@ import Three from './Components/Pages/Three';
 import D3 from './Components/Pages/D3';
 import Pie01 from './Components/D3/Charts/Pie01';
 import AnalogClock from './Components/D3/Special/AnalogClock';
+import PolarClock from './Components/D3/Special/PolarClock';
 import Pie01Example from './Components/D3/Tests/Pie01';
 
 // Lights
@@ -166,6 +167,10 @@ function Routes() {
             <Route path='/d3/special/analogclock'>
                 <AnalogClock />
             </Route>
+            <Route path='/d3/special/polarclock'>
+                <PolarClock />
+            </Route>
+            
             <Route path='/d3/tests/pie01'>
                 <Pie01Example />
             </Route>

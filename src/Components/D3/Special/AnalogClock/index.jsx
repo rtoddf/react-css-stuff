@@ -25,7 +25,6 @@ function AnalogClock() {
     
     useEffect(() => {
         const data = fields();
-        console.log('data: ', data)
 
         const scaleSecs = d3.scaleLinear()
             .domain([ 0, 59 + 999/1000 ])
