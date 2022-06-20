@@ -10,7 +10,7 @@ function AnalogClock() {
 
     const fields = () => {
 		const currentTime = new Date()
-        const ms = currentTime.getMilliseconds()
+        // const ms = currentTime.getMilliseconds()
 		const second = currentTime.getSeconds()
 		const minute = currentTime.getMinutes()
 		// Add the fraction of seconds elapsed if you prefer a smooth-sweeping minute handfairy dust. 
@@ -24,8 +24,6 @@ function AnalogClock() {
 	}
     
     useEffect(() => {
-        const data = fields();
-
         const scaleSecs = d3.scaleLinear()
             .domain([ 0, 59 + 999/1000 ])
             .range([ 0, 2 * pi ])
@@ -64,32 +62,20 @@ function AnalogClock() {
         const secondArc = d3.arc()
             .innerRadius(0)
             .outerRadius(((height / 2) - 10) * .85)
-            .startAngle(function(d){
-                return scaleSecs(d.numeric)
-            })
-            .endAngle(function(d){
-                return scaleSecs(d.numeric)
-            })
+            .startAngle((d) => scaleSecs(d.numeric))
+            .endAngle((d) => scaleSecs(d.numeric))
 
         const minuteArc = d3.arc()
             .innerRadius(0)
             .outerRadius(((height / 2) - 10) * .85)
-            .startAngle(function(d){
-                return scaleMins(d.numeric)
-            })
-            .endAngle(function(d){
-                return scaleMins(d.numeric)
-            })
+            .startAngle((d) => scaleMins(d.numeric))
+            .endAngle((d) => scaleMins(d.numeric))
 
         const hourArc = d3.arc()
             .innerRadius(0)
             .outerRadius(((height / 2) - 10) * .5)
-            .startAngle(function(d){
-                return scaleHours(d.numeric)
-            })
-            .endAngle(function(d){
-                return scaleHours(d.numeric)
-            })
+            .startAngle((d) => scaleHours(d.numeric))
+            .endAngle((d) => scaleHours(d.numeric))
 
         const interval = setInterval(() => {
             let data = fields();

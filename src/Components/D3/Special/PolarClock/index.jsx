@@ -17,16 +17,14 @@ function PolarClock() {
         const fdat = d3.timeFormat('%d d');
         const fmon = d3.timeFormat('%b');
 
-        function days(){
-            return 32 - new Date(d.getYear(), d.getMonth(), 32).getDate()
-        }
+        const days = () => 32 - new Date(d.getYear(), d.getMonth(), 32).getDate();
 
-        var second = (d.getSeconds() + d.getMilliseconds() / 1000) / 60,
-            minute = (d.getMinutes() + second) / 60,
-            hour = (d.getHours() + minute) / 24,
-            weekday = (d.getDay() + hour) / 7,
-            date = (d.getDate() - 1 + hour) / days(),
-            month = (d.getMonth() + date) / 12
+        const second = (d.getSeconds() + d.getMilliseconds() / 1000) / 60;
+        const minute = (d.getMinutes() + second) / 60;
+        const hour = (d.getHours() + minute) / 24;
+        const weekday = (d.getDay() + hour) / 7;
+        const date = (d.getDate() - 1 + hour) / days();
+        const month = (d.getMonth() + date) / 12;
 
         return [
             {value: second,  index: .7, text: fsec(d)},
@@ -46,9 +44,7 @@ function PolarClock() {
 
         const interpolateHSL = (a, b) => {
             var i = d3.interpolateString(a, b)
-            return function(t){
-                return d3.hsl(i(t))
-            }
+            return (t) => d3.hsl(i(t))
         }
 
         const fill = d3.scaleLinear()
@@ -57,15 +53,9 @@ function PolarClock() {
 
         const arc = d3.arc()
             .startAngle(0)
-            .endAngle(function(d){
-                return d.value * 2 * Math.PI
-            })
-            .innerRadius(function(d){
-                return d.index * radius
-            })
-            .outerRadius(function(d){
-                return (d.index + .09) * radius
-            })
+            .endAngle((d) => d.value * 2 * Math.PI)
+            .innerRadius((d) => d.index * radius)
+            .outerRadius((d) => (d.index + .09) * radius)
 
         const vis = d3.select(polarClock.current)
             .attr('width', width)
@@ -82,40 +72,28 @@ function PolarClock() {
 
         g.append('path')
             .attr('d', arc)
-            .style('fill', function(d){ return fill(d.value) })
+            .style('fill', d => fill(d.value))
 
         g.append('text')
             .attr('text-anchor','middle')
             .attr('dy', '1em')
-            .text(function(d){
-                return d.text
-            })
+            .text(d => d.text)
 
         // update arcs
         d3.timer(function(){
-            var g = vis.selectAll('g')
+            let g = vis.selectAll('g')
                 .data(fields)
 
             g.select('path')
                 .attr('d', arc)
-                .style('fill', function(d){
-                        return fill(d.value)
-                    })
+                .style('fill', d => fill(d.value))
 
             g.select('text')
-                .attr('dy', function(d){
-                        return d.value < .5 ? '-.5em' : '1em'
-                    })
-                .attr('transform', function(d) {
-                        return 'rotate(' + 360 * d.value + ')'
-                            + 'translate(0,' + -(d.index + .09 / 2) * radius + ')'
-                            + 'rotate(' + (d.value < .5 ? -90 : 90) + ')'
-                    })
-                .attr('fill', '#fff')
+                .attr('dy', d => d.value < .5 ? '-.5em' : '1em')
+                .attr('transform', d => `rotate(${360 * d.value})` + ' translate(0,' + -(d.index + .09 / 2) * radius + ')' + ' rotate(' + (d.value < .5 ? -90 : 90) + ')')
+                .attr('fill', theme.d3.charts.colors.grays.white)
                 .attr('font-size', '10px')
-                .text(function(d){
-                    return d.text
-                })
+                .text(d => d.text)
 
         })
 
