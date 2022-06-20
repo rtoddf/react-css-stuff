@@ -7,9 +7,8 @@ import Description from '../../../Description';
 import data from '../../data/population.json';
 import { StyledPie01 } from './Pie01.styles';
 
-function Pie01() {
+function Bar01() {
     const pieChart = useRef();
-    console.log('data: ', data)
 
     useEffect(()=> {
         const container_parent = document.querySelector('.display');
@@ -62,7 +61,6 @@ function Pie01() {
         function user_interaction(e, d){
             const rad = e.type === 'mouseover' ? radius + 20 : radius;
             const tooltip_opacity = e.type === 'mouseover' ? 1 : 0
-            // const delay = e.type === 'mouseover' ? 0 : 150
             const text_opacity = e.type === 'mouseover' ? 1 : 0
 
             tooltip
@@ -98,9 +96,6 @@ function Pie01() {
                 .style('font-size', radius / 4)
                 .style('opacity', text_opacity)
                 .text(() => `${(d.data.percentage * 100).toFixed(1)}%`)
-                    // .transition()
-                    //     .delay(delay)
-                    //     .duration(500)
         }
             
     });
@@ -119,4 +114,4 @@ function Pie01() {
     )
 }
 
-export default Pie01;
+export default Bar01;

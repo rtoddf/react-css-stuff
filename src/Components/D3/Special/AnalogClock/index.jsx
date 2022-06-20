@@ -1,5 +1,6 @@
 import {useEffect, useRef} from 'react';
 import * as d3 from 'd3';
+import Grid from '../../../Grid';
 import Description from '../../../Description';
 
 import {theme} from '../../../../styles/Theme';
@@ -104,11 +105,14 @@ function AnalogClock() {
     return (
         <>
             <Description title="Analog Clock" />
-            <div className="display">
-                <div id="chart">
-                    <svg ref={analogClock}></svg>
+            <Grid>
+                <div className="display">
+                    <div id="chart">
+                        <svg ref={analogClock}></svg>
+                    </div>
                 </div>
-            </div>
+            </Grid>
+            
         </>
     )
 }

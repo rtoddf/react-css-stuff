@@ -73,6 +73,13 @@
                     "title": "D3 Pie Chart One",
                     "image": "d3/thumbnails/pie01.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "d3-charts-2",
+                    "link": "/d3/charts/bar01",
+                    "title": "D3 Bar Chart One",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
         },
