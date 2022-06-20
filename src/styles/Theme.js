@@ -27,4 +27,39 @@ export const theme = {
     baseFont: '"Open Sans Condensed", sans-serif',
     baseFontSize: '16px',
   },
+  d3: {
+    charts: {
+      colors: {
+        orange: {
+          one: '#f06d06',
+        },
+        red: {
+          one: '#ae0000',
+        },
+        blue: {
+          one: '#003264',
+          two: '#32889e',
+        },
+        green: {
+          one: '#baba71',
+        },
+        purple: {
+          one: '#7705c0',
+        },
+        brown: {
+          one: '#c07f2c',
+        },
+        grays: {
+          black: '#000',
+          one: '#333',
+          two: '#666',
+          three: '#999',
+          four: '#ababab',
+          five: '#ccc',
+          six: '#dedede',
+          white: '#fff',
+        },
+      },
+    },
+  },
 };

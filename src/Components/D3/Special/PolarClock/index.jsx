@@ -6,7 +6,6 @@ import {theme} from '../../../../styles/Theme';
 
 function PolarClock() {
     const polarClock = useRef();
-    const pi = Math.PI;
 
     const fields = () => {
         var d = new Date()
@@ -38,22 +37,87 @@ function PolarClock() {
             {value: month,   index: .2, text: fmon(d)},
         ]
 	}
-    
+
     useEffect(() => {
         const container_parent = document.querySelector('.display');
         const width = container_parent.offsetWidth;
         const height = width;
         const radius = (width / 2) / 2;
 
-        console.log('fields: ', fields())
+        const interpolateHSL = (a, b) => {
+            var i = d3.interpolateString(a, b)
+            return function(t){
+                return d3.hsl(i(t))
+            }
+        }
+
+        const fill = d3.scaleLinear()
+            .range([ 'hsl(252, 96%, 27%)', 'hsl(200, 96%, 34%)' ])
+                .interpolate(interpolateHSL)
+
+        const arc = d3.arc()
+            .startAngle(0)
+            .endAngle(function(d){
+                return d.value * 2 * Math.PI
+            })
+            .innerRadius(function(d){
+                return d.index * radius
+            })
+            .outerRadius(function(d){
+                return (d.index + .09) * radius
+            })
 
         const vis = d3.select(polarClock.current)
             .attr('width', width)
             .attr('height', height)
             .attr('preserveAspectRatio', 'xMinYMid')
             .attr('viewBox', `0 0 ${width} ${height}`)
-            .append('g')
-                .attr('transform', `translate(${radius},${radius})`)
+                .append('g')
+                    .attr('transform', `translate(${radius},${radius})`)
+
+        const g = vis.selectAll('g')
+            .data(fields)
+                .enter()
+                    .append('g')
+
+        g.append('path')
+            .attr('d', arc)
+            .style('fill', function(d){ return fill(d.value) })
+
+        g.append('text')
+            .attr('text-anchor','middle')
+            .attr('dy', '1em')
+            .text(function(d){
+                return d.text
+            })
+
+        // update arcs
+        d3.timer(function(){
+            var g = vis.selectAll('g')
+                .data(fields)
+
+            g.select('path')
+                .attr('d', arc)
+                .style('fill', function(d){
+                        return fill(d.value)
+                    })
+
+            g.select('text')
+                .attr('dy', function(d){
+                        return d.value < .5 ? '-.5em' : '1em'
+                    })
+                .attr('transform', function(d) {
+                        return 'rotate(' + 360 * d.value + ')'
+                            + 'translate(0,' + -(d.index + .09 / 2) * radius + ')'
+                            + 'rotate(' + (d.value < .5 ? -90 : 90) + ')'
+                    })
+                .attr('fill', '#fff')
+                .attr('font-size', '10px')
+                .text(function(d){
+                    return d.text
+                })
+
+        })
 
     })
 

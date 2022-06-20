@@ -13,7 +13,6 @@ function Pie01() {
 
     useEffect(()=> {
         const container_parent = document.querySelector('.display');
-        const chart_container = document.querySelector('#chart');
         const margins = {top: 20, right: 20, bottom: 20, left: 20};
         const width = (container_parent.offsetWidth - margins.left - margins.right) / 2;
         const height = ((width * 0.8) - margins.top - margins.bottom);
@@ -28,11 +27,11 @@ function Pie01() {
 
         // set the colors
         const colors = d3.scaleOrdinal([
-            theme.colors.orange,
-            theme.colors.blue,
-            theme.colors.green,
-            theme.colors.red,
-            theme.colors.purple]
+            theme.d3.charts.colors.orange.one,
+            theme.d3.charts.colors.blue.one,
+            theme.d3.charts.colors.green.one,
+            theme.d3.charts.colors.red.one,
+            theme.d3.charts.colors.purple.one]
         );
 
         const vis = d3.select(pieChart.current)

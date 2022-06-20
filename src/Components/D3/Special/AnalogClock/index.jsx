@@ -39,7 +39,6 @@ function AnalogClock() {
             .range([ 0, 2 * pi ])
 
         const container_parent = document.querySelector('.display');
-        // const chart_container = document.querySelector('#chart');
         const margins = {top: 20, right: 20, bottom: 20, left: 20};
         const width = (container_parent.offsetWidth - margins.left - margins.right) / 2;
         const height = ((width * 0.8) - margins.top - margins.bottom);
@@ -56,12 +55,11 @@ function AnalogClock() {
             .attr('r', (height / 2) - 10)
             .attr('fill', 'rgba(0,0,0,.25)')
             .attr('class', 'clock')
-            .attr('stroke', theme.grays.black)
+            .attr('stroke', theme.d3.charts.colors.grays.black)
             .attr('stroke-width', 3)
 
         vis.append('circle')
             .attr('r', height * .02)
-            // .attr('class', 'clock inner')
 
         const secondArc = d3.arc()
             .innerRadius(0)
@@ -106,7 +104,7 @@ function AnalogClock() {
                             else return secondArc(d)
                         })
                         .attr('class', 'clockhand')
-                        .attr('stroke', theme.grays.black)
+                        .attr('stroke', theme.d3.charts.colors.grays.black)
                         .attr('stroke-width', (d) => {
                             if(d.unit === 'hours') return 3
                             else if (d.unit === 'minutes') return 2
