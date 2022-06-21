@@ -7,7 +7,7 @@ import Description from '../../../Description';
 import { StlyedGeometry } from '../Geometry.styles';
 
 function Wireframes() {
-    const [shape, setShape] = useState('cube');
+    const shape = 'cube';
     const [geom, setGeom] = useState(
         new THREE.BoxGeometry(
             settings[shape].width,

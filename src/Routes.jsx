@@ -29,7 +29,7 @@ import Dodecahedron from './Components/Three/Geometries/Dodecahedron';
 import Plane from './Components/Three/Geometries/Plane';
 import Sphere from './Components/Three/Geometries/Sphere';
 import Torus from './Components/Three/Geometries/Torus';
-import Wireframes from './Components/Three/Geometries/Wireframes/default';
+import Wireframes from './Components/Three/Geometries/Wireframes';
 
 // Three Trials & Tests
 import Test01 from './Components/Three/Tests/Test01';
@@ -172,7 +172,6 @@ function Routes() {
             <Route path='/d3/maps/projection-albers'>
                 <ProjectionAlbers />
             </Route>
-
             
             <Route path='/d3/special/analogclock'>
                 <AnalogClock />
@@ -182,9 +181,6 @@ function Routes() {
             </Route>
             
             <Route path='/d3/tests/pie01'>
-                <Pie01Example />
-            </Route>
-            <Route path='/d3/tests/pie02'>
                 <Pie01Example />
             </Route>
             

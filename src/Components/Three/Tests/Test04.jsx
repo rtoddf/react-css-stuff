@@ -11,8 +11,6 @@ function Test04() {
 
 			let spotLight, lightHelper, shadowCameraHelper;
 
-			let gui;
-
         // create a scene
         scene = new THREE.Scene();
 

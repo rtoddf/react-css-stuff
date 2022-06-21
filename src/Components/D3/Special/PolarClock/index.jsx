@@ -91,7 +91,7 @@ function PolarClock() {
 
             g.select('text')
                 .attr('dy', d => d.value < .5 ? '-.5em' : '1em')
-                .attr('transform', d => `rotate(${360 * d.value})` + ' translate(0,' + -(d.index + .09 / 2) * radius + ')' + ' rotate(' + (d.value < .5 ? -90 : 90) + ')')
+                .attr('transform', d => `rotate(${360 * d.value}) translate(0, ${-(d.index + .09 / 2) * radius}) rotate(${(d.value < .5 ? -90 : 90)})`)
                 .attr('fill', theme.d3.charts.colors.grays.white)
                 .attr('font-size', '10px')
                 .text(d => d.text)

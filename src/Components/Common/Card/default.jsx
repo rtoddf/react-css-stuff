@@ -1,5 +1,4 @@
 import Image from '../Image';
-import SocialIcons from './SocialIcons';
 import './default.scss';
 
 function Card({ index, name, show, img, imgShape, link }) {

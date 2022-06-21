@@ -1,6 +1,6 @@
 import {useEffect, useRef} from 'react';
 import * as d3 from 'd3';
-import {geoAlbersUsa, geoPath} from 'd3';
+import {geoPath} from 'd3';
 import * as topojson from "topojson-client";
 
 import {theme} from '../../../../styles/Theme';
@@ -23,14 +23,7 @@ function ProjectionAlbers() {
             .attr('width', width + margins.left + margins.right)
             .attr('height', height + margins.top + margins.bottom)
 
-        const projection = geoAlbersUsa()
-            // .scale(width)
-            // .translate([ width/2, height/2 ]);
-        
         const path = geoPath()
-            // .projection(projection);
-
-        // var path = d3.geoPath();
 
         d3.json('https://d3js.org/us-10m.v1.json')
             .then(function(us, error){

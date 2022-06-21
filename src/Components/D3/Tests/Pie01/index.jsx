@@ -56,7 +56,7 @@ function Pie01() {
                 .on('mouseover', (e, d) => {
                     toolDiv
                         .style('visibility', 'visible')
-                        .text(`${d.data.item}:` + `${d.data.count}`)
+                        .text(`${d.data.item}: ${d.data.count}`)
                 })
                 .on('mousemove', (e, d) => {
                     toolDiv
@@ -69,11 +69,17 @@ function Pie01() {
     });
 
     return (
-        <StyledPie01>
-            <div id="chartArea">
-                <svg ref={pieChart}></svg>
-            </div>
-        </StyledPie01>
+        <>
+            <Grid>
+            <Description title="Pie Chart Test" />
+                <StyledPie01>
+                    <div id="chartArea">
+                        <svg ref={pieChart}></svg>
+                    </div>
+                </StyledPie01>
+            </Grid>
+        </>
+        
     )
 }
 

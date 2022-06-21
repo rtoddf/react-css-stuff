@@ -71,14 +71,14 @@
                     "id": "d3-charts-1",
                     "link": "/d3/charts/pie01",
                     "title": "D3 Pie Chart One",
-                    "image": "d3/thumbnails/pie01.jpg",
+                    "image": "d3/thumbnails/charts/pie01.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": "d3-charts-2",
                     "link": "/d3/charts/bar01",
                     "title": "D3 Bar Chart One",
-                    "image": "placeholder.jpg",
+                    "image": "d3/thumbnails/charts/bar01.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
@@ -91,7 +91,7 @@
                     "id": "d3-maps-1",
                     "link": "/d3/maps/projection-albers",
                     "title": "D3 Albers Projection - USA",
-                    "image": "placeholder.jpg",
+                    "image": "d3/thumbnails/maps/us-map01.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
@@ -104,14 +104,14 @@
                     "id": "d3-special-1",
                     "link": "/d3/special/analogclock",
                     "title": "D3 Analog Clock",
-                    "image": "d3/thumbnails/analog-clock.jpg",
+                    "image": "d3/thumbnails/special/analog-clock.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": "d3-special-2",
                     "link": "/d3/special/polarclock",
                     "title": "D3 Polar Clock",
-                    "image": "placeholder.jpg",
+                    "image": "d3/thumbnails/special/polar-clock.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
@@ -124,14 +124,7 @@
                     "id": "d3-tests-1",
                     "link": "/d3/tests/pie01",
                     "title": "D3 Pie Chart One",
-                    "image": "placeholder.jpg",
-                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
-                },
-                {
-                    "id": "d3-tests-2",
-                    "link": "/d3/tests/pie02",
-                    "title": "D3 Pie Chart Two",
-                    "image": "placeholder.jpg",
+                    "image": "d3/thumbnails/tests/pie01.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
