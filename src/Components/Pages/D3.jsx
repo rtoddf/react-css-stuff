@@ -5,6 +5,7 @@ function D3() {
     return (
         <>
             <SectionContent section={menuData.d3.charts} />
+            <SectionContent section={menuData.d3.maps} />
             <SectionContent section={menuData.d3.special} />
             <SectionContent section={menuData.d3.tests} />
         </>

@@ -9,6 +9,7 @@ import Three from './Components/Pages/Three';
 import D3 from './Components/Pages/D3';
 import Pie01 from './Components/D3/Charts/Pie01';
 import Bar01 from './Components/D3/Charts/Bar01';
+import ProjectionAlbers from './Components/D3/Maps/ProjectionAlbers';
 import AnalogClock from './Components/D3/Special/AnalogClock';
 import PolarClock from './Components/D3/Special/PolarClock';
 import Pie01Example from './Components/D3/Tests/Pie01';
@@ -168,6 +169,11 @@ function Routes() {
             <Route path='/d3/charts/bar01'>
                 <Bar01 />
             </Route>
+            <Route path='/d3/maps/projection-albers'>
+                <ProjectionAlbers />
+            </Route>
+
+            
             <Route path='/d3/special/analogclock'>
                 <AnalogClock />
             </Route>

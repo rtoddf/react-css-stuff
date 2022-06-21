@@ -83,6 +83,19 @@
                 }
             ]
         },
+        "maps": {
+            "headline": "D3 React Maps",
+            "copy": "",
+            "items": [
+                {
+                    "id": "d3-maps-1",
+                    "link": "/d3/maps/projection-albers",
+                    "title": "D3 Albers Projection - USA",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        },
         "special": {
             "headline": "D3 React Special",
             "copy": "",
