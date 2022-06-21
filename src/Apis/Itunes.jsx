@@ -5,7 +5,6 @@ export function ItunesData(artist, song, entity) {
   const [data, setData] = useState([]);
   const [artistName, setArtistName] = useState(artist);
   const songTitle = song;
-  // const [songTitle, setSongTitle] = useState(song);
 
   useEffect(() => {
     axios
