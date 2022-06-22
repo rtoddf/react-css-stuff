@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Description from '../../Description';
-import '../default.scss';
 
 function Test04() {
     useEffect(() => {

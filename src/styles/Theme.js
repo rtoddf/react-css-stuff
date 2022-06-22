@@ -18,14 +18,19 @@ export const theme = {
   grays: {
     black: '#000',
     white: '#fff',
+    two: '#222',
     three: '#333',
     four: '#666',
     five: '#999',
     six: '#dedede',
+    seven: '#d5d5d5',
   },
   fonts: {
     baseFont: '"Open Sans Condensed", sans-serif',
     baseFontSize: '16px',
+  },
+  borders: {
+    radius: '6px',
   },
   d3: {
     charts: {

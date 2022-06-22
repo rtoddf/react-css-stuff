@@ -51,7 +51,7 @@ import ItunesArtistInfo from './Components/Apis/Itunes/ItunesArtistInfo';
 // Layouts
 import Layouts from './Components/Pages/Layouts';
 import SocialCard from './Components/Layouts/SocialCard';
-import Panel from './Components/Layouts/Panel/default';
+import Panel from './Components/Layouts/Panel';
 
 // Learning
 import Learning from './Components/Pages/Learning';

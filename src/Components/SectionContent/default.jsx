@@ -3,14 +3,10 @@ import Grid from '../Grid/index';
 import { StyledSectionContent } from './SectionContent.styled';
 import Card from '../Card';
 
-function SectionContent({ section }) {
-    console.log('section: ', section.copy)
-    
+function SectionContent({ section }) {    
     const menuItems = (section.items).map((item, index) => {
         return (
-            <>
-                <Card index={index} item={item} />
-            </>
+            <Card key={index} item={item} />
         )
     })
 

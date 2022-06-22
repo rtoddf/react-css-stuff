@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import * as THREE from 'three';
 import Description from '../../Description';
-import '../default.scss';
 
 function Test01() {
     useEffect(() => {

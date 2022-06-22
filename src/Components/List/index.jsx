@@ -1,5 +1,4 @@
-import React from 'react';
-import './default.scss';
+import { StyledList } from './List.styled';
 
 function List({listItems}) {
     const listStructure = (listItems).map((item, id) => {
@@ -7,7 +6,7 @@ function List({listItems}) {
     });
 
     return (
-        <ul>{listStructure}</ul>
+        <StyledList>{listStructure}</StyledList>
     )
 }
 
