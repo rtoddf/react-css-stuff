@@ -5,8 +5,16 @@ import Card from '../Card';
 
 function SectionContent({ section }) {    
     const menuItems = (section.items).map((item, index) => {
+        console.log('item: ', item)
         return (
-            <Card key={index} item={item} />
+            <Card
+                key={index}
+                item={item}
+                title={item.title}
+                img={item.image}
+                imgSrc='internal'
+                copy={item.copy}
+                link={item.link} />
         )
     })
 

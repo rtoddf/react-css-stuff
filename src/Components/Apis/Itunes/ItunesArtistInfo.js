@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Grid from '../../Grid';
-import Card from '../../Common/Card/default';
+import Card from '../../Card';
 import { ItunesData } from '../../../Apis/Itunes';
 
 function ItunesArtistInfo() {
@@ -10,23 +10,24 @@ function ItunesArtistInfo() {
   const data = ItunesData(artistName, songTitle, 'musicTrack');
 
   const cards = data.map((track, index) => {
-    // console.log('track: ', track);
     if (track.kind !== 'music-video' && track.artistName === artistName) {
       return (
         <Card
-          index={index}
-          name={artistName}
-          show={track.primaryGenreName}
+          key={index}
+          title={track.artistName}
           img={track.artworkUrl100.replace('100x100', '225x225')}
           imgShape='round'
+          imgSrc='external'
+          copy={track.primaryGenreName}
           link={track.artistViewUrl}
+          linkTarget='_blank'
         />
       );
     }
   });
 
   return (
-    <div className='itunes'>
+    <>
       <h3>
         {artistName} {songTitle !== '' ? `- {songTitle}` : ``}
       </h3>
@@ -34,7 +35,7 @@ function ItunesArtistInfo() {
       <button type='button'>Click Me!</button>
 
       <Grid cols='4'>{cards}</Grid>
-    </div>
+    </>
   );
 }
 
