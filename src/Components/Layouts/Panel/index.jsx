@@ -1,12 +1,13 @@
+import Grid from '../../Grid';
 import Description from '../../Description';
-import Image from '../Image';
+import Figure from '../../Figure';
 import List from '../../List';
 
 import data from './data/panels.json';
 import { StyledPanel } from './Panel.styled';
 
 function Panel() {
-    const repeatAmt = 3;
+    const repeatAmt = '3';
 
     const panels = (data.television).map((item, id) => {
         return (
@@ -14,11 +15,9 @@ function Panel() {
                 <StyledPanel>
                     <h3>{item.panelTitle}</h3>
 
-                    <Image
-                        src={item.images.main.src}
-                        alt={item.images.main.caption}
-                        caption={item.images.main.caption}
-                        credit={item.images.main.credit}
+                    <Figure
+                        image={ item.images.main.src }
+                        alt={ item.images.main.caption }
                     />
 
                     {item.headline !== '' && ( <h4>{item.headline}</h4>  )}
@@ -32,9 +31,9 @@ function Panel() {
     return (
         <>
             <Description title="Panels" copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor aliquet lacus ut dignissim. In pellentesque lorem eu nisl pretium fermentum. Donec ut tellus imperdiet, vestibulum nisl sed, pellentesque purus. Donec sollicitudin sapien in nibh aliquam pellentesque." />
-            <div className="grid" data-col={repeatAmt}>
+            <Grid cols={repeatAmt}>
                 {panels} 
-            </div>
+            </Grid>
         </>
     )
 }
