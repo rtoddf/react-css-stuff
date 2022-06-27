@@ -202,7 +202,7 @@
                     "id": "three-geometries-11",
                     "link": "/three/geometries/sphere-division",
                     "title": "Sphere w/Division",
-                    "image": "palceholder.jpg",
+                    "image": "threejs/thumbnails/sphere-division.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
@@ -256,7 +256,7 @@
                     "id": "three-texture-0",
                     "link": "/three/textures/texture01",
                     "title": "Texture One",
-                    "image": "placeholder.jpg",
+                    "image": "threejs/thumbnails/texture01.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
