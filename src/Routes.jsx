@@ -11,6 +11,7 @@ import Pie01 from './Components/D3/Charts/Pie01';
 import Bar01 from './Components/D3/Charts/Bar01';
 import ProjectionAlbers from './Components/D3/Maps/ProjectionAlbers';
 import AnalogClock from './Components/D3/Special/AnalogClock';
+import AnalogClockTwo from './Components/D3/Special/AnalogClockTwo';
 import PolarClock from './Components/D3/Special/PolarClock';
 import Pie01Example from './Components/D3/Tests/Pie01';
 
@@ -18,6 +19,10 @@ import Pie01Example from './Components/D3/Tests/Pie01';
 import Point01 from './Components/Three/Lights/Point01';
 import Shadows01 from './Components/Three/Lights/Shadows01';
 import Shadows02 from './Components/Three/Lights/Shadows02';
+
+// Textures
+import Texture01 from './Components/Three/Textures/Texture01';
+
 
 // Three Geometries
 import Box from './Components/Three/Geometries/Box';
@@ -28,6 +33,7 @@ import Cylinder from './Components/Three/Geometries/Cylinder';
 import Dodecahedron from './Components/Three/Geometries/Dodecahedron';
 import Plane from './Components/Three/Geometries/Plane';
 import Sphere from './Components/Three/Geometries/Sphere';
+import SphereDivision from './Components/Three/Geometries/SphereDivision';
 import Torus from './Components/Three/Geometries/Torus';
 import Wireframes from './Components/Three/Geometries/Wireframes';
 
@@ -127,12 +133,23 @@ function Routes() {
             <Route path='/three/geometries/sphere'>
                 <Sphere />
             </Route>
+            <Route path='/three/geometries/sphere-division'>
+                <SphereDivision />
+            </Route>
+            
             <Route path='/three/geometries/torus'>
                 <Torus />
             </Route>
             <Route path='/three/geometries/wireframes'>
                 <Wireframes />
             </Route>
+
+            {/* ThreeJS Textures */}
+            <Route path='/three/textures/texture01'>
+                <Texture01 />
+            </Route>
+            
+
             {/* ThreeJS Trials & Tests */}
             <Route path='/three/tests/test01'>
                 <Test01 />
@@ -175,6 +192,9 @@ function Routes() {
             
             <Route path='/d3/special/analogclock'>
                 <AnalogClock />
+            </Route>
+            <Route path='/d3/special/analogclocktwo'>
+                <AnalogClockTwo />
             </Route>
             <Route path='/d3/special/polarclock'>
                 <PolarClock />
@@ -236,6 +256,7 @@ function Routes() {
             <Route path='/pocs/icon-animations'>
                 <IconAnimations />
             </Route>
+
             {/* Reference */}
             <Route exact path='/reference'>
                 <Reference />
