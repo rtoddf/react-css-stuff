@@ -44,6 +44,8 @@ import Test02 from './Components/Three/Tests/Test02';
 import Test03 from './Components/Three/Tests/Test03';
 import Test04 from './Components/Three/Tests/Test04';
 import Test05 from './Components/Three/Tests/Test05';
+import Test06 from './Components/Three/Tests/Test06';
+import Test07 from './Components/Three/Tests/Test07';
 
 //GSAP
 import Gsap from './Components/Pages/Gsap';
@@ -175,6 +177,13 @@ function Routes() {
             <Route path='/three/tests/test05'>
                 <Test05 />
             </Route>
+            <Route path='/three/tests/test06'>
+                <Test06 />
+            </Route>
+            <Route path='/three/tests/test07'>
+                <Test07 />
+            </Route>
+            
             {/* Apis */}
             <Route exact path='/apis'>
                 <Apis />

@@ -297,7 +297,7 @@
                     "id": "three-test-3",
                     "link": "/three/tests/test03",
                     "title": "Simple Parent Child",
-                    "image": "placeholder.jpg",
+                    "image": "threejs/thumbnails/test03.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
@@ -310,6 +310,20 @@
                 {
                     "id": "three-test-5",
                     "link": "/three/tests/test05",
+                    "title": "Lighting Test",
+                    "image": "threejs/thumbnails/test05.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-test-6",
+                    "link": "/three/tests/test06",
+                    "title": "Lighting Test",
+                    "image": "threejs/thumbnails/test06.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-test-7",
+                    "link": "/three/tests/test07",
                     "title": "Lighting Test",
                     "image": "placeholder.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
