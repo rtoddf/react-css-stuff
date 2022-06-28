@@ -22,7 +22,8 @@ import Shadows02 from './Components/Three/Lights/Shadows02';
 
 // Textures
 import Texture01 from './Components/Three/Textures/Texture01';
-
+import Texture02 from './Components/Three/Textures/Texture02';
+import Texture03 from './Components/Three/Textures/Texture03';
 
 // Three Geometries
 import Box from './Components/Three/Geometries/Box';
@@ -40,7 +41,9 @@ import Wireframes from './Components/Three/Geometries/Wireframes';
 // Three Trials & Tests
 import Test01 from './Components/Three/Tests/Test01';
 import Test02 from './Components/Three/Tests/Test02';
+import Test03 from './Components/Three/Tests/Test03';
 import Test04 from './Components/Three/Tests/Test04';
+import Test05 from './Components/Three/Tests/Test05';
 
 //GSAP
 import Gsap from './Components/Pages/Gsap';
@@ -148,8 +151,14 @@ function Routes() {
             <Route path='/three/textures/texture01'>
                 <Texture01 />
             </Route>
+            <Route path='/three/textures/texture02'>
+                <Texture02 />
+            </Route>
+            <Route path='/three/textures/texture03'>
+                <Texture03 />
+            </Route>
             
-
+            
             {/* ThreeJS Trials & Tests */}
             <Route path='/three/tests/test01'>
                 <Test01 />
@@ -157,8 +166,14 @@ function Routes() {
             <Route path='/three/tests/test02'>
                 <Test02 />
             </Route>
+            <Route path='/three/tests/test03'>
+                <Test03 />
+            </Route>
             <Route path='/three/tests/test04'>
                 <Test04 />
+            </Route>
+            <Route path='/three/tests/test05'>
+                <Test05 />
             </Route>
             {/* Apis */}
             <Route exact path='/apis'>

@@ -4,22 +4,22 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Grid from '../../Grid';
 import Description from '../../Description';
 
-function Test01() {
+function Test05() {
     useEffect(() => {
         const scene = new THREE.Scene();
         const container = document.getElementById('shape-holder');
         const canvasWidth = document.getElementById('shape-holder').offsetWidth;
         const canvasHeight = canvasWidth * 0.5;
 
-        // create a camera
         const camera = new THREE.PerspectiveCamera(
-            1000, // field of view
+            75, // field of view
             canvasWidth / canvasHeight, // aspect ratio
-            1, // near
-            5000 // far
+            0.1, // near
+            1000 // far
         );
-        // position the camera so you're not on top of the geometry
-        camera.position.z = 15;
+        camera.position.x = 12
+        camera.position.y = 12
+        camera.position.z = 25
 
         // create a renderer
         const renderer = new THREE.WebGLRenderer({
@@ -35,36 +35,44 @@ function Test01() {
         const controls = new OrbitControls( camera, renderer.domElement );
         controls.enableZoom = true;
 
-        const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
-        ambientLight.castShadow = true;
-        scene.add(ambientLight);
+        const light1 = new THREE.PointLight(0xffffff, 2);
+        light1.position.set(0, 10, 0);
+        scene.add(light1);
 
-        const spotLight = new THREE.SpotLight(0xffffff, 1);
-        spotLight.castShadow = true;
-        spotLight.position.set(0, 64, 32);
-        scene.add(spotLight);
+        scene.add(
+            new THREE.PointLightHelper(light1),
+            // new THREE.PointLightHelper(light2)
+        )
 
         const boxGeometry = new THREE.BoxGeometry(10, 10, 10);
-        const boxMaterial = new THREE.MeshNormalMaterial();
+        const boxMaterial = new THREE.MeshPhongMaterial({
+            color: 0xffffff
+        });
         const boxMesh = new THREE.Mesh(boxGeometry, boxMaterial);
         scene.add(boxMesh);
 
+        // plane
+        const planeGeometry = new THREE.PlaneGeometry(40, 40);
+        const planeMaterial = new THREE.MeshPhongMaterial({
+            color: 'rgba(120,120,120,1)',
+		    side: THREE.DoubleSide
+        });
+        const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial);
+        scene.add(planeMesh);
+        planeMesh.position.y = -5;
+        planeMesh.rotation.x = Math.PI/2
+
         const animate = () => {
-            boxMesh.rotation.x += 0.02;
-            boxMesh.rotation.y += 0.02;
-            // stats.update();
-            // controls.update();
+            // sphereMesh.rotation.x += 0.03;
             renderer.render(scene, camera);
             window.requestAnimationFrame(animate);
         };
         animate();
     }, [])
 
-    // create a class for this from the Yourtube example
-
     return (
         <>
-            <Description title="Test One - Box Geometry" />
+            <Description title="Test Three - Simple Parent Child" />
             <Grid>
                 <div id="shape-holder"></div>
             </Grid>
@@ -72,4 +80,4 @@ function Test01() {
     )
 }
 
-export default Test01;
+export default Test05;

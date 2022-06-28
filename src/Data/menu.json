@@ -258,6 +258,20 @@
                     "title": "Texture One",
                     "image": "threejs/thumbnails/texture01.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-texture-1",
+                    "link": "/three/textures/texture02",
+                    "title": "Texture Two",
+                    "image": "threejs/thumbnails/texture02.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-texture-3",
+                    "link": "/three/textures/texture03",
+                    "title": "Texture Three",
+                    "image": "threejs/thumbnails/texture03.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
         },
@@ -280,10 +294,24 @@
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
-                    "id": "three-test-5",
+                    "id": "three-test-3",
+                    "link": "/three/tests/test03",
+                    "title": "Simple Parent Child",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-test-4",
                     "link": "/three/tests/test04",
                     "title": "Lighting & Shadow Test",
                     "image": "threejs/thumbnails/test04.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-test-5",
+                    "link": "/three/tests/test05",
+                    "title": "Lighting Test",
+                    "image": "placeholder.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
