@@ -74,12 +74,14 @@ function Test06() {
         gui.add(light1, 'penumbra', 0, 1);
 
         const animate = () => {
-            // const boxGrid = scene.getObjectByName('boxes');
+            const boxGrid = scene.getObjectByName('boxes');
+
             const timeElapsed = new THREE.Clock().getElapsedTime();
-            // boxes.children.forEach(function(child, i){
-            //     child.scale.y = (Math.sin(timeElapsed * 5 + i) + 1)/2 + 0.001
-            //     child.position.y = child.scale.y/2
-            // })
+            boxes.children.forEach(function(child, i){
+                // child.scale.y = Math.random()
+                child.scale.y = (Math.sin(timeElapsed * 5 + i) + 1)/2 + 0.001
+                child.position.y = child.scale.y/2
+            })
             
             
             console.log('boxes: ', boxes);

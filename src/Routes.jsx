@@ -63,6 +63,7 @@ import ItunesArtistInfo from './Components/Apis/Itunes/ItunesArtistInfo';
 import Layouts from './Components/Pages/Layouts';
 import SocialCard from './Components/Layouts/SocialCard';
 import Panel from './Components/Layouts/Panel';
+import Mosaic from './Components/Layouts/Mosaic';
 
 // Learning
 import Learning from './Components/Pages/Learning';
@@ -248,6 +249,10 @@ function Routes() {
             <Route path='/layouts/panel'>
                 <Panel />
             </Route>
+            <Route path='/layouts/mosaic'>
+                <Mosaic />
+            </Route>
+            
             {/* Learning */}
             {/* POCs */}
             <Route exact path='/pocs'>

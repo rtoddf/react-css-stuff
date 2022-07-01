@@ -413,10 +413,17 @@
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
-                    "id": "layouts-12",
+                    "id": "layouts-2",
                     "link": "/layouts/panel",
                     "title": "Panel",
                     "image": "layouts/thumbnails/panel.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "layouts-3",
+                    "link": "/layouts/mosaic",
+                    "title": "Mosaic",
+                    "image": "placeholder.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
