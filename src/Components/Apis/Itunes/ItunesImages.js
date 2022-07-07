@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import Card from '../../Common/Card/default';
+import Grid from '../../Grid';
+import Description from '../../Description';
+import Card from '../../Card';
 import { ItunesData } from '../../../Apis/Itunes';
-import './default.scss';
 
 function ItunesImages() {
   const [artistName, setArtistName] = useState('Charlie Puth');
@@ -9,29 +10,31 @@ function ItunesImages() {
   const data = ItunesData(artistName, songTitle, 'musicTrack');
 
   const cards = data.map((track, index) => {
+    console.log('track: ', track);
     if (track.kind !== 'music-video' && track.artistName === artistName) {
       return (
-        <Card
-          index={index}
-          name={artistName}
-          show={track.primaryGenreName}
-          img={track.artworkUrl100.replace('100x100', '225x225')}
-          imgShape='round'
-          link={track.artistViewUrl}
-        />
+        <>
+          <Card
+            title={track.artistName}
+            img={track.artworkUrl100.replace('100x100', '225x225')}
+            imgSrc='external'
+            copy={track.primaryGenreName}
+            link={track.artistViewUrl}
+            linkTarget='_blank'
+          />
+        </>
       );
     }
   });
 
   return (
-    <div className='itunes'>
-      <h3>
-        {artistName} {songTitle !== '' ? `- ${songTitle}` : ``}
-      </h3>
-      <div className='grid' data-col='4'>
-        {cards}
-      </div>
-    </div>
+    <>
+      <Description
+        title={`${artistName} ${songTitle !== '' ? songTitle : ''}`}
+        copy='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor aliquet lacus ut dignissim. In pellentesque lorem eu nisl pretium fermentum. Donec ut tellus imperdiet, vestibulum nisl sed, pellentesque purus. Donec sollicitudin sapien in nibh aliquam pellentesque.'
+      />
+      <Grid cols='4'>{cards}</Grid>
+    </>
   );
 }
 

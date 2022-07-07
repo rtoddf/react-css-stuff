@@ -18,6 +18,12 @@ Layouts:
     ☐ figure out the logic for src/Components/Pocs/SquareImages/index.jsx
     ☐ do shadows on src/Components/Three/Geometries/Sphere.jsx
     ☐ style selects
+    ☐ useMemo() hook in src/Components/Three/Geometries/Wireframes/default.jsx
+    ☐ http://localhost:3000/layouts/panel - cleanup
+    ☐ Talk to manny more
+
+  D3:
+    ☐ src/Components/D3/Charts/Pie01/index.jsx - attrTween
   
   Todos:
     You can write plain text notes/descriptions wherever you want

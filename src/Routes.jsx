@@ -7,12 +7,23 @@ import Three from './Components/Pages/Three';
 
 // D3
 import D3 from './Components/Pages/D3';
-import Pie01 from './Components/D3/Tests/Pie01';
+import Pie01 from './Components/D3/Charts/Pie01';
+import Bar01 from './Components/D3/Charts/Bar01';
+import ProjectionAlbers from './Components/D3/Maps/ProjectionAlbers';
+import AnalogClock from './Components/D3/Special/AnalogClock';
+import AnalogClockTwo from './Components/D3/Special/AnalogClockTwo';
+import PolarClock from './Components/D3/Special/PolarClock';
+import Pie01Example from './Components/D3/Tests/Pie01';
 
 // Lights
 import Point01 from './Components/Three/Lights/Point01';
 import Shadows01 from './Components/Three/Lights/Shadows01';
 import Shadows02 from './Components/Three/Lights/Shadows02';
+
+// Textures
+import Texture01 from './Components/Three/Textures/Texture01';
+import Texture02 from './Components/Three/Textures/Texture02';
+import Texture03 from './Components/Three/Textures/Texture03';
 
 // Three Geometries
 import Box from './Components/Three/Geometries/Box';
@@ -23,13 +34,18 @@ import Cylinder from './Components/Three/Geometries/Cylinder';
 import Dodecahedron from './Components/Three/Geometries/Dodecahedron';
 import Plane from './Components/Three/Geometries/Plane';
 import Sphere from './Components/Three/Geometries/Sphere';
+import SphereDivision from './Components/Three/Geometries/SphereDivision';
 import Torus from './Components/Three/Geometries/Torus';
-import Wireframes from './Components/Three/Geometries/Wireframes/default';
+import Wireframes from './Components/Three/Geometries/Wireframes';
 
 // Three Trials & Tests
 import Test01 from './Components/Three/Tests/Test01';
 import Test02 from './Components/Three/Tests/Test02';
+import Test03 from './Components/Three/Tests/Test03';
 import Test04 from './Components/Three/Tests/Test04';
+import Test05 from './Components/Three/Tests/Test05';
+import Test06 from './Components/Three/Tests/Test06';
+import Test07 from './Components/Three/Tests/Test07';
 
 //GSAP
 import Gsap from './Components/Pages/Gsap';
@@ -46,7 +62,8 @@ import ItunesArtistInfo from './Components/Apis/Itunes/ItunesArtistInfo';
 // Layouts
 import Layouts from './Components/Pages/Layouts';
 import SocialCard from './Components/Layouts/SocialCard';
-import Panel from './Components/Layouts/Panel/default';
+import Panel from './Components/Layouts/Panel';
+import Mosaic from './Components/Layouts/Mosaic';
 
 // Learning
 import Learning from './Components/Pages/Learning';
@@ -122,12 +139,29 @@ function Routes() {
             <Route path='/three/geometries/sphere'>
                 <Sphere />
             </Route>
+            <Route path='/three/geometries/sphere-division'>
+                <SphereDivision />
+            </Route>
+            
             <Route path='/three/geometries/torus'>
                 <Torus />
             </Route>
             <Route path='/three/geometries/wireframes'>
                 <Wireframes />
             </Route>
+
+            {/* ThreeJS Textures */}
+            <Route path='/three/textures/texture01'>
+                <Texture01 />
+            </Route>
+            <Route path='/three/textures/texture02'>
+                <Texture02 />
+            </Route>
+            <Route path='/three/textures/texture03'>
+                <Texture03 />
+            </Route>
+            
+            
             {/* ThreeJS Trials & Tests */}
             <Route path='/three/tests/test01'>
                 <Test01 />
@@ -135,9 +169,22 @@ function Routes() {
             <Route path='/three/tests/test02'>
                 <Test02 />
             </Route>
+            <Route path='/three/tests/test03'>
+                <Test03 />
+            </Route>
             <Route path='/three/tests/test04'>
                 <Test04 />
             </Route>
+            <Route path='/three/tests/test05'>
+                <Test05 />
+            </Route>
+            <Route path='/three/tests/test06'>
+                <Test06 />
+            </Route>
+            <Route path='/three/tests/test07'>
+                <Test07 />
+            </Route>
+            
             {/* Apis */}
             <Route exact path='/apis'>
                 <Apis />
@@ -158,11 +205,28 @@ function Routes() {
             <Route exact path='/d3'>
                 <D3 />
             </Route>
-            <Route path='/d3/tests/pie01'>
+            <Route path='/d3/charts/pie01'>
                 <Pie01 />
             </Route>
-            <Route path='/d3/tests/pie02'>
-                <Pie01 />
+            <Route path='/d3/charts/bar01'>
+                <Bar01 />
+            </Route>
+            <Route path='/d3/maps/projection-albers'>
+                <ProjectionAlbers />
+            </Route>
+            
+            <Route path='/d3/special/analogclock'>
+                <AnalogClock />
+            </Route>
+            <Route path='/d3/special/analogclocktwo'>
+                <AnalogClockTwo />
+            </Route>
+            <Route path='/d3/special/polarclock'>
+                <PolarClock />
+            </Route>
+            
+            <Route path='/d3/tests/pie01'>
+                <Pie01Example />
             </Route>
             
             {/* Gsap */}
@@ -185,6 +249,10 @@ function Routes() {
             <Route path='/layouts/panel'>
                 <Panel />
             </Route>
+            <Route path='/layouts/mosaic'>
+                <Mosaic />
+            </Route>
+            
             {/* Learning */}
             {/* POCs */}
             <Route exact path='/pocs'>
@@ -217,6 +285,7 @@ function Routes() {
             <Route path='/pocs/icon-animations'>
                 <IconAnimations />
             </Route>
+
             {/* Reference */}
             <Route exact path='/reference'>
                 <Reference />

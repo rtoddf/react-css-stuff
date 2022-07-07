@@ -3,8 +3,10 @@ import styled from 'styled-components';
 export const StyledGrid = styled.div`
   display: grid;
   grid-gap: ${({ gap }) => (gap !== undefined ? gap : '2.5rem')};
+  grid-auto-rows: 1fr;
   width: 100%;
   margin: 0 auto;
+
   justify-items: ${({ justify }) =>
     justify === 'center' ? 'center' : 'inherit'};
 

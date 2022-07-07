@@ -14,8 +14,6 @@ function Cylinder() {
         // create a scene
         const scene = new THREE.Scene();
 
-        // const camera = createCamera(canvasWidth, canvasHeight, 50, 1, 1000, 0, 0, 300);
-
         // create a camera
         const camera = new THREE.PerspectiveCamera(
             75,

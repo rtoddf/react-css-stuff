@@ -4,7 +4,7 @@ import axios from 'axios';
 export function ItunesData(artist, song, entity) {
   const [data, setData] = useState([]);
   const [artistName, setArtistName] = useState(artist);
-  const [songTitle, setSongTitle] = useState(song);
+  const songTitle = song;
 
   useEffect(() => {
     axios
@@ -22,7 +22,7 @@ export function ItunesData(artist, song, entity) {
       .catch((err) => {
         console.log('err: ', err);
       });
-  }, []);
+  }, [artistName, entity, songTitle]);
 
   return data;
 }

@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Description from '../../Description';
-import '../default.scss';
 
 function Test02() {
     useEffect(() => {
@@ -32,8 +31,6 @@ function Test02() {
         const pointLight = new THREE.PointLight(0xffffff);
         // pointLight.position.set(5,5,5);
         pointLight.position.set(0,10,10);
-
-        const ambientLight = new THREE.AmbientLight(0xffffff);
         scene.add(pointLight);
 
         // create geometry

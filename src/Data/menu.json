@@ -2,20 +2,20 @@
     "home": 
         {
             "headline": "Home",
-            "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor aliquet lacus ut dignissim. In pellentesque lorem eu nisl pretium fermentum. Donec ut tellus imperdiet, vestibulum nisl sed, pellentesque purus. Donec sollicitudin sapien in nibh aliquam pellentesque. Proin sagittis augue non est commodo, quis congue ligula bibendum. Curabitur pellentesque dapibus quam quis imperdiet. Integer venenatis augue consequat diam euismod, a ullamcorper magna varius. Vivamus justo augue, interdum eu ultricies quis, convallis sit amet nunc. Fusce massa nulla, ornare at mauris in, dapibus luctus orci. Aliquam erat volutpat. Duis pulvinar arcu orci, venenatis pellentesque augue bibendum sit amet.",
+            "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor aliquet lacus ut dignissim.",
             "items": [
                 {
                     "id": "home-6",
                     "link": "/three",
                     "title": "ThreeJS",
                     "image": "threejs/thumbnails/point-lights-shadows.jpg",
-                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
                     "id": "home-9",
                     "link": "/d3",
                     "title": "D3 Stuff",
-                    "image": "placeholder.jpg",
+                    "image": "d3/thumbnails/special/polar-clock.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
@@ -63,55 +63,81 @@
             ]
         },
     "d3": {
+        "charts": {
+            "headline": "D3 React Charts",
+            "copy": "",
+            "items": [
+                {
+                    "id": "d3-charts-1",
+                    "link": "/d3/charts/pie01",
+                    "title": "D3 Pie Chart One",
+                    "image": "d3/thumbnails/charts/pie01.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "d3-charts-2",
+                    "link": "/d3/charts/bar01",
+                    "title": "D3 Bar Chart One",
+                    "image": "d3/thumbnails/charts/bar01.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        },
+        "maps": {
+            "headline": "D3 React Maps",
+            "copy": "",
+            "items": [
+                {
+                    "id": "d3-maps-1",
+                    "link": "/d3/maps/projection-albers",
+                    "title": "D3 Albers Projection - USA",
+                    "image": "d3/thumbnails/maps/us-map01.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        },
+        "special": {
+            "headline": "D3 React Special",
+            "copy": "",
+            "items": [
+                {
+                    "id": "d3-special-1",
+                    "link": "/d3/special/analogclock",
+                    "title": "D3 Analog Clock",
+                    "image": "d3/thumbnails/special/analog-clock.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "d3-special-2",
+                    "link": "/d3/special/analogclocktwo",
+                    "title": "D3 Analog Clock Two",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "d3-special-3",
+                    "link": "/d3/special/polarclock",
+                    "title": "D3 Polar Clock",
+                    "image": "d3/thumbnails/special/polar-clock.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        },
         "tests": {
             "headline": "D3 React Tests",
             "copy": "",
             "items": [
                 {
-                    "id": "d3-1",
+                    "id": "d3-tests-1",
                     "link": "/d3/tests/pie01",
                     "title": "D3 Pie Chart One",
-                    "image": "placeholder.jpg",
-                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
-                },
-                {
-                    "id": "d3-2",
-                    "link": "/d3/tests/pie02",
-                    "title": "D3 Pie Chart Two",
-                    "image": "placeholder.jpg",
+                    "image": "d3/thumbnails/tests/pie01.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
         }
     },
     "three": {
-        "lighting": {
-            "headline": "Three JS Lighting",
-            "copy": "",
-            "items": [
-                {
-                    "id": "three-lights-1",
-                    "link": "/three/lights/point01",
-                    "title": "Point Lights & Shadows",
-                    "image": "threejs/thumbnails/point-lights-shadows.jpg",
-                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
-                },
-                {
-                    "id": "three-lights-2",
-                    "link": "/three/lights/shadows01",
-                    "title": "Shadows & Light",
-                    "image": "threejs/thumbnails/shadows01.jpg",
-                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
-                },
-                {
-                    "id": "three-lights-3",
-                    "link": "/three/lights/shadows02",
-                    "title": "Lighting & Shadow",
-                    "image": "threejs/thumbnails/shadows02.jpg",
-                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
-                }
-            ]
-        },
         "geometries": {
             "headline": "Three JS Geometries",
             "copy": "",
@@ -173,6 +199,13 @@
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
+                    "id": "three-geometries-11",
+                    "link": "/three/geometries/sphere-division",
+                    "title": "Sphere w/Division",
+                    "image": "threejs/thumbnails/sphere-division.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
                     "id": "three-geometries-6",
                     "link": "/three/geometries/torus",
                     "title": "Torus",
@@ -184,6 +217,60 @@
                     "link": "/three/geometries/wireframes",
                     "title": "Wireframes",
                     "image": "threejs/thumbnails/wireframes.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        },
+        "lighting": {
+            "headline": "Three JS Lighting",
+            "copy": "",
+            "items": [
+                {
+                    "id": "three-lights-1",
+                    "link": "/three/lights/point01",
+                    "title": "Point Lights & Shadows",
+                    "image": "threejs/thumbnails/point-lights-shadows.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-lights-2",
+                    "link": "/three/lights/shadows01",
+                    "title": "Shadows & Light",
+                    "image": "threejs/thumbnails/shadows01.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-lights-3",
+                    "link": "/three/lights/shadows02",
+                    "title": "Lighting & Shadow",
+                    "image": "threejs/thumbnails/shadows02.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        },
+        "texture": {
+            "headline": "Three JS Texture Mapping",
+            "copy": "",
+            "items": [
+                {
+                    "id": "three-texture-0",
+                    "link": "/three/textures/texture01",
+                    "title": "Texture One",
+                    "image": "threejs/thumbnails/texture01.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-texture-1",
+                    "link": "/three/textures/texture02",
+                    "title": "Texture Two",
+                    "image": "threejs/thumbnails/texture02.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-texture-3",
+                    "link": "/three/textures/texture03",
+                    "title": "Texture Three",
+                    "image": "threejs/thumbnails/texture03.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
@@ -207,10 +294,38 @@
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
-                    "id": "three-test-5",
+                    "id": "three-test-3",
+                    "link": "/three/tests/test03",
+                    "title": "Simple Parent Child",
+                    "image": "threejs/thumbnails/test03.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-test-4",
                     "link": "/three/tests/test04",
                     "title": "Lighting & Shadow Test",
                     "image": "threejs/thumbnails/test04.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-test-5",
+                    "link": "/three/tests/test05",
+                    "title": "Lighting Test",
+                    "image": "threejs/thumbnails/test05.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-test-6",
+                    "link": "/three/tests/test06",
+                    "title": "Lighting Test",
+                    "image": "threejs/thumbnails/test06.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-test-7",
+                    "link": "/three/tests/test07",
+                    "title": "Lighting Test",
+                    "image": "placeholder.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
@@ -298,10 +413,17 @@
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 },
                 {
-                    "id": "layouts-12",
+                    "id": "layouts-2",
                     "link": "/layouts/panel",
                     "title": "Panel",
                     "image": "layouts/thumbnails/panel.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "layouts-3",
+                    "link": "/layouts/mosaic",
+                    "title": "Mosaic",
+                    "image": "placeholder.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
@@ -375,7 +497,6 @@
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
-            
         },
     "reference":
         {
