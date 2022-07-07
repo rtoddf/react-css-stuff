@@ -7,7 +7,10 @@ function Mosaic() {
     const quotes = (data.television).map((item, id) => {
         // console.log('item: ', item);
 
-        return <div key={id} dangerouslySetInnerHTML={{__html: item.quote}} />
+        return <div>
+            <div key={id} dangerouslySetInnerHTML={{__html: item.quote}} />
+            <p className="author">-&nbsp;{item.author}</p>
+        </div>
     });
 
     const colors = [

@@ -20,7 +20,7 @@ Layouts:
     ☐ style selects
     ☐ useMemo() hook in src/Components/Three/Geometries/Wireframes/default.jsx
     ☐ http://localhost:3000/layouts/panel - cleanup
-    ☐ 
+    ☐ Talk to manny more
 
   D3:
     ☐ src/Components/D3/Charts/Pie01/index.jsx - attrTween

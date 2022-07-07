@@ -1,5 +1,17 @@
 import styled from 'styled-components';
 
+const dude = (props) => {
+  const amt = 1;
+
+  const stuff = amt.map((a, i) => {
+    return `&:nth-child(1) {
+      grid-column: span ${(props) => props.combo[i]};
+    }`;
+  });
+
+  return stuff;
+};
+
 export const StyledMosaic = styled.div`
   display: grid;
   grid-gap: 20px;
@@ -43,11 +55,22 @@ export const StyledMosaic = styled.div`
       grid-column: span ${(props) => props.combo[5]};
     }
 
-    p {
-      align-self: center;
+    > div {
+      align-self: flex-end;
       font-family: 'Average', serif;
-      font-size: 1.375rem;
+
+      p {
+        font-size: 1.375rem;
+        line-height: normal;
+      }
+    }
+
+    .author {
+      padding-top: 5px;
+      font-size: 1rem;
       line-height: normal;
+      text-align: right;
+      font-style: italic;
     }
   }
 
