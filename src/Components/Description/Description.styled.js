@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const StyledDescription = styled.div`
   font-family: 'Open Sans', sans-serif;
+  background-color: ${({ theme }) => theme.grays.seven};
 
   h3 {
     font-size: 1rem;
