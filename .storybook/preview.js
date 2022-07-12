@@ -11,6 +11,8 @@ export const decorators = [
 
 // decorators
 // make gray bg a decorator
+// https://storybook.js.org/addons/@react-theming/storybook-addon/
+// https://storybook.js.org/docs/react/writing-stories/decorators
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },

@@ -16,7 +16,7 @@ Common.args = {
 
 export const Circle = Template.bind({});
 Circle.args = {
-    image: '/images/placeholder.jpg',
+    image: '/images/layouts/card/kj-apa.jpg',
     alt: 'alt tag',
     shape: 'circle'
 };
