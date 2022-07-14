@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { StyledImage, StyledContentHolder } from './Square.styled';
 
 function Image({ image, title }) {
@@ -6,7 +7,7 @@ function Image({ image, title }) {
             <StyledImage>
                 <div className="container">
                     <figure>
-                        <img src={image} alt={title} />
+                        <img src={`${image}`} alt={title} />
                     </figure>
                 </div>
             </StyledImage>
@@ -16,8 +17,17 @@ function Image({ image, title }) {
                 </StyledContentHolder>
             )}
         </>
-        
     )
+}
+
+Image.propTypes = {
+    image: PropTypes.string,
+    title: PropTypes.string,
+}
+
+Image.defaultProps = {
+    image: '../images/pocs/squareimages/andrew-garfield.jpg',
+    title: 'Andrew Garfield',
 }
 
 export default Image;

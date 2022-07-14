@@ -80,6 +80,13 @@
                     "title": "Components - Description",
                     "image": "placeholder.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "components-2",
+                    "link": "/components/square-figure",
+                    "title": "Components - Square Figure",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
         },

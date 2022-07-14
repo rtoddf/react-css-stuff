@@ -5,6 +5,7 @@ import Home from './Components/Pages/Home';
 // Components
 import Components from './Components/Pages/Components';
 import Description from './Components/Description';
+import FigureSquare from './Components/FigureSquare';
 
 // Three
 import Three from './Components/Pages/Three';
@@ -111,7 +112,9 @@ function Routes() {
             <Route path='/components/description'>
                 <Description />
             </Route>
-
+            <Route path='/components/square-figure'>
+                <FigureSquare />
+            </Route>
 
 
             {/* Three */}

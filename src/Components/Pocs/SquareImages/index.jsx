@@ -1,6 +1,6 @@
 import Grid from '../../Grid';
 import Description from '../../Description';
-import Image from './Image';
+import Image from '../../FigureSquare';
 import data from './data.json';
 
 import { StyledSquare } from './Square.styled';
