@@ -2,6 +2,10 @@ import { Route, Switch } from "react-router-dom";
 
 import Home from './Components/Pages/Home';
 
+// Components
+import Components from './Components/Pages/Components';
+import Description from './Components/Description';
+
 // Three
 import Three from './Components/Pages/Three';
 
@@ -99,10 +103,23 @@ function Routes() {
             <Route exact path='/'>
                 <Home />
             </Route>
+
+            {/* Components */}
+            <Route exact path='/components'>
+                <Components />
+            </Route>
+            <Route path='/components/description'>
+                <Description />
+            </Route>
+
+
+
             {/* Three */}
             <Route exact path='/three'>
                 <Three />
             </Route>
+
+
             {/* ThreeJS lights */}
             <Route path='/three/lights/point01'>
                 <Point01 />
