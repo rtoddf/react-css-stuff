@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
-import { StyledImage, StyledContentHolder } from './Square.styled';
+import FigureCaption from '../FigureCaption';
 
-function Image({ image, title }) {
+import { StyledImage } from './Square.styled';
+
+function Image({ image, title, copy }) {
     return (
         <>
             <StyledImage>
@@ -12,9 +14,7 @@ function Image({ image, title }) {
                 </div>
             </StyledImage>
             {title && (
-                <StyledContentHolder>
-                    <h4>{title}</h4>
-                </StyledContentHolder>
+                <FigureCaption title={title} copy={copy} />
             )}
         </>
     )
@@ -27,6 +27,7 @@ Image.propTypes = {
 
 Image.defaultProps = {
     image: '../images/pocs/squareimages/andrew-garfield.jpg',
+    copy: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     title: 'Andrew Garfield',
 }
 

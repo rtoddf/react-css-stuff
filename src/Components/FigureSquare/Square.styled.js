@@ -28,47 +28,15 @@ export const StyledImage = styled.div`
         cursor: pointer;
         transition: all 0.6s ease;
 
-        &:hover {
+        /* &:hover {
           width: 110%;
           height: 110%;
           max-width: 110%;
           max-height: 110%;
           margin: -5%;
-        }
+        } */
       }
     }
-  }
-`;
-
-export const StyledContentHolder = styled.div`
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 5px;
-  background: rgba(0, 0, 0, 0.5);
-  border-top: 1px solid rgba(255, 255, 255, 0.25);
-  color: ${({ theme }) => theme.grays.white};
-
-  h4 {
-    margin-bottom: 0;
-    font-weight: normal;
-  }
-
-  a {
-    color: ${({ theme }) => theme.grays.white};
-    font-weight: 400;
-  }
-`;
-
-export const StyledSquare = styled.article`
-  position: relative;
-
-  &:after {
-    content: '';
-    float: left;
-    display: block;
-    padding-top: 100%;
   }
 `;
 

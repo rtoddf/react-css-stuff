@@ -6,15 +6,13 @@ import data from './data.json';
 import { StyledSquare } from './Square.styled';
 
 function SquareImages() {
-    const cols = 7;
+    const cols = 6;
 
     return (
         <>
             <Description title="Square Images" />
             <Grid cols={cols} gap="0">
                 {data.map((item, id) => {
-                    console.log('id: ', id)
-                    console.log('data.length % cols: ', data.length % cols)
                     if(id < data.length - data.length % cols) {
                         return (
                             <StyledSquare key={id}>
