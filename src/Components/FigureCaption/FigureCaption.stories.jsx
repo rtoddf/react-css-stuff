@@ -1,8 +1,14 @@
 import FigureCaption from '.';
+import CustomMDXDocumentation from './Custom-MDX-Documentation.mdx';
 
 export default {
-    title: 'Figure Caption',
-    component: FigureCaption
+    title: 'Images/Figure Caption',
+    component: FigureCaption,
+    parameters: {
+        docs: {
+            // page: CustomMDXDocumentation,
+        },
+    },
 }
 
 const Template = args => <FigureCaption {...args} />

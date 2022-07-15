@@ -1,7 +1,7 @@
 import FigureSquare from '.';
 
 export default {
-    title: 'Square Figure',
+    title: 'Images/Square Figure',
     component: FigureSquare,
 }
 

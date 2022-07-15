@@ -1,7 +1,7 @@
 import Figure from '.';
 
 export default {
-    title: 'Figure',
+    title: 'Images/Figure',
     component: Figure,
 }
 

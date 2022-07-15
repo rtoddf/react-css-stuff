@@ -11,12 +11,19 @@ function FigureCaption({ title, copy }) {
 }
 
 FigureCaption.propTypes = {
-    title: PropTypes.string,
+    /**
+     * Title text for the caption
+     */
+    title: PropTypes.string.isRequired,
+    /**
+     * Text for the caption
+     */
+    copy: PropTypes.string,
 }
 
 FigureCaption.defaultProps = {
-    title: 'Andrew Garfield',
-    copy: 'this is the copy'
+    title: null,
+    copy: null
 }
 
 export default FigureCaption;
