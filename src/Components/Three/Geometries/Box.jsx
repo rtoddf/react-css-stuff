@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useEffect } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
@@ -77,5 +78,7 @@ function Box() {
         </>
     )
 }
+
+Box.propTypes = {}
 
 export default Box;

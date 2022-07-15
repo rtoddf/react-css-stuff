@@ -18,7 +18,6 @@ Layouts:
     ☐ figure out the logic for src/Components/Pocs/SquareImages/index.jsx
     ☐ do shadows on src/Components/Three/Geometries/Sphere.jsx
     ☐ style selects
-    ☐ 
     ☐ http://localhost:3000/layouts/panel - cleanup
     ☐ Talk to manny more
 
@@ -30,6 +29,7 @@ Layouts:
 
   Storybook:
     ☐ storybook-addon-a11y not working
+    ☐ put in controls for Box
   
   Todos:
     You can write plain text notes/descriptions wherever you want
