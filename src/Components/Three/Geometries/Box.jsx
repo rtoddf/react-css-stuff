@@ -6,7 +6,7 @@ import Grid from '../../Grid';
 import Description from '../../Description';
 import { StlyedGeometry } from './Geometry.styles';
 
-function Box({ color01, lightColor2, xRotationSpeed, yRotationSpeed, zRotationSpeed}) {
+function Box({ lightColor1, lightColor2, xRotationSpeed, yRotationSpeed, zRotationSpeed}) {
     const convertToHex = (str) => {
         return parseInt(str.replace(/^#/, ''), 16);
     }
@@ -42,7 +42,7 @@ function Box({ color01, lightColor2, xRotationSpeed, yRotationSpeed, zRotationSp
         controls.enableZoom = true;
 
         // create lights
-        const pointLight01 = new THREE.PointLight(convertToHex(color01), 2);
+        const pointLight01 = new THREE.PointLight(convertToHex(lightColor1), 2);
         pointLight01.position.set( 10, 0, 10 );
         scene.add(pointLight01);
 
@@ -85,7 +85,7 @@ function Box({ color01, lightColor2, xRotationSpeed, yRotationSpeed, zRotationSp
 }
 
 Box.propTypes = {
-    color01: PropTypes.string,
+    lightColor1: PropTypes.string,
     lightColor2: PropTypes.string,
     xRotationSpeed: PropTypes.number,
     yRotationSpeed: PropTypes.number,
@@ -93,7 +93,7 @@ Box.propTypes = {
 }
 
 Box.defaultProps = {
-    color01: '#ff7700',
+    lightColor1: '#ff7700',
     lightColor2: '#baba71',
     xRotationSpeed: 0.02,
     yRotationSpeed: 0,

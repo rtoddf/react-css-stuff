@@ -1,0 +1,46 @@
+{
+    "riverdale": [
+        {
+            "number": 1,
+            "starRating": "4",
+            "name": "Nyland Green",
+            "position": "CB",
+            "image": "../images/layouts/tags/nyland-green.jpg",
+            "highschool": "Newton",
+            "classYear": "2021",
+            "city": "Covington",
+            "state": "GA",
+            "heightFt": 6,
+            "heightIn": 2.5,
+            "weight": 185
+        },
+        {
+            "number": 2,
+            "starRating": "5",
+            "name": "Kendall Milton",
+            "position": "RB",
+            "image": "../images/layouts/tags/kendall-milton.jpg",
+            "highschool": "Buchanan",
+            "classYear": "2020",
+            "city": "Clovis",
+            "state": "CA",
+            "heightFt": 6,
+            "heightIn": 2,
+            "weight": 220
+        },
+        {
+            "number": 4,
+            "starRating": "4",
+            "name": "Oscar Delp",
+            "position": "TE",
+            "image": "../images/layouts/tags/oscar-delp.jpg",
+            "highschool": "West Forsyth",
+            "classYear": "2022",
+            "city": "Cumming",
+            "state": "GA",
+            "heightFt": 6,
+            "heightIn": 5,
+            "weight": 227
+        }
+    ]
+}

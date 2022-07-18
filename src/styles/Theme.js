@@ -14,6 +14,9 @@ export const theme = {
     green: '#baba71',
     purple: '#7705c0',
     brown: '#c07f2c',
+    dawgNationRed: '#d31c1e',
+    dawgNationBlack: '#444',
+    dawgNationGray: '#aeaeae',
   },
   grays: {
     black: '#000',

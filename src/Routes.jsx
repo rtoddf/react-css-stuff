@@ -69,6 +69,7 @@ import Layouts from './Components/Pages/Layouts';
 import SocialCard from './Components/Layouts/SocialCard';
 import Panel from './Components/Layouts/Panel';
 import Mosaic from './Components/Layouts/Mosaic';
+import Tag from './Components/Layouts/Tag';
 
 // Learning
 import Learning from './Components/Pages/Learning';
@@ -271,6 +272,9 @@ function Routes() {
             </Route>
             <Route path='/layouts/mosaic'>
                 <Mosaic />
+            </Route>
+            <Route path='/layouts/tag'>
+                <Tag />
             </Route>
             
             {/* Learning */}
