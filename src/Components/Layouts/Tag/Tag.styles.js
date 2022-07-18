@@ -22,8 +22,8 @@ export const StyledTag = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background-image: linear-gradient(
       45deg,
       ${({ theme }) => theme.grays.black} 0%,
@@ -33,7 +33,7 @@ export const StyledTag = styled.div`
     color: white;
     border-radius: 50%;
     border: 2px solid ${({ theme }) => theme.grays.white};
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
   }
 
@@ -81,15 +81,48 @@ export const StyledTag = styled.div`
     }
   }
 
-  .bio {
-    padding: 0 20px 20px;
+  .bio,
+  .stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 10px;
+    background-color: ${({ theme }) => theme.colors.dawgNationRed};
     color: ${({ theme }) => theme.grays.white};
     font-family: ${({ theme }) => theme.fonts.baseFont};
     font-size: 1rem;
-    line-height: 1.5rem;
+    font-weight: 400;
 
     .position {
-      font-weight: 400;
+      font-size: 1.25rem;
+    }
+
+    .cityState {
+      font-size: 0.875rem;
+    }
+
+    img {
+      max-width: 30px;
+    }
+  }
+
+  .stats {
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  }
+
+  .foot {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px 0;
+    color: ${({ theme }) => theme.colors.dawgNationGray};
+    font-family: ${({ theme }) => theme.fonts.baseFont};
+    font-size: 0.75rem;
+
+    img {
+      max-width: 30px;
     }
   }
 `;

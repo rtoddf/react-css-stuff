@@ -32,7 +32,7 @@
             "number": 4,
             "starRating": "4",
             "name": "Oscar Delp",
-            "position": "TE",
+            "position": "Tight End",
             "image": "../images/layouts/tags/oscar-delp.jpg",
             "highschool": "West Forsyth",
             "classYear": "2022",
@@ -41,6 +41,20 @@
             "heightFt": 6,
             "heightIn": 5,
             "weight": 227
+        },
+        {
+            "number": 13,
+            "starRating": "3",
+            "name": "Stetson Bennett",
+            "position": "Quarter Back",
+            "image": "../images/layouts/tags/stetson-bennett.jpg",
+            "highschool": "Jones County Community College",
+            "classYear": "2019",
+            "city": "Ellisville",
+            "state": "MI",
+            "heightFt": 6,
+            "heightIn": 0,
+            "weight": 185
         }
     ]
 }

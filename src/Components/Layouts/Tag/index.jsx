@@ -7,7 +7,7 @@ import { StyledTag } from './Tag.styles';
 import data from './data/tags.json';
 
 function Tag() {
-    const repeatAmt = 5;
+    const repeatAmt = 4;
     const cards = (data.riverdale).map((player, id) => {
         return (
             <StyledTag key={id}>
@@ -20,10 +20,28 @@ function Tag() {
                     <Figure image={player.image} alt={player.name} />
                 </div>
                 <div className="bio">
-                    <div className="position">{player.position}</div>   
-                    <div className="school">{player.highschool}, Class of {player.classYear}</div>  
-                    <div className="cityState">{player.city}, {player.state}</div> 
-                    <div className="stats">{player.heightFt}' {player.heightIn}", {player.weight} pounds</div> 
+                    <div>
+                        <div className="position">{player.position}</div>   
+                    </div>
+                    {/* <div>
+                        <img src="/images/layouts/tags/uga.png" alt="UGA" />
+                    </div> */}
+                    <div className="cityState">
+                        <div>{player.highschool}, Class of {player.classYear}</div>  
+                        <div>{player.city}, {player.state}</div>
+                    </div>
+                </div>
+                <div className="stats">
+                    <div>
+                        <div>Height: {player.heightFt}' {player.heightIn}"</div> 
+                    </div>
+                    <div className="cityState">
+                        <div>Weight: {player.weight}</div> 
+                    </div>
+                </div>
+                <div className="foot">
+                    <div>Committed:&nbsp;&nbsp;</div>
+                    <div><img src="/images/layouts/tags/uga.png" alt="UGA" /></div>        
                 </div>
             </StyledTag>
         );
