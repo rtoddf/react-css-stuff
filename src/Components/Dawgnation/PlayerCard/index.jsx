@@ -1,7 +1,6 @@
 import Cap from './Cap';
-import Figure from '../../Figure';
+import Figure from './Figure';
 import Foot from './Foot';
-
 
 import { StyledPlayerCard } from './PlayerCard.styles';
 
@@ -10,9 +9,7 @@ function PlayerCard({player, id}) {
         <StyledPlayerCard key={id}>
             <div className="number">{player.number}</div>
             <Cap name={player.name} starRating={player.starRating} />
-            <div>
-                <Figure image={player.image} alt={player.name} />
-            </div>
+            <Figure image={player.image} alt={player.name} shape="rounded" />
             <div className="bio">
                 <div>
                     <div className="position">{player.position}</div>   

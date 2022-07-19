@@ -52,18 +52,6 @@ export const StyledPlayerCard = styled.div`
     }
   }
 
-  figure {
-    margin: 20px;
-    padding: 0;
-    overflow: hidden;
-    border-radius: 40px;
-    box-shadow: 0 0 0 2px ${({ theme }) => theme.grays.white},
-      0 0 0 6px ${({ theme }) => theme.grays.black};
-
-    img {
-    }
-  }
-
   .bio,
   .stats {
     display: flex;
