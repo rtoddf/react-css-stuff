@@ -69,7 +69,10 @@ import Layouts from './Components/Pages/Layouts';
 import SocialCard from './Components/Layouts/SocialCard';
 import Panel from './Components/Layouts/Panel';
 import Mosaic from './Components/Layouts/Mosaic';
-import Tag from './Components/Layouts/Tag';
+
+// Dawgnation
+import Dawgnation from './Components/Pages/Dawgnation';
+import PlayerCards from './Components/Dawgnation/PlayerCards';
 
 // Learning
 import Learning from './Components/Pages/Learning';
@@ -273,8 +276,14 @@ function Routes() {
             <Route path='/layouts/mosaic'>
                 <Mosaic />
             </Route>
-            <Route path='/layouts/tag'>
-                <Tag />
+            
+
+            {/* Dawgnation */}
+            <Route exact path='/dawgnation'>
+                <Dawgnation />
+            </Route>
+            <Route path='/dawgnation/player-cards'>
+                <PlayerCards />
             </Route>
             
             {/* Learning */}

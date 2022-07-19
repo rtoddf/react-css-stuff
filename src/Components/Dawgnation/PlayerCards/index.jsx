@@ -3,14 +3,14 @@ import Description from '../../Description';
 import Figure from '../../Figure';
 import Stars from '../../Stars';
 
-import { StyledTag } from './Tag.styles';
+import { StyledPlayerCard } from './PlayerCard.styles';
 import data from './data/tags.json';
 
-function Tag() {
+function PlayerCards() {
     const repeatAmt = 4;
     const cards = (data.riverdale).map((player, id) => {
         return (
-            <StyledTag key={id}>
+            <StyledPlayerCard key={id}>
                 <div className="number">{player.number}</div>
                 <div className="cap">
                     <div className="name">{player.name}</div>
@@ -43,7 +43,7 @@ function Tag() {
                     <div>Committed:&nbsp;&nbsp;</div>
                     <div><img src="/images/layouts/tags/uga.png" alt="UGA" /></div>        
                 </div>
-            </StyledTag>
+            </StyledPlayerCard>
         );
     });
 
@@ -57,4 +57,4 @@ function Tag() {
     )
 }
 
-export default Tag;
+export default PlayerCards;
