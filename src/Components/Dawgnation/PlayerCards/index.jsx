@@ -9,7 +9,7 @@ function PlayerCards() {
             <Description title="Player Cards" copy="" />
             <Grid cols="4">
                 {(players.dawgnation).map((player, id) => (
-                    <PlayerCard player={player} id={id} />
+                    <PlayerCard key={id} player={player} />
                 ))}
             </Grid>
         </>
