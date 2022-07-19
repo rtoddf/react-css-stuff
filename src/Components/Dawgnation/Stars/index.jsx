@@ -1,8 +1,8 @@
-import React from "react";
 import PropTypes from "prop-types";
+import { StyledStars } from './Stars.styles';
 
 const Stars = ({ starRating }) => (
-  <svg
+  <StyledStars
     version="1.1"
     id="Layer_1"
     xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +19,7 @@ const Stars = ({ starRating }) => (
     <path d="M106.8,0l5.7,11.6l12.8,1.9l-9.3,9l2.2,12.8l-11.5-6l-11.5,6l2.2-12.8l-9.3-9l12.8-1.9L106.8,0z"></path>
     <path d="M150.9,0l5.7,11.6l12.8,1.9l-9.3,9l2.2,12.8l-11.5-6l-11.5,6l2.2-12.8l-9.3-9l12.8-1.9L150.9,0z"></path>
     <path d="M195,0l5.7,11.6l12.8,1.9l-9.3,9l2.2,12.8l-11.5-6l-11.5,6l2.2-12.8l-9.3-9l12.8-1.9L195,0z"></path>
-  </svg>
+  </StyledStars>
 );
 
 Stars.propTypes = {

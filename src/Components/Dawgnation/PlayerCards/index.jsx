@@ -1,57 +1,16 @@
 import Grid from '../../Grid';
 import Description from '../../Description';
-import Figure from '../../Figure';
-import Stars from '../../Stars';
-
-import { StyledPlayerCard } from './PlayerCard.styles';
-import data from './data/tags.json';
+import players from '../data/players.json';
+import PlayerCard from '../PlayerCard';
 
 function PlayerCards() {
-    const repeatAmt = 4;
-    const cards = (data.riverdale).map((player, id) => {
-        return (
-            <StyledPlayerCard key={id}>
-                <div className="number">{player.number}</div>
-                <div className="cap">
-                    <div className="name">{player.name}</div>
-                    <Stars starRating={player.starRating} />  
-                </div>
-                <div>
-                    <Figure image={player.image} alt={player.name} />
-                </div>
-                <div className="bio">
-                    <div>
-                        <div className="position">{player.position}</div>   
-                    </div>
-                    {/* <div>
-                        <img src="/images/layouts/tags/uga.png" alt="UGA" />
-                    </div> */}
-                    <div className="cityState">
-                        <div>{player.highschool}, Class of {player.classYear}</div>  
-                        <div>{player.city}, {player.state}</div>
-                    </div>
-                </div>
-                <div className="stats">
-                    <div>
-                        <div>Height: {player.heightFt}' {player.heightIn}"</div> 
-                    </div>
-                    <div className="cityState">
-                        <div>Weight: {player.weight}</div> 
-                    </div>
-                </div>
-                <div className="foot">
-                    <div>Committed:&nbsp;&nbsp;</div>
-                    <div><img src="/images/layouts/tags/uga.png" alt="UGA" /></div>        
-                </div>
-            </StyledPlayerCard>
-        );
-    });
-
     return (
         <>
-            <Description title="Tags" copy="" />
-            <Grid cols={repeatAmt}>
-                {cards}
+            <Description title="Player Cards" copy="" />
+            <Grid cols="4">
+                {(players.dawgnation).map((player, id) => (
+                    <PlayerCard player={player} id={id} />
+                ))}
             </Grid>
         </>
     )
