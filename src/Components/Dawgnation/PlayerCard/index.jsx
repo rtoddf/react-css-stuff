@@ -1,6 +1,7 @@
 import Cap from './Cap';
 import Figure from './Figure';
 import Bio from './Bio';
+import Stats from './Stats';
 import Foot from './Foot';
 
 import { StyledPlayerCard } from './PlayerCard.styles';
@@ -20,10 +21,7 @@ function PlayerCard({player, id}) {
                 city={player.city}
                 state={player.state}
             />
-            <div className="stats">
-                <div>Height: {player.heightFt}' {player.heightIn}"</div>
-                <div className="cityState">Weight: {player.weight}</div> 
-            </div>
+            <Stats heightFt={player.heightFt} heightIn={player.heightIn} weight={player.weight} />
             <Foot />
         </StyledPlayerCard>
     )
