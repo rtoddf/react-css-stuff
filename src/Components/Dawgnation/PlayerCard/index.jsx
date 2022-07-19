@@ -1,5 +1,7 @@
+import Cap from './Cap';
 import Figure from '../../Figure';
-import Stars from '../Stars';
+import Foot from './Foot';
+
 
 import { StyledPlayerCard } from './PlayerCard.styles';
 
@@ -7,10 +9,7 @@ function PlayerCard({player, id}) {
     return (
         <StyledPlayerCard key={id}>
             <div className="number">{player.number}</div>
-            <div className="cap">
-                <div className="name">{player.name}</div>
-                <Stars starRating={player.starRating} />  
-            </div>
+            <Cap name={player.name} starRating={player.starRating} />
             <div>
                 <Figure image={player.image} alt={player.name} />
             </div>
@@ -34,10 +33,7 @@ function PlayerCard({player, id}) {
                     <div>Weight: {player.weight}</div> 
                 </div>
             </div>
-            <div className="foot">
-                <div>Committed:&nbsp;&nbsp;</div>
-                <div><img src="/images/layouts/tags/uga.png" alt="UGA" /></div>        
-            </div>
+            <Foot />
         </StyledPlayerCard>
     )
 }
