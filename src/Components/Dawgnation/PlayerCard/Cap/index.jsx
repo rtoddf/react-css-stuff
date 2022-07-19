@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import Stars from '../Stars';
+import Stars from '../../Stars';
 import { StyledCap } from './Cap.styles';
 
 function Cap({name, starRating}) {

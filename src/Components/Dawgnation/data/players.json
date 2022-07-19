@@ -1,7 +1,7 @@
 {
     "dawgnation": [
         {
-            "number": 1,
+            "playerNumber": 1,
             "starRating": "4",
             "name": "Nyland Green",
             "position": "CB",
@@ -15,7 +15,7 @@
             "weight": 185
         },
         {
-            "number": 2,
+            "playerNumber": 2,
             "starRating": "5",
             "name": "Kendall Milton",
             "position": "RB",
@@ -29,7 +29,7 @@
             "weight": 220
         },
         {
-            "number": 4,
+            "playerNumber": 4,
             "starRating": "4",
             "name": "Oscar Delp",
             "position": "Tight End",
@@ -43,7 +43,7 @@
             "weight": 227
         },
         {
-            "number": 13,
+            "playerNumber": 13,
             "starRating": "3",
             "name": "Stetson Bennett",
             "position": "Quarter Back",

@@ -8,7 +8,7 @@ export const StyledStars = styled.svg`
     fill: ${({ theme }) => theme.grays.black};
   }
 
-  &.starRating-1 path:first-child,
+  &.starRating-1 path:first-of-type,
   &.starRating-2 path:nth-child(-n + 2),
   &.starRating-3 path:nth-child(-n + 3),
   &.starRating-4 path:nth-child(-n + 4),

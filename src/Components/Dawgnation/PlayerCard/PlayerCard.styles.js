@@ -14,7 +14,7 @@ export const StyledPlayerCard = styled.div`
     ${({ theme }) => theme.grays.black} 80%
   );
 
-  .number {
+  .playerNumber {
     position: absolute;
     top: -10px;
     left: -10px;
@@ -37,49 +37,17 @@ export const StyledPlayerCard = styled.div`
     font-weight: 600;
   }
 
-  .cap {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    border-bottom: 1px solid ${({ theme }) => theme.colors.dawgNationGray};
-
-    .name {
-      margin: 10px 10px 5px;
-      color: ${({ theme }) => theme.grays.white};
-      font-size: 1.5rem;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-    }
-  }
-
-  .bio,
   .stats {
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 20px;
     padding: 10px;
-    background-color: ${({ theme }) => theme.colors.dawgNationRed};
+    background: transparent;
     color: ${({ theme }) => theme.grays.white};
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
     font-family: ${({ theme }) => theme.fonts.baseFont};
     font-size: 1rem;
     font-weight: 400;
-
-    .position {
-      font-size: 1.25rem;
-    }
-
-    .cityState {
-      font-size: 0.875rem;
-    }
-
-    img {
-      max-width: 30px;
-    }
-  }
-
-  .stats {
-    background: transparent;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
   }
 `;

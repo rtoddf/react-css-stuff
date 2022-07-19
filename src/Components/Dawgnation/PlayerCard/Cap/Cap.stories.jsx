@@ -1,7 +1,7 @@
 import Cap from '.';
 
 export default {
-    title: 'Cap',
+    title: 'Player Card/Cap',
     component: Cap,
 }
 
@@ -9,6 +9,6 @@ const Template = args => <Cap {...args} />
 
 export const Common = Template.bind({});
 Common.args = {
-    name: 'Mary',
+    name: 'Kendall Milton',
     starRating: '4',
 }
