@@ -20,7 +20,7 @@ export default {
 
 const Template = args => <Stars {...args} />
 
-export const Common = Template.bind({});
-Common.args = {
+export const Primary = Template.bind({});
+Primary.args = {
     starRating: '4',
 }

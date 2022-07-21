@@ -20,7 +20,7 @@ export default {
 
 const Template = args => <Badge {...args} />
 
-export const Common = Template.bind({})
-Common.args = {
+export const Primary = Template.bind({})
+Primary.args = {
     playerNumber: 25,
 }

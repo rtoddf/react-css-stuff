@@ -18,7 +18,7 @@ export default {
 
 const Template = args => <Foot {...args} />
 
-export const Common = Template.bind({});
-Common.args = {
+export const Primary = Template.bind({});
+Primary.args = {
 
 }

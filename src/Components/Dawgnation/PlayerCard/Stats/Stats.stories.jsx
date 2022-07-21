@@ -17,8 +17,8 @@ export default {
 
 const Template = args => <Stats {...args} />
 
-export const Common = Template.bind({})
-Common.args = {
+export const Primary = Template.bind({})
+Primary.args = {
     heightFt: 6,
     heightIn: 2,
     weight: 220,

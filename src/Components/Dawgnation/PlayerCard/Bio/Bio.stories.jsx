@@ -17,8 +17,8 @@ export default {
 
 const Template = args => <Bio {...args} />
 
-export const Common = Template.bind({})
-Common.args = {
+export const Primary = Template.bind({})
+Primary.args = {
     position: 'RB',
     highschool: 'Buchanan',
     classYear: '2020',

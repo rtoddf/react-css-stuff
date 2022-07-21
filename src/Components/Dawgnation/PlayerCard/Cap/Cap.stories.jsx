@@ -18,8 +18,8 @@ export default {
 
 const Template = args => <Cap {...args} />
 
-export const Common = Template.bind({});
-Common.args = {
+export const Primary = Template.bind({});
+Primary.args = {
     name: 'Kendall Milton',
     starRating: '4',
 }

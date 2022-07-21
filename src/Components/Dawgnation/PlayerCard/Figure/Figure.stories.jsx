@@ -17,8 +17,8 @@ export default {
 
 const Template = args => <Figure {...args} />
 
-export const Common = Template.bind({})
-Common.args = {
+export const Primary = Template.bind({})
+Primary.args = {
     image: '/images/layouts/tags/kendall-milton.jpg',
     alt: 'Kendall Milton',
     shape: 'rounded'

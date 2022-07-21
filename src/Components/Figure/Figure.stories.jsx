@@ -7,8 +7,8 @@ export default {
 
 const Template = args => <Figure {...args} />
 
-export const Common = Template.bind({})
-Common.args = {
+export const Primary = Template.bind({})
+Primary.args = {
     image: '/images/placeholder.jpg',
     alt: 'alt tag',
     shape: ''
