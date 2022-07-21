@@ -1,52 +1,62 @@
 [
     {
         "id": 0,
-        "title": "Wesley Taylor", 
-        "image": "wesley-taylor.jpg"
+        "title": "Wesley Taylor",
+        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "image": "../images/pocs/squareimages/wesley-taylor.jpg"
     },
     {
         "id": 1,
-        "title": "Ben Barnes", 
-        "image": "ben-barnes.jpg"
+        "title": "Ben Barnes",
+        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "image": "../images/pocs/squareimages/ben-barnes.jpg"
     },
     {
         "id": 2,
-        "title": "Nick Jonas", 
-        "image": "nick-jonas.jpg"
+        "title": "Nick Jonas",
+        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "image": "../images/pocs/squareimages/nick-jonas.jpg"
     },
     {
         "id": 3,
         "title": "Ben Wishaw", 
-        "image": "ben-whishaw.jpg"
+        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "image": "../images/pocs/squareimages/ben-whishaw.jpg"
     },
     {
         "id": 4,
-        "title": "Andrew Garfield", 
-        "image": "andrew-garfield.jpg"
+        "title": "Andrew Garfield",
+        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "image": "../images/pocs/squareimages/andrew-garfield.jpg"
     },
     {
         "id": 5,
-        "title": "Deborah Harry", 
-        "image": "deborah-harry.jpg"
+        "title": "Deborah Harry",
+        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "image": "../images/pocs/squareimages/deborah-harry.jpg"
     },
     {
         "id": 6,
-        "title": "Strange New Worlds", 
-        "image": "strange-new-worlds.jpg"
+        "title": "Strange New Worlds",
+        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "image": "../images/pocs/squareimages/strange-new-worlds.jpg"
     },
     {
         "id": 7,
-        "title": "Supernatural", 
-        "image": "supernatural.jpg"
+        "title": "Supernatural",
+        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "image": "../images/pocs/squareimages/supernatural.jpg"
     },
     {
         "id": 8,
-        "title": "Westworld", 
-        "image": "westworld.jpg"
+        "title": "Westworld",
+        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "image": "../images/pocs/squareimages/westworld.jpg"
     },
     {
         "id": 9,
-        "title": "Bob's Burgers", 
-        "image": "bobs-burgers.jpg"
+        "title": "Bob's Burgers",
+        "copy": "",
+        "image": "../images/pocs/squareimages/bobs-burgers.jpg"
     }
 ]

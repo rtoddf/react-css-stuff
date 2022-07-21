@@ -1,11 +1,16 @@
 import { useEffect } from 'react';
+import PropTypes from 'prop-types';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Grid from '../../Grid';
 import Description from '../../Description';
 import { StlyedGeometry } from './Geometry.styles';
 
-function Box() {
+function Box({ lightColor1, lightColor2, xRotationSpeed, yRotationSpeed, zRotationSpeed}) {
+    const convertToHex = (str) => {
+        return parseInt(str.replace(/^#/, ''), 16);
+    }
+
     useEffect(() => {
         const container = document.getElementById('shape-holder');
         const canvasWidth = document.getElementById('shape-holder').offsetWidth;
@@ -37,11 +42,11 @@ function Box() {
         controls.enableZoom = true;
 
         // create lights
-        const pointLight01 = new THREE.PointLight(0xff7700, 2);
+        const pointLight01 = new THREE.PointLight(convertToHex(lightColor1), 2);
         pointLight01.position.set( 10, 0, 10 );
         scene.add(pointLight01);
 
-        const pointLight02 = new THREE.PointLight(0xae0000, 2);
+        const pointLight02 = new THREE.PointLight(convertToHex(lightColor2), 2);
         pointLight02.position.set( -10, 0, 10 );
         scene.add(pointLight02);
 
@@ -60,8 +65,9 @@ function Box() {
         scene.add(mesh);
 
         const animate = () => {
-            mesh.rotation.x += 0.02;
-            mesh.rotation.z += 0.02;
+            mesh.rotation.x += xRotationSpeed;
+            mesh.rotation.y += yRotationSpeed;
+            mesh.rotation.z += zRotationSpeed;
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
         };
@@ -77,5 +83,21 @@ function Box() {
         </>
     )
 }
+
+Box.propTypes = {
+    lightColor1: PropTypes.string,
+    lightColor2: PropTypes.string,
+    xRotationSpeed: PropTypes.number,
+    yRotationSpeed: PropTypes.number,
+    zRotationSpeed: PropTypes.number
+}
+
+Box.defaultProps = {
+    lightColor1: '#ff7700',
+    lightColor2: '#baba71',
+    xRotationSpeed: 0.02,
+    yRotationSpeed: 0,
+    zRotationSpeed: 0.02,
+};
 
 export default Box;

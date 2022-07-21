@@ -11,7 +11,7 @@ function SocialCard() {
     const cards = (data.riverdale).map((person, id) => {
         return (
             <StyledCard key={id}>
-                <Figure image={person.image} alt={ person.name } shape="circle" />
+                <Figure image={person.image} alt={person.name} shape="circle" />
                 <h4>{person.name}</h4>
                 <h5>{person.show}</h5>
 

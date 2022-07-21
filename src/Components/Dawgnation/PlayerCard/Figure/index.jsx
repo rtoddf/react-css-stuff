@@ -15,10 +15,4 @@ Figure.propTypes = {
     shape: PropTypes.string,
 }
 
-// Figure.defaultProps = {
-//     image: '/images/placeholder.jpg',
-//     alt: 'alt tag',
-//     shape: '',
-// };
-
 export default Figure;

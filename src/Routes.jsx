@@ -2,6 +2,11 @@ import { Route, Switch } from "react-router-dom";
 
 import Home from './Components/Pages/Home';
 
+// Components
+import Components from './Components/Pages/Components';
+import Description from './Components/Description';
+import FigureSquare from './Components/FigureSquare';
+
 // Three
 import Three from './Components/Pages/Three';
 
@@ -65,6 +70,10 @@ import SocialCard from './Components/Layouts/SocialCard';
 import Panel from './Components/Layouts/Panel';
 import Mosaic from './Components/Layouts/Mosaic';
 
+// Dawgnation
+import Dawgnation from './Components/Pages/Dawgnation';
+import PlayerCards from './Components/Dawgnation/PlayerCards';
+
 // Learning
 import Learning from './Components/Pages/Learning';
 import StyledComponents from './Components/Learning/StyledComponents';
@@ -99,10 +108,25 @@ function Routes() {
             <Route exact path='/'>
                 <Home />
             </Route>
+
+            {/* Components */}
+            <Route exact path='/components'>
+                <Components />
+            </Route>
+            <Route path='/components/description'>
+                <Description />
+            </Route>
+            <Route path='/components/square-figure'>
+                <FigureSquare />
+            </Route>
+
+
             {/* Three */}
             <Route exact path='/three'>
                 <Three />
             </Route>
+
+
             {/* ThreeJS lights */}
             <Route path='/three/lights/point01'>
                 <Point01 />
@@ -251,6 +275,15 @@ function Routes() {
             </Route>
             <Route path='/layouts/mosaic'>
                 <Mosaic />
+            </Route>
+            
+
+            {/* Dawgnation */}
+            <Route exact path='/dawgnation'>
+                <Dawgnation />
+            </Route>
+            <Route path='/dawgnation/player-cards'>
+                <PlayerCards />
             </Route>
             
             {/* Learning */}
