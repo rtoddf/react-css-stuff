@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { theme } from '../../../../styles/Theme';
 import { StyledBio } from './Bio.styles';
 
 function Bio({ 
@@ -39,5 +40,12 @@ Bio.propTypes = {
     positionFontSize: PropTypes.string,
     bioFontSize: PropTypes.string,
 };
+
+Bio.defaultProps = {
+    color: theme.grays.white,
+    backgroundColor: theme.colors.dawgNationRed,
+    positionFontSize: '1rem',
+    bioFontSize: '0.875rem',
+}
 
 export default Bio;
