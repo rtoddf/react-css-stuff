@@ -1,5 +1,5 @@
 import Bio from '.';
-
+import { theme } from '../../../../styles/Theme';
 export default {
     title: 'Player Card/Bio',
     component: Bio,
@@ -24,4 +24,8 @@ Primary.args = {
     classYear: '2020',
     city: 'Clovis',
     state: 'CA',
+    color: theme.grays.white,
+    backgroundColor: theme.colors.dawgNationRed,
+    positionFontSize: '1rem',
+    bioFontSize: '0.875rem',
 }

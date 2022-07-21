@@ -6,21 +6,21 @@ export const StyledBio = styled.div`
   justify-content: space-around;
   gap: 20px;
   padding: 10px;
-  background-color: ${({ theme }) => theme.colors.dawgNationRed};
-  color: ${({ theme }) => theme.grays.white};
+  background-color: ${({ backgroundColor }) => backgroundColor};
+  color: ${({ color }) => color};
   font-family: ${({ theme }) => theme.fonts.baseFont};
-  font-size: 1rem;
+  /* font-size: ${({ bioFontSize }) => bioFontSize}; */
   font-weight: 400;
 
   .position {
-    font-size: 1.25rem;
+    font-size: ${({ positionFontSize }) => positionFontSize};
   }
 
   .cityState {
-    font-size: 0.875rem;
+    font-size: ${({ bioFontSize }) => bioFontSize};
   }
 
-  img {
+  /* img {
     max-width: 30px;
-  }
+  } */
 `;

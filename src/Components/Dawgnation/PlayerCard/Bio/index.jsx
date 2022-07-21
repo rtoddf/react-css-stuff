@@ -1,9 +1,24 @@
 import PropTypes from "prop-types";
 import { StyledBio } from './Bio.styles';
 
-function Bio({ position, highschool, classYear, city, state }) {
+function Bio({ 
+        color, 
+        backgroundColor, 
+        positionFontSize, 
+        bioFontSize,
+        position, 
+        highschool, 
+        classYear, 
+        city, 
+        state 
+    }) {
     return (
-        <StyledBio>
+        <StyledBio 
+            color={color} 
+            backgroundColor={backgroundColor} 
+            positionFontSize={positionFontSize} 
+            bioFontSize={bioFontSize}
+            >
             <div>
                 <div className="position">{position}</div>   
             </div>
@@ -19,11 +34,10 @@ function Bio({ position, highschool, classYear, city, state }) {
 }
 
 Bio.propTypes = {
-    position: PropTypes.string,
-    highschool: PropTypes.string,
-    classYear: PropTypes.string,
-    city: PropTypes.string,
-    state: PropTypes.string,
+    color: PropTypes.string,
+    backgroundColor: PropTypes.string,
+    positionFontSize: PropTypes.string,
+    bioFontSize: PropTypes.string,
 };
 
 export default Bio;
