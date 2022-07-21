@@ -3,6 +3,16 @@ import Figure from '.';
 export default {
     title: 'Player Card/Figure',
     component: Figure,
+    decorators: [
+        (Story) => (
+            <div style={{ 
+                maxWidth: '450px', 
+                margin: '0 auto',
+            }}>
+            <Story />
+            </div>
+        ),
+    ],
 }
 
 const Template = args => <Figure {...args} />

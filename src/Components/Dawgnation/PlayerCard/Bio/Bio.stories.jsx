@@ -3,6 +3,16 @@ import Bio from '.';
 export default {
     title: 'Player Card/Bio',
     component: Bio,
+    decorators: [
+        (Story) => (
+            <div style={{ 
+                maxWidth: '342px', 
+                margin: '0 auto',
+            }}>
+            <Story />
+            </div>
+        ),
+    ],
 }
 
 const Template = args => <Bio {...args} />

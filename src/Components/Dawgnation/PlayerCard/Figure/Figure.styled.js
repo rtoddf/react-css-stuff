@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const StyledFigure = styled.figure`
-  max-width: 400px;
   margin: 0 -20px 10px;
   padding: ${({ shape }) => (shape === 'circle' ? '20px' : '0')};
   box-shadow: ${({ shape }) =>
