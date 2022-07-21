@@ -1,0 +1,634 @@
+{
+    "home": 
+        {
+            "headline": "Home",
+            "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor aliquet lacus ut dignissim.",
+            "items": [
+                {
+                    "id": "home-7",
+                    "link": "/components",
+                    "title": "Components",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "home-10",
+                    "link": "/dawgnation",
+                    "title": "Dawngation",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "home-6",
+                    "link": "/three",
+                    "title": "ThreeJS",
+                    "image": "threejs/thumbnails/point-lights-shadows.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "home-9",
+                    "link": "/d3",
+                    "title": "D3 Stuff",
+                    "image": "d3/thumbnails/special/polar-clock.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "home-8",
+                    "link": "/gsap",
+                    "title": "GSAP",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "home-5",
+                    "link": "/apis",
+                    "title": "APIS",
+                    "image": "apis/thumbnails/artist-info.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "home-1",
+                    "link": "/layouts",
+                    "title": "Layouts",
+                    "image": "layouts/thumbnails/card.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "home-2",
+                    "link": "/pocs",
+                    "title": "POCs",
+                    "image": "pocs/thumbnails/three-d-cube.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "home-3",
+                    "link": "/reference",
+                    "title": "Reference",
+                    "image": "reference/thumbnails/transform-functions.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "home-4",
+                    "link": "/learning",
+                    "title": "Learning",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        },
+        "components":
+        {
+            "headline": "Componenets",
+            "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor aliquet lacus ut dignissim. In pellentesque lorem eu nisl pretium fermentum. Donec ut tellus imperdiet, vestibulum nisl sed, pellentesque purus. Donec sollicitudin sapien in nibh aliquam pellentesque. Proin sagittis augue non est commodo, quis congue ligula bibendum. Curabitur pellentesque dapibus quam quis imperdiet. Integer venenatis augue consequat diam euismod, a ullamcorper magna varius. Vivamus justo augue, interdum eu ultricies quis, convallis sit amet nunc. Fusce massa nulla, ornare at mauris in, dapibus luctus orci. Aliquam erat volutpat. Duis pulvinar arcu orci, venenatis pellentesque augue bibendum sit amet.",
+            "items": [
+                {
+                    "id": "components-1",
+                    "link": "/components/description",
+                    "title": "Components - Description",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "components-2",
+                    "link": "/components/square-figure",
+                    "title": "Components - Square Figure",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        },
+    "d3": {
+        "charts": {
+            "headline": "D3 React Charts",
+            "copy": "",
+            "items": [
+                {
+                    "id": "d3-charts-1",
+                    "link": "/d3/charts/pie01",
+                    "title": "D3 Pie Chart One",
+                    "image": "d3/thumbnails/charts/pie01.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "d3-charts-2",
+                    "link": "/d3/charts/bar01",
+                    "title": "D3 Bar Chart One",
+                    "image": "d3/thumbnails/charts/bar01.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        },
+        "maps": {
+            "headline": "D3 React Maps",
+            "copy": "",
+            "items": [
+                {
+                    "id": "d3-maps-1",
+                    "link": "/d3/maps/projection-albers",
+                    "title": "D3 Albers Projection - USA",
+                    "image": "d3/thumbnails/maps/us-map01.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        },
+        "special": {
+            "headline": "D3 React Special",
+            "copy": "",
+            "items": [
+                {
+                    "id": "d3-special-1",
+                    "link": "/d3/special/analogclock",
+                    "title": "D3 Analog Clock",
+                    "image": "d3/thumbnails/special/analog-clock.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "d3-special-2",
+                    "link": "/d3/special/analogclocktwo",
+                    "title": "D3 Analog Clock Two",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "d3-special-3",
+                    "link": "/d3/special/polarclock",
+                    "title": "D3 Polar Clock",
+                    "image": "d3/thumbnails/special/polar-clock.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        },
+        "tests": {
+            "headline": "D3 React Tests",
+            "copy": "",
+            "items": [
+                {
+                    "id": "d3-tests-1",
+                    "link": "/d3/tests/pie01",
+                    "title": "D3 Pie Chart One",
+                    "image": "d3/thumbnails/tests/pie01.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        }
+    },
+    "three": {
+        "geometries": {
+            "headline": "Three JS Geometries",
+            "copy": "",
+            "items": [
+                {
+                    "id": "three-geometries-2",
+                    "link": "/three/geometries/box",
+                    "title": "Box",
+                    "image": "threejs/thumbnails/box-shape.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-geometries-9",
+                    "link": "/three/geometries/capsule",
+                    "title": "Capsule ",
+                    "image": "threejs/thumbnails/capsule-shape.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-geometries-4",
+                    "link": "/three/geometries/circle",
+                    "title": "Circle",
+                    "image": "threejs/thumbnails/circle-shape.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-geometries-3",
+                    "link": "/three/geometries/cone",
+                    "title": "Cone",
+                    "image": "threejs/thumbnails/cone-shape.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-geometries-5",
+                    "link": "/three/geometries/cylinder",
+                    "title": "Cylinder",
+                    "image": "threejs/thumbnails/cylinder-shape.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-geometries-10",
+                    "link": "/three/geometries/dodecahedron",
+                    "title": "Dodecahedron",
+                    "image": "threejs/thumbnails/dodecahedron.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-geometries-7",
+                    "link": "/three/geometries/plane",
+                    "title": "Plane",
+                    "image": "threejs/thumbnails/plane-shape.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-geometries-1",
+                    "link": "/three/geometries/sphere",
+                    "title": "Sphere ",
+                    "image": "threejs/thumbnails/sphere-shape.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-geometries-11",
+                    "link": "/three/geometries/sphere-division",
+                    "title": "Sphere w/Division",
+                    "image": "threejs/thumbnails/sphere-division.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-geometries-6",
+                    "link": "/three/geometries/torus",
+                    "title": "Torus",
+                    "image": "threejs/thumbnails/torus-shape.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-geometries-0",
+                    "link": "/three/geometries/wireframes",
+                    "title": "Wireframes",
+                    "image": "threejs/thumbnails/wireframes.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        },
+        "lighting": {
+            "headline": "Three JS Lighting",
+            "copy": "",
+            "items": [
+                {
+                    "id": "three-lights-1",
+                    "link": "/three/lights/point01",
+                    "title": "Point Lights & Shadows",
+                    "image": "threejs/thumbnails/point-lights-shadows.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-lights-2",
+                    "link": "/three/lights/shadows01",
+                    "title": "Shadows & Light",
+                    "image": "threejs/thumbnails/shadows01.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-lights-3",
+                    "link": "/three/lights/shadows02",
+                    "title": "Lighting & Shadow",
+                    "image": "threejs/thumbnails/shadows02.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        },
+        "texture": {
+            "headline": "Three JS Texture Mapping",
+            "copy": "",
+            "items": [
+                {
+                    "id": "three-texture-0",
+                    "link": "/three/textures/texture01",
+                    "title": "Texture One",
+                    "image": "threejs/thumbnails/texture01.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-texture-1",
+                    "link": "/three/textures/texture02",
+                    "title": "Texture Two",
+                    "image": "threejs/thumbnails/texture02.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-texture-3",
+                    "link": "/three/textures/texture03",
+                    "title": "Texture Three",
+                    "image": "threejs/thumbnails/texture03.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        },
+        "tests": {
+            "headline": "Three JS Tests",
+            "copy": "",
+            "items": [
+                {
+                    "id": "three-test-1",
+                    "link": "/three/tests/test01",
+                    "title": "Box Geometry",
+                    "image": "threejs/thumbnails/test01.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-test-2",
+                    "link": "/three/tests/test02",
+                    "title": "Geometry & Lighting",
+                    "image": "threejs/thumbnails/test02.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-test-3",
+                    "link": "/three/tests/test03",
+                    "title": "Simple Parent Child",
+                    "image": "threejs/thumbnails/test03.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-test-4",
+                    "link": "/three/tests/test04",
+                    "title": "Lighting & Shadow Test",
+                    "image": "threejs/thumbnails/test04.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-test-5",
+                    "link": "/three/tests/test05",
+                    "title": "Lighting Test",
+                    "image": "threejs/thumbnails/test05.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-test-6",
+                    "link": "/three/tests/test06",
+                    "title": "Lighting Test",
+                    "image": "threejs/thumbnails/test06.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "three-test-7",
+                    "link": "/three/tests/test07",
+                    "title": "Lighting Test",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        },
+        "shaders": {
+            "headline": "Three JS Shaders",
+            "copy": "",
+            "items": [
+                {
+                    "id": "three-shaders-1",
+                    "link": "/three/shaders/texture01",
+                    "title": "Texture One",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        }
+    },
+    "gsap":
+        {
+            "headline": "GSAP",
+            "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor aliquet lacus ut dignissim. In pellentesque lorem eu nisl pretium fermentum. Donec ut tellus imperdiet, vestibulum nisl sed, pellentesque purus. Donec sollicitudin sapien in nibh aliquam pellentesque. Proin sagittis augue non est commodo, quis congue ligula bibendum. Curabitur pellentesque dapibus quam quis imperdiet. Integer venenatis augue consequat diam euismod, a ullamcorper magna varius. Vivamus justo augue, interdum eu ultricies quis, convallis sit amet nunc. Fusce massa nulla, ornare at mauris in, dapibus luctus orci. Aliquam erat volutpat. Duis pulvinar arcu orci, venenatis pellentesque augue bibendum sit amet.",
+            "items": [
+                {
+                    "id": "gsap-1",
+                    "link": "/apis/gsap/learn01",
+                    "title": "GSAP Learn One",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "gsap-2",
+                    "link": "/apis/gsap/learn02",
+                    "title": "GSAP Learn Two",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        },
+    "apis":
+        {
+            "headline": "APIS",
+            "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor aliquet lacus ut dignissim. In pellentesque lorem eu nisl pretium fermentum. Donec ut tellus imperdiet, vestibulum nisl sed, pellentesque purus. Donec sollicitudin sapien in nibh aliquam pellentesque. Proin sagittis augue non est commodo, quis congue ligula bibendum. Curabitur pellentesque dapibus quam quis imperdiet. Integer venenatis augue consequat diam euismod, a ullamcorper magna varius. Vivamus justo augue, interdum eu ultricies quis, convallis sit amet nunc. Fusce massa nulla, ornare at mauris in, dapibus luctus orci. Aliquam erat volutpat. Duis pulvinar arcu orci, venenatis pellentesque augue bibendum sit amet.",
+            "items": [
+                {
+                    "id": "apis-3",
+                    "link": "/apis/itunes/artist",
+                    "title": "iTunes Artist Info",
+                    "image": "apis/thumbnails/artist-info.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "apis-2",
+                    "link": "/apis/itunes/images",
+                    "title": "iTunes Image Data",
+                    "image": "apis/thumbnails/itunes-images.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "apis-1",
+                    "link": "/apis/placeholder",
+                    "title": "Placeholder Data",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "apis-4",
+                    "link": "/apis/weather",
+                    "title": "Weather Data",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }                
+            ]
+        },
+    "layouts":
+        {
+            "headline": "Layouts",
+            "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor aliquet lacus ut dignissim. In pellentesque lorem eu nisl pretium fermentum. Donec ut tellus imperdiet, vestibulum nisl sed, pellentesque purus. Donec sollicitudin sapien in nibh aliquam pellentesque. Proin sagittis augue non est commodo, quis congue ligula bibendum. Curabitur pellentesque dapibus quam quis imperdiet. Integer venenatis augue consequat diam euismod, a ullamcorper magna varius. Vivamus justo augue, interdum eu ultricies quis, convallis sit amet nunc. Fusce massa nulla, ornare at mauris in, dapibus luctus orci. Aliquam erat volutpat. Duis pulvinar arcu orci, venenatis pellentesque augue bibendum sit amet.",
+            "items": [
+                {
+                    "id": "layouts-1",
+                    "link": "/layouts/social-card",
+                    "title": "Social Card",
+                    "image": "layouts/thumbnails/card.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "layouts-2",
+                    "link": "/layouts/panel",
+                    "title": "Panel",
+                    "image": "layouts/thumbnails/panel.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "layouts-3",
+                    "link": "/layouts/mosaic",
+                    "title": "Mosaic",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "layouts-4",
+                    "link": "/layouts/tag",
+                    "title": "Tag",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        },
+    "dawgnation":
+        {
+            "headline": "Dawgnation",
+            "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor aliquet lacus ut dignissim. In pellentesque lorem eu nisl pretium fermentum. Donec ut tellus imperdiet, vestibulum nisl sed, pellentesque purus. Donec sollicitudin sapien in nibh aliquam pellentesque. Proin sagittis augue non est commodo, quis congue ligula bibendum. Curabitur pellentesque dapibus quam quis imperdiet. Integer venenatis augue consequat diam euismod, a ullamcorper magna varius. Vivamus justo augue, interdum eu ultricies quis, convallis sit amet nunc. Fusce massa nulla, ornare at mauris in, dapibus luctus orci. Aliquam erat volutpat. Duis pulvinar arcu orci, venenatis pellentesque augue bibendum sit amet.",
+            "items": [
+                {
+                    "id": "dawgnation-1",
+                    "link": "/dawgnation/player-cards",
+                    "title": "Dawgnation Player Cards",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        },
+    "pocs":
+        {
+            "headline": "POCs",
+            "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor aliquet lacus ut dignissim. In pellentesque lorem eu nisl pretium fermentum. Donec ut tellus imperdiet, vestibulum nisl sed, pellentesque purus. Donec sollicitudin sapien in nibh aliquam pellentesque. Proin sagittis augue non est commodo, quis congue ligula bibendum. Curabitur pellentesque dapibus quam quis imperdiet. Integer venenatis augue consequat diam euismod, a ullamcorper magna varius. Vivamus justo augue, interdum eu ultricies quis, convallis sit amet nunc. Fusce massa nulla, ornare at mauris in, dapibus luctus orci. Aliquam erat volutpat. Duis pulvinar arcu orci, venenatis pellentesque augue bibendum sit amet.",
+            "items": [
+                {
+                    "id": "poc-9",
+                    "link": "/pocs/fading-images",
+                    "title": "Fading Images",
+                    "image": "pocs/thumbnails/fading-images.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "poc-7",
+                    "link": "/pocs/square-images",
+                    "title": "Square Images",
+                    "image": "pocs/thumbnails/square-images.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "poc-4",
+                    "link": "/pocs/switch-animation",
+                    "title": "Switch Animation",
+                    "image": "pocs/thumbnails/switch-animation.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "poc-5",
+                    "link": "/pocs/day-night-animation",
+                    "title": "Day/Night Animation",
+                    "image": "pocs/thumbnails/day-night-animation.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "poc-1",
+                    "link": "/pocs/dashboard",
+                    "title": "Dashboard",
+                    "image": "pocs/thumbnails/svg-doughnut.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "poc-6",
+                    "link": "/pocs/icon-animations",
+                    "title": "Icon Animations",
+                    "image": "pocs/thumbnails/icon-animations.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "poc-2",
+                    "link": "/pocs/css-pulse",
+                    "title": "CSS Pulse",
+                    "image": "pocs/thumbnails/pulse.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "poc-8",
+                    "link": "/pocs/three-d-cube",
+                    "title": "Three-D Cube",
+                    "image": "pocs/thumbnails/three-d-cube.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "poc-3",
+                    "link": "/pocs/neon-type",
+                    "title": "Neon Type",
+                    "image": "pocs/thumbnails/neon-type.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        },
+    "reference":
+        {
+            "headline": "CSS Reference",
+            "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor aliquet lacus ut dignissim. In pellentesque lorem eu nisl pretium fermentum. Donec ut tellus imperdiet, vestibulum nisl sed, pellentesque purus. Donec sollicitudin sapien in nibh aliquam pellentesque. Proin sagittis augue non est commodo, quis congue ligula bibendum. Curabitur pellentesque dapibus quam quis imperdiet. Integer venenatis augue consequat diam euismod, a ullamcorper magna varius. Vivamus justo augue, interdum eu ultricies quis, convallis sit amet nunc. Fusce massa nulla, ornare at mauris in, dapibus luctus orci. Aliquam erat volutpat. Duis pulvinar arcu orci, venenatis pellentesque augue bibendum sit amet.",
+            "items": [
+                {
+                    "id": 1,
+                    "link": "/reference/nth-child",
+                    "title": "Nth Child",
+                    "image": "reference/thumbnails/nthchild.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": 2,
+                    "link": "/reference/vw-fonts",
+                    "title": "VW Fonts",
+                    "image": "reference/thumbnails/vw-fonts.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": 3,
+                    "link": "/reference/selectors",
+                    "title": "Selectors",
+                    "image": "reference/thumbnails/selectors.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": 4,
+                    "link": "/reference/radial-gradients",
+                    "title": "Radial Gradients",
+                    "image": "reference/thumbnails/radial-gradients.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": 5,
+                    "link": "/reference/dropshadows",
+                    "title": "Dropshadows",
+                    "image": "reference/thumbnails/dropshadows.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": 6,
+                    "link": "/reference/transforms",
+                    "title": "Transforms",
+                    "image": "reference/thumbnails/transform-functions.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": 7,
+                    "link": "/reference/keyframes",
+                    "title": "Keyframes",
+                    "image": "reference/thumbnails/keyframes.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        },
+        "learning":
+        {
+            "headline": "Learning",
+            "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor aliquet lacus ut dignissim. In pellentesque lorem eu nisl pretium fermentum. Donec ut tellus imperdiet, vestibulum nisl sed, pellentesque purus.",
+            "items": [
+                {
+                    "id": "learning-1",
+                    "link": "/learning/styled-components",
+                    "title": "Styled Components",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": "learning-2",
+                    "link": "/learning/hooks",
+                    "title": "Hooks",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                }
+            ]
+        }
+}

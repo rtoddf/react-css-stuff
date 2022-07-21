@@ -10,6 +10,7 @@ export default {
                 width: '400px',
                 height: '75px',
                 margin: '0 auto',
+                backgroundColor: '#d31c1e',
             }}>
             <Story />
             </div>

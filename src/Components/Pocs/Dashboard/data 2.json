@@ -1,0 +1,26 @@
+[
+    {
+        "title": "html",
+        "color": "#003264",
+        "amount": "80",
+        "total": "100"
+    },
+    {
+        "title": "css",
+        "color": "#baba71",
+        "amount": "300",
+        "total": "100"
+    },
+    {
+        "title": "javascript",
+        "color": "#ae0000",
+        "amount": "80",
+        "total": "100"
+    },
+    {
+        "title": "graphic",
+        "color": "#f06d06",
+        "amount": "100",
+        "total": "100"
+    }
+]

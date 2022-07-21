@@ -1,0 +1,15 @@
+
+    {
+        "social": [
+            "fab fa-facebook-f", 
+            "fab fa-twitter", 
+            "fas fa-envelope", 
+            "fab fa-google-plus-g", 
+            "fas fa-share", 
+            "fas fa-thumbs-up", 
+            "fas fa-user-plus", 
+            "fas fa-map-marker", 
+            "fas fa-comment", 
+            "fas fa-camera"
+        ]
+    }
