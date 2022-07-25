@@ -8,10 +8,11 @@ export const StyledIcon = styled.i`
   height: 32px;
   background-image: linear-gradient(
     to top,
-    ${({ theme }) => theme.colors.dawgNationRed},
-    ${({ theme }) => theme.grays.black}
+    ${({ gradientColor1 }) => gradientColor1},
+    ${({ gradientColor2 }) => gradientColor2}
   );
-  color: ${({ theme }) => theme.grays.white};
+  color: ${({ color }) => color};
+  border: 1px solid ${({ borderColor }) => borderColor};
   border-radius: 50%;
   box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.5);
   font-size: 16px;

@@ -12,7 +12,7 @@ export default {
                 margin: '0 auto',
                 backgroundColor: '#d31c1e',
             }}>
-            <Story />
+                <Story />
             </div>
         ),
     ],
