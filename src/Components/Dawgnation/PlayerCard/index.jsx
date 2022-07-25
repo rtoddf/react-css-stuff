@@ -12,16 +12,23 @@ function PlayerCard({player}) {
         <StyledPlayerCard>
             <Badge playerNumber={player.playerNumber} />
             <Cap name={player.name} starRating={player.starRating} />
-            <Figure image={player.image} alt={player.name} shape="rounded" />
-            <Bio
-                player={player}
-                position={player.position}
-                highschool={player.highschool}
-                classYear={player.classYear}
-                city={player.city}
-                state={player.state}
-            />
-            <Stats heightFt={player.heightFt} heightIn={player.heightIn} weight={player.weight} />
+
+            <div className="content">
+                <Figure image={player.image} alt={player.name} shape="rounded" />
+                <div className="stuff">
+                    <Bio
+                        player={player}
+                        position={player.position}
+                        highschool={player.highschool}
+                        classYear={player.classYear}
+                        city={player.city}
+                        state={player.state}
+                    />
+                    <Stats heightFt={player.heightFt} heightIn={player.heightIn} weight={player.weight} />
+                </div>
+                
+            </div>
+
             <Foot />
         </StyledPlayerCard>
     )

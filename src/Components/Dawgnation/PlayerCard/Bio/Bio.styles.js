@@ -12,6 +12,10 @@ export const StyledBio = styled.div`
   /* font-size: ${({ bioFontSize }) => bioFontSize}; */
   font-weight: 400;
 
+  @media (max-width: 600px) {
+    background-color: transparent;
+  }
+
   .position {
     font-size: ${({ positionFontSize }) => positionFontSize};
   }

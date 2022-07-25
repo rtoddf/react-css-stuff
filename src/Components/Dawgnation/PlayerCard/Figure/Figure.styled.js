@@ -23,6 +23,10 @@ export const StyledFigure = styled.figure`
       `
       : ''}
 
+  @media (max-width: 600px) {
+    max-width: 30%;
+  }
+
   img {
     ${(props) =>
       props.shape === 'circle'
