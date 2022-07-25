@@ -12,7 +12,21 @@
             "state": "GA",
             "heightFt": 6,
             "heightIn": 2.5,
-            "weight": 185
+            "weight": 185,
+            "social": [
+                {
+                    "icon": "fab fa-facebook-f",
+                    "link": "https://www.facebook.com/"
+                },
+                {
+                    "icon": "fab fa-twitter",
+                    "link": "https://www.twitter.com/"
+                },
+                {
+                    "icon": "fas fa-share",
+                    "link": ""
+                }
+            ]
         },
         {
             "playerNumber": 2,
@@ -26,7 +40,21 @@
             "state": "CA",
             "heightFt": 6,
             "heightIn": 2,
-            "weight": 220
+            "weight": 220,
+            "social": [
+                {
+                    "icon": "fab fa-facebook-f",
+                    "link": "https://www.facebook.com/"
+                },
+                {
+                    "icon": "fab fa-twitter",
+                    "link": "https://www.twitter.com/"
+                },
+                {
+                    "icon": "fas fa-share",
+                    "link": ""
+                }
+            ]
         },
         {
             "playerNumber": 4,
@@ -40,7 +68,21 @@
             "state": "GA",
             "heightFt": 6,
             "heightIn": 5,
-            "weight": 227
+            "weight": 227,
+            "social": [
+                {
+                    "icon": "fab fa-facebook-f",
+                    "link": "https://www.facebook.com/"
+                },
+                {
+                    "icon": "fab fa-twitter",
+                    "link": "https://www.twitter.com/"
+                },
+                {
+                    "icon": "fas fa-share",
+                    "link": ""
+                }
+            ]
         },
         {
             "playerNumber": 13,
@@ -54,7 +96,21 @@
             "state": "MI",
             "heightFt": 6,
             "heightIn": 0,
-            "weight": 185
+            "weight": 185,
+            "social": [
+                {
+                    "icon": "fab fa-facebook-f",
+                    "link": "https://www.facebook.com/"
+                },
+                {
+                    "icon": "fab fa-twitter",
+                    "link": "https://www.twitter.com/"
+                },
+                {
+                    "icon": "fas fa-share",
+                    "link": ""
+                }
+            ]
         }
     ]
 }

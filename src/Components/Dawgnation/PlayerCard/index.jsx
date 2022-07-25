@@ -3,6 +3,7 @@ import Cap from './Cap';
 import Figure from './Figure';
 import Bio from './Bio';
 import Stats from './Stats';
+import SocialIcons from '../../SocialIcons';
 import Foot from './Foot';
 
 import { StyledPlayerCard } from './PlayerCard.styles';
@@ -27,6 +28,10 @@ function PlayerCard({player}) {
                     <Stats heightFt={player.heightFt} heightIn={player.heightIn} weight={player.weight} />
                 </div>
                 
+            </div>
+
+            <div className="socialContent">
+                <SocialIcons links={player.social} animation="rotate" />  
             </div>
 
             <Foot />
