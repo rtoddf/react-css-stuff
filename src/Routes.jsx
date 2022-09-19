@@ -90,7 +90,7 @@ import SwitchAnimation from './Components/Pocs/SwitchAnimation';
 import DayNightAnimation from './Components/Pocs/DayNightAnimation';
 import IconAnimations from './Components/Pocs/IconAnimations';
 import FadingImages from './Components/Pocs/FadingImages/default';
-import Swiper from './Components/Pocs/Swiper';
+import SwiperTrial from './Components/Pocs/Swiper';
 
 // Reference
 import Reference from './Components/Pages/Reference';
@@ -293,7 +293,7 @@ function Routes() {
                 <Pocs />
             </Route>
             <Route path='/pocs/swiper'>
-                <Swiper />
+                <SwiperTrial />
             </Route>
             <Route path='/pocs/fading-images'>
                 <FadingImages />
