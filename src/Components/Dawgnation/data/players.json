@@ -13,6 +13,7 @@
             "heightFt": 6,
             "heightIn": 2.5,
             "weight": 185,
+            "class": "junior",
             "social": [
                 {
                     "icon": "fab fa-facebook-f",
@@ -41,6 +42,7 @@
             "heightFt": 6,
             "heightIn": 2,
             "weight": 220,
+            "class": "junior",
             "social": [
                 {
                     "icon": "fab fa-facebook-f",
@@ -60,7 +62,7 @@
             "playerNumber": 4,
             "starRating": "4",
             "name": "Oscar Delp",
-            "position": "Tight End",
+            "position": "TE",
             "image": "../images/layouts/tags/oscar-delp.jpg",
             "highschool": "West Forsyth",
             "classYear": "2022",
@@ -69,6 +71,7 @@
             "heightFt": 6,
             "heightIn": 5,
             "weight": 227,
+            "class": "junior",
             "social": [
                 {
                     "icon": "fab fa-facebook-f",
@@ -88,7 +91,7 @@
             "playerNumber": 13,
             "starRating": "3",
             "name": "Stetson Bennett",
-            "position": "Quarter Back",
+            "position": "QB",
             "image": "../images/layouts/tags/stetson-bennett.jpg",
             "highschool": "Jones County Community College",
             "classYear": "2019",
@@ -97,6 +100,7 @@
             "heightFt": 6,
             "heightIn": 0,
             "weight": 185,
+            "class": "junior",
             "social": [
                 {
                     "icon": "fab fa-facebook-f",

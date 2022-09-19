@@ -27,7 +27,7 @@ function Bio({
                 <img src="/images/layouts/tags/uga.png" alt="UGA" />
             </div> */}
             <div className="cityState">
-                <div>{highschool}, Class of {classYear}</div>  
+                <div>{highschool}<br />Class of {classYear}</div>  
                 <div>{city}, {state}</div>
             </div>
         </StyledBio>

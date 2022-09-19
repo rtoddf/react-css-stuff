@@ -9,10 +9,11 @@ import Foot from './Foot';
 import { StyledPlayerCard } from './PlayerCard.styles';
 
 function PlayerCard({player}) {
+    console.log('player: ', player.class)
     return (
         <StyledPlayerCard>
             <Badge playerNumber={player.playerNumber} />
-            <Cap name={player.name} starRating={player.starRating} />
+            <Cap name={player.name} starRating={player.starRating} classLevel={player.class} />
 
             <div className="content">
                 <Figure image={player.image} alt={player.name} shape="rounded" />
@@ -30,11 +31,11 @@ function PlayerCard({player}) {
                 
             </div>
 
-            <div className="socialContent">
+            {/* <div className="socialContent">
                 <SocialIcons links={player.social} animation="rotate" />  
-            </div>
+            </div> */}
 
-            <Foot />
+            {/* <Foot /> */}
         </StyledPlayerCard>
     )
 }
