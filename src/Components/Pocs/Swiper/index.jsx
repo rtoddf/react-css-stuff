@@ -39,24 +39,28 @@ function SwiperTrial() {
                         slidesPerGroup: 3,
                     },
                     1024: {
-                        slidesPerView: 4,
+                        slidesPerView: 5,
                         spaceBetween: 10,
-                        slidesPerGroup: 4,
+                        slidesPerGroup: 5,
                     },
                 }}
                 navigation={false}
-                // autoplay={{
-                //     delay: 7000,
-                //     disableOnInteraction: true,
-                // }}
+                autoplay={{
+                    delay: 7000,
+                    disableOnInteraction: true,
+                }}
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper">
                 <SwiperSlide>
                     <div className="imageHolder">
-                        <img src={mt} />
+                        <a href="#">
+                            <img src={mt} />
+                        </a>
                     </div>
                     <div className="content">
-                        <h4>Meriwether &amp; Tharp</h4>
+                        <a href="#">
+                            <h4>Meriwether &amp; Tharp</h4>
+                        </a>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
