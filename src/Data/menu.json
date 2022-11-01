@@ -111,6 +111,13 @@
             "items": [
                 {
                     "id": 1,
+                    "link": "/grids/example01",
+                    "title": "Traversy Crash Course - Example 01",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": 2,
                     "link": "/grids/traversy",
                     "title": "Traversy Crash Course",
                     "image": "placeholder.jpg",

@@ -4,6 +4,7 @@ import Home from './Components/Pages/Home';
 
 // Grids
 import Grids from './Components/Pages/Grids';
+import Example01 from './Components/Grids/Example01';
 import Traversy from './Components/Grids/Traversy';
 
 // Components
@@ -118,6 +119,9 @@ function Routes() {
             {/* Grids */}
             <Route exact path='/grids'>
                 <Grids />
+            </Route>
+            <Route path='/grids/example01'>
+                <Example01 />
             </Route>
             <Route path='/grids/traversy'>
                 <Traversy />
