@@ -145,7 +145,7 @@ class FlipClock extends React.Component {
       render() {
       
       // state object destructuring
-          const { 
+    const { 
         hours, 
         minutes, 
         seconds, 

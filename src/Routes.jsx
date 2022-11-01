@@ -2,6 +2,10 @@ import { Route, Switch } from "react-router-dom";
 
 import Home from './Components/Pages/Home';
 
+// Grids
+import Grids from './Components/Pages/Grids';
+import Traversy from './Components/Grids/Traversy';
+
 // Components
 import Components from './Components/Pages/Components';
 import Description from './Components/Description';
@@ -109,6 +113,14 @@ function Routes() {
         <Switch>
             <Route exact path='/'>
                 <Home />
+            </Route>
+
+            {/* Grids */}
+            <Route exact path='/grids'>
+                <Grids />
+            </Route>
+            <Route path='/grids/traversy'>
+                <Traversy />
             </Route>
 
             {/* Components */}
