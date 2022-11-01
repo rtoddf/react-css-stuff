@@ -1,9 +1,25 @@
 import PropTypes from "prop-types";
+import { theme } from '../../../../styles/Theme';
 import { StyledBio } from './Bio.styles';
 
-function Bio({ position, highschool, classYear, city, state }) {
+function Bio({ 
+        color, 
+        backgroundColor, 
+        positionFontSize, 
+        bioFontSize,
+        position, 
+        highschool, 
+        classYear, 
+        city, 
+        state 
+    }) {
     return (
-        <StyledBio>
+        <StyledBio 
+            color={color} 
+            backgroundColor={backgroundColor} 
+            positionFontSize={positionFontSize} 
+            bioFontSize={bioFontSize}
+            >
             <div>
                 <div className="position">{position}</div>   
             </div>
@@ -11,7 +27,7 @@ function Bio({ position, highschool, classYear, city, state }) {
                 <img src="/images/layouts/tags/uga.png" alt="UGA" />
             </div> */}
             <div className="cityState">
-                <div>{highschool}, Class of {classYear}</div>  
+                <div>{highschool}<br />Class of {classYear}</div>  
                 <div>{city}, {state}</div>
             </div>
         </StyledBio>
@@ -19,11 +35,17 @@ function Bio({ position, highschool, classYear, city, state }) {
 }
 
 Bio.propTypes = {
-    position: PropTypes.string,
-    highschool: PropTypes.string,
-    classYear: PropTypes.string,
-    city: PropTypes.string,
-    state: PropTypes.string,
+    color: PropTypes.string,
+    backgroundColor: PropTypes.string,
+    positionFontSize: PropTypes.string,
+    bioFontSize: PropTypes.string,
 };
+
+Bio.defaultProps = {
+    color: theme.grays.white,
+    backgroundColor: theme.colors.dawgNationRed,
+    positionFontSize: '1rem',
+    bioFontSize: '0.875rem',
+}
 
 export default Bio;

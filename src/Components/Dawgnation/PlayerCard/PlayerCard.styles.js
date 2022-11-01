@@ -13,4 +13,27 @@ export const StyledPlayerCard = styled.div`
     ${({ theme }) => theme.colors.dawgNationRed} 0%,
     ${({ theme }) => theme.grays.black} 80%
   );
+
+  .socialContent {
+    text-align: center;
+    /* display: flex;
+    flex-direction: column; */
+
+    a {
+      /* display: block; */
+      /* border: 1px solid orange; */
+    }
+  }
+
+  @media (max-width: 600px) {
+    .content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .stuff {
+        width: 100%;
+      }
+    }
+  }
 `;

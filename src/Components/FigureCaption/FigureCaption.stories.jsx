@@ -13,8 +13,8 @@ export default {
 
 const Template = args => <FigureCaption {...args} />
 
-export const Common = Template.bind({});
-Common.args = {
+export const Primary = Template.bind({});
+Primary.args = {
     title: 'Some Title',
     copy: 'Some copy',
 }

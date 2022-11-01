@@ -8,7 +8,7 @@ export const StyledStats = styled.div`
   padding: 10px;
   background: transparent;
   color: ${({ theme }) => theme.grays.white};
-  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  // border-bottom: 1px solid rgba(255, 255, 255, 0.35);
   font-family: ${({ theme }) => theme.fonts.baseFont};
   font-size: 1rem;
   font-weight: 400;

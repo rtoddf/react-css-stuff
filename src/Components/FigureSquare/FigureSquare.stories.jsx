@@ -7,8 +7,8 @@ export default {
 
 const Template = args => <FigureSquare {...args} />
 
-export const Common = Template.bind({});
-Common.args = {
+export const Primary = Template.bind({});
+Primary.args = {
     image: '../images/pocs/squareimages/ben-barnes.jpg',
     title: 'Some Title',
 }

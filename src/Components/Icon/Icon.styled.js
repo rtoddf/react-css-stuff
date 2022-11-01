@@ -2,19 +2,20 @@ import styled from 'styled-components';
 
 export const StyledIcon = styled.i`
   display: inline-block;
-  margin: 5px;
-  padding-top: 10px;
-  width: 42px;
-  height: 42px;
+  margin: 10px 10px 5px;
+  padding-top: 8px;
+  width: 32px;
+  height: 32px;
   background-image: linear-gradient(
     to top,
-    ${({ theme }) => theme.colors.blueGreen},
-    ${({ theme }) => theme.colors.green}
+    ${({ gradientColor1 }) => gradientColor1},
+    ${({ gradientColor2 }) => gradientColor2}
   );
-  color: ${({ theme }) => theme.grays.white};
+  color: ${({ color }) => color};
+  border: 1px solid ${({ borderColor }) => borderColor};
   border-radius: 50%;
-  box-shadow: 0 2px 4px 0 rgba(149, 149, 149, 0.5);
-  font-size: 24px;
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.5);
+  font-size: 16px;
   text-align: center;
   transition: transform 0.5s;
   cursor: pointer;

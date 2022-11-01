@@ -90,6 +90,8 @@ import SwitchAnimation from './Components/Pocs/SwitchAnimation';
 import DayNightAnimation from './Components/Pocs/DayNightAnimation';
 import IconAnimations from './Components/Pocs/IconAnimations';
 import FadingImages from './Components/Pocs/FadingImages/default';
+import SwiperTrial from './Components/Pocs/Swiper';
+import Clock from './Components/Pocs/Clock';
 
 // Reference
 import Reference from './Components/Pages/Reference';
@@ -290,6 +292,12 @@ function Routes() {
             {/* POCs */}
             <Route exact path='/pocs'>
                 <Pocs />
+            </Route>
+            <Route path='/pocs/clock'>
+                <Clock />
+            </Route>
+            <Route path='/pocs/swiper'>
+                <SwiperTrial />
             </Route>
             <Route path='/pocs/fading-images'>
                 <FadingImages />

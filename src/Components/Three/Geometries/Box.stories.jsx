@@ -7,7 +7,7 @@ export default {
 
 const Template = args => <Box {...args} />
 
-export const Common = Template.bind({});
-Common.args = {
+export const Primary = Template.bind({});
+Primary.args = {
     // lightColor1: '#ff0000'
 };

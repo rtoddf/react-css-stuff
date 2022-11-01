@@ -12,13 +12,13 @@ export const StyledBadge = styled.div`
   height: 60px;
   background-image: linear-gradient(
     45deg,
-    ${({ theme }) => theme.grays.black} 0%,
-    ${({ theme }) => theme.colors.dawgNationRed} 50%,
-    ${({ theme }) => theme.grays.black} 100%
+    ${({ gradientColor1 }) => gradientColor1} 0%,
+    ${({ gradientColor2 }) => gradientColor2} 50%,
+    ${({ gradientColor1 }) => gradientColor1} 100%
   );
-  color: white;
+  color: ${({ color }) => color};
   border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.grays.white};
+  border: 2px solid ${({ borderColor }) => borderColor};
   font-size: 2rem;
   font-weight: 600;
 `;
