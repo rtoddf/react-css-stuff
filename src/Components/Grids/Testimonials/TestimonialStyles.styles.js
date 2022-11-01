@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import quotes from './images/bg-pattern-quotation.svg';
 
-export const Testimonials = styled.div`
+export const TestimonialStyles = styled.div`
   * {
     box-sizing: border-box;
     padding: 0;

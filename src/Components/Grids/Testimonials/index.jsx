@@ -1,13 +1,13 @@
-import { Testimonials } from './Testimonials.styles';
+import { TestimonialStyles } from './TestimonialStyles.styles';
 import daniel from './images/image-daniel.jpg';
 import jonathan from './images/image-jonathan.jpg';
 import jeanette from './images/image-jeanette.jpg';
 import kira from './images/image-kira.jpg';
 import patrick from './images/image-patrick.jpg';
 
-function Traversy() {
+function Testimonials() {
     return (
-        <Testimonials>
+        <TestimonialStyles>
             <div className="testimonials">
                 <div className="card card--bg-purple">
                     <header className="card__header">
@@ -72,8 +72,8 @@ function Traversy() {
             <footer>
                 <h3>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>.</h3>
             </footer>
-        </Testimonials>
+        </TestimonialStyles>
     )
 }
 
-export default Traversy;
+export default Testimonials;

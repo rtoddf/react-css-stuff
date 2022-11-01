@@ -118,8 +118,8 @@
                 },
                 {
                     "id": 2,
-                    "link": "/grids/traversy",
-                    "title": "Traversy Crash Course",
+                    "link": "/grids/testimonials",
+                    "title": "Testimonials",
                     "image": "placeholder.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
