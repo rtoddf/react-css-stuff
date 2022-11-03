@@ -23,6 +23,9 @@ export const NewsHome = styled.div`
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, auto);
       /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
 
       .headline {
         color: #fe0000;
@@ -37,6 +40,7 @@ export const NewsHome = styled.div`
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
         align-items: center;
+        padding: 20px;
       }
 
       .credits {
@@ -44,8 +48,8 @@ export const NewsHome = styled.div`
         grid-row: 1;
         display: flex;
         justify-content: space-between;
-        padding: 5px 10px;
-        background: #333;
+        padding: 10px 20px;
+        background: #fe0000;
         color: #fff;
 
         .author {
@@ -71,19 +75,24 @@ export const NewsHome = styled.div`
     }
 
     .new {
-      padding: 20px;
+      padding: 10px 20px;
       background: #333;
       color: #fff;
+      background: #333;
+      border-radius: 20px;
+      box-shadow: rgba(255, 255, 255, 0.25) 0px 0px 10px 0px;
 
       .head {
-        color: #fe0000;
+        margin-bottom: 15px;
+        color: #fff;
         font-size: 2rem;
         font-weight: 800;
       }
 
       .item {
         margin-bottom: 20px;
-        border-bottom: 1px solid rgba(254, 0, 0, 0.75);
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.75);
 
         &:last-child {
           border-bottom: none;
@@ -91,6 +100,7 @@ export const NewsHome = styled.div`
 
         .headline {
           margin-bottom: 15px;
+          color: #fff;
           font-weight: 800;
         }
 
