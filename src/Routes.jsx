@@ -6,6 +6,7 @@ import Home from './Components/Pages/Home';
 import Grids from './Components/Pages/Grids';
 import Example01 from './Components/Grids/Example01';
 import Testimonials from './Components/Grids/Testimonials';
+import NewsHomePage from './Components/Grids/NewsHomePage';
 
 // Components
 import Components from './Components/Pages/Components';
@@ -126,6 +127,11 @@ function Routes() {
             <Route path='/grids/testimonials'>
                 <Testimonials />
             </Route>
+            <Route path='/grids/newshomepage'>
+                <NewsHomePage />
+            </Route>
+
+            
 
             {/* Components */}
             <Route exact path='/components'>
