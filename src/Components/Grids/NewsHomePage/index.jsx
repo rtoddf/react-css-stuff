@@ -1,17 +1,18 @@
-import { NewsHome } from './NewsHomePage.styles';
 import Card from './children/Card';
 import New from './children/New';
 import List from './children/List';
 
+import { NewsHome } from './NewsHomePage.styles';
+
 function NewsHomePage() {
     return (
-        <NewsHome>
-            <div className="grid-container main">
+        <>
+            <NewsHome>
                 <Card />
                 <New />
-            </div>
+            </NewsHome>
             <List />
-        </NewsHome>
+        </>
     )
 }
 

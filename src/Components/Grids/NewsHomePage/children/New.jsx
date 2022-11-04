@@ -3,7 +3,7 @@ import { NewStyles } from './NewStyles.styles';
 function New() {
     return (
         <NewStyles>
-        <div className="grid-container new">
+            <div className="grid-container new">
                 <div className="head">New</div>
                 <div className="item">
                     <div className="headline">Kirby Smart updates Georgia injuries Tennessee week; Adonai Mitchell return would provide lift</div>

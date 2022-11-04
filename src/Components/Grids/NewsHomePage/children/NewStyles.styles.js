@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const NewStyles = styled.div`
+  font-size: 100%;
+
   .new {
     padding: 10px 20px;
     background: #333;
@@ -10,7 +12,7 @@ export const NewStyles = styled.div`
     .head {
       margin-bottom: 15px;
       color: #fe0000;
-      font-size: 2rem;
+      font-size: 200%;
       font-weight: 800;
     }
 
@@ -21,11 +23,13 @@ export const NewStyles = styled.div`
       .headline {
         margin-bottom: 15px;
         color: #fff;
-        font-weight: 800;
+        font-size: 100%;
+        font-weight: 600;
       }
 
       .content {
-        font-size: 14px;
+        font-size: 87.5%;
+        font-weight: 400;
         opacity: 0.7;
       }
     }
