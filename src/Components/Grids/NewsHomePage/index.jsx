@@ -1,6 +1,7 @@
 import { NewsHome } from './NewsHomePage.styles';
-import Card from './Card';
-import New from './New';
+import Card from './children/Card';
+import New from './children/New';
+import List from './children/List';
 
 function NewsHomePage() {
     return (
@@ -9,6 +10,7 @@ function NewsHomePage() {
                 <Card />
                 <New />
             </div>
+            <List />
         </NewsHome>
     )
 }

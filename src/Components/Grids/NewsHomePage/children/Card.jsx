@@ -1,5 +1,5 @@
-import dogs from './images/dogs.jpg';
-import jeff from './images/jeff-sentell.jpg';
+import dogs from '../images/dogs.jpg';
+import jeff from '../images/jeff-sentell.jpg';
 
 function Card() {
     return (
