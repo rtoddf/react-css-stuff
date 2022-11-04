@@ -129,6 +129,13 @@
                     "title": "News Home Page",
                     "image": "placeholder.jpg",
                     "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
+                },
+                {
+                    "id": 4,
+                    "link": "/grids/podcasts",
+                    "title": "Podcasts",
+                    "image": "placeholder.jpg",
+                    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas maximus convallis diam sit amet convallis."
                 }
             ]
         },

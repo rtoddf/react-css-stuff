@@ -9,10 +9,10 @@ export const CardStyles = styled.div`
   /* for how this compoennt works in the parent element */
   grid-column: 1 / 3;
   /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
-  background: #fff;
+  font-size: 16px;
 
   .headline {
-    font-size: 2rem;
+    font-size: 200%;
     font-weight: 800;
     line-height: 1.2;
   }
@@ -29,6 +29,7 @@ export const CardStyles = styled.div`
       display: flex;
       flex-direction: column;
       height: 100%;
+      font-size: 100%;
     }
   }
 
@@ -40,11 +41,11 @@ export const CardStyles = styled.div`
     padding: 10px 20px;
     background: #333;
     color: #fff;
+    font-size: 75%;
 
     .author {
       display: flex;
       align-items: center;
-      font-size: 12px;
 
       img {
         width: 30px;
@@ -58,12 +59,24 @@ export const CardStyles = styled.div`
     .posted {
       display: flex;
       align-items: center;
-      font-size: 12px;
     }
   }
 
   .lead {
     grid-column: 1 / 3;
+  }
+
+  .button {
+    width: 50%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #fe0000;
+    color: #fff;
+    font-size: 87.5%;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
   }
 
   @media (max-width: 600px) {

@@ -8,19 +8,6 @@ export const NewsHome = styled.div`
   margin: 20px auto;
   padding: 10px;
 
-  .button {
-    width: 50%;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #fe0000;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-  }
-
   .lead {
     grid-column: 1 / 3;
   }

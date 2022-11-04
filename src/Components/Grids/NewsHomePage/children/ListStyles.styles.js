@@ -7,6 +7,7 @@ export const ListStyles = styled.div`
   max-width: 1440px;
   margin: 20px auto;
   padding: 10px;
+  font-size: 16px;
 
   .item {
     display: grid;
@@ -16,19 +17,19 @@ export const ListStyles = styled.div`
 
   .order {
     color: #999;
-    font-size: 24px;
+    font-size: 150%;
     font-weight: 600;
   }
 
   .headline {
-    font-size: 16px;
+    font-size: 100%;
     font-weight: 800;
     line-height: 2;
   }
 
   .text {
     color: #999;
-    font-size: 14px;
+    font-size: 87.5%;
     line-height: 1.5;
   }
 

@@ -1,7 +1,7 @@
 export const theme = {
   colors: {
     header: '#ebfbff',
-    bodyBgColor: '#fff',
+    bodyBgColor: '#111',
     bodyTextColor: '#333',
     linkColor: '#003264',
     linkColorHover: '#c07f2c',
