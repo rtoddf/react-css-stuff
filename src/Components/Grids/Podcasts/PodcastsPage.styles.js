@@ -2,11 +2,10 @@ import styled from 'styled-components';
 
 export const PodcastsPage = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   gap: 20px;
-  max-width: 1440px;
-  margin: 20px auto;
-  padding: 10px;
+  max-width: 1600px;
+  margin: 0 auto;
   font-size: 16px;
 
   .image,
@@ -15,11 +14,11 @@ export const PodcastsPage = styled.div`
   }
 
   .image {
-    grid-column: 2 / -1;
+    grid-column: 1 / -1;
   }
 
   .text {
-    grid-column: 1 / 3;
+    grid-column: 2 / 5;
     align-self: center;
     /* justify-self: center; */
     padding: 20px;
@@ -30,8 +29,9 @@ export const PodcastsPage = styled.div`
       margin-bottom: 20px;
       font-size: 250%;
       line-height: 1.2;
+      font-family: 'Montserrat', sans-serif;
       text-transform: uppercase;
-      font-weight: 600;
+      font-weight: 100;
 
       span:nth-of-type(1) {
         display: block;
@@ -41,6 +41,7 @@ export const PodcastsPage = styled.div`
 
     p {
       font-size: 100%;
+      font-weight: 100;
       opacity: 0.7;
     }
   }
@@ -51,3 +52,6 @@ export const PodcastsPage = styled.div`
     margin: 0 auto;
   }
 `;
+
+
+// src/Components/Container/Container.styled.js
