@@ -77,17 +77,17 @@ const AudioPlayer = () => {
         <div className="play-pause-buttons" onClick={togglePlayPause}>
           { isPlaying ? <PodcastIcon /> : <VideoIcon /> }      
         </div>
+
+        <div className="audio-range">
+          <input ref={audioProgressBar} type="range" className="range" defaultValue='0' onChange={changeRange} />
+        </div>
       </div>
 
       <div className="audio-controls">
         <div className="audio-current-time">
           {calculateTime(currentTime)}
         </div>
-
-        <div className="audio-range">
-          <input ref={audioProgressBar} type="range" className="range" defaultValue='0' onChange={changeRange} />
-        </div>
-
+        <div></div>
         <div className="audio-current-duration">
           {calculateTime(duration)}
         </div>
