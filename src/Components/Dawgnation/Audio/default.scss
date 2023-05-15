@@ -25,12 +25,18 @@
 
       svg {
         width: 150px;
-        fill: hsla(0, 0%, 100%, .5);
+        fill: hsla(0, 0%, 100%, .4);
         transition: 0.5s;
         cursor: pointer;
 
         &:hover {
-          fill: hsla(0, 0%, 100%, 1);
+          fill: hsla(0, 0%, 100%, .7);
+        }
+      }
+
+      &.playing {
+        svg {
+          fill: hsla(0, 0%, 100%, .25);
         }
       }
     }
@@ -60,8 +66,6 @@
       --bar-bg: #222;
       --seek-before-width: 0;
       --seek-before-color: #ba0c2f;
-      // --knobby: purple;
-      // --selected-knobby: red;
 
       appearance: none;
       background: var(--bar-bg);

@@ -67,7 +67,7 @@ const AudioPlayer = () => {
       <div className="audio-image-holder">
         <img src={image} />
 
-        <div className="play-pause-buttons" onClick={togglePlayPause}>
+        <div className={`play-pause-buttons ${isPlaying ? 'playing' : 'paused'}`} onClick={togglePlayPause}>
           { isPlaying ? <PauseIcon /> : <VideoIcon /> }      
         </div>
 
