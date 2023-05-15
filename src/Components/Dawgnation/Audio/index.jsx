@@ -1,11 +1,7 @@
 import React, {useState, useRef, useEffect} from 'react';
-import PropTypes from 'prop-types';
-
 import VideoIcon from './icons/video';
-import PodcastIcon from './icons/podcast';
+import PauseIcon from './icons/pause';
 import image from './images/audio-placeholder.jpg';
-
-import styles from './default.scss';
 
 import './default.scss';
 
@@ -22,19 +18,16 @@ const AudioPlayer = () => {
   const audioProgressBar = useRef();
   const animationRef = useRef();
 
-  console.log('styles: ', styles)
-
   useEffect(() => {
-    // console.log('audioPlayer: ', audioPlayer)
-    console.log('audioPlayer.current: ', audioPlayer.current)
-    console.log('audioPlayer.current.duration: ', audioPlayer.current.duration)
+    const audio =  new Audio();
+    audio.src = `https://docs.google.com/uc?export=open&id=${audioId}`;
 
-    // const seconds = 36;
-    const seconds = audioPlayer.current.duration;
-
-    audioProgressBar.current.max = seconds;
-    setDuration(Math.floor(seconds));
-  }, [audioPlayer?.current?.loadedmetadata, audioPlayer?.current?.readyState])
+    audio.addEventListener('loadedmetadata', () => {
+      const seconds = audio.duration;
+      audioProgressBar.current.max = seconds;
+      setDuration(Math.floor(seconds));
+    })
+  }, [])
 
   const calculateTime = (secs) => {
     const minutes = Math.floor(secs/60);
@@ -75,7 +68,7 @@ const AudioPlayer = () => {
         <img src={image} />
 
         <div className="play-pause-buttons" onClick={togglePlayPause}>
-          { isPlaying ? <PodcastIcon /> : <VideoIcon /> }      
+          { isPlaying ? <PauseIcon /> : <VideoIcon /> }      
         </div>
 
         <div className="audio-range">
