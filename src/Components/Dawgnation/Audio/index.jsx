@@ -1,16 +1,18 @@
 import React, {useState, useRef, useEffect} from 'react';
 import PropTypes from 'prop-types';
 
-// import VideoIcon from '../../../../resources/icons/media/video';
-// import PodcastIcon from '../../../../resources/icons/media/podcast';
+import VideoIcon from './icons/video';
+import PodcastIcon from './icons/podcast';
 import image from './images/audio-placeholder.jpg';
+
+import styles from './default.scss';
 
 import './default.scss';
 
 const AudioPlayer = () => {
   const audioId = '1S4uUTeD_1o8vXOYmdVGOlR8exmoTiLw8';
   const headlineText = 'headline';
-  const descriptionText = 'description';
+  const descriptionText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in est ac dolor fringilla mollis. Sed aliquet condimentum mi, non luctus ex ultricies id. Praesent sagittis lectus eget eros ullamcorper porta bibendum nec enim. Suspendisse eget tortor ac sapien porta viverra id at ipsum. In eget mi elit.';
 
   const [isPlaying, setIsPlaying] = useState(false);
   const [duration, setDuration] = useState(0);
@@ -18,16 +20,19 @@ const AudioPlayer = () => {
 
   const audioPlayer = useRef();
   const audioProgressBar = useRef();
+  const animationRef = useRef();
+
+  console.log('styles: ', styles)
 
   useEffect(() => {
     // console.log('audioPlayer: ', audioPlayer)
     console.log('audioPlayer.current: ', audioPlayer.current)
     console.log('audioPlayer.current.duration: ', audioPlayer.current.duration)
 
-    const seconds = 36;
-    // const seconds = audioPlayer.current.duration;
+    // const seconds = 36;
+    const seconds = audioPlayer.current.duration;
 
-    // audioProgressBar.current.max = seconds;
+    audioProgressBar.current.max = seconds;
     setDuration(Math.floor(seconds));
   }, [audioPlayer?.current?.loadedmetadata, audioPlayer?.current?.readyState])
 
@@ -44,13 +49,24 @@ const AudioPlayer = () => {
     setIsPlaying(!prevValue);
     if(!prevValue){
       audioPlayer.current.play();
+      animationRef.current = requestAnimationFrame(whilePlaying);
     } else {
       audioPlayer.current.pause();
+      cancelAnimationFrame(animationRef.current);
     }
+  }
+
+  const whilePlaying = () => {
+    audioProgressBar.current.value = audioPlayer.current.currentTime;
+    audioProgressBar.current.style.setProperty('--seek-before-width', `${audioProgressBar.current.value / duration * 100}%`);
+    setCurrentTime(audioProgressBar.current.value);
+    animationRef.current = requestAnimationFrame(whilePlaying);
   }
 
   const changeRange = () => {
     audioPlayer.current.currentTime = audioProgressBar.current.value;
+    audioProgressBar.current.style.setProperty('--seek-before-width', `${audioProgressBar.current.value / duration * 100}%`);
+    setCurrentTime(audioProgressBar.current.value);
   }
 
   return (
@@ -59,11 +75,11 @@ const AudioPlayer = () => {
         <img src={image} />
 
         <div className="play-pause-buttons" onClick={togglePlayPause}>
-          {/* { isPlaying ? <PodcastIcon /> : <VideoIcon /> }       */}
+          { isPlaying ? <PodcastIcon /> : <VideoIcon /> }      
         </div>
       </div>
 
-      {/* <div className="audio-controls">
+      <div className="audio-controls">
         <div className="audio-current-time">
           {calculateTime(currentTime)}
         </div>
@@ -75,7 +91,7 @@ const AudioPlayer = () => {
         <div className="audio-current-duration">
           {calculateTime(duration)}
         </div>
-      </div> */}
+      </div>
 
       <div className="audio-content-holder">
         {headlineText && (
@@ -94,7 +110,7 @@ const AudioPlayer = () => {
         ref={audioPlayer}
         src={`https://docs.google.com/uc?export=open&id=${audioId}`}
         type="audio/mpeg"
-        preload="auto"
+        preload="metadata"
       />
     </div>
   );

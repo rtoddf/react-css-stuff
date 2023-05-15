@@ -1,5 +1,5 @@
-@import '../../../../src/base/mixins';
-@import '../../../../src/base/variables';
+@import './scss/mixins';
+@import './scss/variables';
 
 .audio-player {
   border: 1px solid $dawgnationV2Gray03;
@@ -25,7 +25,13 @@
 
       svg {
         width: 150px;
-        fill: $white;
+        fill: hsla(0, 0%, 100%, .5);
+        transition: 0.5s;
+        cursor: pointer;
+
+        &:hover {
+          fill: hsla(0, 0%, 100%, 1);
+        }
       }
     }
   }
@@ -44,9 +50,9 @@
 
     .audio-range {
       .range {
-        --bar-bg: green;
+        --bar-bg: black;
         --seek-before-width: 0;
-        --seek-before-color: orange;
+        --seek-before-color: #ba0c2f;
         // --knobby: purple;
         // --selected-knobby: red;
 
