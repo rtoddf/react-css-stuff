@@ -1,0 +1,93 @@
+@import '../../../../src/base/mixins';
+@import '../../../../src/base/variables';
+
+.audio-player {
+  border: 1px solid $dawgnationV2Gray03;
+  display: grid;
+  justify-items: center;
+
+  .audio-image-holder {
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    .play-pause-buttons {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      display: grid;
+      align-content: center;
+      justify-content: center;
+
+      svg {
+        width: 150px;
+        fill: $white;
+      }
+    }
+  }
+
+  .audio-controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+
+    .audio-current-time,
+    .audio-current-duration {
+      @include text-styles(.75rem, normal, 'Rubik');
+      font-weight: 400;
+    }
+
+    .audio-range {
+      .range {
+        --bar-bg: green;
+        --seek-before-width: 0;
+        --seek-before-color: orange;
+        // --knobby: purple;
+        // --selected-knobby: red;
+
+        appearance: none;
+        background: var(--bar-bg);
+        position: relative;
+        width: 100%;
+        height: 15px;
+        outline: none;
+
+        &:before {
+          display: block;
+          content: '';
+          width: var(--seek-before-width);
+          background: var(--seek-before-color);
+          cursor: pointer;
+        }
+
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+        }
+      }
+    }
+  }
+
+  .audio-content-holder {
+    padding: 10px;
+
+    .audio-headline {
+      @include text-styles(1.125rem, 2, 'Rubik');
+      font-weight: 600;
+    }
+
+    .audio-description {
+      @include text-styles(1rem, normal, 'Rubik');
+      font-weight: 400;
+    }
+  }
+
+  svg {
+    width: 30px;
+    fill: $dawgnationred;
+  }
+}

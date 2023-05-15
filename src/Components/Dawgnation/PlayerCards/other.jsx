@@ -1,0 +1,125 @@
+import React, {useState, useRef, useEffect} from 'react';
+import PropTypes from 'prop-types';
+
+import VideoIcon from '../../../../resources/icons/media/video';
+import PodcastIcon from '../../../../resources/icons/media/podcast';
+import image from './images/audio-placeholder.jpg';
+
+import './default.scss';
+
+const AudioPlayer = ({ customFields }) => {
+  const audioId = customFields?.audioId || '';
+  const headlineText = customFields?.headlineText || '';
+  const descriptionText = customFields?.descriptionText || '';
+
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [duration, setDuration] = useState(0);
+  const [currentTime, setCurrentTime] = useState(0);
+
+  const audioPlayer = useRef();
+  const audioProgressBar = useRef();
+
+  useEffect(() => {
+    // console.log('audioPlayer: ', audioPlayer)
+    console.log('audioPlayer.current: ', audioPlayer.current)
+    console.log('audioPlayer.current.duration: ', audioPlayer.current.duration)
+
+    const seconds = 36;
+    // const seconds = audioPlayer.current.duration;
+
+    // audioProgressBar.current.max = seconds;
+    setDuration(Math.floor(seconds));
+  }, [audioPlayer?.current?.loadedmetadata, audioPlayer?.current?.readyState])
+
+  const calculateTime = (secs) => {
+    const minutes = Math.floor(secs/60);
+    const minutesReturned = minutes < 10 ? `0${minutes}` : `${minutes}`;
+    const seconds = Math.floor(secs % 60);
+    const secondsReturned = seconds < 10 ? `0${seconds}` : `${seconds}`;
+    return `${minutesReturned}:${secondsReturned}`;
+  }
+
+  const togglePlayPause = () => {
+    const prevValue = isPlaying;
+    setIsPlaying(!prevValue);
+    if(!prevValue){
+      audioPlayer.current.play();
+    } else {
+      audioPlayer.current.pause();
+    }
+  }
+
+  const changeRange = () => {
+    audioPlayer.current.currentTime = audioProgressBar.current.value;
+  }
+
+  return (
+    <div className="audio-player">
+      <div className="audio-image-holder">
+        <img src={image} />
+
+        <div className="play-pause-buttons" onClick={togglePlayPause}>
+          { isPlaying ? <PodcastIcon /> : <VideoIcon /> }      
+        </div>
+      </div>
+
+      {/* <div className="audio-controls">
+        <div className="audio-current-time">
+          {calculateTime(currentTime)}
+        </div>
+
+        <div className="audio-range">
+          <input ref={audioProgressBar} type="range" className="range" defaultValue='0' onChange={changeRange} />
+        </div>
+
+        <div className="audio-current-duration">
+          {calculateTime(duration)}
+        </div>
+      </div> */}
+
+      <div className="audio-content-holder">
+        {headlineText && (
+          <div className="audio-headline">
+            { headlineText }
+          </div>
+        )}
+        {headlineText && (
+          <div className="audio-description">
+            { descriptionText }
+          </div>
+        )}
+      </div>
+
+      <audio
+        ref={audioPlayer}
+        src={`https://docs.google.com/uc?export=open&id=${audioId}`}
+        type="audio/mpeg"
+        preload="auto"
+      />
+    </div>
+  );
+};
+
+AudioPlayer.propTypes = {
+  customFields: PropTypes.shape({
+    audioId: PropTypes.string.tag({
+      label: 'Audio ID',
+      description: 'Audio ID',
+      defaultValue: '',
+    }),
+    headlineText: PropTypes.string.tag({
+      label: 'Headline text',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt turpis mauris, eget condimentum lacus dapibus sed. Duis ullamcorper lacus sed fringilla vestibulum. ',
+      defaultValue: '',
+    }),
+    descriptionText: PropTypes.string.tag({
+      label: 'Headline text',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt turpis mauris, eget condimentum lacus dapibus sed. Duis ullamcorper lacus sed fringilla vestibulum. ',
+      defaultValue: '',
+    }),
+  }),
+};
+
+AudioPlayer.label = 'Audio Player - V2';
+
+export default AudioPlayer;
