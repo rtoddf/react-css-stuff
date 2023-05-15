@@ -1,0 +1,67 @@
+/* Breakpoints: */
+$breakpoint: (
+  mobile: 0,
+  mobile-sm: 375px,
+  mobile-lg: 550px,
+  tablet: 768px,
+  tablet-md: 856px,
+  desktop-sm: 1024px,
+  desktop-md: 1232px,
+  desktop-lg: 1440px,
+) !default;
+
+$is-amp: false !default;
+
+@mixin breakpoint($point) {
+  /* Equal or greater than 375px */
+  @if $point == mobile-sm {
+    /* stylelint-disable-next-line */
+    @media only screen and (min-width: map-get($breakpoint, mobile-sm)) {
+      @content;
+    }
+  }
+  @if $is-amp == false {
+    /* Equal or greater than 550px */
+    @if $point == mobile-lg {
+      /* stylelint-disable-next-line */
+      @media only screen and (min-width: map-get($breakpoint, mobile-lg)) {
+        @content;
+      }
+    }
+    /* Equal or greater than 768px */
+    @if $point == tablet {
+      /* stylelint-disable-next-line */
+      @media only screen and (min-width: map-get($breakpoint, tablet)) {
+        @content;
+      }
+    }
+    /* Equal or greater than 1024px */
+    @if $point == desktop-sm {
+      /* stylelint-disable-next-line */
+      @media only screen and (min-width: map-get($breakpoint, desktop-sm)) {
+        @content;
+      }
+    }
+    /* Equal or greater than 1232px */
+    @if $point == desktop-md {
+      /* stylelint-disable-next-line */
+      @media only screen and (min-width: map-get($breakpoint, desktop-md)) {
+        @content;
+      }
+    }
+    /* Equal or greater than 1440px */
+    @if $point == desktop-lg {
+      /* stylelint-disable-next-line */
+      @media only screen and (min-width: map-get($breakpoint, desktop-lg)) {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin between-breakpoints($pointA, $pointB) {
+  /* stylelint-disable-next-line */
+  @media only screen and (min-width: map-get($breakpoint, $pointA)) and (max-width: map-get($breakpoint, $pointB) - 1) {
+    @content;
+  }
+}

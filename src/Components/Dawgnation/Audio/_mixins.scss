@@ -1,0 +1,107 @@
+@import './breakpoints';
+
+/* Amp */
+@mixin amp-exclude() {
+  @if $is-amp==false {
+    @content;
+  }
+}
+
+@mixin amp-only() {
+  @if $is-amp==true {
+    @content;
+  }
+}
+
+@mixin ie11-compatible-flex-basis($width) {
+  flex-basis: $width;
+  max-width: $width;
+}
+
+/** Font Styling for different breakpoints  **/
+@mixin text-styles-tablet($size, $line-height, $font: '') {
+  @include breakpoint(tablet) {
+    font-size: $size;
+    line-height: $line-height;
+
+    @if $font !='' {
+      font-family: $font;
+    }
+  }
+}
+
+@mixin text-styles-mobile($size, $line-height, $font: '') {
+  @include breakpoint(mobile) {
+    font-size: $size;
+    line-height: $line-height;
+
+    @if $font !='' {
+      font-family: $font;
+    }
+  }
+}
+
+@mixin text-styles($size, $line-height, $font: '') {
+  font-size: $size;
+  line-height: $line-height;
+
+  @if $font !='' {
+    font-family: $font;
+  }
+}
+
+@mixin text-styles-desktop($size, $line-height, $font: '') {
+  @include breakpoint(all-desktop) {
+    font-size: $size;
+    line-height: $line-height;
+
+    @if $font !='' {
+      font-family: $font;
+    }
+  }
+}
+
+@mixin border($width: map-get($border-size, default),
+  $color: map-get($color, black),
+  $style: solid,
+  $side: false) {
+  @if ($side) {
+    border-#{$side}-width: $width;
+    border-#{$side}-style: $style;
+    border-#{$side}-color: $color;
+  }
+
+  @else {
+    border-width: $width;
+    border-style: $style;
+    border-color: $color;
+  }
+}
+
+@mixin render-custom($rule-map) {
+
+  @each $prop,
+  $value in $rule-map {
+    #{$prop}: #{$value};
+  }
+}
+
+@mixin content-width {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 2.85%;
+}
+
+@mixin sectionHeadling {
+  @include text-styles(1.875rem, 1.07, 'Prompt');
+  font-weight: 600;
+
+  @include breakpoint(tablet) {
+    @include text-styles(1.75rem, 1.14, 'Prompt');
+  }
+
+  @include breakpoint(desktop-sm) {
+    @include text-styles(1.875rem, 1.07, 'Prompt');
+  }
+}
