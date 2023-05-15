@@ -1,16 +1,16 @@
 import React, {useState, useRef, useEffect} from 'react';
 import PropTypes from 'prop-types';
 
-import VideoIcon from '../../../../resources/icons/media/video';
-import PodcastIcon from '../../../../resources/icons/media/podcast';
+// import VideoIcon from '../../../../resources/icons/media/video';
+// import PodcastIcon from '../../../../resources/icons/media/podcast';
 import image from './images/audio-placeholder.jpg';
 
 import './default.scss';
 
-const AudioPlayer = ({ customFields }) => {
-  const audioId = customFields?.audioId || '';
-  const headlineText = customFields?.headlineText || '';
-  const descriptionText = customFields?.descriptionText || '';
+const AudioPlayer = () => {
+  const audioId = '1S4uUTeD_1o8vXOYmdVGOlR8exmoTiLw8';
+  const headlineText = 'headline';
+  const descriptionText = 'description';
 
   const [isPlaying, setIsPlaying] = useState(false);
   const [duration, setDuration] = useState(0);
@@ -59,7 +59,7 @@ const AudioPlayer = ({ customFields }) => {
         <img src={image} />
 
         <div className="play-pause-buttons" onClick={togglePlayPause}>
-          { isPlaying ? <PodcastIcon /> : <VideoIcon /> }      
+          {/* { isPlaying ? <PodcastIcon /> : <VideoIcon /> }       */}
         </div>
       </div>
 
@@ -100,25 +100,25 @@ const AudioPlayer = ({ customFields }) => {
   );
 };
 
-AudioPlayer.propTypes = {
-  customFields: PropTypes.shape({
-    audioId: PropTypes.string.tag({
-      label: 'Audio ID',
-      description: 'Audio ID',
-      defaultValue: '',
-    }),
-    headlineText: PropTypes.string.tag({
-      label: 'Headline text',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt turpis mauris, eget condimentum lacus dapibus sed. Duis ullamcorper lacus sed fringilla vestibulum. ',
-      defaultValue: '',
-    }),
-    descriptionText: PropTypes.string.tag({
-      label: 'Headline text',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt turpis mauris, eget condimentum lacus dapibus sed. Duis ullamcorper lacus sed fringilla vestibulum. ',
-      defaultValue: '',
-    }),
-  }),
-};
+// AudioPlayer.propTypes = {
+//   customFields: PropTypes.shape({
+//     audioId: PropTypes.string.tag({
+//       label: 'Audio ID',
+//       description: 'Audio ID',
+//       defaultValue: '',
+//     }),
+//     headlineText: PropTypes.string.tag({
+//       label: 'Headline text',
+//       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt turpis mauris, eget condimentum lacus dapibus sed. Duis ullamcorper lacus sed fringilla vestibulum. ',
+//       defaultValue: '',
+//     }),
+//     descriptionText: PropTypes.string.tag({
+//       label: 'Headline text',
+//       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt turpis mauris, eget condimentum lacus dapibus sed. Duis ullamcorper lacus sed fringilla vestibulum. ',
+//       defaultValue: '',
+//     }),
+//   }),
+// };
 
 AudioPlayer.label = 'Audio Player - V2';
 
