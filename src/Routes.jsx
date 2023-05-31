@@ -80,6 +80,7 @@ import Mosaic from './Components/Layouts/Mosaic';
 // Dawgnation
 import Dawgnation from './Components/Pages/Dawgnation';
 import Audio from './Components/Dawgnation/Audio';
+import SvgAnimation from './Components/Dawgnation/SvgAnimation';
 import PlayerCards from './Components/Dawgnation/PlayerCards';
 
 // Learning
@@ -311,6 +312,9 @@ function Routes() {
             </Route>
             <Route path='/dawgnation/audio'>
                 <Audio />
+            </Route>
+            <Route path='/dawgnation/svg-animation'>
+                <SvgAnimation />
             </Route>
             <Route path='/dawgnation/player-cards'>
                 <PlayerCards />

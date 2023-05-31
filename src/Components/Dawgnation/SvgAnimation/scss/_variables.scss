@@ -1,0 +1,45 @@
+$margin-bottom-desktop-x-small: 1.25rem;
+$margin-bottom-desktop-small: 1.875rem;
+$margin-bottom-desktop-large: 2.5rem;
+
+$margin-bottom-mobile-x-small: 1rem;
+$margin-bottom-mobile-small: 1.25rem;
+$margin-bottom-mobile-large: 1.875rem;
+
+$white: #fff;
+
+/// legacy
+$dawgnationLegacyDark: #444;
+
+// dark mode
+$dawgnationV2BodyBackgroundDark: #2c2a29;
+$dawgnationV2BodyBackgroundLight: #fff;
+
+$dawgnationV2TextColorDark: #fff;
+$dawgnationV2TextColorLight: #000;
+
+$dawgnationV2BorderColor: #676767;
+
+$dawgnationV2Gray01: #f4f4f4;
+$dawgnationV2Gray03: #acacac;
+
+$dawgnationBlack: #000;
+
+$dawgnationMiddleGray: #999;
+
+$dawgnationred: #ba0c2f;
+$dawgnationGray01: #f4f4f4;
+$dawgnationGray03: #acacac;
+$dawgnationGray04: #2c2a29;
+
+$cardDetailBack: #454240;
+
+// to do: this needs to move to the aa vars file, but I'd rather work on getting them uniform first
+// so putting it here for now
+$aaBlack: #000;
+$aaorange: #ea4724;
+$aaTextColor: #231f20;
+
+@mixin dawgnationBackgroundAlpha($r, $g, $b, $a) {
+  background-color: rgba($r, $g, $b, $a);
+}
