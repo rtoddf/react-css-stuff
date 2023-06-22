@@ -9,6 +9,9 @@ import Testimonials from './Components/Grids/Testimonials';
 import NewsHomePage from './Components/Grids/NewsHomePage';
 import Podcasts from './Components/Grids/Podcasts';
 
+// Dawgnation
+import StyledComponent01 from './Components/StyledComponents/01';
+
 // Components
 import Components from './Components/Pages/Components';
 import Description from './Components/Description';
@@ -135,6 +138,10 @@ function Routes() {
             </Route>
             <Route path='/grids/podcasts'>
                 <Podcasts />
+            </Route>
+
+            <Route path='/styled-components'>
+                <StyledComponent01 />
             </Route>
 
             {/* Components */}
